@@ -1,0 +1,26 @@
+name: Get a specific Pages build
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/pages/builds/{build_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  build_id:
+    description: |
+      build_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

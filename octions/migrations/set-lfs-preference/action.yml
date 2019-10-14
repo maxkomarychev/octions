@@ -1,0 +1,26 @@
+name: Set Git LFS preference
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/import/lfs`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  use_lfs:
+    description: |
+      Can be one of `opt_in` (large files will be stored using Git LFS) or `opt_out` (large files will be removed during the import).
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,50 @@
+name: List pull requests
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/pulls`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  state:
+    description: |
+      Either `open`, `closed`, or `all` to filter by state.
+    required: true
+  head:
+    description: |
+      Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`.
+    required: true
+  base:
+    description: |
+      Filter pulls by base branch name. Example: `gh-pages`.
+    required: true
+  sort:
+    description: |
+      What to sort results by. Can be either `created`, `updated`, `popularity` (comment count) or `long-running` (age, filtering by pulls updated in the last month).
+    required: true
+  direction:
+    description: |
+      The direction of the sort. Can be either `asc` or `desc`. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

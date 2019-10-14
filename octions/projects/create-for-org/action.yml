@@ -1,0 +1,26 @@
+name: Create an organization project
+description: |
+  This action implements `POST` request to `/orgs/{org}/projects`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  name:
+    description: |
+      The name of the project.
+    required: true
+  body:
+    description: |
+      The description of the project.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

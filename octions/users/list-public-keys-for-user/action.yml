@@ -1,0 +1,26 @@
+name: List public keys for a user
+description: |
+  This action implements `GET` request to `/users/{username}/keys`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

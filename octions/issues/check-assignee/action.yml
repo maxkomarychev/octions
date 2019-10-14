@@ -1,0 +1,26 @@
+name: Check assignee
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/assignees/{assignee}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  assignee:
+    description: |
+      assignee parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

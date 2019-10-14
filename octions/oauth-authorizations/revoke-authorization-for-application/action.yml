@@ -1,0 +1,22 @@
+name: Revoke an authorization for an application
+description: |
+  This action implements `DELETE` request to `/applications/{client_id}/tokens/{access_token}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  client_id:
+    description: |
+      client_id parameter
+    required: true
+  access_token:
+    description: |
+      access_token parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,26 @@
+name: Rerequest check suite
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/check-suites/{check_suite_id}/rerequest`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  check_suite_id:
+    description: |
+      check_suite_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

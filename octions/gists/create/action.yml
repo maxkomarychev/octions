@@ -1,0 +1,26 @@
+name: Create a gist
+description: |
+  This action implements `POST` request to `/gists`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  files:
+    description: |
+      The filenames and content of each file in the gist. The keys in the `files` object represent the filename and have the type `string`.
+    required: true
+  description:
+    description: |
+      A descriptive name for this gist.
+    required: false
+  public:
+    description: |
+      When `true`, the gist will be public and available for anyone to see.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

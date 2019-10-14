@@ -1,0 +1,42 @@
+name: Merge a pull request (Merge Button)
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/merge`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  pull_number:
+    description: |
+      pull_number parameter
+    required: true
+  commit_title:
+    description: |
+      Title for the automatic commit message.
+    required: false
+  commit_message:
+    description: |
+      Extra detail to append to automatic commit message.
+    required: false
+  sha:
+    description: |
+      SHA that pull request head must match to allow merge.
+    required: false
+  merge_method:
+    description: |
+      Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,18 @@
+name: Delete a thread subscription
+description: |
+  This action implements `DELETE` request to `/notifications/threads/{thread_id}/subscription`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  thread_id:
+    description: |
+      thread_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

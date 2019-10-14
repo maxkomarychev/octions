@@ -1,0 +1,26 @@
+name: Check if a GitHub account is associated with any Marketplace listing (stubbed)
+description: |
+  This action implements `GET` request to `/marketplace_listing/stubbed/accounts/{account_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  account_id:
+    description: |
+      account_id parameter
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

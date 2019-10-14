@@ -1,0 +1,46 @@
+name: Update a pull request
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/pulls/{pull_number}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  pull_number:
+    description: |
+      pull_number parameter
+    required: true
+  title:
+    description: |
+      The title of the pull request.
+    required: false
+  body:
+    description: |
+      The contents of the pull request.
+    required: false
+  state:
+    description: |
+      State of this Pull Request. Either `open` or `closed`.
+    required: false
+  base:
+    description: |
+      The name of the branch you want your changes pulled into. This should be an existing branch on the current repository. You cannot update the base branch on a pull request to point to another repository.
+    required: false
+  maintainer_can_modify:
+    description: |
+      Indicates whether [maintainers can modify](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

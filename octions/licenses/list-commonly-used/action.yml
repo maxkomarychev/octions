@@ -1,0 +1,14 @@
+name: List commonly used licenses
+description: |
+  This action implements `GET` request to `/licenses`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,30 @@
+name: Get archive link
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/{archive_format}/{ref}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  archive_format:
+    description: |
+      archive_format parameter
+    required: true
+  ref:
+    description: |
+      ref parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,46 @@
+name: List your notifications in a repository
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/notifications`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  all:
+    description: |
+      If `true`, show notifications marked as read.
+    required: true
+  participating:
+    description: |
+      If `true`, only shows notifications in which the user is directly participating or mentioned.
+    required: true
+  since:
+    description: |
+      Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  before:
+    description: |
+      Only show notifications updated before the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

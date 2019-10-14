@@ -1,0 +1,22 @@
+name: Create a project column
+description: |
+  This action implements `POST` request to `/projects/{project_id}/columns`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  project_id:
+    description: |
+      project_id parameter
+    required: true
+  name:
+    description: |
+      The name of the column.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

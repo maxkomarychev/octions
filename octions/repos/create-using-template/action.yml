@@ -1,0 +1,38 @@
+name: Create repository using a repository template
+description: |
+  This action implements `POST` request to `/repos/{template_owner}/{template_repo}/generate`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  template_owner:
+    description: |
+      template_owner parameter
+    required: true
+  template_repo:
+    description: |
+      template_repo parameter
+    required: true
+  owner:
+    description: |
+      The organization or person who will own the new repository. To create a new repository in an organization, the authenticated user must be a member of the specified organization.
+    required: false
+  name:
+    description: |
+      The name of the new repository.
+    required: true
+  description:
+    description: |
+      A short description of the new repository.
+    required: false
+  private:
+    description: |
+      Either `true` to create a new private repository or `false` to create a new public one.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

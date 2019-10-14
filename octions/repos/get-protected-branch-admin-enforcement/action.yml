@@ -1,0 +1,26 @@
+name: Get admin enforcement of protected branch
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  branch:
+    description: |
+      branch parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

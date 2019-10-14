@@ -1,0 +1,34 @@
+name: List pull requests associated with commit
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/commits/{commit_sha}/pulls`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  commit_sha:
+    description: |
+      commit_sha parameter
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,34 @@
+name: Add a new deploy key
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/keys`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  title:
+    description: |
+      A name for the key.
+    required: false
+  key:
+    description: |
+      The contents of the key.
+    required: true
+  read_only:
+    description: |
+      If `true`, the key will only be able to read repository contents. Otherwise, the key will be able to read and write.      Deploy keys with write access can perform the same actions as an organization member with admin access, or a collaborator on a personal repository. For more information, see "[Repository permission levels for an organization](https://help.github.com/articles/repository-permission-levels-for-an-organization/)" and "[Permission levels for a user account repository](https://help.github.com/articles/permission-levels-for-a-user-account-repository/)."
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

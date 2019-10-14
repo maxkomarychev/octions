@@ -1,0 +1,22 @@
+name: Conceal a user's membership
+description: |
+  This action implements `DELETE` request to `/orgs/{org}/public_members/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

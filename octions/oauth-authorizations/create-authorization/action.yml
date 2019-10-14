@@ -1,0 +1,38 @@
+name: Create a new authorization
+description: |
+  This action implements `POST` request to `/authorizations`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  scopes:
+    description: |
+      A list of scopes that this authorization is in.
+    required: false
+  note:
+    description: |
+      A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.
+    required: true
+  note_url:
+    description: |
+      A URL to remind you what app the OAuth token is for.
+    required: false
+  client_id:
+    description: |
+      The 20 character OAuth app client key for which to create the token.
+    required: false
+  client_secret:
+    description: |
+      The 40 character OAuth app client secret for which to create the token.
+    required: false
+  fingerprint:
+    description: |
+      A unique string to distinguish an authorization from others created for the same client ID and user.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

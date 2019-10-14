@@ -1,0 +1,30 @@
+name: Compare two commits
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/compare/{base}...{head}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  base:
+    description: |
+      base parameter
+    required: true
+  head:
+    description: |
+      head parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

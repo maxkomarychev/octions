@@ -1,0 +1,26 @@
+name: Get single hook
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/hooks/{hook_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  hook_id:
+    description: |
+      hook_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

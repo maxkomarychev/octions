@@ -1,0 +1,38 @@
+name: Update a label
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/labels/{name}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  name:
+    description: |
+      name parameter
+    required: true
+  new_name:
+    description: |
+      The new name of the label. Emoji can be added to label names, using either native emoji or colon-style markup. For example, typing `:strawberry:` will render the emoji ![:strawberry:](https://github.githubassets.com/images/icons/emoji/unicode/1f353.png ":strawberry:"). For a full list of available emoji and codes, see [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/).
+    required: false
+  color:
+    description: |
+      The [hexadecimal color code](http://www.color-hex.com/) for the label, without the leading `#`.
+    required: false
+  description:
+    description: |
+      A short description of the label.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

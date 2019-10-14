@@ -1,0 +1,22 @@
+name: Set a thread subscription
+description: |
+  This action implements `PUT` request to `/notifications/threads/{thread_id}/subscription`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  thread_id:
+    description: |
+      thread_id parameter
+    required: true
+  ignored:
+    description: |
+      Unsubscribes and subscribes you to a conversation. Set `ignored` to `true` to block all notifications from this thread.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

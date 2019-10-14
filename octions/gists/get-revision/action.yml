@@ -1,0 +1,22 @@
+name: Get a specific revision of a gist
+description: |
+  This action implements `GET` request to `/gists/{gist_id}/{sha}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  gist_id:
+    description: |
+      gist_id parameter
+    required: true
+  sha:
+    description: |
+      sha parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

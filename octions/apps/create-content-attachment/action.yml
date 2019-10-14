@@ -1,0 +1,26 @@
+name: Create a content attachment
+description: |
+  This action implements `POST` request to `/content_references/{content_reference_id}/attachments`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  content_reference_id:
+    description: |
+      content_reference_id parameter
+    required: true
+  title:
+    description: |
+      The title of the content attachment displayed in the body or comment of an issue or pull request.
+    required: true
+  body:
+    description: |
+      The body text of the content attachment displayed in the body or comment of an issue or pull request. This parameter supports markdown.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

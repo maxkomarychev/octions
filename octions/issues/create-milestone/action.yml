@@ -1,0 +1,38 @@
+name: Create a milestone
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/milestones`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  title:
+    description: |
+      The title of the milestone.
+    required: true
+  state:
+    description: |
+      The state of the milestone. Either `open` or `closed`.
+    required: false
+  description:
+    description: |
+      A description of the milestone.
+    required: false
+  due_on:
+    description: |
+      The milestone due date. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

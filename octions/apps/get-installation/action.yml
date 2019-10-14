@@ -1,0 +1,18 @@
+name: Get an installation
+description: |
+  This action implements `GET` request to `/app/installations/{installation_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  installation_id:
+    description: |
+      installation_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

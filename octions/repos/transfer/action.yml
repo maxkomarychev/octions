@@ -1,0 +1,30 @@
+name: Transfer a repository
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/transfer`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  new_owner:
+    description: |
+      **Required:** The username or organization name the repository will be transferred to.
+    required: false
+  team_ids:
+    description: |
+      ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,18 @@
+name: Get a project card
+description: |
+  This action implements `GET` request to `/projects/columns/cards/{card_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  card_id:
+    description: |
+      card_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

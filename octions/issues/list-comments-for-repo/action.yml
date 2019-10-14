@@ -1,0 +1,34 @@
+name: List comments in a repository
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/issues/comments`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  sort:
+    description: |
+      Either `created` or `updated`.
+    required: true
+  direction:
+    description: |
+      Either `asc` or `desc`. Ignored without the `sort` parameter.
+    required: true
+  since:
+    description: |
+      Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

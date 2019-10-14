@@ -1,0 +1,14 @@
+name: Listing available templates
+description: |
+  This action implements `GET` request to `/gitignore/templates`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

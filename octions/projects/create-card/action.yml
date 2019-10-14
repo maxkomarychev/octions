@@ -1,0 +1,30 @@
+name: Create a project card
+description: |
+  This action implements `POST` request to `/projects/columns/{column_id}/cards`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  column_id:
+    description: |
+      column_id parameter
+    required: true
+  note:
+    description: |
+      The card's note content. Only valid for cards without another type of content, so you must omit when specifying `content_id` and `content_type`.
+    required: false
+  content_id:
+    description: |
+      The issue or pull request id you want to associate with this card. You can use the [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository) and [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoints to find this id.   **Note:** Depending on whether you use the issue id or pull request id, you will need to specify `Issue` or `PullRequest` as the `content_type`.
+    required: false
+  content_type:
+    description: |
+      **Required if you provide `content_id`**. The type of content you want to associate with this card. Use `Issue` when `content_id` is an issue id and use `PullRequest` when `content_id` is a pull request id.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

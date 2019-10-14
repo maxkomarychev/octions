@@ -1,0 +1,45 @@
+# Update a pull request branch
+
+"Oction" is a GitHub Action that implements a single call with 
+[@octokit/request](https://www.npmjs.com/package/@octokit/request)
+allowing easy interaction with GitHub REST APIs from your workflow.
+
+Original documentation: https://developer.github.com/v3/pulls/#update-a-pull-request-branch
+
+This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/update-branch`
+
+
+# Quick start
+
+```yaml
+- uses: /@v
+  id: my_step_id
+  with:
+    token: <token value>
+    owner: <owner value>
+    repo: <repo value>
+    pull_number: <pull_number value>
+- name: Print outputs
+  run: |
+    echo ${{ steps.my_step_id.outputs.id }}
+    echo ${{ steps.my_step_id.outputs.number }}
+```
+
+
+# Inputs
+
+| Name | Is required | Description |
+|---|---|---|
+|token|true|Token to authenticate the request
+|owner|true|owner parameter
+|repo|true|repo parameter
+|pull_number|true|pull_number parameter
+|expected_head_sha|false|The expected SHA of the pull request's HEAD ref. This is the most recent commit on the pull request's branch. If the expected SHA does not match the pull request's HEAD, you will receive a `422 Unprocessable Entity` status. You can use the "[List commits on a repository](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository)" endpoint to find the most recent commit SHA. Default: SHA of the pull request's current HEAD ref.
+
+# Outputs
+
+| Name | Description |
+|---|---|
+|id|`id` field of the response (if exists)|
+|number|`number` field of the response (if exists)|
+

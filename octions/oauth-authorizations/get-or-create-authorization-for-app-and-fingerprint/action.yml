@@ -1,0 +1,38 @@
+name: Get-or-create an authorization for a specific app and fingerprint
+description: |
+  This action implements `PUT` request to `/authorizations/clients/{client_id}/{fingerprint}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  client_id:
+    description: |
+      client_id parameter
+    required: true
+  fingerprint:
+    description: |
+      fingerprint parameter
+    required: true
+  client_secret:
+    description: |
+      The 40 character OAuth app client secret associated with the client ID specified in the URL.
+    required: true
+  scopes:
+    description: |
+      A list of scopes that this authorization is in.
+    required: false
+  note:
+    description: |
+      A note to remind you what the OAuth token is for.
+    required: false
+  note_url:
+    description: |
+      A URL to remind you what app the OAuth token is for.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

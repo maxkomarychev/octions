@@ -1,0 +1,30 @@
+name: Add labels to an issue
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  labels:
+    description: |
+      The name of the label to add to the issue. Must contain at least one label. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

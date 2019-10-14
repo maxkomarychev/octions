@@ -1,0 +1,74 @@
+name: Creates a new repository for the authenticated user
+description: |
+  This action implements `POST` request to `/user/repos`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  name:
+    description: |
+      The name of the repository.
+    required: true
+  description:
+    description: |
+      A short description of the repository.
+    required: false
+  homepage:
+    description: |
+      A URL with more information about the repository.
+    required: false
+  private:
+    description: |
+      Either `true` to create a private repository or `false` to create a public one. Creating private repositories requires a paid GitHub account.
+    required: false
+  has_issues:
+    description: |
+      Either `true` to enable issues for this repository or `false` to disable them.
+    required: false
+  has_projects:
+    description: |
+      Either `true` to enable projects for this repository or `false` to disable them. **Note:** If you're creating a repository in an organization that has disabled repository projects, the default is `false`, and if you pass `true`, the API returns an error.
+    required: false
+  has_wiki:
+    description: |
+      Either `true` to enable the wiki for this repository or `false` to disable it.
+    required: false
+  is_template:
+    description: |
+      Either `true` to make this repo available as a template repository or `false` to prevent it.
+    required: false
+  team_id:
+    description: |
+      The id of the team that will be granted access to this repository. This is only valid when creating a repository in an organization.
+    required: false
+  auto_init:
+    description: |
+      Pass `true` to create an initial commit with empty README.
+    required: false
+  gitignore_template:
+    description: |
+      Desired language or platform [.gitignore template](https://github.com/github/gitignore) to apply. Use the name of the template without the extension. For example, "Haskell".
+    required: false
+  license_template:
+    description: |
+      Choose an [open source license template](https://choosealicense.com/) that best suits your needs, and then use the [license keyword](https://help.github.com/articles/licensing-a-repository/#searching-github-by-license-type) as the `license_template` string. For example, "mit" or "mpl-2.0".
+    required: false
+  allow_squash_merge:
+    description: |
+      Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
+    required: false
+  allow_merge_commit:
+    description: |
+      Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
+    required: false
+  allow_rebase_merge:
+    description: |
+      Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

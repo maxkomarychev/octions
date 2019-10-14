@@ -1,0 +1,34 @@
+name: Update required status checks of protected branch
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  branch:
+    description: |
+      branch parameter
+    required: true
+  strict:
+    description: |
+      Require branches to be up to date before merging.
+    required: false
+  contexts:
+    description: |
+      The list of status checks to require in order to merge into this branch
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,18 @@
+name: Get a single GPG key
+description: |
+  This action implements `GET` request to `/user/gpg_keys/{gpg_key_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  gpg_key_id:
+    description: |
+      gpg_key_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

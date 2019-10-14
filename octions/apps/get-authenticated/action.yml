@@ -1,0 +1,14 @@
+name: Get the authenticated GitHub App
+description: |
+  This action implements `GET` request to `/app`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

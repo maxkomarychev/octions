@@ -1,0 +1,26 @@
+name: Delete a label
+description: |
+  This action implements `DELETE` request to `/repos/{owner}/{repo}/labels/{name}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  name:
+    description: |
+      name parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

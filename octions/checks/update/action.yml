@@ -1,0 +1,62 @@
+name: Update a check run
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/check-runs/{check_run_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  check_run_id:
+    description: |
+      check_run_id parameter
+    required: true
+  name:
+    description: |
+      The name of the check. For example, "code-coverage".
+    required: false
+  details_url:
+    description: |
+      The URL of the integrator's site that has the full details of the check.
+    required: false
+  external_id:
+    description: |
+      A reference for the run on the integrator's system.
+    required: false
+  started_at:
+    description: |
+      This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: false
+  status:
+    description: |
+      The current status. Can be one of `queued`, `in_progress`, or `completed`.
+    required: false
+  conclusion:
+    description: |
+      **Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `timed_out`, or `action_required`.   **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`.
+    required: false
+  completed_at:
+    description: |
+      The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: false
+  output:
+    description: |
+      Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](https://developer.github.com/v3/checks/runs/#output-object-1) description.
+    required: false
+  actions:
+    description: |
+      Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description. To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,42 @@
+name: Update an existing authorization
+description: |
+  This action implements `PATCH` request to `/authorizations/{authorization_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  authorization_id:
+    description: |
+      authorization_id parameter
+    required: true
+  scopes:
+    description: |
+      Replaces the authorization scopes with these.
+    required: false
+  add_scopes:
+    description: |
+      A list of scopes to add to this authorization.
+    required: false
+  remove_scopes:
+    description: |
+      A list of scopes to remove from this authorization.
+    required: false
+  note:
+    description: |
+      A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.
+    required: false
+  note_url:
+    description: |
+      A URL to remind you what app the OAuth token is for.
+    required: false
+  fingerprint:
+    description: |
+      A unique string to distinguish an authorization from others created for the same client ID and user.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

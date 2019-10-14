@@ -1,0 +1,30 @@
+name: Set a Repository Subscription
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/subscription`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  subscribed:
+    description: |
+      Determines if notifications should be received from this repository.
+    required: false
+  ignored:
+    description: |
+      Determines if all notifications should be blocked from this repository.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

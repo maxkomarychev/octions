@@ -1,0 +1,14 @@
+name: List blocked users
+description: |
+  This action implements `GET` request to `/user/blocks`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

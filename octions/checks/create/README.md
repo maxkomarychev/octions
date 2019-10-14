@@ -1,0 +1,54 @@
+# Create a check run
+
+"Oction" is a GitHub Action that implements a single call with 
+[@octokit/request](https://www.npmjs.com/package/@octokit/request)
+allowing easy interaction with GitHub REST APIs from your workflow.
+
+Original documentation: https://developer.github.com/v3/checks/runs/#create-a-check-run
+
+This action implements `POST` request to `/repos/{owner}/{repo}/check-runs`
+
+
+# Quick start
+
+```yaml
+- uses: /@v
+  id: my_step_id
+  with:
+    token: <token value>
+    owner: <owner value>
+    repo: <repo value>
+    name: <name value>
+    head_sha: <head_sha value>
+- name: Print outputs
+  run: |
+    echo ${{ steps.my_step_id.outputs.id }}
+    echo ${{ steps.my_step_id.outputs.number }}
+```
+
+
+# Inputs
+
+| Name | Is required | Description |
+|---|---|---|
+|token|true|Token to authenticate the request
+|owner|true|owner parameter
+|repo|true|repo parameter
+|name|true|The name of the check. For example, "code-coverage".
+|head_sha|true|The SHA of the commit.
+|details_url|false|The URL of the integrator's site that has the full details of the check.
+|external_id|false|A reference for the run on the integrator's system.
+|status|false|The current status. Can be one of `queued`, `in_progress`, or `completed`.
+|started_at|false|The time that the check run began. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+|conclusion|false|**Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `timed_out`, or `action_required`. When the conclusion is `action_required`, additional details should be provided on the site specified by `details_url`.   **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`.
+|completed_at|false|The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+|output|false|Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](https://developer.github.com/v3/checks/runs/#output-object) description.
+|actions|false|Displays a button on GitHub that can be clicked to alert your app to do additional tasks. For example, a code linting app can display a button that automatically fixes detected errors. The button created in this object is displayed after the check run completes. When a user clicks the button, GitHub sends the [`check_run.requested_action` webhook](https://developer.github.com/v3/activity/events/types/#checkrunevent) to your app. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description. To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)." To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
+
+# Outputs
+
+| Name | Description |
+|---|---|
+|id|`id` field of the response (if exists)|
+|number|`number` field of the response (if exists)|
+

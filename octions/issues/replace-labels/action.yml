@@ -1,0 +1,30 @@
+name: Replace all labels for an issue
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  labels:
+    description: |
+      The names of the labels to add to the issue. You can pass an empty array to remove all labels. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

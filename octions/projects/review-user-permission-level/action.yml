@@ -1,0 +1,22 @@
+name: Review a user's permission level
+description: |
+  This action implements `GET` request to `/projects/{project_id}/collaborators/{username}/permission`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  project_id:
+    description: |
+      project_id parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

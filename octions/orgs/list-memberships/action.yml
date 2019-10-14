@@ -1,0 +1,26 @@
+name: List your organization memberships
+description: |
+  This action implements `GET` request to `/user/memberships/orgs`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  state:
+    description: |
+      Indicates the state of the memberships to return. Can be either `active` or `pending`. If not specified, the API returns both active and pending memberships.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

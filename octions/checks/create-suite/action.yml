@@ -1,0 +1,26 @@
+name: Create a check suite
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/check-suites`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  head_sha:
+    description: |
+      The sha of the head commit.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

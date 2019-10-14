@@ -1,0 +1,46 @@
+name: Delete a file
+description: |
+  This action implements `DELETE` request to `/repos/{owner}/{repo}/contents/{path}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  path:
+    description: |
+      path parameter
+    required: true
+  message:
+    description: |
+      The commit message.
+    required: true
+  sha:
+    description: |
+      The blob SHA of the file being replaced.
+    required: true
+  branch:
+    description: |
+      The branch name. Default: the repository’s default branch (usually `master`)
+    required: false
+  committer:
+    description: |
+      object containing information about the committer.
+    required: false
+  author:
+    description: |
+      object containing information about the author.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

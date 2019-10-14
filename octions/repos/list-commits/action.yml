@@ -1,0 +1,50 @@
+name: List commits on a repository
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/commits`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  sha:
+    description: |
+      SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`).
+    required: true
+  path:
+    description: |
+      Only commits containing this file path will be returned.
+    required: true
+  author:
+    description: |
+      GitHub login or email address by which to filter by commit author.
+    required: true
+  since:
+    description: |
+      Only commits after this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  until:
+    description: |
+      Only commits before this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

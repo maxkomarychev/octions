@@ -1,0 +1,34 @@
+name: Members list
+description: |
+  This action implements `GET` request to `/orgs/{org}/members`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  filter:
+    description: |
+      Filter members returned in the list. Can be one of:   \* `2fa_disabled` - Members without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled. Available for organization owners.   \* `all` - All members the authenticated user can see.
+    required: true
+  role:
+    description: |
+      Filter members returned by their role. Can be one of:   \* `all` - All members of the organization, regardless of role.   \* `admin` - Organization owners.   \* `member` - Non-owner organization members.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

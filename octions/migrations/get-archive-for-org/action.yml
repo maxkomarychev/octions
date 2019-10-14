@@ -1,0 +1,22 @@
+name: Download an organization migration archive
+description: |
+  This action implements `GET` request to `/orgs/{org}/migrations/{migration_id}/archive`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  migration_id:
+    description: |
+      migration_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

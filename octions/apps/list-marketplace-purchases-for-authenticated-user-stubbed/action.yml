@@ -1,0 +1,22 @@
+name: Get a user's Marketplace purchases (stubbed)
+description: |
+  This action implements `GET` request to `/user/marketplace_purchases/stubbed`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

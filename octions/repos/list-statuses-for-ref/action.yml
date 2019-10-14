@@ -1,0 +1,34 @@
+name: List statuses for a specific ref
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/statuses`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  ref:
+    description: |
+      ref parameter
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

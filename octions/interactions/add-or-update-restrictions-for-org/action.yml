@@ -1,0 +1,22 @@
+name: Add or update interaction restrictions for an organization
+description: |
+  This action implements `PUT` request to `/orgs/{org}/interaction-limits`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  limit:
+    description: |
+      Specifies the group of GitHub users who can comment, open issues, or create pull requests in public repositories for the given organization. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

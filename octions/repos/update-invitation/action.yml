@@ -1,0 +1,30 @@
+name: Update a repository invitation
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/invitations/{invitation_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  invitation_id:
+    description: |
+      invitation_id parameter
+    required: true
+  permissions:
+    description: |
+      The permissions that the associated user will have on the repository. Valid values are `read`, `write`, and `admin`.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

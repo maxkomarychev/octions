@@ -1,0 +1,45 @@
+# Update a repository invitation
+
+"Oction" is a GitHub Action that implements a single call with 
+[@octokit/request](https://www.npmjs.com/package/@octokit/request)
+allowing easy interaction with GitHub REST APIs from your workflow.
+
+Original documentation: https://developer.github.com/v3/repos/invitations/#update-a-repository-invitation
+
+This action implements `PATCH` request to `/repos/{owner}/{repo}/invitations/{invitation_id}`
+
+
+# Quick start
+
+```yaml
+- uses: /@v
+  id: my_step_id
+  with:
+    token: <token value>
+    owner: <owner value>
+    repo: <repo value>
+    invitation_id: <invitation_id value>
+- name: Print outputs
+  run: |
+    echo ${{ steps.my_step_id.outputs.id }}
+    echo ${{ steps.my_step_id.outputs.number }}
+```
+
+
+# Inputs
+
+| Name | Is required | Description |
+|---|---|---|
+|token|true|Token to authenticate the request
+|owner|true|owner parameter
+|repo|true|repo parameter
+|invitation_id|true|invitation_id parameter
+|permissions|false|The permissions that the associated user will have on the repository. Valid values are `read`, `write`, and `admin`.
+
+# Outputs
+
+| Name | Description |
+|---|---|
+|id|`id` field of the response (if exists)|
+|number|`number` field of the response (if exists)|
+

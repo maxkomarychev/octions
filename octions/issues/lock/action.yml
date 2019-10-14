@@ -1,0 +1,30 @@
+name: Lock an issue
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_number}/lock`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  lock_reason:
+    description: |
+      The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:   \* `off-topic`   \* `too heated`   \* `resolved`   \* `spam`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

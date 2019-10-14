@@ -1,0 +1,34 @@
+name: Update a pull request review
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  pull_number:
+    description: |
+      pull_number parameter
+    required: true
+  review_id:
+    description: |
+      review_id parameter
+    required: true
+  body:
+    description: |
+      The body text of the pull request review.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

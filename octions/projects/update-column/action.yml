@@ -1,0 +1,22 @@
+name: Update a project column
+description: |
+  This action implements `PATCH` request to `/projects/columns/{column_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  column_id:
+    description: |
+      column_id parameter
+    required: true
+  name:
+    description: |
+      The new name of the column.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

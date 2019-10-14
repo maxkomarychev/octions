@@ -1,0 +1,18 @@
+name: Get an organization installation
+description: |
+  This action implements `GET` request to `/orgs/{org}/installation`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

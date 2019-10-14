@@ -1,0 +1,30 @@
+name: List team members
+description: |
+  This action implements `GET` request to `/teams/{team_id}/members`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  role:
+    description: |
+      Filters members returned by their role in the team. Can be one of:   \* `member` - normal members of the team.   \* `maintainer` - team maintainers.   \* `all` - all members of the team.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

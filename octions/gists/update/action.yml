@@ -1,0 +1,26 @@
+name: Edit a gist
+description: |
+  This action implements `PATCH` request to `/gists/{gist_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  gist_id:
+    description: |
+      gist_id parameter
+    required: true
+  description:
+    description: |
+      A descriptive name for this gist.
+    required: false
+  files:
+    description: |
+      The filenames and content that make up this gist.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

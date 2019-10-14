@@ -1,0 +1,22 @@
+name: Get contributors list with additions, deletions, and commit counts
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/stats/contributors`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

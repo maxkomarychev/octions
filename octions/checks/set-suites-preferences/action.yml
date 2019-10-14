@@ -1,0 +1,26 @@
+name: Set preferences for check suites on a repository
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/check-suites/preferences`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  auto_trigger_checks:
+    description: |
+      Enables or disables automatic creation of CheckSuite events upon pushes to the repository. Enabled by default. See the [`auto_trigger_checks` object](https://developer.github.com/v3/checks/suites/#auto_trigger_checks-object) description for details.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

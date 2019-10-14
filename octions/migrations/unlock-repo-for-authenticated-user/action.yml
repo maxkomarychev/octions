@@ -1,0 +1,22 @@
+name: Unlock a user repository
+description: |
+  This action implements `DELETE` request to `/user/migrations/{migration_id}/repos/{repo_name}/lock`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  migration_id:
+    description: |
+      migration_id parameter
+    required: true
+  repo_name:
+    description: |
+      repo_name parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

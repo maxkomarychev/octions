@@ -1,0 +1,34 @@
+name: List forks
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/forks`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  sort:
+    description: |
+      The sort order. Can be either `newest`, `oldest`, or `stargazers`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

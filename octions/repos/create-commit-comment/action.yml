@@ -1,0 +1,42 @@
+name: Create a commit comment
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/commits/{commit_sha}/comments`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  commit_sha:
+    description: |
+      commit_sha parameter
+    required: true
+  body:
+    description: |
+      The contents of the comment.
+    required: true
+  path:
+    description: |
+      Relative path of the file to comment on.
+    required: false
+  position:
+    description: |
+      Line index in the diff to comment on.
+    required: false
+  line:
+    description: |
+      **Deprecated**. Use **position** parameter instead. Line number in the file to comment on.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,22 @@
+name: Get team membership
+description: |
+  This action implements `GET` request to `/teams/{team_id}/memberships/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

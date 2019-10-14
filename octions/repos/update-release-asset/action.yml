@@ -1,0 +1,34 @@
+name: Edit a release asset
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/releases/assets/{asset_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  asset_id:
+    description: |
+      asset_id parameter
+    required: true
+  name:
+    description: |
+      The file name of the asset.
+    required: false
+  label:
+    description: |
+      An alternate short description of the asset. Used in place of the filename.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

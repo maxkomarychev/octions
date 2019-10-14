@@ -1,0 +1,22 @@
+name: Convert member to outside collaborator
+description: |
+  This action implements `PUT` request to `/orgs/{org}/outside_collaborators/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,38 @@
+name: List reactions for a commit comment
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/comments/{comment_id}/reactions`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  comment_id:
+    description: |
+      comment_id parameter
+    required: true
+  content:
+    description: |
+      Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a commit comment.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

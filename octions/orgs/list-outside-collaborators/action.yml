@@ -1,0 +1,30 @@
+name: List outside collaborators
+description: |
+  This action implements `GET` request to `/orgs/{org}/outside_collaborators`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  filter:
+    description: |
+      Filter the list of outside collaborators. Can be one of:   \* `2fa_disabled`: Outside collaborators without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled.   \* `all`: All outside collaborators.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,26 @@
+name: Add or update team membership
+description: |
+  This action implements `PUT` request to `/teams/{team_id}/memberships/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  role:
+    description: |
+      The role that this user should have in the team. Can be one of:   \* `member` - a normal member of the team.   \* `maintainer` - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,30 @@
+name: Search issues
+description: |
+  This action implements `GET` request to `/legacy/issues/search/{owner}/{repository}/{state}/{keyword}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repository:
+    description: |
+      repository parameter
+    required: true
+  state:
+    description: |
+      Indicates the state of the issues to return. Can be either `open` or `closed`.
+    required: true
+  keyword:
+    description: |
+      The search term.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

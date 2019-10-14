@@ -1,0 +1,30 @@
+name: Create a discussion
+description: |
+  This action implements `POST` request to `/teams/{team_id}/discussions`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  title:
+    description: |
+      The discussion post's title.
+    required: true
+  body:
+    description: |
+      The discussion post's body text.
+    required: true
+  private:
+    description: |
+      Private posts are only visible to team members, organization owners, and team maintainers. Public posts are visible to all members of the organization. Set to `true` to create a private post.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

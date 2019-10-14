@@ -1,0 +1,30 @@
+name: Edit a comment
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/issues/comments/{comment_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  comment_id:
+    description: |
+      comment_id parameter
+    required: true
+  body:
+    description: |
+      The contents of the comment.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

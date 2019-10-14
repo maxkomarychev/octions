@@ -1,0 +1,26 @@
+name: Get contextual information about a user
+description: |
+  This action implements `GET` request to `/users/{username}/hovercard`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  subject_type:
+    description: |
+      Identifies which additional information you'd like to receive about the person's hovercard. Can be `organization`, `repository`, `issue`, `pull_request`. **Required** when using `subject_id`.
+    required: true
+  subject_id:
+    description: |
+      Uses the ID for the `subject_type` you specified. **Required** when using `subject_type`.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

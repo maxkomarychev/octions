@@ -1,0 +1,30 @@
+name: Create reaction for an issue
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/reactions`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  content:
+    description: |
+      The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

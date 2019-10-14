@@ -1,0 +1,26 @@
+name: List the authenticated user's gists or if called anonymously, this will return all public gists
+description: |
+  This action implements `GET` request to `/gists`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  since:
+    description: |
+      This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Only gists updated at or after this time are returned.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

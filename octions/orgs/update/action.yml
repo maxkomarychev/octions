@@ -1,0 +1,62 @@
+name: Edit an organization
+description: |
+  This action implements `PATCH` request to `/orgs/{org}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  billing_email:
+    description: |
+      Billing email address. This address is not publicized.
+    required: false
+  company:
+    description: |
+      The company name.
+    required: false
+  email:
+    description: |
+      The publicly visible email address.
+    required: false
+  location:
+    description: |
+      The location.
+    required: false
+  name:
+    description: |
+      The shorthand name of the company.
+    required: false
+  description:
+    description: |
+      The description of the company.
+    required: false
+  has_organization_projects:
+    description: |
+      Toggles whether organization projects are enabled for the organization.
+    required: false
+  has_repository_projects:
+    description: |
+      Toggles whether repository projects are enabled for repositories that belong to the organization.
+    required: false
+  default_repository_permission:
+    description: |
+      Default permission level members have for organization repositories:   \* `read` - can pull, but not push to or administer this repository.   \* `write` - can pull and push, but not administer this repository.   \* `admin` - can pull, push, and administer this repository.   \* `none` - no permissions granted by default.
+    required: false
+  members_can_create_repositories:
+    description: |
+      Toggles the ability of non-admin organization members to create repositories. Can be one of:   \* `true` - all organization members can create repositories.   \* `false` - only admin members can create repositories.   Default: `true`   **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
+    required: false
+  members_allowed_repository_creation_type:
+    description: |
+      Specifies which types of repositories non-admin organization members can create. Can be one of:   \* `all` - all organization members can create public and private repositories.   \* `private` - members can create private repositories. This option is only available to repositories that are part of an organization on [GitHub Business Cloud](https://github.com/pricing/business-cloud).   \* `none` - only admin members can create repositories.   **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

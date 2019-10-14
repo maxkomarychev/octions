@@ -1,0 +1,22 @@
+name: Request a page build
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/pages/builds`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

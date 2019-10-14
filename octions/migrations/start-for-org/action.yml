@@ -1,0 +1,30 @@
+name: Start an organization migration
+description: |
+  This action implements `POST` request to `/orgs/{org}/migrations`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  repositories:
+    description: |
+      A list of arrays indicating which repositories should be migrated.
+    required: true
+  lock_repositories:
+    description: |
+      Indicates whether repositories should be locked (to prevent manipulation) while migrating data.
+    required: false
+  exclude_attachments:
+    description: |
+      Indicates whether attachments should be excluded from the migration (to reduce migration archive file size).
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

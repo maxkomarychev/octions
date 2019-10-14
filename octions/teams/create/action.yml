@@ -1,0 +1,46 @@
+name: Create team
+description: |
+  This action implements `POST` request to `/orgs/{org}/teams`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  name:
+    description: |
+      The name of the team.
+    required: true
+  description:
+    description: |
+      The description of the team.
+    required: false
+  maintainers:
+    description: |
+      The logins of organization members to add as maintainers of the team.
+    required: false
+  repo_names:
+    description: |
+      The full name (e.g., "organization-name/repository-name") of repositories to add the team to.
+    required: false
+  privacy:
+    description: |
+      The level of privacy this team should have. The options are:   **For a non-nested team:**   \* `secret` - only visible to organization owners and members of this team.   \* `closed` - visible to all members of this organization.   Default: `secret`   **For a parent or child team:**   \* `closed` - visible to all members of this organization.   Default for child team: `closed`   **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams.
+    required: false
+  permission:
+    description: |
+      **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:   \* `pull` - team members can pull, but not push to or administer newly-added repositories.   \* `push` - team members can pull and push, but not administer newly-added repositories.   \* `admin` - team members can pull, push and administer newly-added repositories.
+    required: false
+  parent_team_id:
+    description: |
+      The ID of a team to set as the parent team. **Note**: You must pass the `hellcat-preview` media type to use this parameter.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

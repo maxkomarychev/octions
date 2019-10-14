@@ -1,0 +1,30 @@
+name: Create a comment
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/comments`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  body:
+    description: |
+      The contents of the comment.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

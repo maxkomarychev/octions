@@ -1,0 +1,26 @@
+name: Add or update organization membership
+description: |
+  This action implements `PUT` request to `/orgs/{org}/memberships/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  role:
+    description: |
+      The role to give the user in the organization. Can be one of:   \* `admin` - The user will become an owner of the organization.   \* `member` - The user will become a non-owner member of the organization.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,21 @@
+name: {{{name}}}
+description: |
+  {{{singleline description}}}
+
+{{#if has_inputs}}
+inputs:
+{{#inputs}}
+  {{{name}}}:
+    description: |
+      {{{singleline description}}}
+    required: {{{required}}}
+{{/inputs}}
+{{/if}}
+
+runs:
+  using: {{{runs.using}}}
+  main: {{{runs.main}}}
+
+{{!-- branding:
+  icon: {{{branding.icon}}}
+  color: {{{branding.color}}} --}}

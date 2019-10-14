@@ -1,0 +1,42 @@
+name: Create a tag object
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/git/tags`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  tag:
+    description: |
+      The tag's name. This is typically a version (e.g., "v0.0.1").
+    required: true
+  message:
+    description: |
+      The tag message.
+    required: true
+  object:
+    description: |
+      The SHA of the git object this is tagging.
+    required: true
+  type:
+    description: |
+      The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
+    required: true
+  tagger:
+    description: |
+      An object with information about the individual creating the tag.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,22 @@
+name: Get provisioning details for a single user
+description: |
+  This action implements `GET` request to `/scim/v2/organizations/{org}/Users/{scim_user_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  scim_user_id:
+    description: |
+      scim_user_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

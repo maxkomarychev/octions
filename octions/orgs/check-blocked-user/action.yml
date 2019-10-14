@@ -1,0 +1,22 @@
+name: Check whether a user is blocked from an organization
+description: |
+  This action implements `GET` request to `/orgs/{org}/blocks/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

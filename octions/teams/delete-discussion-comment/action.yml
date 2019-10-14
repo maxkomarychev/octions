@@ -1,0 +1,26 @@
+name: Delete a comment
+description: |
+  This action implements `DELETE` request to `/teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  discussion_number:
+    description: |
+      discussion_number parameter
+    required: true
+  comment_number:
+    description: |
+      comment_number parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,18 @@
+name: Add email address(es)
+description: |
+  This action implements `POST` request to `/user/emails`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  emails:
+    description: |
+      Adds one or more email addresses to your GitHub account. Must contain at least one email address. **Note:** Alternatively, you can pass a single email address or an `array` of emails addresses directly, but we recommend that you pass an object using the `emails` key.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

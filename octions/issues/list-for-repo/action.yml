@@ -1,0 +1,66 @@
+name: List issues for a repository
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/issues`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  milestone:
+    description: |
+      If an `integer` is passed, it should refer to a milestone by its `number` field. If the string `*` is passed, issues with any milestone are accepted. If the string `none` is passed, issues without milestones are returned.
+    required: true
+  state:
+    description: |
+      Indicates the state of the issues to return. Can be either `open`, `closed`, or `all`.
+    required: true
+  assignee:
+    description: |
+      Can be the name of a user. Pass in `none` for issues with no assigned user, and `*` for issues assigned to any user.
+    required: true
+  creator:
+    description: |
+      The user that created the issue.
+    required: true
+  mentioned:
+    description: |
+      A user that's mentioned in the issue.
+    required: true
+  labels:
+    description: |
+      A list of comma separated label names. Example: `bug,ui,@high`
+    required: true
+  sort:
+    description: |
+      What to sort results by. Can be either `created`, `updated`, `comments`.
+    required: true
+  direction:
+    description: |
+      The direction of the sort. Can be either `asc` or `desc`.
+    required: true
+  since:
+    description: |
+      Only issues updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

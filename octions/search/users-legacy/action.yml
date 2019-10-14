@@ -1,0 +1,30 @@
+name: Search users
+description: |
+  This action implements `GET` request to `/legacy/user/search/{keyword}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  keyword:
+    description: |
+      The search term.
+    required: true
+  start_page:
+    description: |
+      The page number to fetch.
+    required: true
+  sort:
+    description: |
+      The sort field. One of `stars`, `forks`, or `updated`. Default: results are sorted by best match.
+    required: true
+  order:
+    description: |
+      The sort field. if `sort` param is provided. Can be either `asc` or `desc`.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

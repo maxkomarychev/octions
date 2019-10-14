@@ -1,0 +1,48 @@
+# Search repositories
+
+"Oction" is a GitHub Action that implements a single call with 
+[@octokit/request](https://www.npmjs.com/package/@octokit/request)
+allowing easy interaction with GitHub REST APIs from your workflow.
+
+Original documentation: https://developer.github.com/v3/search/legacy/#search-repositories
+
+This action implements `GET` request to `/legacy/repos/search/{keyword}`
+
+
+# Quick start
+
+```yaml
+- uses: /@v
+  id: my_step_id
+  with:
+    token: <token value>
+    keyword: <keyword value>
+    language: <language value>
+    start_page: <start_page value>
+    sort: <sort value>
+    order: <order value>
+- name: Print outputs
+  run: |
+    echo ${{ steps.my_step_id.outputs.id }}
+    echo ${{ steps.my_step_id.outputs.number }}
+```
+
+
+# Inputs
+
+| Name | Is required | Description |
+|---|---|---|
+|token|true|Token to authenticate the request
+|keyword|true|The search term.
+|language|true|Filter results by language.
+|start_page|true|The page number to fetch.
+|sort|true|The sort field. One of `stars`, `forks`, or `updated`. Default: results are sorted by best match.
+|order|true|The sort field. if `sort` param is provided. Can be either `asc` or `desc`.
+
+# Outputs
+
+| Name | Description |
+|---|---|
+|id|`id` field of the response (if exists)|
+|number|`number` field of the response (if exists)|
+

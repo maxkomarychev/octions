@@ -1,0 +1,30 @@
+name: Remove assignees from an issue
+description: |
+  This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_number}/assignees`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  issue_number:
+    description: |
+      issue_number parameter
+    required: true
+  assignees:
+    description: |
+      Usernames of assignees to remove from an issue. _NOTE: Only users with push access can remove assignees from an issue. Assignees are silently ignored otherwise._
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

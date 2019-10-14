@@ -1,0 +1,50 @@
+name: Create or update a file
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/contents/{path}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  path:
+    description: |
+      path parameter
+    required: true
+  message:
+    description: |
+      The commit message.
+    required: true
+  content:
+    description: |
+      The new file content, using Base64 encoding.
+    required: true
+  sha:
+    description: |
+      **Required if you are updating a file**. The blob SHA of the file being replaced.
+    required: false
+  branch:
+    description: |
+      The branch name. Default: the repository’s default branch (usually `master`)
+    required: false
+  committer:
+    description: |
+      The person that committed the file. Default: the authenticated user.
+    required: false
+  author:
+    description: |
+      The author of the file. Default: The `committer` or the authenticated user if you omit `committer`.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

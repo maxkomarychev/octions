@@ -1,0 +1,30 @@
+name: Update existing import
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/import`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  vcs_username:
+    description: |
+      The username to provide to the originating repository.
+    required: false
+  vcs_password:
+    description: |
+      The password to provide to the originating repository.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

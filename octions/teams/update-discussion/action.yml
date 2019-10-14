@@ -1,0 +1,30 @@
+name: Edit a discussion
+description: |
+  This action implements `PATCH` request to `/teams/{team_id}/discussions/{discussion_number}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  discussion_number:
+    description: |
+      discussion_number parameter
+    required: true
+  title:
+    description: |
+      The discussion post's title.
+    required: false
+  body:
+    description: |
+      The discussion post's body text.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

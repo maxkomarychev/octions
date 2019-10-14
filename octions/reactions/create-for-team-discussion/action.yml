@@ -1,0 +1,26 @@
+name: Create reaction for a team discussion
+description: |
+  This action implements `POST` request to `/teams/{team_id}/discussions/{discussion_number}/reactions`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  discussion_number:
+    description: |
+      discussion_number parameter
+    required: true
+  content:
+    description: |
+      The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

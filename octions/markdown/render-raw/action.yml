@@ -1,0 +1,14 @@
+name: Render a Markdown document in raw mode
+description: |
+  This action implements `POST` request to `/markdown/raw`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

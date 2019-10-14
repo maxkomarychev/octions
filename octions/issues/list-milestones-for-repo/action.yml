@@ -1,0 +1,42 @@
+name: List milestones for a repository
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/milestones`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  state:
+    description: |
+      The state of the milestone. Either `open`, `closed`, or `all`.
+    required: true
+  sort:
+    description: |
+      What to sort results by. Either `due_on` or `completeness`.
+    required: true
+  direction:
+    description: |
+      The direction of the sort. Either `asc` or `desc`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

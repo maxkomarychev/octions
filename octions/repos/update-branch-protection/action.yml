@@ -1,0 +1,42 @@
+name: Update branch protection
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/branches/{branch}/protection`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  branch:
+    description: |
+      branch parameter
+    required: true
+  required_status_checks:
+    description: |
+      Require status checks to pass before merging. Set to `null` to disable.
+    required: true
+  enforce_admins:
+    description: |
+      Enforce all configured restrictions for administrators. Set to `true` to enforce required status checks for repository administrators. Set to `null` to disable.
+    required: true
+  required_pull_request_reviews:
+    description: |
+      Require at least one approving review on a pull request, before merging. Set to `null` to disable.
+    required: true
+  restrictions:
+    description: |
+      Restrict who can push to this branch. User, app, and team `restrictions` are only available for organization-owned repositories. Set to `null` to disable.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

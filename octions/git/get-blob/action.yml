@@ -1,0 +1,26 @@
+name: Get a blob
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/git/blobs/{file_sha}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  file_sha:
+    description: |
+      file_sha parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

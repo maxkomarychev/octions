@@ -1,0 +1,22 @@
+name: Check if you are starring a repository
+description: |
+  This action implements `GET` request to `/user/starred/{owner}/{repo}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

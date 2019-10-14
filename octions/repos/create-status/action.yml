@@ -1,0 +1,42 @@
+name: Create a status
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/statuses/{sha}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  sha:
+    description: |
+      sha parameter
+    required: true
+  state:
+    description: |
+      The state of the status. Can be one of `error`, `failure`, `pending`, or `success`.
+    required: true
+  target_url:
+    description: |
+      The target URL to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the source of the status.   For example, if your continuous integration system is posting build status, you would want to provide the deep link for the build output for this specific SHA:   `http://ci.example.com/user/repo/build/sha`
+    required: false
+  description:
+    description: |
+      A short description of the status.
+    required: false
+  context:
+    description: |
+      A string label to differentiate this status from the status of other systems.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

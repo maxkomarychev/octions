@@ -1,0 +1,26 @@
+name: Mark notifications as read in a repository
+description: |
+  This action implements `PUT` request to `/repos/{owner}/{repo}/notifications`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  last_read_at:
+    description: |
+      Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

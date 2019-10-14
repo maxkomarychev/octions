@@ -1,0 +1,34 @@
+name: Map a commit author
+description: |
+  This action implements `PATCH` request to `/repos/{owner}/{repo}/import/authors/{author_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  author_id:
+    description: |
+      author_id parameter
+    required: true
+  email:
+    description: |
+      The new Git author email.
+    required: false
+  name:
+    description: |
+      The new Git author name.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

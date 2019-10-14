@@ -1,0 +1,22 @@
+name: Create or update IdP group connections
+description: |
+  This action implements `PATCH` request to `/teams/{team_id}/team-sync/group-mappings`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  groups:
+    description: |
+      The IdP groups you want to connect to a GitHub team. When updating, the new `groups` object will replace the original one. You must include any existing groups that you don't want to remove.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

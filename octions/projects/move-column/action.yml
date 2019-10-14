@@ -1,0 +1,22 @@
+name: Move a project column
+description: |
+  This action implements `POST` request to `/projects/columns/{column_id}/moves`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  column_id:
+    description: |
+      column_id parameter
+    required: true
+  position:
+    description: |
+      Can be one of `first`, `last`, or `after:<column_id>`, where `<column_id>` is the `id` value of a column in the same project.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

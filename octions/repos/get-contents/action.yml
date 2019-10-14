@@ -1,0 +1,30 @@
+name: Get contents
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/contents/{path}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  path:
+    description: |
+      path parameter
+    required: true
+  ref:
+    description: |
+      The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

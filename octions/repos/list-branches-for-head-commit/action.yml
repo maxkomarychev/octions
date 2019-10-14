@@ -1,0 +1,26 @@
+name: List branches for HEAD commit
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  commit_sha:
+    description: |
+      commit_sha parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

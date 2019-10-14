@@ -1,0 +1,14 @@
+name: Get
+description: |
+  This action implements `GET` request to `/emojis`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

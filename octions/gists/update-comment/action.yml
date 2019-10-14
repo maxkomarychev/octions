@@ -1,0 +1,26 @@
+name: Edit a comment
+description: |
+  This action implements `PATCH` request to `/gists/{gist_id}/comments/{comment_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  gist_id:
+    description: |
+      gist_id parameter
+    required: true
+  comment_id:
+    description: |
+      comment_id parameter
+    required: true
+  body:
+    description: |
+      The comment text.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

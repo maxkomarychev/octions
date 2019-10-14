@@ -1,0 +1,22 @@
+name: Star a repository
+description: |
+  This action implements `PUT` request to `/user/starred/{owner}/{repo}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

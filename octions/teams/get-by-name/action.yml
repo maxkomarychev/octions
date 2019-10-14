@@ -1,0 +1,22 @@
+name: Get team by name
+description: |
+  This action implements `GET` request to `/orgs/{org}/teams/{team_slug}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  team_slug:
+    description: |
+      team_slug parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

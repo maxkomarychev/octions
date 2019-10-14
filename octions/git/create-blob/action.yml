@@ -1,0 +1,30 @@
+name: Create a blob
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/git/blobs`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  content:
+    description: |
+      The new blob's content.
+    required: true
+  encoding:
+    description: |
+      The encoding used for `content`. Currently, `"utf-8"` and `"base64"` are supported.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

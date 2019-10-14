@@ -1,0 +1,22 @@
+name: Review a team project
+description: |
+  This action implements `GET` request to `/teams/{team_id}/projects/{project_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  project_id:
+    description: |
+      project_id parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

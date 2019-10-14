@@ -1,0 +1,30 @@
+name: Create a repository dispatch event
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/dispatches`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  event_type:
+    description: |
+      **Required:** A custom webhook event name.
+    required: false
+  client_payload:
+    description: |
+      JSON payload with extra information about the webhook event that your action or worklow may use.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

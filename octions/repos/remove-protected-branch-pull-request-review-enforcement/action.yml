@@ -1,0 +1,26 @@
+name: Remove pull request review enforcement of protected branch
+description: |
+  This action implements `DELETE` request to `/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  branch:
+    description: |
+      branch parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

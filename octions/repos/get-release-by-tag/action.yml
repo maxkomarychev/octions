@@ -1,0 +1,26 @@
+name: Get a release by tag name
+description: |
+  This action implements `GET` request to `/repos/{owner}/{repo}/releases/tags/{tag}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  tag:
+    description: |
+      tag parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

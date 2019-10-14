@@ -1,0 +1,18 @@
+name: Email search
+description: |
+  This action implements `GET` request to `/legacy/user/email/{email}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  email:
+    description: |
+      The email address.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

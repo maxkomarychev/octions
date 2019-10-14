@@ -1,0 +1,50 @@
+name: List all issues for a given organization assigned to the authenticated user
+description: |
+  This action implements `GET` request to `/orgs/{org}/issues`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  filter:
+    description: |
+      Indicates which sorts of issues to return. Can be one of:   \* `assigned`: Issues assigned to you   \* `created`: Issues created by you   \* `mentioned`: Issues mentioning you   \* `subscribed`: Issues you're subscribed to updates for   \* `all`: All issues the authenticated user can see, regardless of participation or creation
+    required: true
+  state:
+    description: |
+      Indicates the state of the issues to return. Can be either `open`, `closed`, or `all`.
+    required: true
+  labels:
+    description: |
+      A list of comma separated label names. Example: `bug,ui,@high`
+    required: true
+  sort:
+    description: |
+      What to sort results by. Can be either `created`, `updated`, `comments`.
+    required: true
+  direction:
+    description: |
+      The direction of the sort. Can be either `asc` or `desc`.
+    required: true
+  since:
+    description: |
+      Only issues updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

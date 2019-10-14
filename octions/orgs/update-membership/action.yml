@@ -1,0 +1,22 @@
+name: Edit your organization membership
+description: |
+  This action implements `PATCH` request to `/user/memberships/orgs/{org}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  state:
+    description: |
+      The state that the membership should be in. Only `"active"` will be accepted.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

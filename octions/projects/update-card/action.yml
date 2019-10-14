@@ -1,0 +1,26 @@
+name: Update a project card
+description: |
+  This action implements `PATCH` request to `/projects/columns/cards/{card_id}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  card_id:
+    description: |
+      card_id parameter
+    required: true
+  note:
+    description: |
+      The card's note content. Only valid for cards without another type of content, so this cannot be specified if the card already has a `content_id` and `content_type`.
+    required: false
+  archived:
+    description: |
+      Use `true` to archive a project card. Specify `false` if you need to restore a previously archived project card.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

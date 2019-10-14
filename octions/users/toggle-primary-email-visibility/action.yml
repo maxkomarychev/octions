@@ -1,0 +1,22 @@
+name: Toggle primary email visibility
+description: |
+  This action implements `PATCH` request to `/user/email/visibility`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  email:
+    description: |
+      Specify the _primary_ email address that needs a visibility change.
+    required: true
+  visibility:
+    description: |
+      Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

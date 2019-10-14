@@ -1,0 +1,54 @@
+# {{{name}}}
+
+"Oction" is a GitHub Action that implements a single call with 
+[@octokit/request](https://www.npmjs.com/package/@octokit/request)
+allowing easy interaction with GitHub REST APIs from your workflow.
+
+Original documentation: {{{octokit_doc}}}
+
+{{{description}}}
+
+
+# Quick start
+
+```yaml
+- uses: {{{owner}}}/{{{repo}}}@v{{{version}}}
+{{#if has_outputs}}
+  id: my_step_id
+{{/if}}
+  with:
+{{#inputs}}
+        {{#required}}
+    {{{name}}}: <{{{name}}} value>
+        {{/required}}
+{{/inputs}}
+{{#if has_outputs}}
+- name: Print outputs
+  run: |
+    {{#outputs}}
+    echo $\{{ steps.my_step_id.outputs.{{{name}}} }}
+    {{/outputs}}
+{{/if}}
+```
+
+
+{{#if has_inputs}}
+# Inputs
+
+| Name | Is required | Description |
+|---|---|---|
+{{#inputs}}
+|{{{name}}}|{{{required}}}|{{{singleline description}}}
+{{/inputs}}
+{{/if}}
+
+{{#if has_outputs}}
+# Outputs
+
+| Name | Description |
+|---|---|
+{{#outputs}}
+|{{{name}}}|{{{description}}}|
+{{/outputs}}
+{{/if}}
+

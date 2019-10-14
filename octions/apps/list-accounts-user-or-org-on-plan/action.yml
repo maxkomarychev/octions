@@ -1,0 +1,34 @@
+name: List all GitHub accounts (user or organization) on a specific plan
+description: |
+  This action implements `GET` request to `/marketplace_listing/plans/{plan_id}/accounts`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  plan_id:
+    description: |
+      plan_id parameter
+    required: true
+  sort:
+    description: |
+      Sorts the GitHub accounts by the date they were created or last updated. Can be one of `created` or `updated`.
+    required: true
+  direction:
+    description: |
+      To return the oldest accounts first, set to `asc`. Can be one of `asc` or `desc`. Ignored without the `sort` parameter.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+

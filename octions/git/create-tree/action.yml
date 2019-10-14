@@ -1,0 +1,30 @@
+name: Create a tree
+description: |
+  This action implements `POST` request to `/repos/{owner}/{repo}/git/trees`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  tree:
+    description: |
+      Objects (of `path`, `mode`, `type`, and `sha`) specifying a tree structure.
+    required: true
+  base_tree:
+    description: |
+      The SHA1 of the tree you want to update with new data. If you don't set this, the commit will be created on top of everything; however, it will only contain your change, the rest of your files will show up as deleted.
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

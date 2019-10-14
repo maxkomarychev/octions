@@ -1,0 +1,26 @@
+name: Remove user as a collaborator
+description: |
+  This action implements `DELETE` request to `/repos/{owner}/{repo}/collaborators/{username}`
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: true
+  repo:
+    description: |
+      repo parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+
+runs:
+  using: node12
+  main: index.js
+
