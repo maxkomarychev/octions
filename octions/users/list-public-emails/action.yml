@@ -1,6 +1,6 @@
 name: List public email addresses for a user
 description: |
-  This action implements `GET` request to `/user/public_emails`
+  Lists your publicly visible email address, which you can set with the [Toggle primary email visibility](https://developer.github.com/v3/users/emails/#toggle-primary-email-visibility) endpoint. This endpoint is accessible with the `user:email` scope.
 
 inputs:
   token:

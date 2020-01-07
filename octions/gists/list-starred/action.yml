@@ -1,6 +1,6 @@
 name: List starred gists
 description: |
-  This action implements `GET` request to `/gists/starred`
+  List the authenticated user's starred gists:
 
 inputs:
   token:

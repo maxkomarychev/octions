@@ -1,15 +1,30 @@
 # Search commits
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/search/#search-commits
 
-This action implements `GET` request to `/search/commits`
+Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
+
+When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match metadata](https://developer.github.com/v3/search/#text-match-metadata).
+
+**Considerations for commit search**
+
+Only the _default branch_ is considered. In most cases, this will be the `master` branch.
+
+Suppose you want to find commits related to CSS in the [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository. Your query would look something like this:
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +43,8 @@ This action implements `GET` request to `/search/commits`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +55,8 @@ This action implements `GET` request to `/search/commits`
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

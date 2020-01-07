@@ -1,6 +1,6 @@
 name: Set a thread subscription
 description: |
-  This action implements `PUT` request to `/notifications/threads/{thread_id}/subscription`
+  This lets you subscribe or unsubscribe from a conversation.
 
 inputs:
   token:

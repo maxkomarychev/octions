@@ -1,6 +1,6 @@
 name: Get a single comment
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/comments/{comment_id}`
+  
 
 inputs:
   token:

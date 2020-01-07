@@ -1,6 +1,6 @@
 name: Update a milestone
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/milestones/{milestone_number}`
+  
 
 inputs:
   token:

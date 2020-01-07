@@ -1,6 +1,6 @@
 name: Update a label
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/labels/{name}`
+  
 
 inputs:
   token:

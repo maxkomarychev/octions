@@ -1,15 +1,28 @@
 # List repositories accessible to the user for an installation
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-user-for-an-installation
 
-This action implements `GET` request to `/user/installations/{installation_id}/repositories`
+List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access for an installation.
+
+The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
+
+You must use a [user-to-server OAuth access token](https://developer.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint.
+
+The access the user has to each repository is included in the hash under the `permissions` key.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +39,8 @@ This action implements `GET` request to `/user/installations/{installation_id}/r
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +49,8 @@ This action implements `GET` request to `/user/installations/{installation_id}/r
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

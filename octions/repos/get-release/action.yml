@@ -1,6 +1,6 @@
 name: Get a single release
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/releases/{release_id}`
+  **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://developer.github.com/v3/#hypermedia).
 
 inputs:
   token:

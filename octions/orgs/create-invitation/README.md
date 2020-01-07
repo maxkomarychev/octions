@@ -1,15 +1,24 @@
 # Create organization invitation
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/orgs/members/#create-organization-invitation
 
-This action implements `POST` request to `/orgs/{org}/invitations`
+Invite people to an organization by using their GitHub user ID or their email address. In order to create invitations in an organization, the authenticated user must be an organization owner.
+
+This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,7 +33,8 @@ This action implements `POST` request to `/orgs/{org}/invitations`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +45,8 @@ This action implements `POST` request to `/orgs/{org}/invitations`
 |role|false|Specify role for new member. Can be one of:   \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.   \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.   \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
 |team_ids|false|Specify IDs for the teams you want to invite new members to.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

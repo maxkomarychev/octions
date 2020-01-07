@@ -1,6 +1,6 @@
 name: List who the authenticated user is following
 description: |
-  This action implements `GET` request to `/user/following`
+  
 
 inputs:
   token:

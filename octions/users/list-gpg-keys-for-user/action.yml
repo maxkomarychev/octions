@@ -1,6 +1,6 @@
 name: List GPG keys for a user
 description: |
-  This action implements `GET` request to `/users/{username}/gpg_keys`
+  Lists the GPG keys for a user. This information is accessible by anyone.
 
 inputs:
   token:

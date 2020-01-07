@@ -1,15 +1,22 @@
 # Transfer a repository
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/#transfer-a-repository
 
-This action implements `POST` request to `/repos/{owner}/{repo}/transfer`
+A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://help.github.com/articles/about-repository-transfers/).
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/transfer`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +43,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/transfer`
 |new_owner|false|**Required:** The username or organization name the repository will be transferred to.
 |team_ids|false|ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

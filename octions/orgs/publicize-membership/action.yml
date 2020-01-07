@@ -1,6 +1,6 @@
 name: Publicize a user's membership
 description: |
-  This action implements `PUT` request to `/orgs/{org}/public_members/{username}`
+  The user can publicize their own membership. (A user cannot publicize the membership for another user.)  Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
 
 inputs:
   token:

@@ -1,15 +1,22 @@
 # Edit a release asset
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/releases/#edit-a-release-asset
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/releases/assets/{asset_id}`
+Users with push access to the repository can edit a release asset.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/releases/assets
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +45,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/releases/assets
 |name|false|The file name of the asset.
 |label|false|An alternate short description of the asset. Used in place of the filename.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

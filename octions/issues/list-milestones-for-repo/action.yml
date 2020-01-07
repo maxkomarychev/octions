@@ -1,6 +1,6 @@
 name: List milestones for a repository
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/milestones`
+  
 
 inputs:
   token:

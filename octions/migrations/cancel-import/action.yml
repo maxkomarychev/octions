@@ -1,6 +1,6 @@
 name: Cancel an import
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/import`
+  Stop an import for a repository.
 
 inputs:
   token:

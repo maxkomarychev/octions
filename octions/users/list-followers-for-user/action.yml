@@ -1,6 +1,6 @@
 name: List a user's followers
 description: |
-  This action implements `GET` request to `/users/{username}/followers`
+  
 
 inputs:
   token:

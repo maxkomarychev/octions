@@ -1,6 +1,6 @@
 name: List all codes of conduct
 description: |
-  This action implements `GET` request to `/codes_of_conduct`
+  
 
 inputs:
   token:

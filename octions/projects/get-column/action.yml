@@ -1,6 +1,6 @@
 name: Get a project column
 description: |
-  This action implements `GET` request to `/projects/columns/{column_id}`
+  
 
 inputs:
   token:

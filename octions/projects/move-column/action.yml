@@ -1,6 +1,6 @@
 name: Move a project column
 description: |
-  This action implements `POST` request to `/projects/columns/{column_id}/moves`
+  
 
 inputs:
   token:

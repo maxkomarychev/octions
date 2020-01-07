@@ -1,6 +1,6 @@
 name: Get an individual code of conduct
 description: |
-  This action implements `GET` request to `/codes_of_conduct/{key}`
+  
 
 inputs:
   token:

@@ -1,15 +1,24 @@
 # Get the last year of commit activity data
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statistics/#get-the-last-year-of-commit-activity-data
 
-This action implements `GET` request to `/repos/{owner}/{repo}/stats/commit_activity`
+Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
 
 
-# Quick start
+
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +34,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/commit_acti
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +43,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/commit_acti
 |owner|true|owner parameter
 |repo|true|repo parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

@@ -1,15 +1,24 @@
 # List your notifications
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/activity/notifications/#list-your-notifications
 
-This action implements `GET` request to `/notifications`
+List all notifications for the current user, sorted by most recently updated.
+
+The following example uses the `since` parameter to list notifications that have been updated after the specified time.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -29,7 +38,8 @@ This action implements `GET` request to `/notifications`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -41,7 +51,8 @@ This action implements `GET` request to `/notifications`
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

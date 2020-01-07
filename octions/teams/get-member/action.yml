@@ -1,6 +1,6 @@
 name: Get team member
 description: |
-  This action implements `GET` request to `/teams/{team_id}/members/{username}`
+  The "Get team member" API (described below) is deprecated.  We recommend using the [Get team membership API](https://developer.github.com/v3/teams/members/#get-team-membership) instead. It allows you to get both active and pending memberships.  To list members in a team, the team must be visible to the authenticated user.
 
 inputs:
   token:

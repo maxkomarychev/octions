@@ -1,6 +1,6 @@
 name: Delete a release
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/releases/{release_id}`
+  Users with push access to the repository can delete a release.
 
 inputs:
   token:

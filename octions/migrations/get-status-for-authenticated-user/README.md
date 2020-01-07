@@ -1,15 +1,29 @@
 # Get the status of a user migration
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration
 
-This action implements `GET` request to `/user/migrations/{migration_id}`
+Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
+
+*   `pending` - the migration hasn't started yet.
+*   `exporting` - the migration is in progress.
+*   `exported` - the migration finished successfully.
+*   `failed` - the migration failed.
+
+Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,14 +38,16 @@ This action implements `GET` request to `/user/migrations/{migration_id}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

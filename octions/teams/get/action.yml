@@ -1,6 +1,6 @@
 name: Get team
 description: |
-  This action implements `GET` request to `/teams/{team_id}`
+  
 
 inputs:
   token:

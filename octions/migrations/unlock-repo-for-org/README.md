@@ -1,15 +1,22 @@
 # Unlock an organization repository
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/orgs/#unlock-an-organization-repository
 
-This action implements `DELETE` request to `/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock`
+Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `DELETE` request to `/orgs/{org}/migrations/{migration_id
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +43,8 @@ This action implements `DELETE` request to `/orgs/{org}/migrations/{migration_id
 |migration_id|true|migration_id parameter
 |repo_name|true|repo_name parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

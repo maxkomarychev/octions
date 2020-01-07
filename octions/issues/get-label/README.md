@@ -1,15 +1,22 @@
 # Get a single label
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/labels/#get-a-single-label
 
-This action implements `GET` request to `/repos/{owner}/{repo}/labels/{name}`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/labels/{name}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +43,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/labels/{name}`
 |repo|true|repo parameter
 |name|true|name parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

@@ -1,15 +1,26 @@
 # {{{name}}}
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+{{#if has_inputs}}
+1. [Inputs](#inputs)
+{{/if}}
+{{#if has_outputs}}
+1. [Outputs](#outputs)
+{{/if}}
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: {{{octokit_doc}}}
 
 {{{description}}}
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: {{{owner}}}/{{{repo}}}@v{{{version}}}
@@ -33,7 +44,8 @@ Original documentation: {{{octokit_doc}}}
 
 
 {{#if has_inputs}}
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -43,7 +55,8 @@ Original documentation: {{{octokit_doc}}}
 {{/if}}
 
 {{#if has_outputs}}
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

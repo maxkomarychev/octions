@@ -1,6 +1,6 @@
 name: List repositories being watched by the authenticated user
 description: |
-  This action implements `GET` request to `/user/subscriptions`
+  
 
 inputs:
   token:

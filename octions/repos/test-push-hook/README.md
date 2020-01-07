@@ -1,15 +1,24 @@
 # Test a push hook
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/hooks/#test-a-push-hook
 
-This action implements `POST` request to `/repos/{owner}/{repo}/hooks/{hook_id}/tests`
+This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
+
+**Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/hooks/{hook_id}/
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +45,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/hooks/{hook_id}/
 |repo|true|repo parameter
 |hook_id|true|hook_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

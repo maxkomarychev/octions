@@ -1,6 +1,6 @@
 name: Add a new deploy key
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/keys`
+  Here's how you can create a read-only deploy key:  
 
 inputs:
   token:

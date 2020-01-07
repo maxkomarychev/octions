@@ -1,6 +1,6 @@
 name: Star a gist
 description: |
-  This action implements `PUT` request to `/gists/{gist_id}/star`
+  Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
 
 inputs:
   token:

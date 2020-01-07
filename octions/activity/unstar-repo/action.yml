@@ -1,6 +1,6 @@
 name: Unstar a repository
 description: |
-  This action implements `DELETE` request to `/user/starred/{owner}/{repo}`
+  Requires for the user to be authenticated.
 
 inputs:
   token:

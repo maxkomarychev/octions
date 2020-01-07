@@ -1,6 +1,6 @@
 name: Decline a repository invitation
 description: |
-  This action implements `DELETE` request to `/user/repository_invitations/{invitation_id}`
+  
 
 inputs:
   token:

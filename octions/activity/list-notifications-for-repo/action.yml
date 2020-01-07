@@ -1,6 +1,6 @@
 name: List your notifications in a repository
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/notifications`
+  List all notifications for the current user.
 
 inputs:
   token:

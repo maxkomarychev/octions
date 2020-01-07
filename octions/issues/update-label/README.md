@@ -1,15 +1,22 @@
 # Update a label
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/labels/#update-a-label
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/labels/{name}`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/labels/{name}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -38,7 +46,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/labels/{name}`
 |color|false|The [hexadecimal color code](http://www.color-hex.com/) for the label, without the leading `#`.
 |description|false|A short description of the label.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

@@ -1,6 +1,6 @@
 name: Create or update a file
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/contents/{path}`
+  Creates a new file or updates an existing file in a repository.
 
 inputs:
   token:

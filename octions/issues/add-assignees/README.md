@@ -1,15 +1,24 @@
 # Add assignees to an issue
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/assignees/#add-assignees-to-an-issue
 
-This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/assignees`
+Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced.
+
+This example adds two assignees to the existing `octocat` assignee.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_nu
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -36,7 +46,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_nu
 |issue_number|true|issue_number parameter
 |assignees|false|Usernames of people to assign this issue to. _NOTE: Only users with push access can add assignees to an issue. Assignees are silently ignored otherwise._
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

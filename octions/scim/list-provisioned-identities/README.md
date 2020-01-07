@@ -1,15 +1,28 @@
 # Get a list of provisioned identities
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/scim/#get-a-list-of-provisioned-identities
 
-This action implements `GET` request to `/scim/v2/organizations/{org}/Users`
+To filter for a specific email address, use the `email` query parameter and the `eq` operator:
+
+Your filter would look like this cURL command:
+
+Retrieves users that match the filter. In the example, we searched only for [octocat@github.com](mailto:octocat@github.com).
+
+Retrieves a paginated list of all provisioned organization members, including pending invitations.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +40,8 @@ This action implements `GET` request to `/scim/v2/organizations/{org}/Users`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +51,8 @@ This action implements `GET` request to `/scim/v2/organizations/{org}/Users`
 |count|true|Used for pagination: the number of results to return.
 |filter|true|Filters results using the equals query parameter operator (`eq`). You can filter results that are equal to `id`, `userName`, `emails`, and `external_id`. For example, to search for an identity with the `userName` Octocat, you would use this query: `?filter=userName%20eq%20\"Octocat\"`.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

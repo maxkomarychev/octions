@@ -1,15 +1,22 @@
 # Submit a pull request review
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/reviews/#submit-a-pull-request-review
 
-This action implements `POST` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +35,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/pulls/{pull_numb
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -40,7 +48,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/pulls/{pull_numb
 |body|false|The body text of the pull request review
 |event|true|The review action you want to perform. The review actions include: `APPROVE`, `REQUEST_CHANGES`, or `COMMENT`. When you leave this blank, the API returns _HTTP 422 (Unrecognizable entity)_ and sets the review action state to `PENDING`, which means you will need to re-submit the pull request review using a review action.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

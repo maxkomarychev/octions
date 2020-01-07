@@ -1,6 +1,6 @@
 name: Get the authenticated user
 description: |
-  This action implements `GET` request to `/user`
+  Lists public and private profile information when authenticated through basic auth or OAuth with the `user` scope.  Lists public profile information when authenticated through OAuth without the `user` scope.
 
 inputs:
   token:

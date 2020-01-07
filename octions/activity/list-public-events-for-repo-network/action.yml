@@ -1,6 +1,6 @@
 name: List public events for a network of repositories
 description: |
-  This action implements `GET` request to `/networks/{owner}/{repo}/events`
+  
 
 inputs:
   token:

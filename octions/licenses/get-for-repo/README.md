@@ -1,15 +1,24 @@
 # Get the contents of a repository's license
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/licenses/#get-the-contents-of-a-repositorys-license
 
-This action implements `GET` request to `/repos/{owner}/{repo}/license`
+This method returns the contents of the repository's license file, if one is detected.
+
+Similar to [the repository contents API](https://developer.github.com/v3/repos/contents/#get-contents), this method also supports [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw license content or rendered license HTML.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +34,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/license`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +43,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/license`
 |owner|true|owner parameter
 |repo|true|repo parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

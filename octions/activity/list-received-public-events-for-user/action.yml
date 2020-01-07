@@ -1,6 +1,6 @@
 name: List public events that a user has received
 description: |
-  This action implements `GET` request to `/users/{username}/received_events/public`
+  
 
 inputs:
   token:

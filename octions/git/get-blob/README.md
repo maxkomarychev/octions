@@ -1,15 +1,24 @@
 # Get a blob
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/git/blobs/#get-a-blob
 
-This action implements `GET` request to `/repos/{owner}/{repo}/git/blobs/{file_sha}`
+The `content` in the response will always be Base64 encoded.
+
+_Note_: This API supports blobs up to 100 megabytes in size.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/git/blobs/{file_s
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +45,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/git/blobs/{file_s
 |repo|true|repo parameter
 |file_sha|true|file_sha parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

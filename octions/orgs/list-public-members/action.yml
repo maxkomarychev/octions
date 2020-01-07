@@ -1,6 +1,6 @@
 name: Public members list
 description: |
-  This action implements `GET` request to `/orgs/{org}/public_members`
+  Members of an organization can choose to have their membership publicized or not.
 
 inputs:
   token:

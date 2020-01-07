@@ -1,6 +1,6 @@
 name: Update a repository invitation
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/invitations/{invitation_id}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: View a single thread
 description: |
-  This action implements `GET` request to `/notifications/threads/{thread_id}`
+  
 
 inputs:
   token:

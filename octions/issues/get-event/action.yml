@@ -1,6 +1,6 @@
 name: Get a single event
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/issues/events/{event_id}`
+  
 
 inputs:
   token:

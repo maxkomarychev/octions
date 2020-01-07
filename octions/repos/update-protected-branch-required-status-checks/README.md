@@ -1,15 +1,24 @@
 # Update required status checks of protected branch
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/branches/#update-required-status-checks-of-protected-branch
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks`
+Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+
+Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/branches/{branc
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +47,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/branches/{branc
 |strict|false|Require branches to be up to date before merging.
 |contexts|false|The list of status checks to require in order to merge into this branch
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

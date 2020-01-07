@@ -1,6 +1,6 @@
 name: Update a project card
 description: |
-  This action implements `PATCH` request to `/projects/columns/cards/{card_id}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Delete a commit comment
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/comments/{comment_id}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Remove a deploy key
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/keys/{key_id}`
+  
 
 inputs:
   token:

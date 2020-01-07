@@ -1,6 +1,6 @@
 name: List events that a user has received
 description: |
-  This action implements `GET` request to `/users/{username}/received_events`
+  These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
 
 inputs:
   token:

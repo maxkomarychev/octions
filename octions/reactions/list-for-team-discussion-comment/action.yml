@@ -1,6 +1,6 @@
 name: List reactions for a team discussion comment
 description: |
-  This action implements `GET` request to `/teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions`
+  List the reactions to a [team discussion comment](https://developer.github.com/v3/teams/discussion_comments/). OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

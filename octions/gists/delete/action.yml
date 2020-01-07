@@ -1,6 +1,6 @@
 name: Delete a gist
 description: |
-  This action implements `DELETE` request to `/gists/{gist_id}`
+  
 
 inputs:
   token:

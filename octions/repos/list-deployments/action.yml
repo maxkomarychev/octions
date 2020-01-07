@@ -1,6 +1,6 @@
 name: List deployments
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/deployments`
+  Simple filtering of deployments is available via query parameters:
 
 inputs:
   token:

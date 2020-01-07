@@ -1,6 +1,6 @@
 name: Get a single deployment
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/deployments/{deployment_id}`
+  
 
 inputs:
   token:

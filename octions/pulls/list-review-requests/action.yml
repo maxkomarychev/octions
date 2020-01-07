@@ -1,6 +1,6 @@
 name: List review requests
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`
+  
 
 inputs:
   token:

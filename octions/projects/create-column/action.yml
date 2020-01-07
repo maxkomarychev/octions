@@ -1,6 +1,6 @@
 name: Create a project column
 description: |
-  This action implements `POST` request to `/projects/{project_id}/columns`
+  
 
 inputs:
   token:

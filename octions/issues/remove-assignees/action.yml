@@ -1,6 +1,6 @@
 name: Remove assignees from an issue
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_number}/assignees`
+  Removes one or more assignees from an issue.  This example removes two of three assignees, leaving the `octocat` assignee.
 
 inputs:
   token:

@@ -1,15 +1,30 @@
 # Get the combined status for a specific ref
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statuses/#get-the-combined-status-for-a-specific-ref
 
-This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/status`
+Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
+
+The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.
+
+Additionally, a combined `state` is returned. The `state` is one of:
+
+*   **failure** if any of the contexts report as `error` or `failure`
+*   **pending** if there are no statuses or a context is `pending`
+*   **success** if the latest status for all contexts is `success`
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +41,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/sta
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +51,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/sta
 |repo|true|repo parameter
 |ref|true|ref parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

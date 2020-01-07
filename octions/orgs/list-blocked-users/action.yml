@@ -1,6 +1,6 @@
 name: List blocked users
 description: |
-  This action implements `GET` request to `/orgs/{org}/blocks`
+  List the users blocked by an organization.
 
 inputs:
   token:

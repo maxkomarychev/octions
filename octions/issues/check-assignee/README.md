@@ -1,15 +1,26 @@
 # Check assignee
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/assignees/#check-assignee
 
-This action implements `GET` request to `/repos/{owner}/{repo}/assignees/{assignee}`
+Checks if a user has permission to be assigned to an issue in this repository.
+
+If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
+
+Otherwise a `404` status code is returned.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +37,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/assignees/{assign
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +47,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/assignees/{assign
 |repo|true|repo parameter
 |assignee|true|assignee parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

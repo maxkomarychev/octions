@@ -1,15 +1,22 @@
 # Replace all labels for an issue
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/labels/#replace-all-labels-for-an-issue
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_num
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -36,7 +44,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_num
 |issue_number|true|issue_number parameter
 |labels|false|The names of the labels to add to the issue. You can pass an empty array to remove all labels. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

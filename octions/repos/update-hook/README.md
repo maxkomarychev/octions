@@ -1,15 +1,22 @@
 # Edit a hook
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/hooks/#edit-a-hook
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/hooks/{hook_id}`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/hooks/{hook_id}
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -40,7 +48,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/hooks/{hook_id}
 |remove_events|false|Determines a list of events to be removed from the list of events that the Hook triggers for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

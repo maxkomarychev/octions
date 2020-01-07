@@ -1,6 +1,6 @@
 name: Create a comment
 description: |
-  This action implements `POST` request to `/gists/{gist_id}/comments`
+  
 
 inputs:
   token:

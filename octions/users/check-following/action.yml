@@ -1,6 +1,6 @@
 name: Check if you are following a user
 description: |
-  This action implements `GET` request to `/user/following/{username}`
+  
 
 inputs:
   token:

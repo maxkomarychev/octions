@@ -1,6 +1,6 @@
 name: Edit a gist
 description: |
-  This action implements `PATCH` request to `/gists/{gist_id}`
+  Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
 
 inputs:
   token:

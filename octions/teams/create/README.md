@@ -1,15 +1,22 @@
 # Create team
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/teams/#create-team
 
-This action implements `POST` request to `/orgs/{org}/teams`
+To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `POST` request to `/orgs/{org}/teams`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +47,8 @@ This action implements `POST` request to `/orgs/{org}/teams`
 |permission|false|**Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:   \* `pull` - team members can pull, but not push to or administer newly-added repositories.   \* `push` - team members can pull and push, but not administer newly-added repositories.   \* `admin` - team members can pull, push and administer newly-added repositories.
 |parent_team_id|false|The ID of a team to set as the parent team. **Note**: You must pass the `hellcat-preview` media type to use this parameter.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

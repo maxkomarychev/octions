@@ -1,6 +1,6 @@
 name: Move a project card
 description: |
-  This action implements `POST` request to `/projects/columns/cards/{card_id}/moves`
+  
 
 inputs:
   token:

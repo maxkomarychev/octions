@@ -1,6 +1,6 @@
 name: Toggle primary email visibility
 description: |
-  This action implements `PATCH` request to `/user/email/visibility`
+  Sets the visibility for your primary email addresses.
 
 inputs:
   token:

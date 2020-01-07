@@ -1,6 +1,6 @@
 name: Get a single grant
 description: |
-  This action implements `GET` request to `/applications/grants/{grant_id}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Create a blob
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/git/blobs`
+  
 
 inputs:
   token:

@@ -1,15 +1,22 @@
 # Dismiss a pull request review
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/reviews/#dismiss-a-pull-request-review
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals`
+**Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +35,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +47,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 |review_id|true|review_id parameter
 |message|true|The message for the pull request review dismissal
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

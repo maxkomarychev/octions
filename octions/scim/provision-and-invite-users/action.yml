@@ -1,6 +1,6 @@
 name: Provision and invite users
 description: |
-  This action implements `POST` request to `/scim/v2/organizations/{org}/Users`
+  Provision organization membership for a user, and send an activation email to the email address.  As shown in the following example, you must at least provide the required values for the user: `userName`, `name`, and `emails`.
 
 inputs:
   token:

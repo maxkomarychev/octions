@@ -1,6 +1,6 @@
 name: Get a list of organization migrations
 description: |
-  This action implements `GET` request to `/orgs/{org}/migrations`
+  Lists the most recent migrations.
 
 inputs:
   token:

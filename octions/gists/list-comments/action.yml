@@ -1,6 +1,6 @@
 name: List comments on a gist
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/comments`
+  
 
 inputs:
   token:

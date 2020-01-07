@@ -1,6 +1,6 @@
 name: Edit an organization
 description: |
-  This action implements `PATCH` request to `/orgs/{org}`
+  **Note:** The new `members_allowed_repository_creation_type` replaces the functionality of `members_can_create_repositories`.  Setting `members_allowed_repository_creation_type` will override the value of `members_can_create_repositories` in the following ways:  *   Setting `members_allowed_repository_creation_type` to `all` or `private` sets `members_can_create_repositories` to `true`. *   Setting `members_allowed_repository_creation_type` to `none` sets `members_can_create_repositories` to `false`. *   If you omit `members_allowed_repository_creation_type`, `members_can_create_repositories` is not modified.
 
 inputs:
   token:

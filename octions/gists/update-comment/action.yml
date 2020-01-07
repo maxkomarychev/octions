@@ -1,6 +1,6 @@
 name: Edit a comment
 description: |
-  This action implements `PATCH` request to `/gists/{gist_id}/comments/{comment_id}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: List user projects
 description: |
-  This action implements `GET` request to `/users/{username}/projects`
+  
 
 inputs:
   token:

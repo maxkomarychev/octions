@@ -1,6 +1,6 @@
 name: Block a user
 description: |
-  This action implements `PUT` request to `/orgs/{org}/blocks/{username}`
+  
 
 inputs:
   token:

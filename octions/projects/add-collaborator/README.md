@@ -1,15 +1,22 @@
 # Add user as a collaborator
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/projects/collaborators/#add-user-as-a-collaborator
 
-This action implements `PUT` request to `/projects/{project_id}/collaborators/{username}`
+Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `PUT` request to `/projects/{project_id}/collaborators/{u
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -34,7 +42,8 @@ This action implements `PUT` request to `/projects/{project_id}/collaborators/{u
 |username|true|username parameter
 |permission|false|The permission to grant the collaborator. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)." Can be one of:   \* `read` - can read, but not write to or administer this project.   \* `write` - can read and write, but not administer this project.   \* `admin` - can read, write and administer this project.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

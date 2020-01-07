@@ -1,6 +1,6 @@
 name: Get a Repository Subscription
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/subscription`
+  
 
 inputs:
   token:

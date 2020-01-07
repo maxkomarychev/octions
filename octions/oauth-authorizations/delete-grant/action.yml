@@ -1,6 +1,6 @@
 name: Delete a grant
 description: |
-  This action implements `DELETE` request to `/applications/grants/{grant_id}`
+  Deleting an OAuth application's grant will also delete all OAuth tokens associated with the application for your user. Once deleted, the application has no access to your account and is no longer listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
 
 inputs:
   token:

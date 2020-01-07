@@ -1,6 +1,6 @@
 name: Review a team project
 description: |
-  This action implements `GET` request to `/teams/{team_id}/projects/{project_id}`
+  Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Check if you are watching a repository (LEGACY)
 description: |
-  This action implements `GET` request to `/user/subscriptions/{owner}/{repo}`
+  Requires for the user to be authenticated.
 
 inputs:
   token:

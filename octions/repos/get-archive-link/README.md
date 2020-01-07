@@ -1,15 +1,28 @@
 # Get archive link
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/contents/#get-archive-link
 
-This action implements `GET` request to `/repos/{owner}/{repo}/{archive_format}/{ref}`
+Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
+
+_Note_: For private repositories, these links are temporary and expire after five minutes.
+
+To follow redirects with curl, use the `-L` switch:
 
 
-# Quick start
+
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +40,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/{archive_format}/
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +51,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/{archive_format}/
 |archive_format|true|archive_format parameter
 |ref|true|ref parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

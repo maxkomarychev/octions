@@ -1,6 +1,6 @@
 name: Delete a discussion
 description: |
-  This action implements `DELETE` request to `/teams/{team_id}/discussions/{discussion_number}`
+  Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

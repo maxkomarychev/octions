@@ -1,15 +1,31 @@
 # Get contributors list with additions, deletions, and commit counts
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statistics/#get-contributors-list-with-additions-deletions-and-commit-counts
 
-This action implements `GET` request to `/repos/{owner}/{repo}/stats/contributors`
+*   `total` - The Total number of commits authored by the contributor.
+
+Weekly Hash (`weeks` array):
+
+*   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).
+*   `a` - Number of additions
+*   `d` - Number of deletions
+*   `c` - Number of commits
 
 
-# Quick start
+
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +41,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/contributor
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +50,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/contributor
 |owner|true|owner parameter
 |repo|true|repo parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

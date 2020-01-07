@@ -1,6 +1,6 @@
 name: Unfollow a user
 description: |
-  This action implements `DELETE` request to `/user/following/{username}`
+  Unfollowing a user requires the user to be logged in and authenticated with basic auth or OAuth with the `user:follow` scope.
 
 inputs:
   token:

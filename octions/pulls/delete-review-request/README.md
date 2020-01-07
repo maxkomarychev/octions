@@ -1,15 +1,22 @@
 # Delete a review request
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/review_requests/#delete-a-review-request
 
-This action implements `DELETE` request to `/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/pulls/{pull_nu
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +45,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/pulls/{pull_nu
 |reviewers|false|An array of user `login`s that will be removed.
 |team_reviewers|false|An array of team `slug`s that will be removed.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

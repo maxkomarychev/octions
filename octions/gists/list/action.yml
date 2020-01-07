@@ -1,6 +1,6 @@
 name: List the authenticated user's gists or if called anonymously, this will return all public gists
 description: |
-  This action implements `GET` request to `/gists`
+  
 
 inputs:
   token:

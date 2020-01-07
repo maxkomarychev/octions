@@ -1,6 +1,6 @@
 name: Search users
 description: |
-  This action implements `GET` request to `/legacy/user/search/{keyword}`
+  Find users by keyword.
 
 inputs:
   token:

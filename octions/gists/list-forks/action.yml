@@ -1,6 +1,6 @@
 name: List gist forks
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/forks`
+  
 
 inputs:
   token:

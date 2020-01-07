@@ -1,15 +1,31 @@
 # Create repository using a repository template
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/#create-repository-using-a-repository-template
 
-This action implements `POST` request to `/repos/{template_owner}/{template_repo}/generate`
+Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [`GET /repos/:owner/:repo`](https://developer.github.com/v3/repos/#get) endpoint and check that the `is_template` key is `true`.
+
+**OAuth scope requirements**
+
+When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+
+*   `public_repo` scope or `repo` scope to create a public repository
+*   `repo` scope to create a private repository
+
+\`
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +42,8 @@ This action implements `POST` request to `/repos/{template_owner}/{template_repo
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -38,7 +55,8 @@ This action implements `POST` request to `/repos/{template_owner}/{template_repo
 |description|false|A short description of the new repository.
 |private|false|Either `true` to create a new private repository or `false` to create a new public one.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

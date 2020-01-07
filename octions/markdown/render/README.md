@@ -1,15 +1,22 @@
 # Render an arbitrary Markdown document
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/markdown/#render-an-arbitrary-markdown-document
 
-This action implements `POST` request to `/markdown`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,7 +31,8 @@ This action implements `POST` request to `/markdown`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +41,8 @@ This action implements `POST` request to `/markdown`
 |mode|false|The rendering mode. Can be either:   \* `markdown` to render a document in plain Markdown, just like README.md files are rendered.   \* `gfm` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.
 |context|false|The repository context to use when creating references in `gfm` mode. Omit this parameter when using `markdown` mode.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

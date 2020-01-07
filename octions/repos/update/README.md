@@ -1,15 +1,22 @@
 # Edit
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/#edit
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}`
+**Note**: To edit a repository's topics, use the [`topics` endpoint](https://developer.github.com/v3/repos/#replace-all-topics-for-a-repository).
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -46,7 +54,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}`
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
 |archived|false|`true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

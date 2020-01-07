@@ -1,6 +1,6 @@
 name: Delete a release asset
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/releases/assets/{asset_id}`
+  
 
 inputs:
   token:

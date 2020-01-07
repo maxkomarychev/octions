@@ -1,15 +1,22 @@
 # Update a pull request review
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/reviews/#update-a-pull-request-review
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}`
+Update the review summary comment with new text.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +35,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +47,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 |review_id|true|review_id parameter
 |body|true|The body text of the pull request review.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

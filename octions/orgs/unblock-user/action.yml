@@ -1,6 +1,6 @@
 name: Unblock a user
 description: |
-  This action implements `DELETE` request to `/orgs/{org}/blocks/{username}`
+  
 
 inputs:
   token:

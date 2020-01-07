@@ -1,6 +1,6 @@
 name: Remove a user from the organization
 description: |
-  This action implements `DELETE` request to `/scim/v2/organizations/{org}/Users/{scim_user_id}`
+  
 
 inputs:
   token:

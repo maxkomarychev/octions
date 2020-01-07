@@ -1,6 +1,6 @@
 name: Get a tree
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/git/trees/{tree_sha}`
+  If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
 
 inputs:
   token:

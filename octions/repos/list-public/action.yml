@@ -1,6 +1,6 @@
 name: List all public repositories
 description: |
-  This action implements `GET` request to `/repositories`
+  Lists all public repositories in the order that they were created.  Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
 
 inputs:
   token:

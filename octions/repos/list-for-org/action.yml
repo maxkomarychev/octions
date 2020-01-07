@@ -1,6 +1,6 @@
 name: List organization repositories
 description: |
-  This action implements `GET` request to `/orgs/{org}/repos`
+  Lists repositories for the specified organization.
 
 inputs:
   token:

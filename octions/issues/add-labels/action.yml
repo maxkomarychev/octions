@@ -1,6 +1,6 @@
 name: Add labels to an issue
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
+  
 
 inputs:
   token:

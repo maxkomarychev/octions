@@ -1,6 +1,6 @@
 name: Add or update interaction restrictions for an organization
 description: |
-  This action implements `PUT` request to `/orgs/{org}/interaction-limits`
+  Temporarily restricts interactions to certain GitHub users in any public repository in the given organization. You must be an organization owner to set these restrictions.
 
 inputs:
   token:

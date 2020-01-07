@@ -1,6 +1,6 @@
 name: List tags
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/tags`
+  
 
 inputs:
   token:

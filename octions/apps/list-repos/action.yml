@@ -1,6 +1,6 @@
 name: List repositories
 description: |
-  This action implements `GET` request to `/installation/repositories`
+  List repositories that an installation can access.  You must use an [installation access token](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
 
 inputs:
   token:

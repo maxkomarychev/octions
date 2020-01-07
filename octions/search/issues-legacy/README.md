@@ -1,15 +1,22 @@
 # Search issues
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/search/legacy/#search-issues
 
-This action implements `GET` request to `/legacy/issues/search/{owner}/{repository}/{state}/{keyword}`
+Find issues by state and keyword.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +34,8 @@ This action implements `GET` request to `/legacy/issues/search/{owner}/{reposito
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +45,8 @@ This action implements `GET` request to `/legacy/issues/search/{owner}/{reposito
 |state|true|Indicates the state of the issues to return. Can be either `open` or `closed`.
 |keyword|true|The search term.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

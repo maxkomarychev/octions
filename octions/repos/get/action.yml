@@ -1,6 +1,6 @@
 name: Get
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}`
+  The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
 
 inputs:
   token:

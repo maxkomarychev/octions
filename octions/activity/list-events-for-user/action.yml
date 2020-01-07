@@ -1,6 +1,6 @@
 name: List events performed by a user
 description: |
-  This action implements `GET` request to `/users/{username}/events`
+  If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events.
 
 inputs:
   token:

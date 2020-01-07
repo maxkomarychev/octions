@@ -1,6 +1,6 @@
 name: Get labels for every issue in a milestone
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/milestones/{milestone_number}/labels`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Stop watching a repository (LEGACY)
 description: |
-  This action implements `DELETE` request to `/user/subscriptions/{owner}/{repo}`
+  Requires for the user to be authenticated.
 
 inputs:
   token:

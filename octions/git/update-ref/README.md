@@ -1,15 +1,22 @@
 # Update a reference
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/git/refs/#update-a-reference
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/git/refs/{ref}`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +34,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/git/refs/{ref}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -38,7 +46,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/git/refs/{ref}`
 |sha|true|The SHA1 value to set this reference to
 |force|false|Indicates whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to `false` will make sure you're not overwriting work.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

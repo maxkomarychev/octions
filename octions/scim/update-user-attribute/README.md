@@ -1,15 +1,40 @@
 # Update a user attribute
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/scim/#update-a-user-attribute
 
-This action implements `PATCH` request to `/scim/v2/organizations/{org}/Users/{scim_user_id}`
+Allows you to change a provisioned user's individual attributes. To change a user's values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations.
+
+The following example shows adding a new email address and updating the user's given name. For other examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).
+
+**Note:** Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `"path": "emails[type eq \"work\"]"` will not work.
+
+**Warning:** If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.
+
+```
+{
+  "Operations":[{
+    "op":"replace",
+    "value":{
+      "active":false
+    }
+  }]
+}
+
+```
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +50,8 @@ This action implements `PATCH` request to `/scim/v2/organizations/{org}/Users/{s
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +59,8 @@ This action implements `PATCH` request to `/scim/v2/organizations/{org}/Users/{s
 |org|true|org parameter
 |scim_user_id|true|scim_user_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

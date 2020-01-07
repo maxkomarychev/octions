@@ -1,15 +1,28 @@
 # Update existing import
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/source_imports/#update-existing-import
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/import`
+An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API request. If no parameters are provided, the import will be restarted.
+
+Some servers (e.g. TFS servers) can have several projects at a single URL. In those cases the import progress will have the status `detection_found_multiple` and the Import Progress response will include a `project_choices` array. You can select the project to import by providing one of the objects in the `project_choices` array in the update request.
+
+The following example demonstrates the workflow for updating an import with "project1" as the project choice. Given a `project_choices` array like such:
+
+To restart an import, no parameters are provided in the update request.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +38,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/import`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +49,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/import`
 |vcs_username|false|The username to provide to the originating repository.
 |vcs_password|false|The password to provide to the originating repository.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

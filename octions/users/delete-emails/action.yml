@@ -1,6 +1,6 @@
 name: Delete email address(es)
 description: |
-  This action implements `DELETE` request to `/user/emails`
+  This endpoint is accessible with the `user` scope.
 
 inputs:
   token:

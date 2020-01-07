@@ -1,15 +1,22 @@
 # Perform a merge
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/merging/#perform-a-merge
 
-This action implements `POST` request to `/repos/{owner}/{repo}/merges`
 
 
-# Quick start
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +34,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/merges`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -38,7 +46,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/merges`
 |head|true|The head to merge. This can be a branch name or a commit SHA1.
 |commit_message|false|Commit message to use for the merge commit. If omitted, a default message will be used.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

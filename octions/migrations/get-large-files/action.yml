@@ -1,6 +1,6 @@
 name: Get large files
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/import/large_files`
+  List files larger than 100MB found during the import
 
 inputs:
   token:

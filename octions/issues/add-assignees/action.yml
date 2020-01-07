@@ -1,6 +1,6 @@
 name: Add assignees to an issue
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/assignees`
+  Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced.  This example adds two assignees to the existing `octocat` assignee.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Delete a comment
 description: |
-  This action implements `DELETE` request to `/gists/{gist_id}/comments/{comment_id}`
+  
 
 inputs:
   token:

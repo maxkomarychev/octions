@@ -1,6 +1,6 @@
 name: Get latest Pages build
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pages/builds/latest`
+  
 
 inputs:
   token:

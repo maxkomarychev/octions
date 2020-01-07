@@ -1,6 +1,6 @@
 name: List comments on an issue
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/issues/{issue_number}/comments`
+  Issue Comments are ordered by ascending ID.  
 
 inputs:
   token:

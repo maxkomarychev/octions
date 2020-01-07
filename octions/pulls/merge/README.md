@@ -1,15 +1,22 @@
 # Merge a pull request (Merge Button)
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/#merge-a-pull-request-merge-button
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/merge`
+This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +47,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_numbe
 |sha|false|SHA that pull request head must match to allow merge.
 |merge_method|false|Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

@@ -1,6 +1,6 @@
 name: Remove user as a collaborator
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/collaborators/{username}`
+  
 
 inputs:
   token:

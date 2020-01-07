@@ -1,6 +1,6 @@
 name: Get comments for a single review
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments`
+  
 
 inputs:
   token:

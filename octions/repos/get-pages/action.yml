@@ -1,6 +1,6 @@
 name: Get information about a Pages site
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pages`
+  
 
 inputs:
   token:

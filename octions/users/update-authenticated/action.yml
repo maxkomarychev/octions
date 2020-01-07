@@ -1,6 +1,6 @@
 name: Update the authenticated user
 description: |
-  This action implements `PATCH` request to `/user`
+  **Note:** If your email is set to private and you send an `email` parameter as part of this request to update your profile, your privacy settings are still enforced: the email address will not be displayed on your public profile or via the API.
 
 inputs:
   token:

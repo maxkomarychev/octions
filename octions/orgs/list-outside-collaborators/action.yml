@@ -1,6 +1,6 @@
 name: List outside collaborators
 description: |
-  This action implements `GET` request to `/orgs/{org}/outside_collaborators`
+  List all users who are outside collaborators of an organization.  
 
 inputs:
   token:

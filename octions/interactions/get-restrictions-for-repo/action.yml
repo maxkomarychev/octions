@@ -1,6 +1,6 @@
 name: Get interaction restrictions for a repository
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/interaction-limits`
+  Shows which group of GitHub users can interact with this repository and when the restriction expires. If there are no restrictions, you will see an empty response.
 
 inputs:
   token:

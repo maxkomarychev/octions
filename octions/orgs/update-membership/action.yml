@@ -1,6 +1,6 @@
 name: Edit your organization membership
 description: |
-  This action implements `PATCH` request to `/user/memberships/orgs/{org}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Perform a merge
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/merges`
+  
 
 inputs:
   token:

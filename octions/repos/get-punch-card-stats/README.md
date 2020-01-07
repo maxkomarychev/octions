@@ -1,15 +1,28 @@
 # Get the number of commits per hour in each day
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statistics/#get-the-number-of-commits-per-hour-in-each-day
 
-This action implements `GET` request to `/repos/{owner}/{repo}/stats/punch_card`
+Each array contains the day number, hour number, and number of commits:
+
+*   `0-6`: Sunday - Saturday
+*   `0-23`: Hour of day
+*   Number of commits
+
+For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +38,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/punch_card`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +47,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/stats/punch_card`
 |owner|true|owner parameter
 |repo|true|repo parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

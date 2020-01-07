@@ -1,6 +1,6 @@
 name: Remove outside collaborator
 description: |
-  This action implements `DELETE` request to `/orgs/{org}/outside_collaborators/{username}`
+  Removing a user from this list will remove them from all the organization's repositories.
 
 inputs:
   token:

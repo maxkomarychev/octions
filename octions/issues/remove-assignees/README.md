@@ -1,15 +1,24 @@
 # Remove assignees from an issue
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/assignees/#remove-assignees-from-an-issue
 
-This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_number}/assignees`
+Removes one or more assignees from an issue.
+
+This example removes two of three assignees, leaving the `octocat` assignee.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -36,7 +46,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_
 |issue_number|true|issue_number parameter
 |assignees|false|Usernames of assignees to remove from an issue. _NOTE: Only users with push access can remove assignees from an issue. Assignees are silently ignored otherwise._
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

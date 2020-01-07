@@ -1,6 +1,6 @@
 name: List Pages builds
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pages/builds`
+  
 
 inputs:
   token:

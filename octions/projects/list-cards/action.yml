@@ -1,6 +1,6 @@
 name: List project cards
 description: |
-  This action implements `GET` request to `/projects/columns/{column_id}/cards`
+  
 
 inputs:
   token:

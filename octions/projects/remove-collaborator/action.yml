@@ -1,6 +1,6 @@
 name: Remove user as a collaborator
 description: |
-  This action implements `DELETE` request to `/projects/{project_id}/collaborators/{username}`
+  Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator.
 
 inputs:
   token:

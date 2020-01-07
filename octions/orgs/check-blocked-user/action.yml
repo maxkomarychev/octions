@@ -1,6 +1,6 @@
 name: Check whether a user is blocked from an organization
 description: |
-  This action implements `GET` request to `/orgs/{org}/blocks/{username}`
+  If the user is blocked:  If the user is not blocked:
 
 inputs:
   token:

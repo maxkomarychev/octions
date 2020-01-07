@@ -1,6 +1,6 @@
 name: Add or update team project
 description: |
-  This action implements `PUT` request to `/teams/{team_id}/projects/{project_id}`
+  Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
 
 inputs:
   token:

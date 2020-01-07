@@ -1,6 +1,6 @@
 name: Unlock an issue
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/issues/{issue_number}/lock`
+  Users with push access can unlock an issue's conversation.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Create reaction for a commit comment
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/comments/{comment_id}/reactions`
+  Create a reaction to a [commit comment](https://developer.github.com/v3/repos/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this commit comment.
 
 inputs:
   token:

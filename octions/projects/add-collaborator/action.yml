@@ -1,6 +1,6 @@
 name: Add user as a collaborator
 description: |
-  This action implements `PUT` request to `/projects/{project_id}/collaborators/{username}`
+  Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
 
 inputs:
   token:

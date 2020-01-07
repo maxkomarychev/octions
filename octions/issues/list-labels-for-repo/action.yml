@@ -1,6 +1,6 @@
 name: List all labels for this repository
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/labels`
+  
 
 inputs:
   token:

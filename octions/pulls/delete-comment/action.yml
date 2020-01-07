@@ -1,6 +1,6 @@
 name: Delete a comment
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/pulls/comments/{comment_id}`
+  Deletes a review comment.
 
 inputs:
   token:

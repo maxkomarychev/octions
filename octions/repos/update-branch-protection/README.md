@@ -1,15 +1,28 @@
 # Update branch protection
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/branches/#update-branch-protection
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/branches/{branch}/protection`
+Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+
+Protecting a branch requires admin or owner permissions to the repository.
+
+**Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+
+**Note**: The list of users, apps, and teams in total is limited to 100 items.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -30,7 +43,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/branches/{branch}
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -43,7 +57,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/branches/{branch}
 |required_pull_request_reviews|true|Require at least one approving review on a pull request, before merging. Set to `null` to disable.
 |restrictions|true|Restrict who can push to this branch. User, app, and team `restrictions` are only available for organization-owned repositories. Set to `null` to disable.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

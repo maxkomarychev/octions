@@ -1,15 +1,22 @@
 # Create or update a file
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/contents/#create-or-update-a-file
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/contents/{path}`
+Creates a new file or updates an existing file in a repository.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +35,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/contents/{path}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -43,7 +51,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/contents/{path}`
 |committer|false|The person that committed the file. Default: the authenticated user.
 |author|false|The author of the file. Default: The `committer` or the authenticated user if you omit `committer`.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

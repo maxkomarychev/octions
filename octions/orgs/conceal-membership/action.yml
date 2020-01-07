@@ -1,6 +1,6 @@
 name: Conceal a user's membership
 description: |
-  This action implements `DELETE` request to `/orgs/{org}/public_members/{username}`
+  
 
 inputs:
   token:

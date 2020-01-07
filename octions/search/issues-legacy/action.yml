@@ -1,6 +1,6 @@
 name: Search issues
 description: |
-  This action implements `GET` request to `/legacy/issues/search/{owner}/{repository}/{state}/{keyword}`
+  Find issues by state and keyword.
 
 inputs:
   token:

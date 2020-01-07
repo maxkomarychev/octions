@@ -1,6 +1,6 @@
 name: Delete a label
 description: |
-  This action implements `DELETE` request to `/repos/{owner}/{repo}/labels/{name}`
+  
 
 inputs:
   token:

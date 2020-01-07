@@ -1,6 +1,6 @@
 name: List your repositories
 description: |
-  This action implements `GET` request to `/user/repos`
+  Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.  The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
 
 inputs:
   token:

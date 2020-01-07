@@ -1,6 +1,6 @@
 name: Get a list of provisioned identities
 description: |
-  This action implements `GET` request to `/scim/v2/organizations/{org}/Users`
+  To filter for a specific email address, use the `email` query parameter and the `eq` operator:  Your filter would look like this cURL command:  Retrieves users that match the filter. In the example, we searched only for [octocat@github.com](mailto:octocat@github.com).  Retrieves a paginated list of all provisioned organization members, including pending invitations.
 
 inputs:
   token:

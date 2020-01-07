@@ -1,6 +1,6 @@
 name: Get an individual license
 description: |
-  This action implements `GET` request to `/licenses/{license}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Edit a release asset
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/releases/assets/{asset_id}`
+  Users with push access to the repository can edit a release asset.
 
 inputs:
   token:

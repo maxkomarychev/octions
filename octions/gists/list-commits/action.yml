@@ -1,6 +1,6 @@
 name: List gist commits
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/commits`
+  
 
 inputs:
   token:

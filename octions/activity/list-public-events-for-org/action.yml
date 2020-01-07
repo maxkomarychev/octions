@@ -1,6 +1,6 @@
 name: List public events for an organization
 description: |
-  This action implements `GET` request to `/orgs/{org}/events`
+  
 
 inputs:
   token:

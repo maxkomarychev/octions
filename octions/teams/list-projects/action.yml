@@ -1,6 +1,6 @@
 name: List team projects
 description: |
-  This action implements `GET` request to `/teams/{team_id}/projects`
+  Lists the organization projects for a team. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
 
 inputs:
   token:

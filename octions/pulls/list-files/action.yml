@@ -1,6 +1,6 @@
 name: List pull requests files
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pulls/{pull_number}/files`
+  **Note:** The response includes a maximum of 300 files.
 
 inputs:
   token:

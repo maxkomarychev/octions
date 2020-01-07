@@ -1,15 +1,22 @@
 # Toggle primary email visibility
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/users/emails/#toggle-primary-email-visibility
 
-This action implements `PATCH` request to `/user/email/visibility`
+Sets the visibility for your primary email addresses.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `PATCH` request to `/user/email/visibility`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +41,8 @@ This action implements `PATCH` request to `/user/email/visibility`
 |email|true|Specify the _primary_ email address that needs a visibility change.
 |visibility|true|Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

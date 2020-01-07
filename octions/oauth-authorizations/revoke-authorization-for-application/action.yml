@@ -1,6 +1,6 @@
 name: Revoke an authorization for an application
 description: |
-  This action implements `DELETE` request to `/applications/{client_id}/tokens/{access_token}`
+  OAuth application owners can revoke a single token for an OAuth application. You must use [Basic Authentication](https://developer.github.com/v3/auth#basic-authentication) for this method, where the username is the OAuth application `client_id` and the password is its `client_secret`.
 
 inputs:
   token:

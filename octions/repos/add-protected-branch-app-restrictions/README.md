@@ -1,15 +1,28 @@
 # Add app restrictions of protected branch
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/branches/#add-app-restrictions-of-protected-branch
 
-This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps`
+Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+
+Grants the specified apps push access for this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
+
+| Type    | Description                                                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +39,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +49,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch
 |repo|true|repo parameter
 |branch|true|branch parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

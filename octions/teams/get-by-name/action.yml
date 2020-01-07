@@ -1,6 +1,6 @@
 name: Get team by name
 description: |
-  This action implements `GET` request to `/orgs/{org}/teams/{team_slug}`
+  Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
 
 inputs:
   token:

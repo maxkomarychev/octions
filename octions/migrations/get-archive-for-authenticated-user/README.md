@@ -1,15 +1,44 @@
 # Download a user migration archive
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive
 
-This action implements `GET` request to `/user/migrations/{migration_id}/archive`
+Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
+
+*   attachments
+*   bases
+*   commit\_comments
+*   issue\_comments
+*   issue\_events
+*   issues
+*   milestones
+*   organizations
+*   projects
+*   protected\_branches
+*   pull\_request\_reviews
+*   pull\_requests
+*   releases
+*   repositories
+*   review\_comments
+*   schema
+*   users
+
+The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
 
 
-# Quick start
+
+
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,14 +53,16 @@ This action implements `GET` request to `/user/migrations/{migration_id}/archive
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

@@ -63,7 +63,8 @@ function methodToMeta(method, path, method_data) {
   } = method_data;
   return {
     name: summary,
-    description: `This action implements \`${method.toUpperCase()}\` request to \`${path}\``,
+    description,
+    api_details: `This action implements \`${method.toUpperCase()}\` request to \`${path}\``,
     octokit_doc: method_data.externalDocs.url,
     inputs: [
       {

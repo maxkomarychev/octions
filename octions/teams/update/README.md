@@ -1,15 +1,24 @@
 # Edit team
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/teams/#edit-team
 
-This action implements `PATCH` request to `/teams/{team_id}`
+To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.
+
+**Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +34,8 @@ This action implements `PATCH` request to `/teams/{team_id}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +47,8 @@ This action implements `PATCH` request to `/teams/{team_id}`
 |permission|false|**Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:   \* `pull` - team members can pull, but not push to or administer newly-added repositories.   \* `push` - team members can pull and push, but not administer newly-added repositories.   \* `admin` - team members can pull, push and administer newly-added repositories.
 |parent_team_id|false|The ID of a team to set as the parent team. **Note**: You must pass the `hellcat-preview` media type to use this parameter.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

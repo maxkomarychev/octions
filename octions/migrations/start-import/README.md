@@ -1,15 +1,22 @@
 # Start an import
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/source_imports/#start-an-import
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/import`
+Start a source import to a GitHub repository using GitHub Importer.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/import`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +47,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/import`
 |vcs_password|false|If authentication is required, the password to provide to `vcs_url`.
 |tfvc_project|false|For a tfvc import, the name of the project that is being imported.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

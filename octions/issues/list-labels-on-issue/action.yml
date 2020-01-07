@@ -1,6 +1,6 @@
 name: List labels on an issue
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
+  
 
 inputs:
   token:

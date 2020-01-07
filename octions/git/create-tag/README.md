@@ -1,15 +1,44 @@
 # Create a tag object
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/git/tags/#create-a-tag-object
 
-This action implements `POST` request to `/repos/{owner}/{repo}/git/tags`
+Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
+
+**Signature verification object**
+
+The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+
+These are the possible values for `reason` in the `verification` object:
+
+| Value                    | Description                                                                                                                       |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| `expired_key`            | The key that made the signature is expired.                                                                                       |
+| `not_signing_key`        | The "signing" flag is not among the usage flags in the GPG key that made the signature.                                           |
+| `gpgverify_error`        | There was an error communicating with the signature verification service.                                                         |
+| `gpgverify_unavailable`  | The signature verification service is currently unavailable.                                                                      |
+| `unsigned`               | The object does not include a signature.                                                                                          |
+| `unknown_signature_type` | A non-PGP signature was found in the commit.                                                                                      |
+| `no_user`                | No user was associated with the `committer` email address in the commit.                                                          |
+| `unverified_email`       | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+| `bad_email`              | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature.             |
+| `unknown_key`            | The key that made the signature has not been registered with any user's account.                                                  |
+| `malformed_signature`    | There was an error parsing the signature.                                                                                         |
+| `invalid`                | The signature could not be cryptographically verified using the key whose key-id was found in the signature.                      |
+| `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -29,7 +58,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/git/tags`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -42,7 +72,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/git/tags`
 |type|true|The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
 |tagger|false|An object with information about the individual creating the tag.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

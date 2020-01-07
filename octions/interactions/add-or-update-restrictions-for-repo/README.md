@@ -1,15 +1,22 @@
 # Add or update interaction restrictions for a repository
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/interactions/repos/#add-or-update-interaction-restrictions-for-a-repository
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/interaction-limits`
+Temporarily restricts interactions to certain GitHub users within the given repository. You must have owner or admin access to set restrictions.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +33,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/interaction-limit
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +43,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/interaction-limit
 |repo|true|repo parameter
 |limit|true|Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

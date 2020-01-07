@@ -1,15 +1,24 @@
 # Update an existing authorization
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/oauth_authorizations/#update-an-existing-authorization
 
-This action implements `PATCH` request to `/authorizations/{authorization_id}`
+If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Working with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."
+
+You can only send one of these scope keys at a time.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,7 +33,8 @@ This action implements `PATCH` request to `/authorizations/{authorization_id}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +47,8 @@ This action implements `PATCH` request to `/authorizations/{authorization_id}`
 |note_url|false|A URL to remind you what app the OAuth token is for.
 |fingerprint|false|A unique string to distinguish an authorization from others created for the same client ID and user.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

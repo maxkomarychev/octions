@@ -1,15 +1,29 @@
 # Creates a new repository in the specified organization
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/#create
 
-This action implements `POST` request to `/orgs/{org}/repos`
+Creates a new repository for the authenticated user.
+
+**OAuth scope requirements**
+
+When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+
+*   `public_repo` scope or `repo` scope to create a public repository
+*   `repo` scope to create a private repository
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +39,8 @@ This action implements `POST` request to `/orgs/{org}/repos`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -47,7 +62,8 @@ This action implements `POST` request to `/orgs/{org}/repos`
 |allow_merge_commit|false|Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

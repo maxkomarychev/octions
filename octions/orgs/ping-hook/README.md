@@ -1,15 +1,22 @@
 # Ping a hook
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/orgs/hooks/#ping-a-hook
 
-This action implements `POST` request to `/orgs/{org}/hooks/{hook_id}/pings`
+This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +32,8 @@ This action implements `POST` request to `/orgs/{org}/hooks/{hook_id}/pings`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +41,8 @@ This action implements `POST` request to `/orgs/{org}/hooks/{hook_id}/pings`
 |org|true|org parameter
 |hook_id|true|hook_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

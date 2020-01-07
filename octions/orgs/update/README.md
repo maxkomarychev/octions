@@ -1,15 +1,28 @@
 # Edit an organization
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/orgs/#edit-an-organization
 
-This action implements `PATCH` request to `/orgs/{org}`
+**Note:** The new `members_allowed_repository_creation_type` replaces the functionality of `members_can_create_repositories`.
+
+Setting `members_allowed_repository_creation_type` will override the value of `members_can_create_repositories` in the following ways:
+
+*   Setting `members_allowed_repository_creation_type` to `all` or `private` sets `members_can_create_repositories` to `true`.
+*   Setting `members_allowed_repository_creation_type` to `none` sets `members_can_create_repositories` to `false`.
+*   If you omit `members_allowed_repository_creation_type`, `members_can_create_repositories` is not modified.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -24,7 +37,8 @@ This action implements `PATCH` request to `/orgs/{org}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -42,7 +56,8 @@ This action implements `PATCH` request to `/orgs/{org}`
 |members_can_create_repositories|false|Toggles the ability of non-admin organization members to create repositories. Can be one of:   \* `true` - all organization members can create repositories.   \* `false` - only admin members can create repositories.   Default: `true`   **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details. **Note:** Another parameter can override the this parameter. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
 |members_allowed_repository_creation_type|false|Specifies which types of repositories non-admin organization members can create. Can be one of:   \* `all` - all organization members can create public and private repositories.   \* `private` - members can create private repositories. This option is only available to repositories that are part of an organization on [GitHub Business Cloud](https://github.com/pricing/business-cloud).   \* `none` - only admin members can create repositories.   **Note:** Using this parameter will override values set in `members_can_create_repositories`. See [this note](https://developer.github.com/v3/orgs/#members_can_create_repositories) for details.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

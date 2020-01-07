@@ -1,6 +1,6 @@
 name: List project columns
 description: |
-  This action implements `GET` request to `/projects/{project_id}/columns`
+  
 
 inputs:
   token:

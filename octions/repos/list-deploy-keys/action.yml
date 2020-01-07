@@ -1,6 +1,6 @@
 name: List deploy keys
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/keys`
+  
 
 inputs:
   token:

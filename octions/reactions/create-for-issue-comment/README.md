@@ -1,15 +1,22 @@
 # Create reaction for an issue comment
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/reactions/#create-reaction-for-an-issue-comment
 
-This action implements `POST` request to `/repos/{owner}/{repo}/issues/comments/{comment_id}/reactions`
+Create a reaction to an [issue comment](https://developer.github.com/v3/issues/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue comment.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +34,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/comments/
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +45,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/comments/
 |comment_id|true|comment_id parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue comment.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

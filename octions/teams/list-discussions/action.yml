@@ -1,6 +1,6 @@
 name: List discussions
 description: |
-  This action implements `GET` request to `/teams/{team_id}/discussions`
+  List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

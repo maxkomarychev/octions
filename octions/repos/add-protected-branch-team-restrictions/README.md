@@ -1,15 +1,28 @@
 # Add team restrictions of protected branch
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/branches/#add-team-restrictions-of-protected-branch
 
-This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams`
+Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+
+Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
+
+| Type    | Description                                                                                                                                |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +39,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +49,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/branches/{branch
 |repo|true|repo parameter
 |branch|true|branch parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

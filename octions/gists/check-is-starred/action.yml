@@ -1,6 +1,6 @@
 name: Check if a gist is starred
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/star`
+  
 
 inputs:
   token:

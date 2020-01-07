@@ -1,6 +1,6 @@
 name: Get provisioning details for a single user
 description: |
-  This action implements `GET` request to `/scim/v2/organizations/{org}/Users/{scim_user_id}`
+  
 
 inputs:
   token:

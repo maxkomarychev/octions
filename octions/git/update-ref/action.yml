@@ -1,6 +1,6 @@
 name: Update a reference
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/git/refs/{ref}`
+  
 
 inputs:
   token:

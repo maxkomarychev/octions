@@ -1,6 +1,6 @@
 name: List email addresses for a user
 description: |
-  This action implements `GET` request to `/user/emails`
+  Lists all of your email addresses, and specifies which one is visible to the public. This endpoint is accessible with the `user:email` scope.
 
 inputs:
   token:

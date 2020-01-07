@@ -1,15 +1,22 @@
 # Create reaction for an issue
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/reactions/#create-reaction-for-an-issue
 
-This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_number}/reactions`
+Create a reaction to an [issue](https://developer.github.com/v3/issues/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +34,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_nu
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +45,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/issues/{issue_nu
 |issue_number|true|issue_number parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

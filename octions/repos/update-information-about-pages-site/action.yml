@@ -1,6 +1,6 @@
 name: Update information about a Pages site
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/pages`
+  
 
 inputs:
   token:

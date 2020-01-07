@@ -1,6 +1,6 @@
 name: Update a pull request review
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}`
+  Update the review summary comment with new text.
 
 inputs:
   token:

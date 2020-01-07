@@ -1,6 +1,6 @@
 name: Get a release by tag name
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/releases/tags/{tag}`
+  Get a published release with the specified tag.
 
 inputs:
   token:

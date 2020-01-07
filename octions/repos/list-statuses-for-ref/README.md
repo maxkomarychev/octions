@@ -1,15 +1,24 @@
 # List statuses for a specific ref
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statuses/#list-statuses-for-a-specific-ref
 
-This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/statuses`
+Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
+
+This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -28,7 +37,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/sta
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -39,7 +49,8 @@ This action implements `GET` request to `/repos/{owner}/{repo}/commits/{ref}/sta
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

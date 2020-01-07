@@ -1,6 +1,6 @@
 name: Update a pull request branch
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/pulls/{pull_number}/update-branch`
+  Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
 
 inputs:
   token:

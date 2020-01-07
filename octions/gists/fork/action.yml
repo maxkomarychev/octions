@@ -1,6 +1,6 @@
 name: Fork a gist
 description: |
-  This action implements `POST` request to `/gists/{gist_id}/forks`
+  **Note**: This was previously `/gists/:gist_id/fork`.
 
 inputs:
   token:

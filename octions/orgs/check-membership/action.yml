@@ -1,6 +1,6 @@
 name: Check membership
 description: |
-  This action implements `GET` request to `/orgs/{org}/members/{username}`
+  Check if a user is, publicly or privately, a member of the organization.
 
 inputs:
   token:

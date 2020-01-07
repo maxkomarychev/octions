@@ -1,6 +1,6 @@
 name: List your organization memberships
 description: |
-  This action implements `GET` request to `/user/memberships/orgs`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: List reviews on a pull request
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pulls/{pull_number}/reviews`
+  The list of reviews returns in chronological order.
 
 inputs:
   token:

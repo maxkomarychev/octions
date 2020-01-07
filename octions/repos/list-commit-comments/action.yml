@@ -1,6 +1,6 @@
 name: List commit comments for a repository
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/comments`
+  Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).  Comments are ordered by ascending ID.  
 
 inputs:
   token:

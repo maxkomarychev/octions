@@ -1,6 +1,6 @@
 name: Delete a project card
 description: |
-  This action implements `DELETE` request to `/projects/columns/cards/{card_id}`
+  
 
 inputs:
   token:

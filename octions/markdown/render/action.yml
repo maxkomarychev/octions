@@ -1,6 +1,6 @@
 name: Render an arbitrary Markdown document
 description: |
-  This action implements `POST` request to `/markdown`
+  
 
 inputs:
   token:

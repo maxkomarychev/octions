@@ -1,6 +1,6 @@
 name: Start a user migration
 description: |
-  This action implements `POST` request to `/user/migrations`
+  Initiates the generation of a user migration archive.
 
 inputs:
   token:

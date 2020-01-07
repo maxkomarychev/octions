@@ -1,15 +1,29 @@
 # Get the status of an organization migration
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/migrations/orgs/#get-the-status-of-an-organization-migration
 
-This action implements `GET` request to `/orgs/{org}/migrations/{migration_id}`
+Fetches the status of a migration.
+
+The `state` of a migration can be one of the following values:
+
+*   `pending`, which means the migration hasn't started yet.
+*   `exporting`, which means the migration is in progress.
+*   `exported`, which means the migration finished successfully.
+*   `failed`, which means the migration failed.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -25,7 +39,8 @@ This action implements `GET` request to `/orgs/{org}/migrations/{migration_id}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -33,7 +48,8 @@ This action implements `GET` request to `/orgs/{org}/migrations/{migration_id}`
 |org|true|org parameter
 |migration_id|true|migration_id parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

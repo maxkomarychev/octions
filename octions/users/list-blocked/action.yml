@@ -1,6 +1,6 @@
 name: List blocked users
 description: |
-  This action implements `GET` request to `/user/blocks`
+  List the users you've blocked on your personal account.
 
 inputs:
   token:

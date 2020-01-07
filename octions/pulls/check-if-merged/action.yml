@@ -1,6 +1,6 @@
 name: Get if a pull request has been merged
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/pulls/{pull_number}/merge`
+  
 
 inputs:
   token:

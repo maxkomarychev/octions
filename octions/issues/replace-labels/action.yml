@@ -1,6 +1,6 @@
 name: Replace all labels for an issue
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_number}/labels`
+  
 
 inputs:
   token:

@@ -1,15 +1,24 @@
 # Create a hook
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/hooks/#create-a-hook
 
-This action implements `POST` request to `/repos/{owner}/{repo}/hooks`
+Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can share the same `config` as long as those webhooks do not have any `events` that overlap.
+
+Here's how you can create a hook that posts payloads in JSON format:
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/hooks`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -38,7 +48,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/hooks`
 |events|false|Determines what [events](https://developer.github.com/v3/activity/events/types/) the hook is triggered for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

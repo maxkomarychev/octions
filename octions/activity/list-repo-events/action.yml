@@ -1,6 +1,6 @@
 name: List repository events
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/events`
+  
 
 inputs:
   token:

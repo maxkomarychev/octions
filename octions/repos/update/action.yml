@@ -1,6 +1,6 @@
 name: Edit
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}`
+  **Note**: To edit a repository's topics, use the [`topics` endpoint](https://developer.github.com/v3/repos/#replace-all-topics-for-a-repository).
 
 inputs:
   token:

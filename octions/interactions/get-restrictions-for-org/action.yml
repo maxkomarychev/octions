@@ -1,6 +1,6 @@
 name: Get interaction restrictions for an organization
 description: |
-  This action implements `GET` request to `/orgs/{org}/interaction-limits`
+  Shows which group of GitHub users can interact with this organization and when the restriction expires. If there are no restrictions, you will see an empty response.
 
 inputs:
   token:

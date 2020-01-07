@@ -1,6 +1,6 @@
 name: List commonly used licenses
 description: |
-  This action implements `GET` request to `/licenses`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: List your authorizations
 description: |
-  This action implements `GET` request to `/authorizations`
+  
 
 inputs:
   token:

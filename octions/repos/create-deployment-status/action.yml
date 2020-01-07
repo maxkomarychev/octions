@@ -1,6 +1,6 @@
 name: Create a deployment status
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/deployments/{deployment_id}/statuses`
+  Users with `push` access can create deployment statuses for a given deployment.  GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
 
 inputs:
   token:

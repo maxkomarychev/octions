@@ -1,6 +1,6 @@
 name: Create a label
 description: |
-  This action implements `POST` request to `/repos/{owner}/{repo}/labels`
+  
 
 inputs:
   token:

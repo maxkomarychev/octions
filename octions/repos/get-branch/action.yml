@@ -1,6 +1,6 @@
 name: Get branch
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/branches/{branch}`
+  
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Get a list of user migrations
 description: |
-  This action implements `GET` request to `/user/migrations`
+  Lists all migrations a user has started.
 
 inputs:
   token:

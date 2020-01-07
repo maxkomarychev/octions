@@ -1,6 +1,6 @@
 name: List comments
 description: |
-  This action implements `GET` request to `/teams/{team_id}/discussions/{discussion_number}/comments`
+  List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

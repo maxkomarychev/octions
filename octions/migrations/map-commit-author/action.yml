@@ -1,6 +1,6 @@
 name: Map a commit author
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/import/authors/{author_id}`
+  Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Get a specific revision of a gist
 description: |
-  This action implements `GET` request to `/gists/{gist_id}/{sha}`
+  
 
 inputs:
   token:

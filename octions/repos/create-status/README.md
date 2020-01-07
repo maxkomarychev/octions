@@ -1,15 +1,24 @@
 # Create a status
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/repos/statuses/#create-a-status
 
-This action implements `POST` request to `/repos/{owner}/{repo}/statuses/{sha}`
+Users with push access in a repository can create commit statuses for a given SHA.
+
+Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +36,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/statuses/{sha}`
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -40,7 +50,8 @@ This action implements `POST` request to `/repos/{owner}/{repo}/statuses/{sha}`
 |description|false|A short description of the status.
 |context|false|A string label to differentiate this status from the status of other systems.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

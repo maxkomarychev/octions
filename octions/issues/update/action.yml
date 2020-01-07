@@ -1,6 +1,6 @@
 name: Edit an issue
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/issues/{issue_number}`
+  Issue owners and users with push access can edit an issue.
 
 inputs:
   token:

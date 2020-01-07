@@ -1,6 +1,6 @@
 name: Get a single download
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/downloads/{download_id}`
+  
 
 inputs:
   token:

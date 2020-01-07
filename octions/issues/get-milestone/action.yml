@@ -1,6 +1,6 @@
 name: Get a single milestone
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/milestones/{milestone_number}`
+  
 
 inputs:
   token:

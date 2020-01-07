@@ -1,6 +1,6 @@
 name: List teams
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/teams`
+  
 
 inputs:
   token:

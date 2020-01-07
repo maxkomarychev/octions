@@ -1,6 +1,6 @@
 name: Get a single gist
 description: |
-  This action implements `GET` request to `/gists/{gist_id}`
+  
 
 inputs:
   token:

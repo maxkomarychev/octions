@@ -1,6 +1,6 @@
 name: Get organization membership
 description: |
-  This action implements `GET` request to `/orgs/{org}/memberships/{username}`
+  In order to get a user's membership with an organization, the authenticated user must be an organization member.
 
 inputs:
   token:

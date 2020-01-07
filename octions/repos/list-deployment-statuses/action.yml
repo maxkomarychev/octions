@@ -1,6 +1,6 @@
 name: List deployment statuses
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/deployments/{deployment_id}/statuses`
+  Users with pull access can view deployment statuses for a deployment:
 
 inputs:
   token:

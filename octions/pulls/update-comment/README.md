@@ -1,15 +1,40 @@
 # Edit a comment
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/pulls/comments/#edit-a-comment
 
-This action implements `PATCH` request to `/repos/{owner}/{repo}/pulls/comments/{comment_id}`
+**Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
+
+Enables you to edit a review comment.
+
+**Multi-line comment summary**
+
+**Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
+
+Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
+
+If you use the `comfort-fade` preview header, your response will show:
+
+*   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
+*   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
+
+If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
+
+*   For multi-line comments, the last line of the comment range for the `position` attribute.
+*   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -27,7 +52,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/pulls/comments/
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -37,7 +63,8 @@ This action implements `PATCH` request to `/repos/{owner}/{repo}/pulls/comments/
 |comment_id|true|comment_id parameter
 |body|true|The text of the reply to the review comment.
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

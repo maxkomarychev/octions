@@ -1,6 +1,6 @@
 name: Unstar a gist
 description: |
-  This action implements `DELETE` request to `/gists/{gist_id}/star`
+  
 
 inputs:
   token:

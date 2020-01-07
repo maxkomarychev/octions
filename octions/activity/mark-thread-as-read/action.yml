@@ -1,6 +1,6 @@
 name: Mark a thread as read
 description: |
-  This action implements `PATCH` request to `/notifications/threads/{thread_id}`
+  
 
 inputs:
   token:

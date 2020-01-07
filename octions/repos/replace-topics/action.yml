@@ -1,6 +1,6 @@
 name: Replace all topics for a repository
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/topics`
+  
 
 inputs:
   token:

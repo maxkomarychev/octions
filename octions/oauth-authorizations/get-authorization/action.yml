@@ -1,6 +1,6 @@
 name: Get a single authorization
 description: |
-  This action implements `GET` request to `/authorizations/{authorization_id}`
+  
 
 inputs:
   token:

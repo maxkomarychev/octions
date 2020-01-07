@@ -1,6 +1,6 @@
 name: Get a single comment
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/issues/comments/{comment_id}`
+  
 
 inputs:
   token:

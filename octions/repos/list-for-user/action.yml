@@ -1,6 +1,6 @@
 name: List user repositories
 description: |
-  This action implements `GET` request to `/users/{username}/repos`
+  Lists public repositories for the specified user.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: List paths
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/traffic/popular/paths`
+  Get the top 10 popular contents over the last 14 days.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Delete an authorization
 description: |
-  This action implements `DELETE` request to `/authorizations/{authorization_id}`
+  
 
 inputs:
   token:

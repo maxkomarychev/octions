@@ -1,6 +1,6 @@
 name: Start an organization migration
 description: |
-  This action implements `POST` request to `/orgs/{org}/migrations`
+  Initiates the generation of a migration archive.
 
 inputs:
   token:

@@ -1,6 +1,6 @@
 name: Delete a comment
 description: |
-  This action implements `DELETE` request to `/teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}`
+  Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

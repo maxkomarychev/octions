@@ -1,6 +1,6 @@
 name: List assets for a release
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/releases/{release_id}/assets`
+  
 
 inputs:
   token:

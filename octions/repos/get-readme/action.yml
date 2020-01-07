@@ -1,6 +1,6 @@
 name: Get the README
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/readme`
+  Gets the preferred README for a repository.  READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
 
 inputs:
   token:

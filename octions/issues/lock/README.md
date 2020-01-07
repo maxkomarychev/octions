@@ -1,15 +1,24 @@
 # Lock an issue
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/issues/#lock-an-issue
 
-This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_number}/lock`
+Users with push access can lock an issue or pull request's conversation.
+
+Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +35,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_num
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -36,7 +46,8 @@ This action implements `PUT` request to `/repos/{owner}/{repo}/issues/{issue_num
 |issue_number|true|issue_number parameter
 |lock_reason|false|The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:   \* `off-topic`   \* `too heated`   \* `resolved`   \* `spam`
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

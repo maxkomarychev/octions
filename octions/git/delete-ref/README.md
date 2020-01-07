@@ -1,15 +1,28 @@
 # Delete a reference
 
-"Oction" is a GitHub Action that implements a single call with 
-[@octokit/request](https://www.npmjs.com/package/@octokit/request)
-allowing easy interaction with GitHub REST APIs from your workflow.
+## Table of contents
+
+1. [Docs](#docs)
+1. [Quick start](#quick-start)
+1. [Inputs](#inputs)
+1. [Outputs](#outputs)
+
+<a name="quick-start" ></a>
+## Docs
 
 Original documentation: https://developer.github.com/v3/git/refs/#delete-a-reference
 
-This action implements `DELETE` request to `/repos/{owner}/{repo}/git/refs/{ref}`
+```
+DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
+```
+
+```
+DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
+```
 
 
-# Quick start
+<a name="quick start" ></a>
+## Quick start
 
 ```yaml
 - uses: /@v
@@ -26,7 +39,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/git/refs/{ref}
 ```
 
 
-# Inputs
+<a name="inputs" ></a>
+## Inputs
 
 | Name | Is required | Description |
 |---|---|---|
@@ -35,7 +49,8 @@ This action implements `DELETE` request to `/repos/{owner}/{repo}/git/refs/{ref}
 |repo|true|repo parameter
 |ref|true|ref parameter
 
-# Outputs
+<a name="outputs" ></a>
+## Outputs
 
 | Name | Description |
 |---|---|

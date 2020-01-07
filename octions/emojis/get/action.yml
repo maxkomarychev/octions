@@ -1,6 +1,6 @@
 name: Get
 description: |
-  This action implements `GET` request to `/emojis`
+  Lists all the emojis available to use on GitHub.  
 
 inputs:
   token:

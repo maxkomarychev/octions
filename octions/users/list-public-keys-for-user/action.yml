@@ -1,6 +1,6 @@
 name: List public keys for a user
 description: |
-  This action implements `GET` request to `/users/{username}/keys`
+  Lists the _verified_ public SSH keys for a user. This is accessible by anyone.
 
 inputs:
   token:

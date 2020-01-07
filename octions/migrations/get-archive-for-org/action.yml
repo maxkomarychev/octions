@@ -1,6 +1,6 @@
 name: Download an organization migration archive
 description: |
-  This action implements `GET` request to `/orgs/{org}/migrations/{migration_id}/archive`
+  Fetches the URL to a migration archive.  
 
 inputs:
   token:

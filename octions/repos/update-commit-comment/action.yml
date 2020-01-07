@@ -1,6 +1,6 @@
 name: Update a commit comment
 description: |
-  This action implements `PATCH` request to `/repos/{owner}/{repo}/comments/{comment_id}`
+  
 
 inputs:
   token:

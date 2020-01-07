@@ -1,6 +1,6 @@
 name: Edit a discussion
 description: |
-  This action implements `PATCH` request to `/teams/{team_id}/discussions/{discussion_number}`
+  Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
 inputs:
   token:

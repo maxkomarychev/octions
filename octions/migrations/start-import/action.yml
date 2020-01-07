@@ -1,6 +1,6 @@
 name: Start an import
 description: |
-  This action implements `PUT` request to `/repos/{owner}/{repo}/import`
+  Start a source import to a GitHub repository using GitHub Importer.
 
 inputs:
   token:

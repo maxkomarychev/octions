@@ -1,6 +1,6 @@
 name: Update an existing authorization
 description: |
-  This action implements `PATCH` request to `/authorizations/{authorization_id}`
+  If you have two-factor authentication setup, Basic Authentication for this endpoint requires that you use a one-time password (OTP) and your username and password instead of tokens. For more information, see "[Working with two-factor authentication](https://developer.github.com/v3/auth/#working-with-two-factor-authentication)."  You can only send one of these scope keys at a time.
 
 inputs:
   token:

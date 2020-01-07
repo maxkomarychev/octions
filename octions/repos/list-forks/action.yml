@@ -1,6 +1,6 @@
 name: List forks
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/forks`
+  
 
 inputs:
   token:

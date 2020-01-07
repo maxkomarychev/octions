@@ -1,6 +1,6 @@
 name: List reactions for a commit comment
 description: |
-  This action implements `GET` request to `/repos/{owner}/{repo}/comments/{comment_id}/reactions`
+  List the reactions to a [commit comment](https://developer.github.com/v3/repos/comments/).
 
 inputs:
   token:

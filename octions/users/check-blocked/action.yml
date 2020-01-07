@@ -1,6 +1,6 @@
 name: Check whether you've blocked a user
 description: |
-  This action implements `GET` request to `/user/blocks/{username}`
+  If the user is blocked:  If the user is not blocked:
 
 inputs:
   token:
