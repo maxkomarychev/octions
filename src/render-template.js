@@ -41,8 +41,17 @@ const templates = fs
 
 const allPaths = routes[API_GITHUB].paths;
 
+function isSame(path, data) {
+  try {
+    const existingData = fs.readFileSync(path).toString();
+    return existingData === data;
+  } catch (error) {
+    return false;
+  }
+}
+
 for (const apiPath in allPaths) {
-  console.log(apiPath);
+  console.error(apiPath);
   const pathPathData = allPaths[apiPath];
   for (const method in pathPathData) {
     const methodSpec = pathPathData[method];
@@ -73,7 +82,13 @@ for (const apiPath in allPaths) {
     for (const template_name in templates) {
       const compiled = templates[template_name];
       const rendered = compiled(view);
-      fs.writeFileSync(path.join(actionRoot, template_name), rendered);
+      const outputPath = path.join(actionRoot, template_name);
+      if (!isSame(outputPath, rendered)) {
+        console.error("written", outputPath);
+        fs.writeFileSync(outputPath, rendered);
+      } else {
+        console.error("skipped", outputPath);
+      }
     }
   }
 }
