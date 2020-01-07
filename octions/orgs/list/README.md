@@ -21,7 +21,7 @@ Lists all organizations, in the order that they were created on GitHub.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list@master
   id: my_step_id
   with:
     token: <token value>

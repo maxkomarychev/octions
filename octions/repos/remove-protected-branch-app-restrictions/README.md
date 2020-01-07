@@ -25,7 +25,7 @@ Removes the ability of an app to push to this branch. Only installed GitHub Apps
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/remove-protected-branch-app-restrictions@master
   id: my_step_id
   with:
     token: <token value>

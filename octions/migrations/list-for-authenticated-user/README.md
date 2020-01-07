@@ -19,7 +19,7 @@ Lists all migrations a user has started.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/list-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

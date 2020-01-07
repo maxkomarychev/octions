@@ -25,7 +25,7 @@ The Emails API enables you to list all of your email addresses, and toggle a pri
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/get-by-username@master
   id: my_step_id
   with:
     token: <token value>

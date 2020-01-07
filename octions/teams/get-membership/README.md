@@ -23,7 +23,7 @@ To get a user's membership with a team, the team must be visible to the authenti
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/get-membership@master
   id: my_step_id
   with:
     token: <token value>

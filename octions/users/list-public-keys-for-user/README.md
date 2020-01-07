@@ -19,7 +19,7 @@ Lists the _verified_ public SSH keys for a user. This is accessible by anyone.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list-public-keys-for-user@master
   id: my_step_id
   with:
     token: <token value>

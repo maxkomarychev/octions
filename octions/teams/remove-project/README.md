@@ -19,7 +19,7 @@ Removes an organization project from a team. An organization owner or a team mai
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/remove-project@master
   id: my_step_id
   with:
     token: <token value>

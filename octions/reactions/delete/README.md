@@ -19,7 +19,7 @@ OAuth access tokens require the `write:discussion` [scope](https://developer.git
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/delete@master
   id: my_step_id
   with:
     token: <token value>

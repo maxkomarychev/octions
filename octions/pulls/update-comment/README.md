@@ -37,7 +37,7 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/update-comment@master
   id: my_step_id
   with:
     token: <token value>

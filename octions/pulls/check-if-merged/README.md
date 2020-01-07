@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/pulls/#get-if-a-pull-req
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/check-if-merged@master
   id: my_step_id
   with:
     token: <token value>

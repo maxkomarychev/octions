@@ -21,7 +21,7 @@ The latest release is the most recent non-prerelease, non-draft release, sorted 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-latest-release@master
   id: my_step_id
   with:
     token: <token value>

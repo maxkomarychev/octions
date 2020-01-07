@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/comments/#delete-a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/delete-comment@master
   id: my_step_id
   with:
     token: <token value>

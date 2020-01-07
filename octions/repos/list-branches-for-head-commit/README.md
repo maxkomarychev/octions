@@ -21,7 +21,7 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-branches-for-head-commit@master
   id: my_step_id
   with:
     token: <token value>

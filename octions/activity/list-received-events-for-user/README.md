@@ -19,7 +19,7 @@ These are events that you've received by watching repos and following users. If 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/list-received-events-for-user@master
   id: my_step_id
   with:
     token: <token value>

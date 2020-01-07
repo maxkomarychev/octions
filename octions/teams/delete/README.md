@@ -21,7 +21,7 @@ If you are an organization owner and you pass the `hellcat-preview` media type, 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/delete@master
   id: my_step_id
   with:
     token: <token value>

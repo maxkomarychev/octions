@@ -21,7 +21,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/create-discussion-comment@master
   id: my_step_id
   with:
     token: <token value>

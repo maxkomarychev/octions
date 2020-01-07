@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/issues/labels/#list-labe
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/list-labels-on-issue@master
   id: my_step_id
   with:
     token: <token value>

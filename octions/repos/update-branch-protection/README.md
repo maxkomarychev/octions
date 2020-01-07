@@ -25,7 +25,7 @@ Protecting a branch requires admin or owner permissions to the repository.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-branch-protection@master
   id: my_step_id
   with:
     token: <token value>

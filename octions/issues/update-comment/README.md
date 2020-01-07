@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/issues/comments/#edit-a-
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/update-comment@master
   id: my_step_id
   with:
     token: <token value>

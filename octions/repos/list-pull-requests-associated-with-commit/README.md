@@ -19,7 +19,7 @@ Lists all pull requests containing the provided commit SHA, which can be from an
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-pull-requests-associated-with-commit@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ Note: With [pagination](https://developer.github.com/v3/#pagination), you can fe
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/list-public@master
   id: my_step_id
   with:
     token: <token value>

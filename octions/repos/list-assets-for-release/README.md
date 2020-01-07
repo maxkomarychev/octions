@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/releases/#list-ass
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-assets-for-release@master
   id: my_step_id
   with:
     token: <token value>

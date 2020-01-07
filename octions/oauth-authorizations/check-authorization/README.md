@@ -19,7 +19,7 @@ OAuth applications can use a special API method for checking OAuth token validit
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/check-authorization@master
   id: my_step_id
   with:
     token: <token value>

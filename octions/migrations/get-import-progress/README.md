@@ -52,7 +52,7 @@ This section includes details about Git LFS related fields that may be present i
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/get-import-progress@master
   id: my_step_id
   with:
     token: <token value>

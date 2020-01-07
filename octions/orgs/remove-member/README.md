@@ -19,7 +19,7 @@ Removing a user from this list will remove them from all teams and they will no 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/remove-member@master
   id: my_step_id
   with:
     token: <token value>

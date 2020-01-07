@@ -25,7 +25,7 @@ The access the user has to each repository is included in the hash under the `pe
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/list-installation-repos-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

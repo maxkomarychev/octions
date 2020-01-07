@@ -25,7 +25,7 @@ Grants the specified apps push access for this branch. Only installed GitHub App
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/add-protected-branch-app-restrictions@master
   id: my_step_id
   with:
     token: <token value>

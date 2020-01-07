@@ -21,7 +21,7 @@ If an organization owner has configured the organization to prevent members from
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/delete@master
   id: my_step_id
   with:
     token: <token value>

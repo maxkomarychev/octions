@@ -21,7 +21,7 @@ Lists check runs for a check suite using its `id`. GitHub Apps must have the `ch
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/list-for-suite@master
   id: my_step_id
   with:
     token: <token value>

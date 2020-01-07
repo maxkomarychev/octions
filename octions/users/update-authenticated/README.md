@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/users/#update-the-authen
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/update-authenticated@master
   id: my_step_id
   with:
     token: <token value>

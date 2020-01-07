@@ -19,7 +19,7 @@ Create a reaction to an [issue comment](https://developer.github.com/v3/issues/c
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/create-for-issue-comment@master
   id: my_step_id
   with:
     token: <token value>

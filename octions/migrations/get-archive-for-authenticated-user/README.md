@@ -41,7 +41,7 @@ The archive will also contain an `attachments` directory that includes all attac
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/get-archive-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

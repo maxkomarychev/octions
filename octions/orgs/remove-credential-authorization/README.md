@@ -21,7 +21,7 @@ An authenticated organization owner with the `admin:org` scope can remove a cred
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/remove-credential-authorization@master
   id: my_step_id
   with:
     token: <token value>

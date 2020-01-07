@@ -19,7 +19,7 @@ This endpoint will return all community profile metrics, including an overall he
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/retrieve-community-profile-metrics@master
   id: my_step_id
   with:
     token: <token value>

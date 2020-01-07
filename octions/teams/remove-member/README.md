@@ -27,7 +27,7 @@ To remove a team member, the authenticated user must have 'admin' permissions to
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/remove-member@master
   id: my_step_id
   with:
     token: <token value>

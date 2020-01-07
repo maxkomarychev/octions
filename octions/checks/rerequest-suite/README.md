@@ -21,7 +21,7 @@ To rerequest a check suite, your GitHub App must have the `checks:read` permissi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/rerequest-suite@master
   id: my_step_id
   with:
     token: <token value>

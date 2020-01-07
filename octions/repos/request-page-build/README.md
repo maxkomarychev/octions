@@ -21,7 +21,7 @@ Build requests are limited to one concurrent build per repository and one concur
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/request-page-build@master
   id: my_step_id
   with:
     token: <token value>

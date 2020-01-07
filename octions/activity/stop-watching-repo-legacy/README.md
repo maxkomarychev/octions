@@ -19,7 +19,7 @@ Requires for the user to be authenticated.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/stop-watching-repo-legacy@master
   id: my_step_id
   with:
     token: <token value>

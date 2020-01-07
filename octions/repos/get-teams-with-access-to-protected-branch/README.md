@@ -21,7 +21,7 @@ Lists the teams who have push access to this branch. If you pass the `hellcat-pr
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-teams-with-access-to-protected-branch@master
   id: my_step_id
   with:
     token: <token value>

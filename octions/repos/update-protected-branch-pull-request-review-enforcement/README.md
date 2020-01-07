@@ -23,7 +23,7 @@ Updating pull request review enforcement requires admin or owner permissions to 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-protected-branch-pull-request-review-enforcement@master
   id: my_step_id
   with:
     token: <token value>

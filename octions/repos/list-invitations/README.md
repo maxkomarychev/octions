@@ -21,7 +21,7 @@ When authenticating as a user with admin rights to a repository, this endpoint w
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-invitations@master
   id: my_step_id
   with:
     token: <token value>

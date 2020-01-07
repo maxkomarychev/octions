@@ -19,7 +19,7 @@ Update an author's identity for the import. Your application can continue updati
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/map-commit-author@master
   id: my_step_id
   with:
     token: <token value>

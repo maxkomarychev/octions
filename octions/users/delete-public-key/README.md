@@ -19,7 +19,7 @@ Removes a public SSH key from the authenticated user's GitHub account. Requires 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/delete-public-key@master
   id: my_step_id
   with:
     token: <token value>

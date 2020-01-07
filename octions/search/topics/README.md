@@ -29,7 +29,7 @@ In this request, we're searching for topics with the keyword `ruby`, and we're l
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/topics@master
   id: my_step_id
   with:
     token: <token value>

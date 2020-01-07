@@ -21,7 +21,7 @@ Note that subscriptions are only generated if a user is participating in a conve
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/get-thread-subscription@master
   id: my_step_id
   with:
     token: <token value>

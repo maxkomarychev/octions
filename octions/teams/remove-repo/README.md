@@ -19,7 +19,7 @@ If the authenticated user is an organization owner or a team maintainer, they ca
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/remove-repo@master
   id: my_step_id
   with:
     token: <token value>

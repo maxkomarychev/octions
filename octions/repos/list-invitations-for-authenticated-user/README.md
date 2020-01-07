@@ -21,7 +21,7 @@ When authenticating as a user, this endpoint will list all currently open reposi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-invitations-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

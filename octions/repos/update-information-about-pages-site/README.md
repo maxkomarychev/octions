@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/pages/#update-info
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-information-about-pages-site@master
   id: my_step_id
   with:
     token: <token value>

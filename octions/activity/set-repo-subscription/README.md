@@ -19,7 +19,7 @@ If you would like to watch a repository, set `subscribed` to `true`. If you woul
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/set-repo-subscription@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Lists annotations for a check run using the annotation `id`. GitHub Apps must ha
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/list-annotations@master
   id: my_step_id
   with:
     token: <token value>

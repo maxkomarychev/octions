@@ -19,7 +19,7 @@ Update the review summary comment with new text.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/update-review@master
   id: my_step_id
   with:
     token: <token value>

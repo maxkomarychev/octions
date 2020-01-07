@@ -19,7 +19,7 @@ This API call is added for compatibility reasons only. There's no guarantee that
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/email-legacy@master
   id: my_step_id
   with:
     token: <token value>

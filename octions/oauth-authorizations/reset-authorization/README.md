@@ -19,7 +19,7 @@ OAuth applications can use this API method to reset a valid OAuth token without 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/reset-authorization@master
   id: my_step_id
   with:
     token: <token value>

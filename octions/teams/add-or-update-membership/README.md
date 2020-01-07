@@ -27,7 +27,7 @@ If the user is already a member of the team, this endpoint will update the role 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/add-or-update-membership@master
   id: my_step_id
   with:
     token: <token value>

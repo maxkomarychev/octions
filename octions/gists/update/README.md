@@ -19,7 +19,7 @@ Allows you to update or delete a gist file and rename gist files. Files from the
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/update@master
   id: my_step_id
   with:
     token: <token value>

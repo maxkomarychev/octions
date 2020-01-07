@@ -37,7 +37,7 @@ The following example shows adding a new email address and updating the user's g
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/scim/update-user-attribute@master
   id: my_step_id
   with:
     token: <token value>

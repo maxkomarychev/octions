@@ -21,7 +21,7 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/get-or-create-authorization-for-app@master
   id: my_step_id
   with:
     token: <token value>

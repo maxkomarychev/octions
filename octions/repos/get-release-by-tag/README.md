@@ -19,7 +19,7 @@ Get a published release with the specified tag.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-release-by-tag@master
   id: my_step_id
   with:
     token: <token value>

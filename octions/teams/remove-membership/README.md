@@ -23,7 +23,7 @@ To remove a membership between a user and a team, the authenticated user must ha
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/remove-membership@master
   id: my_step_id
   with:
     token: <token value>

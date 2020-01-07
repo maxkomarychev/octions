@@ -27,7 +27,7 @@ Additionally, a combined `state` is returned. The `state` is one of:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-combined-status-for-ref@master
   id: my_step_id
   with:
     token: <token value>

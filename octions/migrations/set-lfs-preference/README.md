@@ -19,7 +19,7 @@ You can import repositories from Subversion, Mercurial, and TFS that include fil
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/set-lfs-preference@master
   id: my_step_id
   with:
     token: <token value>

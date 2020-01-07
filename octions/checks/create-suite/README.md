@@ -21,7 +21,7 @@ By default, check suites are automatically created when you create a [check run]
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/create-suite@master
   id: my_step_id
   with:
     token: <token value>

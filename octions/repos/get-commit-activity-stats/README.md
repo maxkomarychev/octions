@@ -21,7 +21,7 @@ Returns the last year of commit activity grouped by week. The `days` array is a 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-commit-activity-stats@master
   id: my_step_id
   with:
     token: <token value>

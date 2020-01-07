@@ -27,7 +27,7 @@ Organizations that enforce SAML SSO require personal access tokens to be whiteli
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/create-authorization@master
   id: my_step_id
   with:
     token: <token value>

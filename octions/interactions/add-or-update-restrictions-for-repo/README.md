@@ -19,7 +19,7 @@ Temporarily restricts interactions to certain GitHub users within the given repo
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/interactions/add-or-update-restrictions-for-repo@master
   id: my_step_id
   with:
     token: <token value>

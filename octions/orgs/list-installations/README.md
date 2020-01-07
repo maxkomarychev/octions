@@ -19,7 +19,7 @@ Lists all GitHub Apps in an organization. The installation count includes all Gi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-installations@master
   id: my_step_id
   with:
     token: <token value>

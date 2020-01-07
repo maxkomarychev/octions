@@ -19,7 +19,7 @@ Shows which group of GitHub users can interact with this repository and when the
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/interactions/get-restrictions-for-repo@master
   id: my_step_id
   with:
     token: <token value>

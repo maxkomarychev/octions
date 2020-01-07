@@ -19,7 +19,7 @@ This endpoint should only be used to stop watching a repository. To control whet
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/delete-repo-subscription@master
   id: my_step_id
   with:
     token: <token value>

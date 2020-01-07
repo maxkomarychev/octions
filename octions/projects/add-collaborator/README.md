@@ -19,7 +19,7 @@ Adds a collaborator to a an organization project and sets their permission level
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/add-collaborator@master
   id: my_step_id
   with:
     token: <token value>

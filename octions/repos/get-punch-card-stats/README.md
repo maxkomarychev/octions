@@ -25,7 +25,7 @@ For example, `[2, 14, 25]` indicates that there were 25 total commits, during th
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-punch-card-stats@master
   id: my_step_id
   with:
     token: <token value>

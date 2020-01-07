@@ -21,7 +21,7 @@ List all users who are members of an organization. If the authenticated user is 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-members@master
   id: my_step_id
   with:
     token: <token value>

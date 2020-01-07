@@ -19,7 +19,7 @@ Find users by keyword.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/users-legacy@master
   id: my_step_id
   with:
     token: <token value>

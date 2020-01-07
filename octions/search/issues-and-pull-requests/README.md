@@ -25,7 +25,7 @@ In this query, we're searching for the keyword `windows`, within any open issue 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/issues-and-pull-requests@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ This lets you subscribe or unsubscribe from a conversation.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/set-thread-subscription@master
   id: my_step_id
   with:
     token: <token value>

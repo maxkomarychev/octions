@@ -23,7 +23,7 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/add-or-update-repo@master
   id: my_step_id
   with:
     token: <token value>

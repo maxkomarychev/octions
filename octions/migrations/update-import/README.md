@@ -25,7 +25,7 @@ To restart an import, no parameters are provided in the update request.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/update-import@master
   id: my_step_id
   with:
     token: <token value>

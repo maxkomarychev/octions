@@ -19,7 +19,7 @@ Checks whether a team has `read`, `write`, or `admin` permissions for an organiz
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/review-project@master
   id: my_step_id
   with:
     token: <token value>

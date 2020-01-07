@@ -19,7 +19,7 @@ Lists the organization projects for a team. If you pass the `hellcat-preview` me
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/list-projects@master
   id: my_step_id
   with:
     token: <token value>

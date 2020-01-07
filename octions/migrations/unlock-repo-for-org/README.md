@@ -19,7 +19,7 @@ Unlocks a repository that was locked for migration. You should unlock each migra
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/unlock-repo-for-org@master
   id: my_step_id
   with:
     token: <token value>

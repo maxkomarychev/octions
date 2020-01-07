@@ -21,7 +21,7 @@ You must send Markdown as plain text (using a `Content-Type` header of `text/pla
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/markdown/render-raw@master
   id: my_step_id
   with:
     token: <token value>

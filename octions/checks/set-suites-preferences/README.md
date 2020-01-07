@@ -19,7 +19,7 @@ Changes the default automatic flow when creating check suites. By default, the C
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/set-suites-preferences@master
   id: my_step_id
   with:
     token: <token value>

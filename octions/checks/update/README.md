@@ -21,7 +21,7 @@ Updates a check run for a specific commit in a repository. Your GitHub App must 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/update@master
   id: my_step_id
   with:
     token: <token value>

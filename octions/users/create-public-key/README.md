@@ -19,7 +19,7 @@ Adds a public SSH key to the authenticated user's GitHub account. Requires that 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/create-public-key@master
   id: my_step_id
   with:
     token: <token value>

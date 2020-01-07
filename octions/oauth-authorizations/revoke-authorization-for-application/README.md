@@ -19,7 +19,7 @@ OAuth application owners can revoke a single token for an OAuth application. You
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/revoke-authorization-for-application@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ Allows you to add a new gist with one or more files.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/create@master
   id: my_step_id
   with:
     token: <token value>

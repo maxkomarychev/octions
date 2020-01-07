@@ -21,7 +21,7 @@ GitHub identifies contributors by author email address. This endpoint groups con
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-contributors@master
   id: my_step_id
   with:
     token: <token value>

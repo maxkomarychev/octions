@@ -19,7 +19,7 @@ When an organization member is converted to an outside collaborator, they'll onl
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/convert-member-to-outside-collaborator@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Deletes a project board. Returns a `404 Not Found` status if projects are disabl
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/delete@master
   id: my_step_id
   with:
     token: <token value>

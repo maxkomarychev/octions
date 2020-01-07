@@ -19,7 +19,7 @@ Deletes a previous migration archive. Downloadable migration archives are automa
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/delete-archive-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

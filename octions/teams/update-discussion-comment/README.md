@@ -19,7 +19,7 @@ Edits the body text of a discussion comment. OAuth access tokens require the `wr
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/update-discussion-comment@master
   id: my_step_id
   with:
     token: <token value>

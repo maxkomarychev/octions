@@ -21,7 +21,7 @@ Lists check runs for a commit ref. The `ref` can be a SHA, branch name, or a tag
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/list-for-ref@master
   id: my_step_id
   with:
     token: <token value>

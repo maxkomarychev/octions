@@ -19,7 +19,7 @@ This endpoint provides a list of GitHub's IP addresses. For more information, se
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/meta/get@master
   id: my_step_id
   with:
     token: <token value>

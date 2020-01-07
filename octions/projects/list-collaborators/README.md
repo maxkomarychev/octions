@@ -19,7 +19,7 @@ Lists the collaborators for an organization project. For a project, the list of 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/list-collaborators@master
   id: my_step_id
   with:
     token: <token value>

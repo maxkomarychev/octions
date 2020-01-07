@@ -21,7 +21,7 @@ Lists public profile information when authenticated through OAuth without the `u
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/get-authenticated@master
   id: my_step_id
   with:
     token: <token value>

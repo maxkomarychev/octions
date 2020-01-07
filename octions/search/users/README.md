@@ -25,7 +25,7 @@ Here, we're looking at users with the name Tom. We're only interested in those w
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/users@master
   id: my_step_id
   with:
     token: <token value>

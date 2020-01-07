@@ -19,7 +19,7 @@ Removing a user from this list will remove them from all the organization's repo
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/remove-outside-collaborator@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Create a reaction to a [commit comment](https://developer.github.com/v3/repos/co
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/create-for-commit-comment@master
   id: my_step_id
   with:
     token: <token value>

@@ -25,7 +25,7 @@ This input example shows how you can use the `client_payload` as a test to debug
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/create-dispatch-event@master
   id: my_step_id
   with:
     token: <token value>

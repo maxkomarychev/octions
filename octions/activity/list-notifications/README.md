@@ -21,7 +21,7 @@ The following example uses the `since` parameter to list notifications that have
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/list-notifications@master
   id: my_step_id
   with:
     token: <token value>

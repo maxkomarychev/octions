@@ -19,7 +19,7 @@ View extended details for a single public SSH key. Requires that you are authent
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/get-public-key@master
   id: my_step_id
   with:
     token: <token value>

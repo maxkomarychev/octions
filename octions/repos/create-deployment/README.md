@@ -49,7 +49,7 @@ This error happens when the `required_contexts` parameter indicates that one or 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/create-deployment@master
   id: my_step_id
   with:
     token: <token value>

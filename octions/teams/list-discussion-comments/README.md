@@ -19,7 +19,7 @@ List all comments on a team discussion. OAuth access tokens require the `read:di
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/list-discussion-comments@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Note that you'll need to set `Content-Length` to zero when calling out to this e
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/star@master
   id: my_step_id
   with:
     token: <token value>

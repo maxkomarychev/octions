@@ -21,7 +21,7 @@ Creates a new check run for a specific commit in a repository. Your GitHub App m
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/create@master
   id: my_step_id
   with:
     token: <token value>

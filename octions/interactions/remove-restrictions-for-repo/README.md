@@ -19,7 +19,7 @@ Removes all interaction restrictions from the given repository. You must have ow
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/interactions/remove-restrictions-for-repo@master
   id: my_step_id
   with:
     token: <token value>

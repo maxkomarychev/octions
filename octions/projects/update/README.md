@@ -19,7 +19,7 @@ Updates a project board's information. Returns a `404 Not Found` status if proje
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/update@master
   id: my_step_id
   with:
     token: <token value>

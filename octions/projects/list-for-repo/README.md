@@ -19,7 +19,7 @@ Lists the projects in a repository. Returns a `404 Not Found` status if projects
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/list-for-repo@master
   id: my_step_id
   with:
     token: <token value>

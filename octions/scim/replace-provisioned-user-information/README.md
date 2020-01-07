@@ -23,7 +23,7 @@ As shown in the following example, you must at least provide the required values
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/scim/replace-provisioned-user-information@master
   id: my_step_id
   with:
     token: <token value>

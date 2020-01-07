@@ -19,7 +19,7 @@ List the reactions to a [team discussion comment](https://developer.github.com/v
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/list-for-team-discussion-comment@master
   id: my_step_id
   with:
     token: <token value>

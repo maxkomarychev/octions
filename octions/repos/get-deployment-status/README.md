@@ -19,7 +19,7 @@ Users with pull access can view a deployment status for a deployment:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-deployment-status@master
   id: my_step_id
   with:
     token: <token value>

@@ -25,7 +25,7 @@ This example creates a content attachment for the domain `https://errors.ai/`.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/create-content-attachment@master
   id: my_step_id
   with:
     token: <token value>

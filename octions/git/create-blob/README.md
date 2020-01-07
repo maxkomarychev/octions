@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/git/blobs/#create-a-blob
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/create-blob@master
   id: my_step_id
   with:
     token: <token value>

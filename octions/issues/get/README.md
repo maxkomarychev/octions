@@ -25,7 +25,7 @@ Be aware that the `id` of a pull request returned from "Issues" endpoints will b
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/get@master
   id: my_step_id
   with:
     token: <token value>

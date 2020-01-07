@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/downloads/#get-a-s
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-download@master
   id: my_step_id
   with:
     token: <token value>

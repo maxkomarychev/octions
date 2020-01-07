@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/branches/#get-bran
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-branch@master
   id: my_step_id
   with:
     token: <token value>

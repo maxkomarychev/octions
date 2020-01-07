@@ -26,7 +26,7 @@ Once the migration has been `exported` you can [download the migration archive](
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/get-status-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

@@ -25,7 +25,7 @@ If you request matching references for a branch named `feature` but the branch `
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/list-matching-refs@master
   id: my_step_id
   with:
     token: <token value>

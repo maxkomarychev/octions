@@ -25,7 +25,7 @@ DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/delete-ref@master
   id: my_step_id
   with:
     token: <token value>

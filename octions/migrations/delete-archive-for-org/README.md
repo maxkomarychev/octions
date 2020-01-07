@@ -19,7 +19,7 @@ Deletes a previous migration archive. Migration archives are automatically delet
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/delete-archive-for-org@master
   id: my_step_id
   with:
     token: <token value>

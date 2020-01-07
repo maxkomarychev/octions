@@ -19,7 +19,7 @@ The return hash contains a `role` field which refers to the Organization Invitat
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-pending-invitations@master
   id: my_step_id
   with:
     token: <token value>

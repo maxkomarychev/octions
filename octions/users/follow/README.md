@@ -21,7 +21,7 @@ Following a user requires the user to be logged in and authenticated with basic 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/follow@master
   id: my_step_id
   with:
     token: <token value>

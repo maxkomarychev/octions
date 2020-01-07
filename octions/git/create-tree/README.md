@@ -21,7 +21,7 @@ If you use this endpoint to add, delete, or modify the file contents in a tree, 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/create-tree@master
   id: my_step_id
   with:
     token: <token value>

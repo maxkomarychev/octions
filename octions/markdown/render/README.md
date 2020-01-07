@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/markdown/#render-an-arbi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/markdown/render@master
   id: my_step_id
   with:
     token: <token value>

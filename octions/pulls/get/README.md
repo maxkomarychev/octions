@@ -33,7 +33,7 @@ Pass the appropriate [media type](https://developer.github.com/v3/media/#commits
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/get@master
   id: my_step_id
   with:
     token: <token value>

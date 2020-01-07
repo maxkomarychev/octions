@@ -19,7 +19,7 @@ Lists all of your email addresses, and specifies which one is visible to the pub
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list-emails@master
   id: my_step_id
   with:
     token: <token value>

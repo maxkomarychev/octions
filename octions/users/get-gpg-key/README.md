@@ -19,7 +19,7 @@ View extended details for a single GPG key. Requires that you are authenticated 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/get-gpg-key@master
   id: my_step_id
   with:
     token: <token value>

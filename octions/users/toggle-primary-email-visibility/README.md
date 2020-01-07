@@ -19,7 +19,7 @@ Sets the visibility for your primary email addresses.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/toggle-primary-email-visibility@master
   id: my_step_id
   with:
     token: <token value>

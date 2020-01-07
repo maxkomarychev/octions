@@ -19,7 +19,7 @@ List the reactions to a [pull request review comment](https://developer.github.c
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/list-for-pull-request-review-comment@master
   id: my_step_id
   with:
     token: <token value>

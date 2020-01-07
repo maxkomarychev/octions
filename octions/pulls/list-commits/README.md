@@ -19,7 +19,7 @@ Lists a maximum of 250 commits for a pull request. To receive a complete commit 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/list-commits@master
   id: my_step_id
   with:
     token: <token value>

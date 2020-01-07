@@ -25,7 +25,7 @@ Setting `members_allowed_repository_creation_type` will override the value of `m
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/update@master
   id: my_step_id
   with:
     token: <token value>

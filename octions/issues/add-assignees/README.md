@@ -21,7 +21,7 @@ This example adds two assignees to the existing `octocat` assignee.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/add-assignees@master
   id: my_step_id
   with:
     token: <token value>

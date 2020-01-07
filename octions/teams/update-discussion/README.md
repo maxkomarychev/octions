@@ -19,7 +19,7 @@ Edits the title and body text of a discussion post. Only the parameters you prov
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/update-discussion@master
   id: my_step_id
   with:
     token: <token value>

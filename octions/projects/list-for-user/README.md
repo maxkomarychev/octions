@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/projects/#list-user-proj
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/list-for-user@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/comments/#edit-a-c
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/update-comment@master
   id: my_step_id
   with:
     token: <token value>

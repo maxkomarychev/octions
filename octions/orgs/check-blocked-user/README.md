@@ -21,7 +21,7 @@ If the user is not blocked:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/check-blocked-user@master
   id: my_step_id
   with:
     token: <token value>

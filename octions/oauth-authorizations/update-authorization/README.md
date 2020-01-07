@@ -21,7 +21,7 @@ You can only send one of these scope keys at a time.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/update-authorization@master
   id: my_step_id
   with:
     token: <token value>

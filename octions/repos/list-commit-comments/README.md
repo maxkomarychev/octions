@@ -23,7 +23,7 @@ Comments are ordered by ascending ID.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-commit-comments@master
   id: my_step_id
   with:
     token: <token value>

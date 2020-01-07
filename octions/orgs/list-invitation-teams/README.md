@@ -19,7 +19,7 @@ List all teams associated with an invitation. In order to see invitations in an 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-invitation-teams@master
   id: my_step_id
   with:
     token: <token value>

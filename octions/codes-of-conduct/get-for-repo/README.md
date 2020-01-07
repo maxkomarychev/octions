@@ -19,7 +19,7 @@ This method returns the contents of the repository's code of conduct file, if on
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/codes-of-conduct/get-for-repo@master
   id: my_step_id
   with:
     token: <token value>

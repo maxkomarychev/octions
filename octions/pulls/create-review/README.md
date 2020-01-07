@@ -23,7 +23,7 @@ The `position` value equals the number of lines down from the first "@@" hunk he
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/create-review@master
   id: my_step_id
   with:
     token: <token value>

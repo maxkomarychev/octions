@@ -21,7 +21,7 @@ To open or update a pull request in a public repository, you must have write acc
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/update@master
   id: my_step_id
   with:
     token: <token value>

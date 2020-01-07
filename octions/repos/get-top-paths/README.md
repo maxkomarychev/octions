@@ -19,7 +19,7 @@ Get the top 10 popular contents over the last 14 days.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-top-paths@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/scim/#get-provisioning-d
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/scim/get-provisioning-details-for-user@master
   id: my_step_id
   with:
     token: <token value>

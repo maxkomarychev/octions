@@ -19,7 +19,7 @@ Updates the pull request branch with the latest upstream changes by merging HEAD
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/update-branch@master
   id: my_step_id
   with:
     token: <token value>

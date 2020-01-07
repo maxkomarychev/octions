@@ -19,7 +19,7 @@ You can also find out _when_ stars were created by passing the following custom 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/list-stargazers-for-repo@master
   id: my_step_id
   with:
     token: <token value>

@@ -76,7 +76,11 @@ for (const apiPath in allPaths) {
       runs: {
         using: "node12",
         main: "index.js"
-      }
+      },
+      owner: "maxkomarychev",
+      repo: "octions",
+      oction_path: actionRoot,
+      version: "master"
     };
 
     for (const template_name in templates) {

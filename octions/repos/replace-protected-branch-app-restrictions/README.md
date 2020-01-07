@@ -25,7 +25,7 @@ Replaces the list of apps that have push access to this branch. This removes all
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/replace-protected-branch-app-restrictions@master
   id: my_step_id
   with:
     token: <token value>

@@ -25,7 +25,7 @@ Retrieves a paginated list of all provisioned organization members, including pe
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/scim/list-provisioned-identities@master
   id: my_step_id
   with:
     token: <token value>

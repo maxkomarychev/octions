@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/#list-a-users-gist
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/list-public-for-user@master
   id: my_step_id
   with:
     token: <token value>

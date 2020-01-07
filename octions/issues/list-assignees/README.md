@@ -19,7 +19,7 @@ Lists the [available assignees](https://help.github.com/articles/assigning-issue
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/list-assignees@master
   id: my_step_id
   with:
     token: <token value>

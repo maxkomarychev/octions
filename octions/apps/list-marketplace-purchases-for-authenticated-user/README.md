@@ -19,7 +19,7 @@ Returns only active subscriptions. You must use a [user-to-server OAuth access t
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/list-marketplace-purchases-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

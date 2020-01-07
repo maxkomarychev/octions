@@ -19,7 +19,7 @@ Check if a user is, publicly or privately, a member of the organization.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/check-membership@master
   id: my_step_id
   with:
     token: <token value>

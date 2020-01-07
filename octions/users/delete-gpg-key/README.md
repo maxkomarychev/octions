@@ -19,7 +19,7 @@ Removes a GPG key from the authenticated user's GitHub account. Requires that yo
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/delete-gpg-key@master
   id: my_step_id
   with:
     token: <token value>

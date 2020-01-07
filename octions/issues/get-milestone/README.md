@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/issues/milestones/#get-a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/get-milestone@master
   id: my_step_id
   with:
     token: <token value>

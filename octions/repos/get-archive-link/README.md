@@ -25,7 +25,7 @@ To follow redirects with curl, use the `-L` switch:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-archive-link@master
   id: my_step_id
   with:
     token: <token value>

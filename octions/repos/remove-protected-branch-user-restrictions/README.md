@@ -25,7 +25,7 @@ Removes the ability of a user to push to this branch.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/remove-protected-branch-user-restrictions@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/list-plans-stubbed@master
   id: my_step_id
   with:
     token: <token value>

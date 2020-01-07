@@ -21,7 +21,7 @@ This will trigger the hook with the latest push to the current repository if the
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/test-push-hook@master
   id: my_step_id
   with:
     token: <token value>

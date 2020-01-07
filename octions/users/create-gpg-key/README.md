@@ -19,7 +19,7 @@ Adds a GPG key to the authenticated user's GitHub account. Requires that you are
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/create-gpg-key@master
   id: my_step_id
   with:
     token: <token value>

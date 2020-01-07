@@ -19,7 +19,7 @@ Here's how you can create a hook that posts payloads in JSON format:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/create-hook@master
   id: my_step_id
   with:
     token: <token value>

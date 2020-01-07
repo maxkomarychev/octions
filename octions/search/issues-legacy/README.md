@@ -19,7 +19,7 @@ Find issues by state and keyword.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/issues-legacy@master
   id: my_step_id
   with:
     token: <token value>

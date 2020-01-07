@@ -21,7 +21,7 @@ The `subject_type` and `subject_id` parameters provide context for the person's 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/get-context-for-user@master
   id: my_step_id
   with:
     token: <token value>

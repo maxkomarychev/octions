@@ -21,7 +21,7 @@ If you pass the `hellcat-preview` media type, team members will include the memb
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/check-collaborator@master
   id: my_step_id
   with:
     token: <token value>

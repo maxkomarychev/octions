@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/#check-if-a-gist-i
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/check-is-starred@master
   id: my_step_id
   with:
     token: <token value>

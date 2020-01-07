@@ -19,7 +19,7 @@ Members of an organization can choose to have their membership publicized or not
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-public-members@master
   id: my_step_id
   with:
     token: <token value>

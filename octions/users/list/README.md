@@ -21,7 +21,7 @@ Note: Pagination is powered exclusively by the `since` parameter. Use the [Link 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list@master
   id: my_step_id
   with:
     token: <token value>

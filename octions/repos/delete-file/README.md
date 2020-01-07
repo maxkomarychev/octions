@@ -25,7 +25,7 @@ You must provide values for both `name` and `email`, whether you choose to use `
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/delete-file@master
   id: my_step_id
   with:
     token: <token value>

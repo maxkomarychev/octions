@@ -19,7 +19,7 @@ Marks all notifications in a repository as "read" removes them from the [default
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/mark-notifications-as-read-for-repo@master
   id: my_step_id
   with:
     token: <token value>

@@ -23,7 +23,7 @@ This only lists organizations that your authorization allows you to operate on i
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

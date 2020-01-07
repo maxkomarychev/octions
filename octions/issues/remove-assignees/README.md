@@ -21,7 +21,7 @@ This example removes two of three assignees, leaving the `octocat` assignee.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/remove-assignees@master
   id: my_step_id
   with:
     token: <token value>

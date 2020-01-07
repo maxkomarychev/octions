@@ -19,7 +19,7 @@ Lists languages for the specified repository. The value shown for each language 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-languages@master
   id: my_step_id
   with:
     token: <token value>

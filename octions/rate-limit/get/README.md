@@ -36,7 +36,7 @@ If you're writing new API client code or updating existing code, you should use 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/rate-limit/get@master
   id: my_step_id
   with:
     token: <token value>

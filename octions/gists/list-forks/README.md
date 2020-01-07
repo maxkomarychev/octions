@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/#list-gist-forks
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/list-forks@master
   id: my_step_id
   with:
     token: <token value>

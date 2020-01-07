@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/activity/events/#list-pu
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/list-received-public-events-for-user@master
   id: my_step_id
   with:
     token: <token value>

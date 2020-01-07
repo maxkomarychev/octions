@@ -19,7 +19,7 @@ Lists repositories for the specified organization.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-for-org@master
   id: my_step_id
   with:
     token: <token value>

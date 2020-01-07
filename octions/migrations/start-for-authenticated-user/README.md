@@ -19,7 +19,7 @@ Initiates the generation of a user migration archive.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/start-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

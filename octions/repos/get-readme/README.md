@@ -21,7 +21,7 @@ READMEs support [custom media types](https://developer.github.com/v3/repos/conte
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-readme@master
   id: my_step_id
   with:
     token: <token value>

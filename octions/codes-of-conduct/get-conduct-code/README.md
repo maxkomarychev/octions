@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/codes_of_conduct/#get-an
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/codes-of-conduct/get-conduct-code@master
   id: my_step_id
   with:
     token: <token value>

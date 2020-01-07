@@ -19,7 +19,7 @@ Creates a new file or updates an existing file in a repository.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/create-or-update-file@master
   id: my_step_id
   with:
     token: <token value>

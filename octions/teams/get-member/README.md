@@ -23,7 +23,7 @@ To list members in a team, the team must be visible to the authenticated user.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/get-member@master
   id: my_step_id
   with:
     token: <token value>

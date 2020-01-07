@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#accep
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/accept-invitation@master
   id: my_step_id
   with:
     token: <token value>

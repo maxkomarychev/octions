@@ -19,7 +19,7 @@ If you are authenticated as the given user, you will see your private events. Ot
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/list-events-for-user@master
   id: my_step_id
   with:
     token: <token value>

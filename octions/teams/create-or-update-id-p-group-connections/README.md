@@ -21,7 +21,7 @@ Creates, updates, or removes a connection between a team and an IdP group. When 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/create-or-update-id-p-group-connections@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ Deleting an OAuth application's grant will also delete all OAuth tokens associat
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/revoke-grant-for-application@master
   id: my_step_id
   with:
     token: <token value>

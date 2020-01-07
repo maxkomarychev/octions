@@ -19,7 +19,7 @@ Gets a team using the team's `slug`. GitHub generates the `slug` from the team `
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/get-by-name@master
   id: my_step_id
   with:
     token: <token value>

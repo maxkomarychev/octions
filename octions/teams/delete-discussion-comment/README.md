@@ -19,7 +19,7 @@ Deletes a comment on a team discussion. OAuth access tokens require the `write:d
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/delete-discussion-comment@master
   id: my_step_id
   with:
     token: <token value>

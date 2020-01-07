@@ -19,7 +19,7 @@ To create a team, the authenticated user must be a member or owner of `:org`. By
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/create@master
   id: my_step_id
   with:
     token: <token value>

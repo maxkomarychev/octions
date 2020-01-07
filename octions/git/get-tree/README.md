@@ -19,7 +19,7 @@ If `truncated` is `true`, the number of items in the `tree` array exceeded our m
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/get-tree@master
   id: my_step_id
   with:
     token: <token value>

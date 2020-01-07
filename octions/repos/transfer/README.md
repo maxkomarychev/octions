@@ -19,7 +19,7 @@ A transfer request will need to be accepted by the new owner when transferring a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/transfer@master
   id: my_step_id
   with:
     token: <token value>

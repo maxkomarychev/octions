@@ -21,7 +21,7 @@ At this time, the `hellcat-preview` media type is required to use this endpoint.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/list-child@master
   id: my_step_id
   with:
     token: <token value>

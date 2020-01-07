@@ -21,7 +21,7 @@ Updating required status checks requires admin or owner permissions to the repos
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-protected-branch-required-status-checks@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Find repositories by keyword. Note, this legacy method does not follow the v3 pa
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/repos-legacy@master
   id: my_step_id
   with:
     token: <token value>

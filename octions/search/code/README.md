@@ -35,7 +35,7 @@ Here, we're searching for the keyword `addClass` within a file's contents. We're
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/code@master
   id: my_step_id
   with:
     token: <token value>

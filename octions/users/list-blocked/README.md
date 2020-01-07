@@ -19,7 +19,7 @@ List the users you've blocked on your personal account.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list-blocked@master
   id: my_step_id
   with:
     token: <token value>

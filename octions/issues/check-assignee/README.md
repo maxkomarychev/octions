@@ -23,7 +23,7 @@ Otherwise a `404` status code is returned.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/check-assignee@master
   id: my_step_id
   with:
     token: <token value>

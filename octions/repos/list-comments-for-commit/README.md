@@ -21,7 +21,7 @@ Use the `:commit_sha` to specify the commit that will have its comments listed.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-comments-for-commit@master
   id: my_step_id
   with:
     token: <token value>

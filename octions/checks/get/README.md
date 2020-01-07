@@ -21,7 +21,7 @@ Gets a single check run using its `id`. GitHub Apps must have the `checks:read` 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/get@master
   id: my_step_id
   with:
     token: <token value>

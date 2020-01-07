@@ -19,7 +19,7 @@ Get the total number of clones and breakdown per day or week for the last 14 day
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-clones@master
   id: my_step_id
   with:
     token: <token value>

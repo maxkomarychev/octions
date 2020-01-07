@@ -21,7 +21,7 @@ Information about published releases are available to everyone. Only users with 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-releases@master
   id: my_step_id
   with:
     token: <token value>

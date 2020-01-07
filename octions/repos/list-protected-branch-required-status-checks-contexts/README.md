@@ -19,7 +19,7 @@ Protected branches are available in public repositories with GitHub Free, and in
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-protected-branch-required-status-checks-contexts@master
   id: my_step_id
   with:
     token: <token value>

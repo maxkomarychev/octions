@@ -21,7 +21,7 @@ This resource is also available via a legacy route: `GET /repos/:owner/:repo/sta
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/list-statuses-for-ref@master
   id: my_step_id
   with:
     token: <token value>

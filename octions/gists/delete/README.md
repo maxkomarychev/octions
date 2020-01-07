@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/gists/#delete-a-gist
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gists/delete@master
   id: my_step_id
   with:
     token: <token value>

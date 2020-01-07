@@ -21,7 +21,7 @@ Lists all the emojis available to use on GitHub.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/emojis/get@master
   id: my_step_id
   with:
     token: <token value>

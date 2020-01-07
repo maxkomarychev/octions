@@ -19,7 +19,7 @@ You can use this API to list the set of OAuth applications that have been grante
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/oauth-authorizations/list-grants@master
   id: my_step_id
   with:
     token: <token value>

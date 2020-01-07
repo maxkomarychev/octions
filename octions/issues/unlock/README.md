@@ -19,7 +19,7 @@ Users with push access can unlock an issue's conversation.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/unlock@master
   id: my_step_id
   with:
     token: <token value>

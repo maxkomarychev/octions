@@ -21,7 +21,7 @@ You must use a personal access token (which you can create via the [command line
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/add-repo-to-installation@master
   id: my_step_id
   with:
     token: <token value>

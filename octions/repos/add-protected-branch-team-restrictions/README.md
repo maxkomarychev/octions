@@ -25,7 +25,7 @@ Grants the specified teams push access for this branch. If you pass the `hellcat
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/add-protected-branch-team-restrictions@master
   id: my_step_id
   with:
     token: <token value>

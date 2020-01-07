@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/downloads/#delete-
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/delete-download@master
   id: my_step_id
   with:
     token: <token value>

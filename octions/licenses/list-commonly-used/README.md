@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/licenses/#list-commonly-
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/licenses/list-commonly-used@master
   id: my_step_id
   with:
     token: <token value>

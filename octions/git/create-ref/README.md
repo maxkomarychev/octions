@@ -19,7 +19,7 @@ Creates a reference for your repository. You are unable to create new references
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/create-ref@master
   id: my_step_id
   with:
     token: <token value>

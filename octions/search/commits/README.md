@@ -27,7 +27,7 @@ Suppose you want to find commits related to CSS in the [octocat/Spoon-Knife](htt
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/commits@master
   id: my_step_id
   with:
     token: <token value>

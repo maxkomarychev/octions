@@ -23,7 +23,7 @@ Lists who has access to this protected branch. {{#note}}
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-protected-branch-restrictions@master
   id: my_step_id
   with:
     token: <token value>

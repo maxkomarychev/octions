@@ -19,7 +19,7 @@ List all discussions on a team's page. OAuth access tokens require the `read:dis
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/list-discussions@master
   id: my_step_id
   with:
     token: <token value>

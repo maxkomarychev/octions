@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/orgs/hooks/#get-single-h
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/get-hook@master
   id: my_step_id
   with:
     token: <token value>

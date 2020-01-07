@@ -19,7 +19,7 @@ Create a reaction to a [team discussion](https://developer.github.com/v3/teams/d
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/reactions/create-for-team-discussion@master
   id: my_step_id
   with:
     token: <token value>

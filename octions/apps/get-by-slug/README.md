@@ -21,7 +21,7 @@ If the GitHub App you specify is public, you can access this endpoint without au
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/get-by-slug@master
   id: my_step_id
   with:
     token: <token value>

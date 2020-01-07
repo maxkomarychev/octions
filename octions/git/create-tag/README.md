@@ -41,7 +41,7 @@ These are the possible values for `reason` in the `verification` object:
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/create-tag@master
   id: my_step_id
   with:
     token: <token value>

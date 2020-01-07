@@ -21,7 +21,7 @@ Lists check suites for a commit `ref`. The `ref` can be a SHA, branch name, or a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/checks/list-suites-for-ref@master
   id: my_step_id
   with:
     token: <token value>

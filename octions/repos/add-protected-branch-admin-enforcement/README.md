@@ -21,7 +21,7 @@ Adding admin enforcement requires admin or owner permissions to the repository a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/add-protected-branch-admin-enforcement@master
   id: my_step_id
   with:
     token: <token value>

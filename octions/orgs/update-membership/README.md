@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/orgs/members/#edit-your-
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/update-membership@master
   id: my_step_id
   with:
     token: <token value>

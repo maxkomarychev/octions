@@ -25,7 +25,7 @@ Removes the ability of a team to push to this branch. If you pass the `hellcat-p
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/remove-protected-branch-team-restrictions@master
   id: my_step_id
   with:
     token: <token value>

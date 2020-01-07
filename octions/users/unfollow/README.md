@@ -19,7 +19,7 @@ Unfollowing a user requires the user to be logged in and authenticated with basi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/unfollow@master
   id: my_step_id
   with:
     token: <token value>

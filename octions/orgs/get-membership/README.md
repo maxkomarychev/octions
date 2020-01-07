@@ -19,7 +19,7 @@ In order to get a user's membership with an organization, the authenticated user
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/get-membership@master
   id: my_step_id
   with:
     token: <token value>

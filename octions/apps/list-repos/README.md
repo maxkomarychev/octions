@@ -21,7 +21,7 @@ You must use an [installation access token](https://developer.github.com/apps/bu
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/list-repos@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ List all users who are outside collaborators of an organization.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-outside-collaborators@master
   id: my_step_id
   with:
     token: <token value>

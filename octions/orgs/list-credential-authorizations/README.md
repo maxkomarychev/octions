@@ -21,7 +21,7 @@ An authenticated organization owner with the `read:org` scope can list all crede
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-credential-authorizations@master
   id: my_step_id
   with:
     token: <token value>

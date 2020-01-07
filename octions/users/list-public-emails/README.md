@@ -19,7 +19,7 @@ Lists your publicly visible email address, which you can set with the [Toggle pr
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list-public-emails@master
   id: my_step_id
   with:
     token: <token value>

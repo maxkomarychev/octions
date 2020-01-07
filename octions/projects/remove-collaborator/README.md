@@ -19,7 +19,7 @@ Removes a collaborator from an organization project. You must be an organization
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/remove-collaborator@master
   id: my_step_id
   with:
     token: <token value>

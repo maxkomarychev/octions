@@ -19,7 +19,7 @@ List all templates available to pass as an option when [creating a repository](h
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/gitignore/list-templates@master
   id: my_step_id
   with:
     token: <token value>

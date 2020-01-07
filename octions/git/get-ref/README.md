@@ -23,7 +23,7 @@ To get the reference for a branch named `skunkworkz/featureA`, the endpoint rout
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/get-ref@master
   id: my_step_id
   with:
     token: <token value>

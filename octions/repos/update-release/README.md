@@ -19,7 +19,7 @@ Users with push access to the repository can edit a release.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-release@master
   id: my_step_id
   with:
     token: <token value>

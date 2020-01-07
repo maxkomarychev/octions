@@ -19,7 +19,7 @@ Gets a project by its `id`. Returns a `404 Not Found` status if projects are dis
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/get@master
   id: my_step_id
   with:
     token: <token value>

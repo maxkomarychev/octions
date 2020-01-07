@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/git/refs/#update-a-refer
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/update-ref@master
   id: my_step_id
   with:
     token: <token value>

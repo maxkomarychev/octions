@@ -19,7 +19,7 @@ Returns the collaborator's permission level for an organization project. Possibl
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/review-user-permission-level@master
   id: my_step_id
   with:
     token: <token value>

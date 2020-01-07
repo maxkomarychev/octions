@@ -19,7 +19,7 @@ Removes the specified label from the issue, and returns the remaining labels on 
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/issues/remove-label@master
   id: my_step_id
   with:
     token: <token value>

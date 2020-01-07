@@ -19,7 +19,7 @@ Creates an organization project board. Returns a `404 Not Found` status if proje
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/projects/create-for-org@master
   id: my_step_id
   with:
     token: <token value>

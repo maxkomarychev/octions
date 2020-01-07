@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/users/followers/#list-us
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/users/list-following-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

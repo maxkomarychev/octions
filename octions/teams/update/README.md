@@ -21,7 +21,7 @@ To edit a team, the authenticated user must either be an owner of the org that t
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/update@master
   id: my_step_id
   with:
     token: <token value>

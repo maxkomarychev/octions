@@ -19,7 +19,7 @@ You must use a [JWT](https://developer.github.com/apps/building-github-apps/auth
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/get-installation@master
   id: my_step_id
   with:
     token: <token value>

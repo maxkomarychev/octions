@@ -19,7 +19,7 @@ Marks a notification as "read" removes it from the [default view on GitHub](http
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/mark-as-read@master
   id: my_step_id
   with:
     token: <token value>

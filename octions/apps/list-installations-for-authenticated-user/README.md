@@ -25,7 +25,7 @@ You can find the permissions for the installation under the `permissions` key.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/apps/list-installations-for-authenticated-user@master
   id: my_step_id
   with:
     token: <token value>

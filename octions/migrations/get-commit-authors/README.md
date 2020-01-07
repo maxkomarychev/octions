@@ -21,7 +21,7 @@ This API method and the "Map a commit author" method allow you to provide correc
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/migrations/get-commit-authors@master
   id: my_step_id
   with:
     token: <token value>

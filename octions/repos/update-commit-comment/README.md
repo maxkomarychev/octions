@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/comments/#update-a
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/update-commit-comment@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ You can also get information about the specified repository, including what perm
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/check-manages-repo@master
   id: my_step_id
   with:
     token: <token value>

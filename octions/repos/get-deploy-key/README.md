@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/repos/keys/#get-a-deploy
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/repos/get-deploy-key@master
   id: my_step_id
   with:
     token: <token value>

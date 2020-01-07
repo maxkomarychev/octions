@@ -19,7 +19,7 @@ Mutes all future notifications for a conversation until you comment on the threa
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/activity/delete-thread-subscription@master
   id: my_step_id
   with:
     token: <token value>

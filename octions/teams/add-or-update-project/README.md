@@ -19,7 +19,7 @@ Adds an organization project to a team. To add a project to a team or update the
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/teams/add-or-update-project@master
   id: my_step_id
   with:
     token: <token value>

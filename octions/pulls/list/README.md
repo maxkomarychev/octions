@@ -19,7 +19,7 @@ Draft pull requests are available in public repositories with GitHub Free and Gi
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/pulls/list@master
   id: my_step_id
   with:
     token: <token value>

@@ -21,7 +21,7 @@ GitHub Apps with the `Organization plan` permission can use this endpoint to ret
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/get@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/orgs/hooks/#list-hooks
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/list-hooks@master
   id: my_step_id
   with:
     token: <token value>

@@ -19,7 +19,7 @@ Original documentation: https://developer.github.com/v3/orgs/hooks/#edit-a-hook
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/orgs/update-hook@master
   id: my_step_id
   with:
     token: <token value>

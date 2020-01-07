@@ -25,7 +25,7 @@ The labels that best match for the query appear first in the search results.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/search/labels@master
   id: my_step_id
   with:
     token: <token value>

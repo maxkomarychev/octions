@@ -21,7 +21,7 @@ _Note_: This API supports blobs up to 100 megabytes in size.
 ## Quick start
 
 ```yaml
-- uses: /@v
+- uses: maxkomarychev/octions/octions/git/get-blob@master
   id: my_step_id
   with:
     token: <token value>
