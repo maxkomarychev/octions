@@ -13,7 +13,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     METHOD
   );
 
-  it.only("sholud extract name and description", () => {
+  it("sholud extract name and description", () => {
     expect(spec.name).toEqual(METHOD.summary);
     // expect(meta.description).toEqual(SPEC.description);
     expect(spec.description).toEqual(
@@ -28,7 +28,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
       "https://developer.github.com/v3/repos/deployments/#create-a-deployment"
     );
   });
-  it("should parse inputs and add token as first input", () => {
+  it.skip("should parse inputs and add token as first input", () => {
     expect(spec.inputs).toHaveLength(5);
 
     expect(spec.inputs[0].name).toEqual("token");
