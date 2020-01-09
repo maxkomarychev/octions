@@ -14,7 +14,7 @@ Original documentation: https://developer.github.com/v3/repos/branches/#list-tea
 
 Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
 
-Lists the teams who have push access to this branch. If you pass the `hellcat-preview` media type, the list includes child teams.
+Lists the teams who have push access to this branch. The list includes child teams.
 
 
 <a name="quick start" ></a>

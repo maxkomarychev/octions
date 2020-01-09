@@ -42,11 +42,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "dazzler",
-    ]
-  } 
 });
 
 requestWithAuth("post /orgs/{org}/invitations", {

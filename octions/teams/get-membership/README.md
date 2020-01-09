@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/members/#get-team-membership
 
-If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+Team members will include the members of child teams.
 
 To get a user's membership with a team, the team must be visible to the authenticated user.
 

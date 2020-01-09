@@ -23,6 +23,10 @@ inputs:
     description: |
       Either `true` to create a private repository or `false` to create a public one. Creating private repositories requires a paid GitHub account.
     required: false
+  visibility:
+    description: |
+      Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/github/creating-cloning-and-archiving-repositories/creating-an-internal-repository)" in the GitHub Help documentation.   The `visibility` parameter overrides the `private` parameter when you use both parameters with the `nebula-preview` preview header.
+    required: false
   has_issues:
     description: |
       Either `true` to enable issues for this repository or `false` to disable them.

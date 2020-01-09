@@ -40,11 +40,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "barred-rock",
-    ]
-  } 
 });
 
 requestWithAuth("get /repos/{owner}/{repo}/import/authors", {

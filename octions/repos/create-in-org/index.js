@@ -36,6 +36,7 @@ const name = default_parse("name");
 const description = default_parse("description");
 const homepage = default_parse("homepage");
 const private = parse_boolean("private");
+const visibility = default_parse("visibility");
 const has_issues = parse_boolean("has_issues");
 const has_projects = parse_boolean("has_projects");
 const has_wiki = parse_boolean("has_wiki");
@@ -55,6 +56,7 @@ const requestWithAuth = request.defaults({
   },
   mediaType: {
     previews: [
+      "nebula",
       "baptiste",
     ]
   } 
@@ -67,6 +69,7 @@ requestWithAuth("post /orgs/{org}/repos", {
     description,
     homepage,
     private,
+    visibility,
     has_issues,
     has_projects,
     has_wiki,

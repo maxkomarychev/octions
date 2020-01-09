@@ -41,7 +41,6 @@ const requestWithAuth = request.defaults({
   },
   mediaType: {
     previews: [
-      "echo",
       "squirrel-girl",
     ]
   } 

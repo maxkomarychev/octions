@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/#check-if-a-team-manages-a-repository
 
-**Note**: If you pass the `hellcat-preview` media type, repositories inherited through a parent team will be checked.
+**Note**: Repositories inherited through a parent team will also be checked.
 
 You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
 

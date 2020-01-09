@@ -45,11 +45,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "hellcat",
-    ]
-  } 
 });
 
 requestWithAuth("post /orgs/{org}/teams", {

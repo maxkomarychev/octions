@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/members/#list-team-members
 
-If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+Team members will include the members of child teams.
 
 
 <a name="quick start" ></a>

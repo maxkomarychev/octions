@@ -40,11 +40,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "hellcat",
-    ]
-  } 
 });
 
 requestWithAuth("delete /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams", {

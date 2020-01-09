@@ -39,11 +39,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "echo",
-    ]
-  } 
 });
 
 requestWithAuth("delete /teams/{team_id}/discussions/{discussion_number}", {

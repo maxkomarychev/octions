@@ -43,11 +43,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "hellcat",
-    ]
-  } 
 });
 
 requestWithAuth("patch /teams/{team_id}", {

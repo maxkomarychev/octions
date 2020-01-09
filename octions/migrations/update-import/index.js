@@ -41,11 +41,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "barred-rock",
-    ]
-  } 
 });
 
 requestWithAuth("patch /repos/{owner}/{repo}/import", {

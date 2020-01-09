@@ -14,8 +14,6 @@ Original documentation: https://developer.github.com/v3/teams/#add-or-update-tea
 
 To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.
 
-If you pass the `hellcat-preview` media type, you can modify repository permissions of child teams.
-
 Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
 
 
@@ -46,7 +44,7 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
 |team_id|true|team_id parameter
 |owner|true|owner parameter
 |repo|true|repo parameter
-|permission|false|The permission to grant the team on this repository. Can be one of:   \* `pull` - team members can pull, but not push to or administer this repository.   \* `push` - team members can pull and push, but not administer this repository.   \* `admin` - team members can pull, push and administer this repository.      If no permission is specified, the team's `permission` attribute will be used to determine what permission to grant the team on this repository.   **Note**: If you pass the `hellcat-preview` media type, you can promote—but not demote—a `permission` attribute inherited through a parent team.
+|permission|false|The permission to grant the team on this repository. Can be one of:   \* `pull` - team members can pull, but not push to or administer this repository.   \* `push` - team members can pull and push, but not administer this repository.   \* `admin` - team members can pull, push and administer this repository.      If no permission is specified, the team's `permission` attribute will be used to determine what permission to grant the team on this repository.
 
 <a name="outputs" ></a>
 ## Outputs

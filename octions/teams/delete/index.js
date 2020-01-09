@@ -38,11 +38,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "hellcat",
-    ]
-  } 
 });
 
 requestWithAuth("delete /teams/{team_id}", {

@@ -48,6 +48,7 @@ When using [OAuth](https://developer.github.com/apps/building-oauth-apps/underst
 |description|false|A short description of the repository.
 |homepage|false|A URL with more information about the repository.
 |private|false|Either `true` to create a private repository or `false` to create a public one. Creating private repositories requires a paid GitHub account.
+|visibility|false|Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/github/creating-cloning-and-archiving-repositories/creating-an-internal-repository)" in the GitHub Help documentation.   The `visibility` parameter overrides the `private` parameter when you use both parameters with the `nebula-preview` preview header.
 |has_issues|false|Either `true` to enable issues for this repository or `false` to disable them.
 |has_projects|false|Either `true` to enable projects for this repository or `false` to disable them. **Note:** If you're creating a repository in an organization that has disabled repository projects, the default is `false`, and if you pass `true`, the API returns an error.
 |has_wiki|false|Either `true` to enable the wiki for this repository or `false` to disable it.

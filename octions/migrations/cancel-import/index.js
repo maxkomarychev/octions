@@ -39,11 +39,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "barred-rock",
-    ]
-  } 
 });
 
 requestWithAuth("delete /repos/{owner}/{repo}/import", {

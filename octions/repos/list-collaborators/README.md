@@ -14,7 +14,7 @@ Original documentation: https://developer.github.com/v3/repos/collaborators/#lis
 
 For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
 
-If you pass the `hellcat-preview` media type, team members will include the members of child teams.
+Team members will include the members of child teams.
 
 
 <a name="quick start" ></a>

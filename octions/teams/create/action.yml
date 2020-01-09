@@ -1,6 +1,6 @@
 name: Create team
 description: |
-  To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
+  To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."  When you create a new team, you automatically become a team maintainer without explicitly adding yourself to the optional array of `maintainers`. For more information, see "[About teams](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-teams)" in the GitHub Help documentation.
 
 inputs:
   token:
@@ -21,7 +21,7 @@ inputs:
     required: false
   maintainers:
     description: |
-      The logins of organization members to add as maintainers of the team.
+      List GitHub IDs for organization members who will become team maintainers.
     required: false
   repo_names:
     description: |
@@ -29,7 +29,7 @@ inputs:
     required: false
   privacy:
     description: |
-      The level of privacy this team should have. The options are:   **For a non-nested team:**   \* `secret` - only visible to organization owners and members of this team.   \* `closed` - visible to all members of this organization.   Default: `secret`   **For a parent or child team:**   \* `closed` - visible to all members of this organization.   Default for child team: `closed`   **Note**: You must pass the `hellcat-preview` media type to set privacy default to `closed` for child teams.
+      The level of privacy this team should have. The options are:   **For a non-nested team:**   \* `secret` - only visible to organization owners and members of this team.   \* `closed` - visible to all members of this organization.   Default: `secret`   **For a parent or child team:**   \* `closed` - visible to all members of this organization.   Default for child team: `closed`
     required: false
   permission:
     description: |
@@ -37,7 +37,7 @@ inputs:
     required: false
   parent_team_id:
     description: |
-      The ID of a team to set as the parent team. **Note**: You must pass the `hellcat-preview` media type to use this parameter.
+      The ID of a team to set as the parent team.
     required: false
 
 runs:

@@ -39,6 +39,11 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
+  mediaType: {
+    previews: [
+      "nebula",
+    ]
+  } 
 });
 
 requestWithAuth("get /repos/{owner}/{repo}", {

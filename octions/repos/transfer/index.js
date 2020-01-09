@@ -41,11 +41,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "nightshade",
-    ]
-  } 
 });
 
 requestWithAuth("post /repos/{owner}/{repo}/transfer", {

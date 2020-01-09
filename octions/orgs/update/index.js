@@ -42,6 +42,9 @@ const has_organization_projects = parse_boolean("has_organization_projects");
 const has_repository_projects = parse_boolean("has_repository_projects");
 const default_repository_permission = default_parse("default_repository_permission");
 const members_can_create_repositories = parse_boolean("members_can_create_repositories");
+const members_can_create_internal_repositories = parse_boolean("members_can_create_internal_repositories");
+const members_can_create_private_repositories = parse_boolean("members_can_create_private_repositories");
+const members_can_create_public_repositories = parse_boolean("members_can_create_public_repositories");
 const members_allowed_repository_creation_type = default_parse("members_allowed_repository_creation_type");
 
 
@@ -69,6 +72,9 @@ requestWithAuth("patch /orgs/{org}", {
     has_repository_projects,
     default_repository_permission,
     members_can_create_repositories,
+    members_can_create_internal_repositories,
+    members_can_create_private_repositories,
+    members_can_create_public_repositories,
     members_allowed_repository_creation_type,
 })
   .then(result => {

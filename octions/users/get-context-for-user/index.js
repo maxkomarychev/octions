@@ -40,11 +40,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "hagar",
-    ]
-  } 
 });
 
 requestWithAuth("get /users/{username}/hovercard", {

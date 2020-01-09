@@ -12,9 +12,9 @@
 
 Original documentation: https://developer.github.com/v3/teams/#delete-team
 
-To delete a team, the authenticated user must be a team maintainer or an owner of the org associated with the team.
+To delete a team, the authenticated user must be an organization owner or team maintainer.
 
-If you are an organization owner and you pass the `hellcat-preview` media type, deleting a parent team will delete all of its child teams as well.
+If you are an organization owner, deleting a parent team will delete all of its child teams as well.
 
 
 <a name="quick start" ></a>

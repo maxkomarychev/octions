@@ -41,11 +41,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "symmetra",
-    ]
-  } 
 });
 
 requestWithAuth("delete /repos/{owner}/{repo}/issues/{issue_number}/labels/{name}", {

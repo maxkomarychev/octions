@@ -40,11 +40,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "dazzler",
-    ]
-  } 
 });
 
 requestWithAuth("get /teams/{team_id}/invitations", {

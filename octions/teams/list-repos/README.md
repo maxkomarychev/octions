@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/#list-team-repos
 
-**Note**: If you pass the `hellcat-preview` media type, the response will include any repositories inherited through a parent team.
+
 
 
 <a name="quick start" ></a>

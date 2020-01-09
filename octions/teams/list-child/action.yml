@@ -1,6 +1,6 @@
 name: List child teams
 description: |
-  At this time, the `hellcat-preview` media type is required to use this endpoint.  
+  
 
 inputs:
   token:

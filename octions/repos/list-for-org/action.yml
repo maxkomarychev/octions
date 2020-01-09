@@ -13,7 +13,7 @@ inputs:
     required: true
   type:
     description: |
-      Can be one of `all`, `public`, `private`, `forks`, `sources`, `member`.
+      Specifies the types of repositories you want returned. Can be one of `all`, `public`, `private`, `forks`, `sources`, `member`, `internal`. Default: `all`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud, `type` can also be `internal`.
     required: true
   sort:
     description: |

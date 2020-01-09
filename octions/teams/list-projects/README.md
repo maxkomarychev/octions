@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/#list-team-projects
 
-Lists the organization projects for a team. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
+Lists the organization projects for a team.
 
 
 <a name="quick start" ></a>

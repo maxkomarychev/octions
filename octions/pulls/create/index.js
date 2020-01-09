@@ -48,7 +48,6 @@ const requestWithAuth = request.defaults({
   mediaType: {
     previews: [
       "shadow-cat",
-      "symmetra",
       "sailor-v",
     ]
   } 

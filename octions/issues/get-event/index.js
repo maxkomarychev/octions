@@ -44,7 +44,6 @@ const requestWithAuth = request.defaults({
     previews: [
       "starfox",
       "machine-man",
-      "symmetra",
       "sailor-v",
     ]
   } 

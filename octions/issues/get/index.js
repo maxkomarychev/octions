@@ -42,7 +42,6 @@ const requestWithAuth = request.defaults({
   },
   mediaType: {
     previews: [
-      "symmetra",
       "squirrel-girl",
     ]
   } 

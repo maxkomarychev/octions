@@ -14,7 +14,7 @@ Original documentation: https://developer.github.com/v3/repos/branches/#add-team
 
 Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
 
-Grants the specified teams push access for this branch. If you pass the `hellcat-preview` media type, you can also give push access to child teams.
+Grants the specified teams push access for this branch. You can also give push access to child teams.
 
 | Type    | Description                                                                                                                                |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |

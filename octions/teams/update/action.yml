@@ -1,6 +1,6 @@
 name: Edit team
 description: |
-  To edit a team, the authenticated user must either be an owner of the org that the team is associated with, or a maintainer of the team.  **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
+  To edit a team, the authenticated user must either be an organization owner or a team maintainer.  **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
 
 inputs:
   token:
@@ -29,7 +29,7 @@ inputs:
     required: false
   parent_team_id:
     description: |
-      The ID of a team to set as the parent team. **Note**: You must pass the `hellcat-preview` media type to use this parameter.
+      The ID of a team to set as the parent team.
     required: false
 
 runs:

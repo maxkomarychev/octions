@@ -43,7 +43,6 @@ const requestWithAuth = request.defaults({
   mediaType: {
     previews: [
       "inertia",
-      "hellcat",
     ]
   } 
 });

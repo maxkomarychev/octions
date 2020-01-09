@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/#review-a-team-project
 
-Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. If you pass the `hellcat-preview` media type, the response will include projects inherited from a parent team.
+Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. The response includes projects inherited from a parent team.
 
 
 <a name="quick start" ></a>

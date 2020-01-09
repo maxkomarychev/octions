@@ -45,6 +45,7 @@ const requestWithAuth = request.defaults({
   },
   mediaType: {
     previews: [
+      "nebula",
       "baptiste",
     ]
   } 

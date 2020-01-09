@@ -43,7 +43,7 @@ Lists repositories for the specified organization.
 |---|---|---|
 |token|true|Token to authenticate the request
 |org|true|org parameter
-|type|true|Can be one of `all`, `public`, `private`, `forks`, `sources`, `member`.
+|type|true|Specifies the types of repositories you want returned. Can be one of `all`, `public`, `private`, `forks`, `sources`, `member`, `internal`. Default: `all`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud, `type` can also be `internal`.
 |sort|true|Can be one of `created`, `updated`, `pushed`, `full_name`.
 |direction|true|Can be one of `asc` or `desc`. Default: when using `full_name`: `asc`, otherwise `desc`
 |per_page|true|Results per page (max 100)

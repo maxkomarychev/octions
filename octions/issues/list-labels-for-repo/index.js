@@ -41,11 +41,6 @@ const requestWithAuth = request.defaults({
   headers: {
     authorization: `Bearer ${token}`
   },
-  mediaType: {
-    previews: [
-      "symmetra",
-    ]
-  } 
 });
 
 requestWithAuth("get /repos/{owner}/{repo}/labels", {

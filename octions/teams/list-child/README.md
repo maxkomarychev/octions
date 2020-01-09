@@ -12,8 +12,6 @@
 
 Original documentation: https://developer.github.com/v3/teams/#list-child-teams
 
-At this time, the `hellcat-preview` media type is required to use this endpoint.
-
 
 
 
