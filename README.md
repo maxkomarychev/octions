@@ -4,6 +4,10 @@
 
 **O**ctokit + A**ction** = **Oction** - it is a [GitHub Action](https://github.com/features/actions) that exposes single REST API call from [@octokit/routes](https://github.com/octokit/routes)
 
+## Catalog
+
+[Catalog](CATALOG.md)
+
 ## Examples
 
 ### Close every issue immediatelly once it is opened

@@ -23,6 +23,9 @@ describe("converting openapi method descriptor to action.yml structure", () => {
       "This action implements `POST` request to `/repos/{owner}/{repo}/deployments`"
     );
   });
+  it("should extract operationId", () => {
+    expect(spec.operationId).toEqual("repos/create-deployment");
+  });
   it("should extarct link to external docs", () => {
     expect(spec.octokit_doc).toEqual(
       "https://developer.github.com/v3/repos/deployments/#create-a-deployment"

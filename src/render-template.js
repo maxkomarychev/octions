@@ -9,8 +9,13 @@ handlebars.registerHelper("singleline", function(text) {
   return text.split("\n").join(" ");
 });
 
+handlebars.registerHelper("toUpperCase", function(str) {
+  return str.toUpperCase();
+});
+
 const TEMPLATES_ROOT = process.argv[2];
 const OUTPUT_ROOT = process.argv[3];
+const CATALOG_PATH = process.argv[4];
 
 if (!TEMPLATES_ROOT) {
   console.error("Templates root is not provided");
@@ -19,6 +24,11 @@ if (!TEMPLATES_ROOT) {
 
 if (!OUTPUT_ROOT) {
   console.error("Output root is not provided");
+  process.exit(-1);
+}
+
+if (!CATALOG_PATH) {
+  console.error("Catalog path is not provided");
   process.exit(-1);
 }
 
@@ -41,14 +51,21 @@ const templates = fs
 
 const allPaths = routes[API_GITHUB].paths;
 
-function isSame(path, data) {
+function writeIfChanged(path, data) {
   try {
     const existingData = fs.readFileSync(path).toString();
-    return existingData === data;
+    if (existingData !== data) {
+      console.error("written", path);
+      fs.writeFileSync(path, data);
+    } else {
+      console.error("skipped", path);
+    }
   } catch (error) {
-    return false;
+    console.error("could not write a file", path, error);
   }
 }
+
+const flatMethods = [];
 
 for (const apiPath in allPaths) {
   console.error(apiPath);
@@ -82,17 +99,26 @@ for (const apiPath in allPaths) {
       oction_path: actionRoot,
       version: "master"
     };
+    flatMethods.push(view);
 
     for (const template_name in templates) {
       const compiled = templates[template_name];
       const rendered = compiled(view);
       const outputPath = path.join(actionRoot, template_name);
-      if (!isSame(outputPath, rendered)) {
-        console.error("written", outputPath);
-        fs.writeFileSync(outputPath, rendered);
-      } else {
-        console.error("skipped", outputPath);
-      }
+      writeIfChanged(outputPath, rendered);
     }
   }
 }
+
+const byPrefix = _.groupBy(
+  flatMethods,
+  method => method.operationId.split("/")[0]
+);
+const catalogTemplate = handlebars.compile(
+  fs.readFileSync(CATALOG_PATH).toString()
+);
+const catalogData = catalogTemplate({
+  views: byPrefix
+});
+
+writeIfChanged("./CATALOG.md", catalogData);

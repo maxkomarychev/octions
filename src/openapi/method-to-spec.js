@@ -59,13 +59,15 @@ function methodToMeta(method, path, method_data) {
     description,
     parameters,
     requestBody,
-    "x-github": xgithub
+    "x-github": xgithub,
+    operationId
   } = method_data;
   return {
     name: summary,
     description,
     api_details: `This action implements \`${method.toUpperCase()}\` request to \`${path}\``,
     octokit_doc: method_data.externalDocs.url,
+    operationId,
     inputs: [
       {
         name: "token",

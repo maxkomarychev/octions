@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "node src/render-template.js oction.template/ octions/"
+    "build": "node src/render-template.js oction.template/ octions/ ./CATALOG.md.handlebars"
   },
   "author": "",
   "license": "ISC",
