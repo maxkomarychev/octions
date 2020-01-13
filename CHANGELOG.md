@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/maxkomarychev/octions/compare/v0.3.0...v0.3.1) (2020-01-13)
+
+
+### Bug Fixes
+
+* make `owner` and `repo` params not required ([d8f4b93](https://github.com/maxkomarychev/octions/commit/d8f4b93bfcd5229d09bde9c6579e98e094570732))
+
 ## [0.3.0](https://github.com/maxkomarychev/octions/compare/v0.2.1...v0.3.0) (2020-01-13)
 
 
