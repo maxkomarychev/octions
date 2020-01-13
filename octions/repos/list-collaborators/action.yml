@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   affiliation:
     description: |
       Filter collaborators returned by their affiliation. Can be one of:   \* `outside`: All outside collaborators of an organization-owned repository.   \* `direct`: All collaborators with permissions to an organization-owned repository, regardless of organization membership status.   \* `all`: All collaborators the authenticated user can see.

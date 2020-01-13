@@ -23,8 +23,6 @@ Start a source import to a GitHub repository using GitHub Importer.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     vcs_url: <vcs_url value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Start a source import to a GitHub repository using GitHub Importer.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |vcs_url|true|The URL of the originating repository.
 |vcs|false|The originating VCS type. Can be one of `subversion`, `git`, `mercurial`, or `tfvc`. Please be aware that without this parameter, the import job will take additional time to detect the VCS type before beginning the import. This detection step will be reflected in the response.
 |vcs_username|false|If authentication is required, the username to provide to `vcs_url`.

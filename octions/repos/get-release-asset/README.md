@@ -23,8 +23,6 @@ To download the asset's binary content, set the `Accept` header of the request t
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     asset_id: <asset_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ To download the asset's binary content, set the `Accept` header of the request t
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |asset_id|true|asset_id parameter
 
 <a name="outputs" ></a>

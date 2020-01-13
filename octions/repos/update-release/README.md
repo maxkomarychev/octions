@@ -23,8 +23,6 @@ Users with push access to the repository can edit a release.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     release_id: <release_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Users with push access to the repository can edit a release.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |release_id|true|release_id parameter
 |tag_name|false|The name of the tag.
 |target_commitish|false|Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually `master`).

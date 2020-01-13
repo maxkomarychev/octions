@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/repos/merging/#perform-a
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     base: <base value>
     head: <head value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Original documentation: https://developer.github.com/v3/repos/merging/#perform-a
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |base|true|The name of the base branch that the head will be merged into.
 |head|true|The head to merge. This can be a branch name or a commit SHA1.
 |commit_message|false|Commit message to use for the merge commit. If omitted, a default message will be used.

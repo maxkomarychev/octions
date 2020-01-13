@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   name:
     description: |
       Use `web` to create a webhook. Default: `web`. This parameter only accepts the value `web`.

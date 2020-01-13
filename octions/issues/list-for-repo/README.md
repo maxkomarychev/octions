@@ -27,8 +27,6 @@ Be aware that the `id` of a pull request returned from "Issues" endpoints will b
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     milestone: <milestone value>
     state: <state value>
     assignee: <assignee value>
@@ -54,8 +52,8 @@ Be aware that the `id` of a pull request returned from "Issues" endpoints will b
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |milestone|true|If an `integer` is passed, it should refer to a milestone by its `number` field. If the string `*` is passed, issues with any milestone are accepted. If the string `none` is passed, issues without milestones are returned.
 |state|true|Indicates the state of the issues to return. Can be either `open`, `closed`, or `all`.
 |assignee|true|Can be the name of a user. Pass in `none` for issues with no assigned user, and `*` for issues assigned to any user.

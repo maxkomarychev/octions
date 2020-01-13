@@ -27,8 +27,6 @@ The `position` value equals the number of lines down from the first "@@" hunk he
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
 - name: Print outputs
   run: |
@@ -44,8 +42,8 @@ The `position` value equals the number of lines down from the first "@@" hunk he
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |commit_id|false|The SHA of the commit that needs a review. Not using the latest commit SHA may render your review comment outdated if a subsequent commit modifies the line you specify as the `position`. Defaults to the most recent commit in the pull request when you do not specify a value.
 |body|false|**Required** when using `REQUEST_CHANGES` or `COMMENT` for the `event` parameter. The body text of the pull request review.

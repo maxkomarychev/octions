@@ -23,8 +23,6 @@ Users with pull access can view a deployment status for a deployment:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     deployment_id: <deployment_id value>
     status_id: <status_id value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Users with pull access can view a deployment status for a deployment:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |deployment_id|true|deployment_id parameter
 |status_id|true|status_id parameter
 

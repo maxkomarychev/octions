@@ -25,8 +25,6 @@ Updates a check run for a specific commit in a repository. Your GitHub App must 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     check_run_id: <check_run_id value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Updates a check run for a specific commit in a repository. Your GitHub App must 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |check_run_id|true|check_run_id parameter
 |name|false|The name of the check. For example, "code-coverage".
 |details_url|false|The URL of the integrator's site that has the full details of the check.

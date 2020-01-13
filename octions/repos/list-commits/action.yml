@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   sha:
     description: |
       SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`).

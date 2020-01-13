@@ -25,8 +25,6 @@ By default, Issue Comments are ordered by ascending ID.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     sort: <sort value>
     direction: <direction value>
     since: <since value>
@@ -44,8 +42,8 @@ By default, Issue Comments are ordered by ascending ID.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |sort|true|Either `created` or `updated`.
 |direction|true|Either `asc` or `desc`. Ignored without the `sort` parameter.
 |since|true|Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.

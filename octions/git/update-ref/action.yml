@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   ref:
     description: |
       ref parameter

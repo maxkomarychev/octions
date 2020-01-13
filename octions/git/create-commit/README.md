@@ -49,8 +49,6 @@ These are the possible values for `reason` in the `verification` object:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     message: <message value>
     tree: <tree value>
     parents: <parents value>
@@ -68,8 +66,8 @@ These are the possible values for `reason` in the `verification` object:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |message|true|The commit message
 |tree|true|The SHA of the tree object this commit points to
 |parents|true|The SHAs of the commits that were the parents of this commit. If omitted or empty, the commit will be written as a root commit. For a single parent, an array of one SHA should be provided; for a merge commit, an array of more than one should be provided.

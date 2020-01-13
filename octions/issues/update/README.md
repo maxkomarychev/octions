@@ -23,8 +23,6 @@ Issue owners and users with push access can edit an issue.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Issue owners and users with push access can edit an issue.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |title|false|The title of the issue.
 |body|false|The contents of the issue.

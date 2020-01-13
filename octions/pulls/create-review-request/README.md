@@ -23,8 +23,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |reviewers|false|An array of user `login`s that will be requested.
 |team_reviewers|false|An array of team `slug`s that will be requested.

@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#dismiss-a
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     review_id: <review_id value>
     message: <message value>
@@ -42,8 +40,8 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#dismiss-a
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |review_id|true|review_id parameter
 |message|true|The message for the pull request review dismissal

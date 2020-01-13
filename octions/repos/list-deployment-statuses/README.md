@@ -23,8 +23,6 @@ Users with pull access can view deployment statuses for a deployment:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     deployment_id: <deployment_id value>
     per_page: <per_page value>
     page: <page value>
@@ -42,8 +40,8 @@ Users with pull access can view deployment statuses for a deployment:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |deployment_id|true|deployment_id parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.

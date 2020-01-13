@@ -25,8 +25,6 @@ Issue Comments are ordered by ascending ID.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
     since: <since value>
     per_page: <per_page value>
@@ -45,8 +43,8 @@ Issue Comments are ordered by ascending ID.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |since|true|Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
 |per_page|true|Results per page (max 100)

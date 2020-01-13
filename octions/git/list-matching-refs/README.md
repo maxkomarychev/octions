@@ -29,8 +29,6 @@ If you request matching references for a branch named `feature` but the branch `
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
     per_page: <per_page value>
     page: <page value>
@@ -48,8 +46,8 @@ If you request matching references for a branch named `feature` but the branch `
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|ref parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.

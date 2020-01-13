@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/git/refs/#update-a-refer
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
     sha: <sha value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Original documentation: https://developer.github.com/v3/git/refs/#update-a-refer
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|ref parameter
 |sha|true|The SHA1 value to set this reference to
 |force|false|Indicates whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to `false` will make sure you're not overwriting work.

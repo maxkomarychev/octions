@@ -25,8 +25,6 @@ This API method and the "Map a commit author" method allow you to provide correc
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     since: <since value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ This API method and the "Map a commit author" method allow you to provide correc
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |since|true|Only authors found after this id are returned. Provide the highest author ID you've seen so far. New authors may be added to the list at any point while the importer is performing the `raw` step.
 
 <a name="outputs" ></a>

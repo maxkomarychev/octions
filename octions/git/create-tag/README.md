@@ -45,8 +45,6 @@ These are the possible values for `reason` in the `verification` object:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     tag: <tag value>
     message: <message value>
     object: <object value>
@@ -65,8 +63,8 @@ These are the possible values for `reason` in the `verification` object:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |tag|true|The tag's name. This is typically a version (e.g., "v0.0.1").
 |message|true|The tag message.
 |object|true|The SHA of the git object this is tagging.

@@ -23,8 +23,6 @@ Users with push access can unlock an issue's conversation.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Users with push access can unlock an issue's conversation.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 
 <a name="outputs" ></a>

@@ -29,8 +29,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     title: <title value>
     head: <head value>
     base: <base value>
@@ -48,8 +46,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |title|true|The title of the new pull request.
 |head|true|The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace `head` with a user like this: `username:branch`.
 |base|true|The name of the branch you want the changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repository that requests a merge to a base of another repository.

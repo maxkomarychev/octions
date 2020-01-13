@@ -25,8 +25,6 @@ If you use this endpoint to add, delete, or modify the file contents in a tree, 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     tree: <tree value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ If you use this endpoint to add, delete, or modify the file contents in a tree, 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |tree|true|Objects (of `path`, `mode`, `type`, and `sha`) specifying a tree structure.
 |base_tree|false|The SHA1 of the tree you want to update with new data. If you don't set this, the commit will be created on top of everything; however, it will only contain your change, the rest of your files will show up as deleted.
 

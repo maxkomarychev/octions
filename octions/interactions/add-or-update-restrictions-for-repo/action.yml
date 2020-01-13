@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   limit:
     description: |
       Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.

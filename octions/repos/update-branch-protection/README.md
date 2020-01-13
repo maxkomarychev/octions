@@ -29,8 +29,6 @@ Protecting a branch requires admin or owner permissions to the repository.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
     required_status_checks: <required_status_checks value>
     enforce_admins: <enforce_admins value>
@@ -50,8 +48,8 @@ Protecting a branch requires admin or owner permissions to the repository.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 |required_status_checks|true|Require status checks to pass before merging. Set to `null` to disable.
 |enforce_admins|true|Enforce all configured restrictions for administrators. Set to `true` to enforce required status checks for repository administrators. Set to `null` to disable.

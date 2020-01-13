@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   use_lfs:
     description: |
       Can be one of `opt_in` (large files will be stored using Git LFS) or `opt_out` (large files will be removed during the import).

@@ -23,8 +23,6 @@ Create a reaction to a [pull request review comment](https://developer.github.co
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     comment_id: <comment_id value>
     content: <content value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Create a reaction to a [pull request review comment](https://developer.github.co
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the pull request review comment.
 

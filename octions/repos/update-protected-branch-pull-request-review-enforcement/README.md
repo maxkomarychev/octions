@@ -27,8 +27,6 @@ Updating pull request review enforcement requires admin or owner permissions to 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
 - name: Print outputs
   run: |
@@ -44,8 +42,8 @@ Updating pull request review enforcement requires admin or owner permissions to 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 |dismissal_restrictions|false|Specify which users and teams can dismiss pull request reviews. Pass an empty `dismissal_restrictions` object to disable. User and team `dismissal_restrictions` are only available for organization-owned repositories. Omit this parameter for personal repositories.
 |dismiss_stale_reviews|false|Set to `true` if you want to automatically dismiss approving reviews when someone pushes a new commit.

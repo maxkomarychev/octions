@@ -25,8 +25,6 @@ Team members will include the members of child teams.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     affiliation: <affiliation value>
     per_page: <per_page value>
     page: <page value>
@@ -44,8 +42,8 @@ Team members will include the members of child teams.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |affiliation|true|Filter collaborators returned by their affiliation. Can be one of:   \* `outside`: All outside collaborators of an organization-owned repository.   \* `direct`: All collaborators with permissions to an organization-owned repository, regardless of organization membership status.   \* `all`: All collaborators the authenticated user can see.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.

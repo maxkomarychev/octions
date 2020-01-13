@@ -25,8 +25,6 @@ GitHub identifies contributors by author email address. This endpoint groups con
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     anon: <anon value>
     per_page: <per_page value>
     page: <page value>
@@ -44,8 +42,8 @@ GitHub identifies contributors by author email address. This endpoint groups con
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |anon|true|Set to `1` or `true` to include anonymous contributors in results.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.

@@ -10,11 +10,11 @@ inputs:
   owner:
     description: |
       owner parameter
-    required: true
+    required: false
   repo:
     description: |
       repo parameter
-    required: true
+    required: false
   tag:
     description: |
       The tag's name. This is typically a version (e.g., "v0.0.1").

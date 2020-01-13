@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/issues/labels/#update-a-
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     name: <name value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Original documentation: https://developer.github.com/v3/issues/labels/#update-a-
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |name|true|name parameter
 |new_name|false|The new name of the label. Emoji can be added to label names, using either native emoji or colon-style markup. For example, typing `:strawberry:` will render the emoji ![:strawberry:](https://github.githubassets.com/images/icons/emoji/unicode/1f353.png ":strawberry:"). For a full list of available emoji and codes, see [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/).
 |color|false|The [hexadecimal color code](http://www.color-hex.com/) for the label, without the leading `#`.

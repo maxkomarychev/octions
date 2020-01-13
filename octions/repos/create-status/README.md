@@ -25,8 +25,6 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     sha: <sha value>
     state: <state value>
 - name: Print outputs
@@ -43,8 +41,8 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |sha|true|sha parameter
 |state|true|The state of the status. Can be one of `error`, `failure`, `pending`, or `success`.
 |target_url|false|The target URL to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the source of the status.   For example, if your continuous integration system is posting build status, you would want to provide the deep link for the build output for this specific SHA:   `http://ci.example.com/user/repo/build/sha`

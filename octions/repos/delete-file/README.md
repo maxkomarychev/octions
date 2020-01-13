@@ -29,8 +29,6 @@ You must provide values for both `name` and `email`, whether you choose to use `
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     path: <path value>
     message: <message value>
     sha: <sha value>
@@ -48,8 +46,8 @@ You must provide values for both `name` and `email`, whether you choose to use `
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |path|true|path parameter
 |message|true|The commit message.
 |sha|true|The blob SHA of the file being replaced.

@@ -25,8 +25,6 @@ This example removes two of three assignees, leaving the `octocat` assignee.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ This example removes two of three assignees, leaving the `octocat` assignee.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |assignees|false|Usernames of assignees to remove from an issue. _NOTE: Only users with push access can remove assignees from an issue. Assignees are silently ignored otherwise._
 

@@ -43,8 +43,6 @@ These are the possible values for `reason` in the `verification` object:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     sha: <sha value>
     path: <path value>
     author: <author value>
@@ -66,8 +64,8 @@ These are the possible values for `reason` in the `verification` object:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |sha|true|SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`).
 |path|true|Only commits containing this file path will be returned.
 |author|true|GitHub login or email address by which to filter by commit author.

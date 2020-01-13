@@ -23,8 +23,6 @@ Creates a repository project board. Returns a `404 Not Found` status if projects
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     name: <name value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Creates a repository project board. Returns a `404 Not Found` status if projects
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |name|true|The name of the project.
 |body|false|The description of the project.
 

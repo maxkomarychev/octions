@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/pulls/#list-pull-request
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     per_page: <per_page value>
     page: <page value>
@@ -42,8 +40,8 @@ Original documentation: https://developer.github.com/v3/pulls/#list-pull-request
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.

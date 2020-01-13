@@ -25,8 +25,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     tag_name: <tag_name value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |tag_name|true|The name of the tag.
 |target_commitish|false|Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually `master`).
 |name|false|The name of the release.

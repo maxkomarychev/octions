@@ -23,8 +23,6 @@ Draft pull requests are available in public repositories with GitHub Free and Gi
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     state: <state value>
     head: <head value>
     base: <base value>
@@ -46,8 +44,8 @@ Draft pull requests are available in public repositories with GitHub Free and Gi
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |state|true|Either `open`, `closed`, or `all` to filter by state.
 |head|true|Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`.
 |base|true|Filter pulls by base branch name. Example: `gh-pages`.

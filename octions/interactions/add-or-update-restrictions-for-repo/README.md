@@ -23,8 +23,6 @@ Temporarily restricts interactions to certain GitHub users within the given repo
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     limit: <limit value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Temporarily restricts interactions to certain GitHub users within the given repo
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |limit|true|Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
 
 <a name="outputs" ></a>

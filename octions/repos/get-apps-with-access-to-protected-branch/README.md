@@ -25,8 +25,6 @@ Lists the GitHub Apps that have push access to this branch. Only installed GitHu
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Lists the GitHub Apps that have push access to this branch. Only installed GitHu
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 
 <a name="outputs" ></a>

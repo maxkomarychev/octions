@@ -23,8 +23,6 @@ Creates a new file or updates an existing file in a repository.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     path: <path value>
     message: <message value>
     content: <content value>
@@ -42,8 +40,8 @@ Creates a new file or updates an existing file in a repository.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |path|true|path parameter
 |message|true|The commit message.
 |content|true|The new file content, using Base64 encoding.

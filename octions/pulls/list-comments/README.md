@@ -45,8 +45,6 @@ The `reactions` key will have the following payload where `url` can be used to c
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     sort: <sort value>
     direction: <direction value>
@@ -67,8 +65,8 @@ The `reactions` key will have the following payload where `url` can be used to c
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |sort|true|Can be either `created` or `updated` comments.
 |direction|true|Can be either `asc` or `desc`. Ignored without `sort` parameter.

@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/issues/labels/#add-label
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
     labels: <labels value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Original documentation: https://developer.github.com/v3/issues/labels/#add-label
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |labels|true|The name of the label to add to the issue. Must contain at least one label. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
 

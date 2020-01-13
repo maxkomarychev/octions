@@ -23,8 +23,6 @@ If `truncated` is `true`, the number of items in the `tree` array exceeded our m
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     tree_sha: <tree_sha value>
     recursive: <recursive value>
 - name: Print outputs
@@ -41,8 +39,8 @@ If `truncated` is `true`, the number of items in the `tree` array exceeded our m
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |tree_sha|true|tree_sha parameter
 |recursive|true|recursive parameter
 

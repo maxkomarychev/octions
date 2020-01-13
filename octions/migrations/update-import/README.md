@@ -29,8 +29,6 @@ To restart an import, no parameters are provided in the update request.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -45,8 +43,8 @@ To restart an import, no parameters are provided in the update request.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |vcs_username|false|The username to provide to the originating repository.
 |vcs_password|false|The password to provide to the originating repository.
 

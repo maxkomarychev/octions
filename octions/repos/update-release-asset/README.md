@@ -23,8 +23,6 @@ Users with push access to the repository can edit a release asset.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     asset_id: <asset_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Users with push access to the repository can edit a release asset.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |asset_id|true|asset_id parameter
 |name|false|The file name of the asset.
 |label|false|An alternate short description of the asset. Used in place of the filename.

@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/git/blobs/#create-a-blob
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     content: <content value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Original documentation: https://developer.github.com/v3/git/blobs/#create-a-blob
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |content|true|The new blob's content.
 |encoding|false|The encoding used for `content`. Currently, `"utf-8"` and `"base64"` are supported.
 

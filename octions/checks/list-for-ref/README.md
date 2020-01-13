@@ -25,8 +25,6 @@ Lists check runs for a commit ref. The `ref` can be a SHA, branch name, or a tag
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
     check_name: <check_name value>
     status: <status value>
@@ -47,8 +45,8 @@ Lists check runs for a commit ref. The `ref` can be a SHA, branch name, or a tag
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|ref parameter
 |check_name|true|Returns check runs with the specified `name`.
 |status|true|Returns check runs with the specified `status`. Can be one of `queued`, `in_progress`, or `completed`.

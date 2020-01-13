@@ -25,8 +25,6 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     commit_sha: <commit_sha value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |commit_sha|true|commit_sha parameter
 
 <a name="outputs" ></a>

@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/repos/hooks/#edit-a-hook
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     hook_id: <hook_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Original documentation: https://developer.github.com/v3/repos/hooks/#edit-a-hook
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |hook_id|true|hook_id parameter
 |config|false|Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/repos/hooks/#create-hook-config-params).
 |events|false|Determines what [events](https://developer.github.com/v3/activity/events/types/) the hook is triggered for. This replaces the entire array of events.

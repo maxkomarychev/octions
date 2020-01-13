@@ -25,8 +25,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     comment_id: <comment_id value>
     body: <body value>
@@ -44,8 +42,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |comment_id|true|comment_id parameter
 |body|true|The text of the review comment.

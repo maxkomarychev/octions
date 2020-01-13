@@ -26,8 +26,6 @@ You can also get information about the specified repository, including what perm
   with:
     token: <token value>
     team_id: <team_id value>
-    owner: <owner value>
-    repo: <repo value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -43,8 +41,8 @@ You can also get information about the specified repository, including what perm
 |---|---|---|
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 
 <a name="outputs" ></a>
 ## Outputs

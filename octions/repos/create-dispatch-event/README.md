@@ -29,8 +29,6 @@ This input example shows how you can use the `client_payload` as a test to debug
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -45,8 +43,8 @@ This input example shows how you can use the `client_payload` as a test to debug
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |event_type|false|**Required:** A custom webhook event name.
 |client_payload|false|JSON payload with extra information about the webhook event that your action or worklow may use.
 

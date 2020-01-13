@@ -23,8 +23,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
     body: <body value>
 - name: Print outputs
@@ -41,8 +39,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |body|true|The contents of the comment.
 

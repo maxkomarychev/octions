@@ -25,8 +25,6 @@ If an organization owner has configured the organization to prevent members from
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -41,8 +39,8 @@ If an organization owner has configured the organization to prevent members from
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 
 <a name="outputs" ></a>
 ## Outputs

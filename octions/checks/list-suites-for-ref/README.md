@@ -25,8 +25,6 @@ Lists check suites for a commit `ref`. The `ref` can be a SHA, branch name, or a
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
     app_id: <app_id value>
     check_name: <check_name value>
@@ -46,8 +44,8 @@ Lists check suites for a commit `ref`. The `ref` can be a SHA, branch name, or a
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|ref parameter
 |app_id|true|Filters check suites by GitHub App `id`.
 |check_name|true|Filters checks suites by the name of the [check run](https://developer.github.com/v3/checks/runs/).

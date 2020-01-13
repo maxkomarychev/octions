@@ -25,8 +25,6 @@ When authenticating as a user with admin rights to a repository, this endpoint w
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     per_page: <per_page value>
     page: <page value>
 - name: Print outputs
@@ -43,8 +41,8 @@ When authenticating as a user with admin rights to a repository, this endpoint w
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 

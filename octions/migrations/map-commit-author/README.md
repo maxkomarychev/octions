@@ -23,8 +23,6 @@ Update an author's identity for the import. Your application can continue updati
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     author_id: <author_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Update an author's identity for the import. Your application can continue updati
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |author_id|true|author_id parameter
 |email|false|The new Git author email.
 |name|false|The new Git author name.

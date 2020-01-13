@@ -25,8 +25,6 @@ READMEs support [custom media types](https://developer.github.com/v3/repos/conte
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ READMEs support [custom media types](https://developer.github.com/v3/repos/conte
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
 
 <a name="outputs" ></a>

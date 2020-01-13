@@ -41,8 +41,6 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     comment_id: <comment_id value>
     body: <body value>
 - name: Print outputs
@@ -59,8 +57,8 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |body|true|The text of the reply to the review comment.
 

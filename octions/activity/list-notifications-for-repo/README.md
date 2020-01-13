@@ -23,8 +23,6 @@ List all notifications for the current user.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     all: <all value>
     participating: <participating value>
     since: <since value>
@@ -45,8 +43,8 @@ List all notifications for the current user.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |all|true|If `true`, show notifications marked as read.
 |participating|true|If `true`, only shows notifications in which the user is directly participating or mentioned.
 |since|true|Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.

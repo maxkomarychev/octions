@@ -23,8 +23,6 @@ List the reactions to a [commit comment](https://developer.github.com/v3/repos/c
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     comment_id: <comment_id value>
     content: <content value>
     per_page: <per_page value>
@@ -43,8 +41,8 @@ List the reactions to a [commit comment](https://developer.github.com/v3/repos/c
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |content|true|Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a commit comment.
 |per_page|true|Results per page (max 100)

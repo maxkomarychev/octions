@@ -47,8 +47,6 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     body: <body value>
     commit_id: <commit_id value>
@@ -67,8 +65,8 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |body|true|The text of the review comment.
 |commit_id|true|The SHA of the commit needing a comment. Not using the latest commit SHA may render your comment outdated if a subsequent commit modifies the line you specify as the `position`.

@@ -43,8 +43,6 @@ If the submodule repository is not hosted on github.com, the Git URLs (`git_url`
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     path: <path value>
     ref: <ref value>
 - name: Print outputs
@@ -61,8 +59,8 @@ If the submodule repository is not hosted on github.com, the Git URLs (`git_url`
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |path|true|path parameter
 |ref|true|The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
 

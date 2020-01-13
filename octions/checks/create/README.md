@@ -25,8 +25,6 @@ Creates a new check run for a specific commit in a repository. Your GitHub App m
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     name: <name value>
     head_sha: <head_sha value>
 - name: Print outputs
@@ -43,8 +41,8 @@ Creates a new check run for a specific commit in a repository. Your GitHub App m
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |name|true|The name of the check. For example, "code-coverage".
 |head_sha|true|The SHA of the commit.
 |details_url|false|The URL of the integrator's site that has the full details of the check.

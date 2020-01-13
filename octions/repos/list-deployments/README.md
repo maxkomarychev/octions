@@ -23,8 +23,6 @@ Simple filtering of deployments is available via query parameters:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     sha: <sha value>
     ref: <ref value>
     task: <task value>
@@ -45,8 +43,8 @@ Simple filtering of deployments is available via query parameters:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |sha|true|The SHA recorded at creation time.
 |ref|true|The name of the ref. This can be a branch, tag, or SHA.
 |task|true|The name of the task for the deployment (e.g., `deploy` or `deploy:migrations`).

@@ -25,8 +25,6 @@ Gets a single check suite using its `id`. GitHub Apps must have the `checks:read
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     check_suite_id: <check_suite_id value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Gets a single check suite using its `id`. GitHub Apps must have the `checks:read
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |check_suite_id|true|check_suite_id parameter
 
 <a name="outputs" ></a>

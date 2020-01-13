@@ -25,8 +25,6 @@ Information about published releases are available to everyone. Only users with 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     per_page: <per_page value>
     page: <page value>
 - name: Print outputs
@@ -43,8 +41,8 @@ Information about published releases are available to everyone. Only users with 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 

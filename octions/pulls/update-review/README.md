@@ -23,8 +23,6 @@ Update the review summary comment with new text.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
     review_id: <review_id value>
     body: <body value>
@@ -42,8 +40,8 @@ Update the review summary comment with new text.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |review_id|true|review_id parameter
 |body|true|The body text of the pull request review.

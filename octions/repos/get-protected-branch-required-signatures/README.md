@@ -27,8 +27,6 @@ When authenticated with admin or owner permissions to the repository, you can us
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
 - name: Print outputs
   run: |
@@ -44,8 +42,8 @@ When authenticated with admin or owner permissions to the repository, you can us
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 
 <a name="outputs" ></a>

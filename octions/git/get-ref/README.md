@@ -27,8 +27,6 @@ To get the reference for a branch named `skunkworkz/featureA`, the endpoint rout
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
 - name: Print outputs
   run: |
@@ -44,8 +42,8 @@ To get the reference for a branch named `skunkworkz/featureA`, the endpoint rout
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|ref parameter
 
 <a name="outputs" ></a>

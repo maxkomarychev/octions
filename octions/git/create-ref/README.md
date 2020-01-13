@@ -23,8 +23,6 @@ Creates a reference for your repository. You are unable to create new references
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
     sha: <sha value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Creates a reference for your repository. You are unable to create new references
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|The name of the fully qualified reference (ie: `refs/heads/master`). If it doesn't start with 'refs' and have at least two slashes, it will be rejected.
 |sha|true|The SHA1 value for this reference.
 

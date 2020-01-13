@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/repos/keys/#get-a-deploy
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     key_id: <key_id value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ Original documentation: https://developer.github.com/v3/repos/keys/#get-a-deploy
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |key_id|true|key_id parameter
 
 <a name="outputs" ></a>

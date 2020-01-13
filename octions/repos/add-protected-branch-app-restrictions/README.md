@@ -29,8 +29,6 @@ Grants the specified apps push access for this branch. Only installed GitHub App
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
 - name: Print outputs
   run: |
@@ -46,8 +44,8 @@ Grants the specified apps push access for this branch. Only installed GitHub App
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 
 <a name="outputs" ></a>

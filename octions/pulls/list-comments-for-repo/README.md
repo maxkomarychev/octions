@@ -45,8 +45,6 @@ The `reactions` key will have the following payload where `url` can be used to c
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     sort: <sort value>
     direction: <direction value>
     since: <since value>
@@ -66,8 +64,8 @@ The `reactions` key will have the following payload where `url` can be used to c
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |sort|true|Can be either `created` or `updated` comments.
 |direction|true|Can be either `asc` or `desc`. Ignored without `sort` parameter.
 |since|true|This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Only returns comments `updated` at or after this time.

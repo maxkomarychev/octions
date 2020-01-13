@@ -23,8 +23,6 @@ You can import repositories from Subversion, Mercurial, and TFS that include fil
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     use_lfs: <use_lfs value>
 - name: Print outputs
   run: |
@@ -40,8 +38,8 @@ You can import repositories from Subversion, Mercurial, and TFS that include fil
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |use_lfs|true|Can be one of `opt_in` (large files will be stored using Git LFS) or `opt_out` (large files will be removed during the import).
 
 <a name="outputs" ></a>

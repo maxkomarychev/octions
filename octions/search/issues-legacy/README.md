@@ -23,7 +23,6 @@ Find issues by state and keyword.
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
     repository: <repository value>
     state: <state value>
     keyword: <keyword value>
@@ -41,7 +40,7 @@ Find issues by state and keyword.
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
+|owner|false|owner parameter
 |repository|true|repository parameter
 |state|true|Indicates the state of the issues to return. Can be either `open` or `closed`.
 |keyword|true|The search term.

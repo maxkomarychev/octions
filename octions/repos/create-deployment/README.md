@@ -53,8 +53,6 @@ This error happens when the `required_contexts` parameter indicates that one or 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     ref: <ref value>
 - name: Print outputs
   run: |
@@ -70,8 +68,8 @@ This error happens when the `required_contexts` parameter indicates that one or 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |ref|true|The ref to deploy. This can be a branch, tag, or SHA.
 |task|false|Specifies a task to execute (e.g., `deploy` or `deploy:migrations`).
 |auto_merge|false|Attempts to automatically merge the default branch into the requested ref, if it's behind the default branch.

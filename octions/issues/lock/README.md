@@ -25,8 +25,6 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |lock_reason|false|The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:   \* `off-topic`   \* `too heated`   \* `resolved`   \* `spam`
 

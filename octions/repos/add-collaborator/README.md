@@ -31,8 +31,6 @@ To prevent abuse, you are limited to sending 50 invitations to a repository per 
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     username: <username value>
 - name: Print outputs
   run: |
@@ -48,8 +46,8 @@ To prevent abuse, you are limited to sending 50 invitations to a repository per 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |username|true|username parameter
 |permission|false|The permission to grant the collaborator. **Only valid on organization-owned repositories.** Can be one of:   \* `pull` - can pull, but not push to or administer this repository.   \* `push` - can pull and push, but not administer this repository.   \* `admin` - can pull, push and administer this repository.
 

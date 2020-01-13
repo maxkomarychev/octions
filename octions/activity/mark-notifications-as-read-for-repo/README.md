@@ -23,8 +23,6 @@ Marks all notifications in a repository as "read" removes them from the [default
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -39,8 +37,8 @@ Marks all notifications in a repository as "read" removes them from the [default
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |last_read_at|false|Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
 
 <a name="outputs" ></a>

@@ -25,8 +25,6 @@ To open or update a pull request in a public repository, you must have write acc
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     pull_number: <pull_number value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ To open or update a pull request in a public repository, you must have write acc
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |title|false|The title of the pull request.
 |body|false|The contents of the pull request.

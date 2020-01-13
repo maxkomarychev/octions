@@ -25,8 +25,6 @@ Updating required status checks requires admin or owner permissions to the repos
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     branch: <branch value>
 - name: Print outputs
   run: |
@@ -42,8 +40,8 @@ Updating required status checks requires admin or owner permissions to the repos
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |branch|true|branch parameter
 |strict|false|Require branches to be up to date before merging.
 |contexts|false|The list of status checks to require in order to merge into this branch

@@ -25,8 +25,6 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     commit_sha: <commit_sha value>
     body: <body value>
 - name: Print outputs
@@ -43,8 +41,8 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |commit_sha|true|commit_sha parameter
 |body|true|The contents of the comment.
 |path|false|Relative path of the file to comment on.

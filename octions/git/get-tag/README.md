@@ -43,8 +43,6 @@ These are the possible values for `reason` in the `verification` object:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     tag_sha: <tag_sha value>
 - name: Print outputs
   run: |
@@ -60,8 +58,8 @@ These are the possible values for `reason` in the `verification` object:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |tag_sha|true|tag_sha parameter
 
 <a name="outputs" ></a>

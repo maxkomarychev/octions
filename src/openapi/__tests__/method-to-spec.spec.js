@@ -31,7 +31,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
       "https://developer.github.com/v3/repos/deployments/#create-a-deployment"
     );
   });
-  it.skip("should parse inputs and add token as first input", () => {
+  it("should parse inputs and add token as first input", () => {
     expect(spec.inputs).toHaveLength(5);
 
     expect(spec.inputs[0].name).toEqual("token");

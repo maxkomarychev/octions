@@ -55,8 +55,6 @@ These are the possible values for `reason` in the `verification` object:
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     base: <base value>
     head: <head value>
 - name: Print outputs
@@ -73,8 +71,8 @@ These are the possible values for `reason` in the `verification` object:
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |base|true|base parameter
 |head|true|head parameter
 

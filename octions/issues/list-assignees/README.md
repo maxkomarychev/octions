@@ -23,8 +23,6 @@ Lists the [available assignees](https://help.github.com/articles/assigning-issue
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     per_page: <per_page value>
     page: <page value>
 - name: Print outputs
@@ -41,8 +39,8 @@ Lists the [available assignees](https://help.github.com/articles/assigning-issue
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 

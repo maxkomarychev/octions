@@ -36,7 +36,7 @@ function parametersToInputs(parameters) {
       {
         name,
         description,
-        required: true
+        required: name !== "owner" && name !== "repo"
       }
     ];
   }, []);

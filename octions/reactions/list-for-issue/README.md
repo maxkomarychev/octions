@@ -23,8 +23,6 @@ List the reactions to an [issue](https://developer.github.com/v3/issues/).
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     issue_number: <issue_number value>
     content: <content value>
     per_page: <per_page value>
@@ -43,8 +41,8 @@ List the reactions to an [issue](https://developer.github.com/v3/issues/).
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |content|true|Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to an issue.
 |per_page|true|Results per page (max 100)

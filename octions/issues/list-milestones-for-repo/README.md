@@ -23,8 +23,6 @@ Original documentation: https://developer.github.com/v3/issues/milestones/#list-
   id: my_step_id
   with:
     token: <token value>
-    owner: <owner value>
-    repo: <repo value>
     state: <state value>
     sort: <sort value>
     direction: <direction value>
@@ -44,8 +42,8 @@ Original documentation: https://developer.github.com/v3/issues/milestones/#list-
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|owner|true|owner parameter
-|repo|true|repo parameter
+|owner|false|owner parameter
+|repo|false|repo parameter
 |state|true|The state of the milestone. Either `open`, `closed`, or `all`.
 |sort|true|What to sort results by. Either `due_on` or `completeness`.
 |direction|true|The direction of the sort. Either `asc` or `desc`.
