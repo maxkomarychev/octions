@@ -26,10 +26,9 @@ requestWithAuth("get /repos/{owner}/{repo}/traffic/popular/paths", {
     if (result && result.data && result.data.number) {
       core.setOutput('number', result.data.number)
     }
-    if (result && result.data && result.data.status) {
-      core.setOutput('status', result.data.status)
+    if (result && result.status) {
+      core.setOutput('status', result.status)
     }
-    core.setOutput('status', result.status)
   })
   .catch(error => {
     console.log("error", error);

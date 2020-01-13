@@ -13,6 +13,18 @@ handlebars.registerHelper("toUpperCase", function(str) {
   return str.toUpperCase();
 });
 
+handlebars.registerHelper("safeAccess", function(str) {
+  const elements = str.split(".");
+  return elements.reduce((prev, element, index, array) => {
+    const segment = elements.slice(0, index + 1).join(".");
+    if (prev) {
+      return `${prev} && ${segment}`;
+    } else {
+      return segment;
+    }
+  }, "");
+});
+
 const TEMPLATES_ROOT = process.argv[2];
 const OUTPUT_ROOT = process.argv[3];
 const CATALOG_PATH = process.argv[4];

@@ -65,15 +65,19 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     expect(spec.outputs[0].description).toEqual(
       "`id` field of the response (if exists)"
     );
+    expect(spec.outputs[0].path).toEqual("result.data.id");
 
     expect(spec.outputs[1].name).toEqual("number");
     expect(spec.outputs[1].description).toEqual(
       "`number` field of the response (if exists)"
     );
+    expect(spec.outputs[1].path).toEqual("result.data.number");
+
     expect(spec.outputs[2].name).toEqual("status");
     expect(spec.outputs[2].description).toEqual(
       "HTTP status of underlying API call"
     );
+    expect(spec.outputs[2].path).toEqual("result.status");
   });
   it("should handle previews", () => {
     expect(spec.previews).toHaveLength(2);

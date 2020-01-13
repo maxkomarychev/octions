@@ -37,11 +37,10 @@ requestWithAuth("{{{method}}} {{{path}}}", {
     console.log("result", result);
 {{#if has_outputs}}
 {{#each outputs}}
-    if (result && result.data && result.data.{{{name}}}) {
-      core.setOutput('{{{name}}}', result.data.{{{name}}})
+    if ({{{safeAccess path}}}) {
+      core.setOutput('{{{name}}}', {{{path}}})
     }
 {{/each}}
-    core.setOutput('status', result.status)
 {{/if}}
   })
   .catch(error => {

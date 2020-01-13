@@ -80,15 +80,18 @@ function methodToMeta(method, path, method_data) {
     outputs: [
       {
         name: "id",
-        description: "`id` field of the response (if exists)"
+        description: "`id` field of the response (if exists)",
+        path: "result.data.id"
       },
       {
         name: "number",
-        description: "`number` field of the response (if exists)"
+        description: "`number` field of the response (if exists)",
+        path: "result.data.number"
       },
       {
         name: "status",
-        description: "HTTP status of underlying API call"
+        description: "HTTP status of underlying API call",
+        path: "result.status"
       }
     ],
     previews: previews(xgithub)
