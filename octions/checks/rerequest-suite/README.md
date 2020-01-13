@@ -32,6 +32,7 @@ To rerequest a check suite, your GitHub App must have the `checks:read` permissi
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ To rerequest a check suite, your GitHub App must have the `checks:read` permissi
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

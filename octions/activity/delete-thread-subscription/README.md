@@ -28,6 +28,7 @@ Mutes all future notifications for a conversation until you comment on the threa
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -46,4 +47,5 @@ Mutes all future notifications for a conversation until you comment on the threa
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -33,6 +33,7 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -57,4 +58,5 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

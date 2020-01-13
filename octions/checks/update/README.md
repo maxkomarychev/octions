@@ -32,6 +32,7 @@ Updates a check run for a specific commit in a repository. Your GitHub App must 
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -61,4 +62,5 @@ Updates a check run for a specific commit in a repository. Your GitHub App must 
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

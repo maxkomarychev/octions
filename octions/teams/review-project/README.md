@@ -29,6 +29,7 @@ Checks whether a team has `read`, `write`, or `admin` permissions for an organiz
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ Checks whether a team has `read`, `write`, or `admin` permissions for an organiz
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

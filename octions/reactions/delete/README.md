@@ -28,6 +28,7 @@ OAuth access tokens require the `write:discussion` [scope](https://developer.git
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -46,4 +47,5 @@ OAuth access tokens require the `write:discussion` [scope](https://developer.git
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

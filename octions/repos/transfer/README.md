@@ -29,6 +29,7 @@ A transfer request will need to be accepted by the new owner when transferring a
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ A transfer request will need to be accepted by the new owner when transferring a
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

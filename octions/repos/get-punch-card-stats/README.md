@@ -35,6 +35,7 @@ For example, `[2, 14, 25]` indicates that there were 25 total commits, during th
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -54,4 +55,5 @@ For example, `[2, 14, 25]` indicates that there were 25 total commits, during th
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -27,6 +27,7 @@ List all templates available to pass as an option when [creating a repository](h
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -44,4 +45,5 @@ List all templates available to pass as an option when [creating a repository](h
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

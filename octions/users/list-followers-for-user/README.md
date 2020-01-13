@@ -30,6 +30,7 @@ Original documentation: https://developer.github.com/v3/users/followers/#list-fo
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ Original documentation: https://developer.github.com/v3/users/followers/#list-fo
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

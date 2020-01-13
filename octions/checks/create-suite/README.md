@@ -32,6 +32,7 @@ By default, check suites are automatically created when you create a [check run]
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ By default, check suites are automatically created when you create a [check run]
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

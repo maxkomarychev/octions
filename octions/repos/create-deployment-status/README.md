@@ -33,6 +33,7 @@ GitHub Apps require `read & write` access to "Deployments" and `read-only` acces
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -60,4 +61,5 @@ GitHub Apps require `read & write` access to "Deployments" and `read-only` acces
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

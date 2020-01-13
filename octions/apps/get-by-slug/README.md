@@ -30,6 +30,7 @@ If the GitHub App you specify is public, you can access this endpoint without au
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ If the GitHub App you specify is public, you can access this endpoint without au
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

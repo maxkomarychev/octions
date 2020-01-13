@@ -29,6 +29,7 @@ Marks all notifications in a repository as "read" removes them from the [default
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -49,4 +50,5 @@ Marks all notifications in a repository as "read" removes them from the [default
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -37,6 +37,7 @@ To prevent abuse, the authenticated user is limited to 50 organization invitatio
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -57,4 +58,5 @@ To prevent abuse, the authenticated user is limited to 50 organization invitatio
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

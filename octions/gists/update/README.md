@@ -28,6 +28,7 @@ Allows you to update or delete a gist file and rename gist files. Files from the
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ Allows you to update or delete a gist file and rename gist files. Files from the
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

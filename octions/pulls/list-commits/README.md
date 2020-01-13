@@ -32,6 +32,7 @@ Lists a maximum of 250 commits for a pull request. To receive a complete commit 
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -54,4 +55,5 @@ Lists a maximum of 250 commits for a pull request. To receive a complete commit 
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -34,6 +34,7 @@ Use the `:commit_sha` to specify the commit that will have its comments listed.
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -56,4 +57,5 @@ Use the `:commit_sha` to specify the commit that will have its comments listed.
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

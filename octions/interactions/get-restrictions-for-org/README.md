@@ -28,6 +28,7 @@ Shows which group of GitHub users can interact with this organization and when t
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -46,4 +47,5 @@ Shows which group of GitHub users can interact with this organization and when t
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

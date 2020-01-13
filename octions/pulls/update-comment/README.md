@@ -49,6 +49,7 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -70,4 +71,5 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -32,6 +32,7 @@ The `subject_type` and `subject_id` parameters provide context for the person's 
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ The `subject_type` and `subject_id` parameters provide context for the person's 
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

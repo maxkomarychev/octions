@@ -30,6 +30,7 @@ Note that subscriptions are only generated if a user is participating in a conve
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ Note that subscriptions are only generated if a user is participating in a conve
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

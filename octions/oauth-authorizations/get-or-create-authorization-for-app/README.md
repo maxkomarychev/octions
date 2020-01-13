@@ -37,6 +37,7 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -60,4 +61,5 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -30,6 +30,7 @@ Temporarily restricts interactions to certain GitHub users within the given repo
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ Temporarily restricts interactions to certain GitHub users within the given repo
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

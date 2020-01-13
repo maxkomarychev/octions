@@ -28,6 +28,7 @@ View extended details for a single public SSH key. Requires that you are authent
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -46,4 +47,5 @@ View extended details for a single public SSH key. Requires that you are authent
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

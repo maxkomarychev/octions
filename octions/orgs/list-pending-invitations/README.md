@@ -30,6 +30,7 @@ The return hash contains a `role` field which refers to the Organization Invitat
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ The return hash contains a `role` field which refers to the Organization Invitat
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

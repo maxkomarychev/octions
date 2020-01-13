@@ -35,6 +35,7 @@ This input example shows how you can use the `client_payload` as a test to debug
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -56,4 +57,5 @@ This input example shows how you can use the `client_payload` as a test to debug
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

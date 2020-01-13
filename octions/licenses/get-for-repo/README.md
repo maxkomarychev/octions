@@ -31,6 +31,7 @@ Similar to [the repository contents API](https://developer.github.com/v3/repos/c
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ Similar to [the repository contents API](https://developer.github.com/v3/repos/c
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

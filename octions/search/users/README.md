@@ -38,6 +38,7 @@ Here, we're looking at users with the name Tom. We're only interested in those w
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -60,4 +61,5 @@ Here, we're looking at users with the name Tom. We're only interested in those w
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -27,6 +27,7 @@ This endpoint provides a list of GitHub's IP addresses. For more information, se
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -44,4 +45,5 @@ This endpoint provides a list of GitHub's IP addresses. For more information, se
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

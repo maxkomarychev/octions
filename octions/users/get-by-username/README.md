@@ -34,6 +34,7 @@ The Emails API enables you to list all of your email addresses, and toggle a pri
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ The Emails API enables you to list all of your email addresses, and toggle a pri
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -29,6 +29,7 @@ Lists the current user's GPG keys. Requires that you are authenticated via Basic
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ Lists the current user's GPG keys. Requires that you are authenticated via Basic
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -62,6 +62,7 @@ This section includes details about Git LFS related fields that may be present i
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -81,4 +82,5 @@ This section includes details about Git LFS related fields that may be present i
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

@@ -32,6 +32,7 @@ To open or update a pull request in a public repository, you must have write acc
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -57,4 +58,5 @@ To open or update a pull request in a public repository, you must have write acc
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

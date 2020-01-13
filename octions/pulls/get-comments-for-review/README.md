@@ -33,6 +33,7 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#get-comme
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -56,4 +57,5 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#get-comme
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

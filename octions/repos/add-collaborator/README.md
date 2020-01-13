@@ -38,6 +38,7 @@ To prevent abuse, you are limited to sending 50 invitations to a repository per 
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -59,4 +60,5 @@ To prevent abuse, you are limited to sending 50 invitations to a repository per 
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

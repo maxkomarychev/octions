@@ -31,6 +31,7 @@ Create a reaction to a [commit comment](https://developer.github.com/v3/repos/co
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ Create a reaction to a [commit comment](https://developer.github.com/v3/repos/co
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

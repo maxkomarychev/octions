@@ -29,6 +29,7 @@ Lists public profile information when authenticated through OAuth without the `u
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -46,4 +47,5 @@ Lists public profile information when authenticated through OAuth without the `u
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

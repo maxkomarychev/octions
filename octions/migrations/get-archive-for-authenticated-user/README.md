@@ -50,6 +50,7 @@ The archive will also contain an `attachments` directory that includes all attac
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -68,4 +69,5 @@ The archive will also contain an `attachments` directory that includes all attac
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

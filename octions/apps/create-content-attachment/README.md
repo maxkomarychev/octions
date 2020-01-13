@@ -36,6 +36,7 @@ This example creates a content attachment for the domain `https://errors.ai/`.
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -56,4 +57,5 @@ This example creates a content attachment for the domain `https://errors.ai/`.
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

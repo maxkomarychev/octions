@@ -32,6 +32,7 @@ Here's how you can create a hook that posts payloads in JSON format:
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -55,4 +56,5 @@ Here's how you can create a hook that posts payloads in JSON format:
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

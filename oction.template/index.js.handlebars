@@ -69,6 +69,7 @@ requestWithAuth("{{{method}}} {{{path}}}", {
       core.setOutput('{{{name}}}', result.data.{{{name}}})
     }
 {{/each}}
+    core.setOutput('status', result.status)
 {{/if}}
   })
   .catch(error => {

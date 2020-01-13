@@ -67,6 +67,10 @@ requestWithAuth("post /repos/{template_owner}/{template_repo}/generate", {
     if (result && result.data && result.data.number) {
       core.setOutput('number', result.data.number)
     }
+    if (result && result.data && result.data.status) {
+      core.setOutput('status', result.data.status)
+    }
+    core.setOutput('status', result.status)
   })
   .catch(error => {
     console.log("error", error);

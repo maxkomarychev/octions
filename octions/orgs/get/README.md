@@ -30,6 +30,7 @@ GitHub Apps with the `Organization plan` permission can use this endpoint to ret
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -48,4 +49,5 @@ GitHub Apps with the `Organization plan` permission can use this endpoint to ret
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

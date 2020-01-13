@@ -32,6 +32,7 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -52,4 +53,5 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

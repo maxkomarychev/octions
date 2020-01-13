@@ -60,7 +60,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     );
     expect(spec.inputs[4].required).toEqual(false);
   });
-  it("should create 2 outpus", () => {
+  it("should create 3 outpus", () => {
     expect(spec.outputs[0].name).toEqual("id");
     expect(spec.outputs[0].description).toEqual(
       "`id` field of the response (if exists)"
@@ -69,6 +69,10 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     expect(spec.outputs[1].name).toEqual("number");
     expect(spec.outputs[1].description).toEqual(
       "`number` field of the response (if exists)"
+    );
+    expect(spec.outputs[2].name).toEqual("status");
+    expect(spec.outputs[2].description).toEqual(
+      "HTTP status of underlying API call"
     );
   });
   it("should handle previews", () => {

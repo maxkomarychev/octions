@@ -30,6 +30,7 @@ Deletes a comment on a team discussion. OAuth access tokens require the `write:d
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -50,4 +51,5 @@ Deletes a comment on a team discussion. OAuth access tokens require the `write:d
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 

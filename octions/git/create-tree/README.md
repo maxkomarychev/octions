@@ -32,6 +32,7 @@ If you use this endpoint to add, delete, or modify the file contents in a tree, 
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
     echo ${{ steps.my_step_id.outputs.number }}
+    echo ${{ steps.my_step_id.outputs.status }}
 ```
 
 
@@ -53,4 +54,5 @@ If you use this endpoint to add, delete, or modify the file contents in a tree, 
 |---|---|
 |id|`id` field of the response (if exists)|
 |number|`number` field of the response (if exists)|
+|status|HTTP status of underlying API call|
 
