@@ -1,4 +1,4 @@
-name: Get a list of organization migrations
+name: List organization migrations
 description: |
   Lists the most recent migrations.
 

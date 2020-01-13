@@ -1,4 +1,4 @@
-# Get a list of organization migrations
+# List organization migrations
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/migrations/orgs/#get-a-list-of-organization-migrations
+Original documentation: https://developer.github.com/v3/migrations/orgs/#list-organization-migrations
 
 Lists the most recent migrations.
 

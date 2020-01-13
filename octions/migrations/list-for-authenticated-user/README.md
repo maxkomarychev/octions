@@ -1,4 +1,4 @@
-# Get a list of user migrations
+# List user migrations
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/migrations/users/#get-a-list-of-user-migrations
+Original documentation: https://developer.github.com/v3/migrations/users/#list-user-migrations
 
 Lists all migrations a user has started.
 

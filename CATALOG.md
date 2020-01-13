@@ -247,11 +247,12 @@
 ## MIGRATIONS
 
 1. [Start an organization migration](./octions/migrations/start-for-org/README.md)
-1. [Get a list of organization migrations](./octions/migrations/list-for-org/README.md)
+1. [List organization migrations](./octions/migrations/list-for-org/README.md)
 1. [Get the status of an organization migration](./octions/migrations/get-status-for-org/README.md)
 1. [Download an organization migration archive](./octions/migrations/get-archive-for-org/README.md)
 1. [Delete an organization migration archive](./octions/migrations/delete-archive-for-org/README.md)
 1. [Unlock an organization repository](./octions/migrations/unlock-repo-for-org/README.md)
+1. [List repositories in an organization migration](./octions/migrations/list-repos-for-org/README.md)
 1. [Start an import](./octions/migrations/start-import/README.md)
 1. [Get import progress](./octions/migrations/get-import-progress/README.md)
 1. [Update existing import](./octions/migrations/update-import/README.md)
@@ -261,11 +262,12 @@
 1. [Get large files](./octions/migrations/get-large-files/README.md)
 1. [Set Git LFS preference](./octions/migrations/set-lfs-preference/README.md)
 1. [Start a user migration](./octions/migrations/start-for-authenticated-user/README.md)
-1. [Get a list of user migrations](./octions/migrations/list-for-authenticated-user/README.md)
+1. [List user migrations](./octions/migrations/list-for-authenticated-user/README.md)
 1. [Get the status of a user migration](./octions/migrations/get-status-for-authenticated-user/README.md)
 1. [Download a user migration archive](./octions/migrations/get-archive-for-authenticated-user/README.md)
 1. [Delete a user migration archive](./octions/migrations/delete-archive-for-authenticated-user/README.md)
 1. [Unlock a user repository](./octions/migrations/unlock-repo-for-authenticated-user/README.md)
+1. [List repositories for a user migration](./octions/migrations/list-repos-for-user/README.md)
 
 ## PROJECTS
 

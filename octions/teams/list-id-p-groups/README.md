@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team
 
-Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
 
 List IdP groups connected to a team on GitHub.
 

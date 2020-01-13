@@ -1,4 +1,4 @@
-name: Get a list of user migrations
+name: List user migrations
 description: |
   Lists all migrations a user has started.
 

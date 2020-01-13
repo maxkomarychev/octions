@@ -380,9 +380,9 @@
     universal-user-agent "^4.0.0"
 
 "@octokit/routes@^26.0.0":
-  version "26.13.1"
-  resolved "https://registry.yarnpkg.com/@octokit/routes/-/routes-26.13.1.tgz#e1f7fa34871b435189b0b9c59d6b8b1168029fdd"
-  integrity sha512-qEnOrblrd7nAjh47D+ItQiCVGRi4rof4WXZAx0pI496w2H26HAaGOekFXgyAVFgPJlOgxpjOZV1Y2bOXA4T5kw==
+  version "26.14.0"
+  resolved "https://registry.yarnpkg.com/@octokit/routes/-/routes-26.14.0.tgz#d3d60b988f2ef73d86c75a9230a1fe577e843d65"
+  integrity sha512-NgqIAqKHJYrmQqi8REccmaWtq7PIoL7E37q3yvYSp03WPuRZAt7pw4IqsIFBnKhilqqOJhS5a7Jl/aBL/A8xDQ==
 
 "@octokit/types@^1.0.0":
   version "1.1.0"
@@ -1422,9 +1422,9 @@ handlebars@^4.1.2:
     uglify-js "^3.1.4"
 
 handlebars@^4.4.3:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.6.0.tgz#33af6c3eda930d7a924f5d8f1c6d8edc3180512e"
-  integrity sha512-i1ZUP7Qp2JdkMaFon2a+b0m5geE8Z4ZTLaGkgrObkEd+OkUKyRbRWw4KxuFCoHfdETSY1yf9/574eVoNSiK7pw==
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.1.tgz#052bd2618964dcb8aebad0940bfeb2d8d1cfbfde"
+  integrity sha512-2dd6soo60cwKNJ90VewNLIzdZPR/E2YhszOTgHpN9V0YuwZk7x33/iZoIBnASwDFVHMY7iJ6NPL8d9f/DWYCTA==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -3541,9 +3541,9 @@ type-check@~0.3.2:
     prelude-ls "~1.1.2"
 
 uglify-js@^3.1.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.4.tgz#e6d83a1aa32ff448bd1679359ab13d8db0fe0743"
-  integrity sha512-tinYWE8X1QfCHxS1lBS8yiDekyhSXOO6R66yNOCdUJeojxxw+PX2BHAz/BWyW7PQ7pkiWVxJfIEbiDxyLWvUGg==
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.5.tgz#278c7c24927ac5a32d3336fc68fd4ae1177a486a"
+  integrity sha512-GFZ3EXRptKGvb/C1Sq6nO1iI7AGcjyqmIyOw0DrD0675e+NNbGO72xmMM2iEBdFbxaTLo70NbjM/Wy54uZIlsg==
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"

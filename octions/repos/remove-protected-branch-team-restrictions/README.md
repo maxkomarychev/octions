@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/repos/branches/#remove-team-restrictions-of-protected-branch
 
-Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
+Protected branches are available in public repositories with GitHub Free, and in public and private repositories with GitHub Pro, GitHub Team, and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
 
 Removes the ability of a team to push to this branch. You can also remove push access for child teams.
 
