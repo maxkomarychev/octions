@@ -51,17 +51,21 @@ const templates = fs
 
 const allPaths = routes[API_GITHUB].paths;
 
-function writeIfChanged(path, data) {
+function compare(path, data) {
   try {
     const existingData = fs.readFileSync(path).toString();
-    if (existingData !== data) {
-      console.error("written", path);
-      fs.writeFileSync(path, data);
-    } else {
-      console.error("skipped", path);
-    }
+    return existingData === data;
   } catch (error) {
-    console.error("could not write a file", path, error);
+    return false;
+  }
+}
+
+function writeIfChanged(path, data) {
+  if (compare(path, data)) {
+    console.error("skipped", path);
+  } else {
+    console.error("written", path);
+    fs.writeFileSync(path, data);
   }
 }
 
