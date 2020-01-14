@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const org = default_parse("org");
@@ -22,39 +22,39 @@ const allow_merge_commit = parse_boolean("allow_merge_commit");
 const allow_rebase_merge = parse_boolean("allow_rebase_merge");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "nebula",
-      "baptiste",
-    ]
-  } 
-});
+const previews = [
+  "nebula",
+  "baptiste",
+]
 
-requestWithAuth("post /orgs/{org}/repos", {
-    token,
-    org,
-    name,
-    description,
-    homepage,
-    private,
-    visibility,
-    has_issues,
-    has_projects,
-    has_wiki,
-    is_template,
-    team_id,
-    auto_init,
-    gitignore_template,
-    license_template,
-    allow_squash_merge,
-    allow_merge_commit,
-    allow_rebase_merge,
-})
-  .then(result => {
+const inputs = {
+  token,
+  org,
+  name,
+  description,
+  homepage,
+  private,
+  visibility,
+  has_issues,
+  has_projects,
+  has_wiki,
+  is_template,
+  team_id,
+  auto_init,
+  gitignore_template,
+  license_template,
+  allow_squash_merge,
+  allow_merge_commit,
+  allow_rebase_merge,
+}
+
+
+request(token, 
+  "post", 
+  "/orgs/{org}/repos", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

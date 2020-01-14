@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -12,23 +12,27 @@ const vcs_password = default_parse("vcs_password");
 const tfvc_project = default_parse("tfvc_project");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("put /repos/{owner}/{repo}/import", {
-    token,
-    owner,
-    repo,
-    vcs_url,
-    vcs,
-    vcs_username,
-    vcs_password,
-    tfvc_project,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  vcs_url,
+  vcs,
+  vcs_username,
+  vcs_password,
+  tfvc_project,
+}
+
+
+request(token, 
+  "put", 
+  "/repos/{owner}/{repo}/import", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

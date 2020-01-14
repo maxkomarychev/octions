@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const keyword = default_parse("keyword");
@@ -10,21 +10,25 @@ const sort = default_parse("sort");
 const order = default_parse("order");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("get /legacy/repos/search/{keyword}", {
-    token,
-    keyword,
-    language,
-    start_page,
-    sort,
-    order,
-})
-  .then(result => {
+const inputs = {
+  token,
+  keyword,
+  language,
+  start_page,
+  sort,
+  order,
+}
+
+
+request(token, 
+  "get", 
+  "/legacy/repos/search/{keyword}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

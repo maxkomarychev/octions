@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -13,24 +13,28 @@ const committer = default_parse("committer");
 const author = default_parse("author");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("delete /repos/{owner}/{repo}/contents/{path}", {
-    token,
-    owner,
-    repo,
-    path,
-    message,
-    sha,
-    branch,
-    committer,
-    author,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  path,
+  message,
+  sha,
+  branch,
+  committer,
+  author,
+}
+
+
+request(token, 
+  "delete", 
+  "/repos/{owner}/{repo}/contents/{path}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

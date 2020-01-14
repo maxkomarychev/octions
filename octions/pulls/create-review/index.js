@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -12,23 +12,27 @@ const event = default_parse("event");
 const comments = parse_array("comments");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("post /repos/{owner}/{repo}/pulls/{pull_number}/reviews", {
-    token,
-    owner,
-    repo,
-    pull_number,
-    commit_id,
-    body,
-    event,
-    comments,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  pull_number,
+  commit_id,
+  body,
+  event,
+  comments,
+}
+
+
+request(token, 
+  "post", 
+  "/repos/{owner}/{repo}/pulls/{pull_number}/reviews", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

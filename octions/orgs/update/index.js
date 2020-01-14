@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const org = default_parse("org");
@@ -20,36 +20,36 @@ const members_can_create_public_repositories = parse_boolean("members_can_create
 const members_allowed_repository_creation_type = default_parse("members_allowed_repository_creation_type");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "surtur",
-    ]
-  } 
-});
+const previews = [
+  "surtur",
+]
 
-requestWithAuth("patch /orgs/{org}", {
-    token,
-    org,
-    billing_email,
-    company,
-    email,
-    location,
-    name,
-    description,
-    has_organization_projects,
-    has_repository_projects,
-    default_repository_permission,
-    members_can_create_repositories,
-    members_can_create_internal_repositories,
-    members_can_create_private_repositories,
-    members_can_create_public_repositories,
-    members_allowed_repository_creation_type,
-})
-  .then(result => {
+const inputs = {
+  token,
+  org,
+  billing_email,
+  company,
+  email,
+  location,
+  name,
+  description,
+  has_organization_projects,
+  has_repository_projects,
+  default_repository_permission,
+  members_can_create_repositories,
+  members_can_create_internal_repositories,
+  members_can_create_private_repositories,
+  members_can_create_public_repositories,
+  members_allowed_repository_creation_type,
+}
+
+
+request(token, 
+  "patch", 
+  "/orgs/{org}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

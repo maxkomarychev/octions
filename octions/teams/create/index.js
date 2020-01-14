@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const org = default_parse("org");
@@ -13,24 +13,28 @@ const permission = default_parse("permission");
 const parent_team_id = default_parse("parent_team_id");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("post /orgs/{org}/teams", {
-    token,
-    org,
-    name,
-    description,
-    maintainers,
-    repo_names,
-    privacy,
-    permission,
-    parent_team_id,
-})
-  .then(result => {
+const inputs = {
+  token,
+  org,
+  name,
+  description,
+  maintainers,
+  repo_names,
+  privacy,
+  permission,
+  parent_team_id,
+}
+
+
+request(token, 
+  "post", 
+  "/orgs/{org}/teams", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

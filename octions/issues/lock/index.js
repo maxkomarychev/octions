@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -9,25 +9,25 @@ const issue_number = default_parse("issue_number");
 const lock_reason = default_parse("lock_reason");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "sailor-v",
-    ]
-  } 
-});
+const previews = [
+  "sailor-v",
+]
 
-requestWithAuth("put /repos/{owner}/{repo}/issues/{issue_number}/lock", {
-    token,
-    owner,
-    repo,
-    issue_number,
-    lock_reason,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  issue_number,
+  lock_reason,
+}
+
+
+request(token, 
+  "put", 
+  "/repos/{owner}/{repo}/issues/{issue_number}/lock", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

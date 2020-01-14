@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -10,21 +10,25 @@ const strict = parse_boolean("strict");
 const contexts = parse_array("contexts");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("patch /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks", {
-    token,
-    owner,
-    repo,
-    branch,
-    strict,
-    contexts,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  branch,
+  strict,
+  contexts,
+}
+
+
+request(token, 
+  "patch", 
+  "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

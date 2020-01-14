@@ -1,27 +1,27 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const code = default_parse("code");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "fury",
-    ]
-  } 
-});
+const previews = [
+  "fury",
+]
 
-requestWithAuth("post /app-manifests/{code}/conversions", {
-    token,
-    code,
-})
-  .then(result => {
+const inputs = {
+  token,
+  code,
+}
+
+
+request(token, 
+  "post", 
+  "/app-manifests/{code}/conversions", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

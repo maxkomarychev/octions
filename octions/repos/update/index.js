@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -21,38 +21,38 @@ const allow_rebase_merge = parse_boolean("allow_rebase_merge");
 const archived = parse_boolean("archived");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "nebula",
-      "baptiste",
-    ]
-  } 
-});
+const previews = [
+  "nebula",
+  "baptiste",
+]
 
-requestWithAuth("patch /repos/{owner}/{repo}", {
-    token,
-    owner,
-    repo,
-    name,
-    description,
-    homepage,
-    private,
-    visibility,
-    has_issues,
-    has_projects,
-    has_wiki,
-    is_template,
-    default_branch,
-    allow_squash_merge,
-    allow_merge_commit,
-    allow_rebase_merge,
-    archived,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  name,
+  description,
+  homepage,
+  private,
+  visibility,
+  has_issues,
+  has_projects,
+  has_wiki,
+  is_template,
+  default_branch,
+  allow_squash_merge,
+  allow_merge_commit,
+  allow_rebase_merge,
+  archived,
+}
+
+
+request(token, 
+  "patch", 
+  "/repos/{owner}/{repo}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

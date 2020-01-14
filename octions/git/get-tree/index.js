@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const owner = default_parse("owner");
@@ -9,20 +9,24 @@ const tree_sha = default_parse("tree_sha");
 const recursive = default_parse("recursive");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("get /repos/{owner}/{repo}/git/trees/{tree_sha}", {
-    token,
-    owner,
-    repo,
-    tree_sha,
-    recursive,
-})
-  .then(result => {
+const inputs = {
+  token,
+  owner,
+  repo,
+  tree_sha,
+  recursive,
+}
+
+
+request(token, 
+  "get", 
+  "/repos/{owner}/{repo}/git/trees/{tree_sha}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

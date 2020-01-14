@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const card_id = default_parse("card_id");
@@ -8,24 +8,24 @@ const note = default_parse("note");
 const archived = parse_boolean("archived");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "inertia",
-    ]
-  } 
-});
+const previews = [
+  "inertia",
+]
 
-requestWithAuth("patch /projects/columns/cards/{card_id}", {
-    token,
-    card_id,
-    note,
-    archived,
-})
-  .then(result => {
+const inputs = {
+  token,
+  card_id,
+  note,
+  archived,
+}
+
+
+request(token, 
+  "patch", 
+  "/projects/columns/cards/{card_id}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

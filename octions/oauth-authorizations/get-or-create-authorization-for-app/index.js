@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const client_id = default_parse("client_id");
@@ -11,22 +11,26 @@ const note_url = default_parse("note_url");
 const fingerprint = default_parse("fingerprint");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("put /authorizations/clients/{client_id}", {
-    token,
-    client_id,
-    client_secret,
-    scopes,
-    note,
-    note_url,
-    fingerprint,
-})
-  .then(result => {
+const inputs = {
+  token,
+  client_id,
+  client_secret,
+  scopes,
+  note,
+  note_url,
+  fingerprint,
+}
+
+
+request(token, 
+  "put", 
+  "/authorizations/clients/{client_id}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

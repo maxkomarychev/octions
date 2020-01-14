@@ -1,24 +1,28 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const org = default_parse("org");
 const scim_user_id = default_parse("scim_user_id");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("patch /scim/v2/organizations/{org}/Users/{scim_user_id}", {
-    token,
-    org,
-    scim_user_id,
-})
-  .then(result => {
+const inputs = {
+  token,
+  org,
+  scim_user_id,
+}
+
+
+request(token, 
+  "patch", 
+  "/scim/v2/organizations/{org}/Users/{scim_user_id}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

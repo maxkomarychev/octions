@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 {{#each inputs}}
 {{#if is_array}}
@@ -13,27 +13,25 @@ const {{{name}}} = default_parse("{{{name}}}");
 {{/each}}
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-{{#if has_previews}}
-  mediaType: {
-    previews: [
-    {{#each previews}}
-      "{{{name}}}",
-    {{/each}}
-    ]
-  } 
-{{/if}}
-});
+const previews = [
+{{#each previews}}
+  "{{{name}}}",
+{{/each}}
+]
 
-requestWithAuth("{{{method}}} {{{path}}}", {
-  {{#each inputs}}
-    {{{name}}},
-  {{/each}}
-})
-  .then(result => {
+const inputs = {
+{{#each inputs}}
+  {{{name}}},
+{{/each}}
+}
+
+
+request(token, 
+  "{{{method}}}", 
+  "{{{path}}}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
 {{#if has_outputs}}
 {{#each outputs}}

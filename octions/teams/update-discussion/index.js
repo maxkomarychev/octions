@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const team_id = default_parse("team_id");
@@ -9,25 +9,25 @@ const title = default_parse("title");
 const body = default_parse("body");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-  mediaType: {
-    previews: [
-      "squirrel-girl",
-    ]
-  } 
-});
+const previews = [
+  "squirrel-girl",
+]
 
-requestWithAuth("patch /teams/{team_id}/discussions/{discussion_number}", {
-    token,
-    team_id,
-    discussion_number,
-    title,
-    body,
-})
-  .then(result => {
+const inputs = {
+  token,
+  team_id,
+  discussion_number,
+  title,
+  body,
+}
+
+
+request(token, 
+  "patch", 
+  "/teams/{team_id}/discussions/{discussion_number}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)

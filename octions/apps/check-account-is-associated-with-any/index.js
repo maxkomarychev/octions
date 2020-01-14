@@ -1,6 +1,6 @@
 const core = require("@actions/core");
-const { request } = require("@octokit/request");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const account_id = default_parse("account_id");
@@ -8,19 +8,23 @@ const per_page = default_parse("per_page");
 const page = default_parse("page");
 
 
-const requestWithAuth = request.defaults({
-  headers: {
-    authorization: `Bearer ${token}`
-  },
-});
+const previews = [
+]
 
-requestWithAuth("get /marketplace_listing/accounts/{account_id}", {
-    token,
-    account_id,
-    per_page,
-    page,
-})
-  .then(result => {
+const inputs = {
+  token,
+  account_id,
+  per_page,
+  page,
+}
+
+
+request(token, 
+  "get", 
+  "/marketplace_listing/accounts/{account_id}", 
+  previews,
+  inputs,
+).then(result => {
     console.log("result", result);
     if (result && result.data && result.data.id) {
       core.setOutput('id', result.data.id)
