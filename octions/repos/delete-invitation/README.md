@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#delet
 |owner|false|owner parameter
 |repo|false|repo parameter
 |invitation_id|true|invitation_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

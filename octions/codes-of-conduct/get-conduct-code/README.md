@@ -39,6 +39,7 @@ Original documentation: https://developer.github.com/v3/codes_of_conduct/#get-an
 |---|---|---|
 |token|true|Token to authenticate the request
 |key|true|key parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

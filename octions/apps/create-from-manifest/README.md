@@ -39,6 +39,7 @@ Use this endpoint to complete the handshake necessary when implementing the [Git
 |---|---|---|
 |token|true|Token to authenticate the request
 |code|true|code parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

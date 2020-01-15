@@ -41,6 +41,7 @@ To download the asset's binary content, set the `Accept` header of the request t
 |owner|false|owner parameter
 |repo|false|repo parameter
 |asset_id|true|asset_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

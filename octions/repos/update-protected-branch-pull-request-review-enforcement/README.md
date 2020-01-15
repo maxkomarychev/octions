@@ -49,6 +49,7 @@ Updating pull request review enforcement requires admin or owner permissions to 
 |dismiss_stale_reviews|false|Set to `true` if you want to automatically dismiss approving reviews when someone pushes a new commit.
 |require_code_owner_reviews|false|Blocks merging pull requests until [code owners](https://help.github.com/articles/about-code-owners/) have reviewed.
 |required_approving_review_count|false|Specifies the number of reviewers required to approve pull requests. Use a number between 1 and 6.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

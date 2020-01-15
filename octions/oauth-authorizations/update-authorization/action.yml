@@ -35,6 +35,10 @@ inputs:
     description: |
       A unique string to distinguish an authorization from others created for the same client ID and user.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

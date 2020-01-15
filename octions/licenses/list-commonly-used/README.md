@@ -37,6 +37,7 @@ Original documentation: https://developer.github.com/v3/licenses/#list-commonly-
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

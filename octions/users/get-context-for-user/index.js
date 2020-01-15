@@ -1,11 +1,13 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const username = default_parse("username");
 const subject_type = default_parse("subject_type");
 const subject_id = default_parse("subject_id");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -16,6 +18,7 @@ const inputs = {
   username,
   subject_type,
   subject_id,
+  file_output,
 }
 
 
@@ -23,7 +26,8 @@ request(token,
   "get", 
   "/users/{username}/hovercard", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

@@ -37,6 +37,7 @@ List all templates available to pass as an option when [creating a repository](h
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

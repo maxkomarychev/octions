@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/gists/comments/#edit-a-c
 |gist_id|true|gist_id parameter
 |comment_id|true|comment_id parameter
 |body|true|The comment text.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

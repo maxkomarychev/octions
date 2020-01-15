@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -7,6 +8,7 @@ const column_id = default_parse("column_id");
 const archived_state = default_parse("archived_state");
 const per_page = default_parse("per_page");
 const page = default_parse("page");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -19,6 +21,7 @@ const inputs = {
   archived_state,
   per_page,
   page,
+  file_output,
 }
 
 
@@ -26,7 +29,8 @@ request(token,
   "get", 
   "/projects/columns/{column_id}/cards", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

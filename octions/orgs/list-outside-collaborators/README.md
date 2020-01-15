@@ -47,6 +47,7 @@ List all users who are outside collaborators of an organization.
 |filter|true|Filter the list of outside collaborators. Can be one of:   \* `2fa_disabled`: Outside collaborators without [two-factor authentication](https://github.com/blog/1614-two-factor-authentication) enabled.   \* `all`: All outside collaborators.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

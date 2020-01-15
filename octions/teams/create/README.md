@@ -49,6 +49,7 @@ When you create a new team, you automatically become a team maintainer without e
 |privacy|false|The level of privacy this team should have. The options are:   **For a non-nested team:**   \* `secret` - only visible to organization owners and members of this team.   \* `closed` - visible to all members of this organization.   Default: `secret`   **For a parent or child team:**   \* `closed` - visible to all members of this organization.   Default for child team: `closed`
 |permission|false|**Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:   \* `pull` - team members can pull, but not push to or administer newly-added repositories.   \* `push` - team members can pull and push, but not administer newly-added repositories.   \* `admin` - team members can pull, push and administer newly-added repositories.
 |parent_team_id|false|The ID of a team to set as the parent team.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

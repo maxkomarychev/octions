@@ -31,6 +31,10 @@ inputs:
     description: |
       Either `true` to create a new private repository or `false` to create a new public one.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

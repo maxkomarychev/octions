@@ -44,6 +44,7 @@ Original documentation: https://developer.github.com/v3/users/#update-the-authen
 |location|false|The new location of the user.
 |hireable|false|The new hiring availability of the user.
 |bio|false|The new short biography of the user.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

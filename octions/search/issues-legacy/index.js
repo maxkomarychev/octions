@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -7,6 +8,7 @@ const owner = default_parse("owner");
 const repository = default_parse("repository");
 const state = default_parse("state");
 const keyword = default_parse("keyword");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -18,6 +20,7 @@ const inputs = {
   repository,
   state,
   keyword,
+  file_output,
 }
 
 
@@ -25,7 +28,8 @@ request(token,
   "get", 
   "/legacy/issues/search/{owner}/{repository}/{state}/{keyword}", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

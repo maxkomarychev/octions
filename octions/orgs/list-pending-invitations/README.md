@@ -43,6 +43,7 @@ The return hash contains a `role` field which refers to the Organization Invitat
 |org|true|org parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

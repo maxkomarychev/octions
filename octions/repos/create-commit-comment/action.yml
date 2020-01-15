@@ -35,6 +35,10 @@ inputs:
     description: |
       **Deprecated**. Use **position** parameter instead. Line number in the file to comment on.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

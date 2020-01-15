@@ -39,6 +39,10 @@ inputs:
     description: |
       The ID of a team to set as the parent team.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

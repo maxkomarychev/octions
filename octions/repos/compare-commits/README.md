@@ -75,6 +75,7 @@ These are the possible values for `reason` in the `verification` object:
 |repo|false|repo parameter
 |base|true|base parameter
 |head|true|head parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

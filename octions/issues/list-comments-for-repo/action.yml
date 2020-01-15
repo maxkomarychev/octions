@@ -27,6 +27,10 @@ inputs:
     description: |
       Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

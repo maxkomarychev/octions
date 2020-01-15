@@ -49,6 +49,7 @@ List all users who are members of an organization. If the authenticated user is 
 |role|true|Filter members returned by their role. Can be one of:   \* `all` - All members of the organization, regardless of role.   \* `admin` - Organization owners.   \* `member` - Non-owner organization members.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -54,6 +54,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |body|false|The contents of the pull request.
 |maintainer_can_modify|false|Indicates whether [maintainers can modify](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
 |draft|false|Indicates whether the pull request is a draft. See "[Draft Pull Requests](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests)" in the GitHub Help documentation to learn more.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

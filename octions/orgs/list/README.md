@@ -45,6 +45,7 @@ Lists all organizations, in the order that they were created on GitHub.
 |since|true|The integer ID of the last Organization that you've seen.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

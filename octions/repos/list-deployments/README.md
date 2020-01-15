@@ -51,6 +51,7 @@ Simple filtering of deployments is available via query parameters:
 |environment|true|The name of the environment that was deployed to (e.g., `staging` or `production`).
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

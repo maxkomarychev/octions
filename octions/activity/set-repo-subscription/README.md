@@ -41,6 +41,7 @@ If you would like to watch a repository, set `subscribed` to `true`. If you woul
 |repo|false|repo parameter
 |subscribed|false|Determines if notifications should be received from this repository.
 |ignored|false|Determines if all notifications should be blocked from this repository.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

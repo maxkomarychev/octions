@@ -54,6 +54,7 @@ You must provide values for both `name` and `email`, whether you choose to use `
 |branch|false|The branch name. Default: the repository’s default branch (usually `master`)
 |committer|false|object containing information about the committer.
 |author|false|object containing information about the author.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

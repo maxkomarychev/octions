@@ -41,6 +41,7 @@ Get a published release with the specified tag.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |tag|true|tag parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

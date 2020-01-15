@@ -43,6 +43,7 @@ OAuth applications can use this API method to reset a valid OAuth token without 
 |token|true|Token to authenticate the request
 |client_id|true|client_id parameter
 |access_token|true|access_token parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

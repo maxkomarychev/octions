@@ -40,6 +40,7 @@ Original documentation: https://developer.github.com/v3/projects/#create-a-user-
 |token|true|Token to authenticate the request
 |name|true|The name of the project.
 |body|false|The description of the project.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

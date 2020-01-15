@@ -41,6 +41,7 @@ Sets the visibility for your primary email addresses.
 |token|true|Token to authenticate the request
 |email|true|Specify the _primary_ email address that needs a visibility change.
 |visibility|true|Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

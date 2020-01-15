@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/pulls/#get-if-a-pull-req
 |owner|false|owner parameter
 |repo|false|repo parameter
 |pull_number|true|pull_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

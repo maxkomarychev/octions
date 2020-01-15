@@ -49,6 +49,7 @@ Additionally, a combined `state` is returned. The `state` is one of:
 |owner|false|owner parameter
 |repo|false|repo parameter
 |ref|true|ref parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

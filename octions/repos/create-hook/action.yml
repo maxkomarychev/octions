@@ -31,6 +31,10 @@ inputs:
     description: |
       Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

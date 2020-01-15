@@ -43,6 +43,7 @@ You can also get information about the specified repository, including what perm
 |team_id|true|team_id parameter
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

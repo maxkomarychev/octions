@@ -39,6 +39,7 @@ Deletes a previous migration archive. Downloadable migration archives are automa
 |---|---|---|
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

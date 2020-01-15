@@ -39,6 +39,7 @@ OAuth access tokens require the `write:discussion` [scope](https://developer.git
 |---|---|---|
 |token|true|Token to authenticate the request
 |reaction_id|true|reaction_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

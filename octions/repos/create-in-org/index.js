@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -20,6 +21,7 @@ const license_template = default_parse("license_template");
 const allow_squash_merge = parse_boolean("allow_squash_merge");
 const allow_merge_commit = parse_boolean("allow_merge_commit");
 const allow_rebase_merge = parse_boolean("allow_rebase_merge");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -46,6 +48,7 @@ const inputs = {
   allow_squash_merge,
   allow_merge_commit,
   allow_rebase_merge,
+  file_output,
 }
 
 
@@ -53,7 +56,8 @@ request(token,
   "post", 
   "/orgs/{org}/repos", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

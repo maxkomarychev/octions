@@ -49,6 +49,7 @@ Creates a new file or updates an existing file in a repository.
 |branch|false|The branch name. Default: the repository’s default branch (usually `master`)
 |committer|false|The person that committed the file. Default: the authenticated user.
 |author|false|The author of the file. Default: The `committer` or the authenticated user if you omit `committer`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

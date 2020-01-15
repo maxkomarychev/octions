@@ -23,6 +23,10 @@ inputs:
     description: |
       The sort field. if `sort` param is provided. Can be either `asc` or `desc`.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

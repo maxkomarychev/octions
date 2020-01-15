@@ -47,6 +47,7 @@ This example grants the token "Read and write" permission to `issues` and "Read"
 |installation_id|true|installation_id parameter
 |repository_ids|false|The `id`s of the repositories that the installation token can access. Providing repository `id`s restricts the access of an installation token to specific repositories. You can use the "[List repositories](https://developer.github.com/v3/apps/installations/#list-repositories)" endpoint to get the `id` of all repositories that an installation can access. For example, you can select specific repositories when creating an installation token to restrict the number of repositories that can be cloned using the token.
 |permissions|false|The permissions granted to the access token. The permissions object includes the permission names and their access type. For a complete list of permissions and allowable values, see "[GitHub App permissions](https://developer.github.com/apps/building-github-apps/creating-github-apps-using-url-parameters/#github-app-permissions)."
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

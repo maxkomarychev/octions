@@ -19,6 +19,10 @@ inputs:
     description: |
       When `true`, the gist will be public and available for anyone to see.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

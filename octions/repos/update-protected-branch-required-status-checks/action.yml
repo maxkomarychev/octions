@@ -27,6 +27,10 @@ inputs:
     description: |
       The list of status checks to require in order to merge into this branch
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

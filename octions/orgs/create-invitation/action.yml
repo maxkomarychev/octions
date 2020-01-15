@@ -27,6 +27,10 @@ inputs:
     description: |
       Specify IDs for the teams you want to invite new members to.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

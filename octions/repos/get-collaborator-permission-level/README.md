@@ -41,6 +41,7 @@ Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

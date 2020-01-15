@@ -43,6 +43,7 @@ Users with pull access can view a deployment status for a deployment:
 |repo|false|repo parameter
 |deployment_id|true|deployment_id parameter
 |status_id|true|status_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

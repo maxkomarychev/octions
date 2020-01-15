@@ -47,6 +47,7 @@ This input example shows how you can use the `client_payload` as a test to debug
 |repo|false|repo parameter
 |event_type|false|**Required:** A custom webhook event name.
 |client_payload|false|JSON payload with extra information about the webhook event that your action or worklow may use.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

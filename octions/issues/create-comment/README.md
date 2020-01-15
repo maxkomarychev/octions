@@ -43,6 +43,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |body|true|The contents of the comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

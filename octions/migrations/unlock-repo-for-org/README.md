@@ -43,6 +43,7 @@ Unlocks a repository that was locked for migration. You should unlock each migra
 |org|true|org parameter
 |migration_id|true|migration_id parameter
 |repo_name|true|repo_name parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

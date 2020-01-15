@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -10,6 +11,7 @@ const vcs = default_parse("vcs");
 const vcs_username = default_parse("vcs_username");
 const vcs_password = default_parse("vcs_password");
 const tfvc_project = default_parse("tfvc_project");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -24,6 +26,7 @@ const inputs = {
   vcs_username,
   vcs_password,
   tfvc_project,
+  file_output,
 }
 
 
@@ -31,7 +34,8 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/import", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

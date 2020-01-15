@@ -15,6 +15,10 @@ inputs:
     description: |
       repo_name parameter
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

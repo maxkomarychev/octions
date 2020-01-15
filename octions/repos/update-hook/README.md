@@ -46,6 +46,7 @@ Original documentation: https://developer.github.com/v3/repos/hooks/#edit-a-hook
 |add_events|false|Determines a list of events to be added to the list of events that the Hook triggers for.
 |remove_events|false|Determines a list of events to be removed from the list of events that the Hook triggers for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -39,6 +39,10 @@ inputs:
     description: |
       `true` to identify the release as a prerelease. `false` to identify the release as a full release.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -12,6 +13,7 @@ const sha = default_parse("sha");
 const branch = default_parse("branch");
 const committer = default_parse("committer");
 const author = default_parse("author");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -28,6 +30,7 @@ const inputs = {
   branch,
   committer,
   author,
+  file_output,
 }
 
 
@@ -35,7 +38,8 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/contents/{path}", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

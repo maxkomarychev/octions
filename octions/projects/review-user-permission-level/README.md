@@ -41,6 +41,7 @@ Returns the collaborator's permission level for an organization project. Possibl
 |token|true|Token to authenticate the request
 |project_id|true|project_id parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

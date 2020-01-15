@@ -44,6 +44,7 @@ This example adds two assignees to the existing `octocat` assignee.
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |assignees|false|Usernames of people to assign this issue to. _NOTE: Only users with push access can add assignees to an issue. Assignees are silently ignored otherwise._
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

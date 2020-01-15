@@ -37,6 +37,7 @@ This endpoint provides a list of GitHub's IP addresses. For more information, se
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

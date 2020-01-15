@@ -35,6 +35,10 @@ inputs:
     description: |
       An object with information about the individual creating the tag.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

@@ -71,6 +71,10 @@ inputs:
     description: |
       `true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

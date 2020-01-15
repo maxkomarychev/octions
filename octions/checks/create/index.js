@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -15,6 +16,7 @@ const conclusion = default_parse("conclusion");
 const completed_at = default_parse("completed_at");
 const output = default_parse("output");
 const actions = parse_array("actions");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -35,6 +37,7 @@ const inputs = {
   completed_at,
   output,
   actions,
+  file_output,
 }
 
 
@@ -42,7 +45,8 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/check-runs", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

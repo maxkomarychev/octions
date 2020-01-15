@@ -41,6 +41,7 @@ Removing a user from this list will remove them from all teams and they will no 
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

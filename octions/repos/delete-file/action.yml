@@ -39,6 +39,10 @@ inputs:
     description: |
       object containing information about the author.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/issues/comments/#edit-a-
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |body|true|The contents of the comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

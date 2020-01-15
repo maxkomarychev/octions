@@ -49,6 +49,7 @@ The `position` value equals the number of lines down from the first "@@" hunk he
 |body|false|**Required** when using `REQUEST_CHANGES` or `COMMENT` for the `event` parameter. The body text of the pull request review.
 |event|false|The review action you want to perform. The review actions include: `APPROVE`, `REQUEST_CHANGES`, or `COMMENT`. By leaving this blank, you set the review action state to `PENDING`, which means you will need to [submit the pull request review](https://developer.github.com/v3/pulls/reviews/#submit-a-pull-request-review) when you are ready.
 |comments|false|Use the following table to specify the location, destination, and contents of the draft review comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

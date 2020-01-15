@@ -44,6 +44,7 @@ Find issues by state and keyword.
 |repository|true|repository parameter
 |state|true|Indicates the state of the issues to return. Can be either `open` or `closed`.
 |keyword|true|The search term.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

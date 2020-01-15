@@ -42,6 +42,7 @@ Create a fork for the authenticated user.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |organization|false|Optional parameter to specify the organization name if forking into an organization.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

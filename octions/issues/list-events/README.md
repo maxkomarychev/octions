@@ -45,6 +45,7 @@ Original documentation: https://developer.github.com/v3/issues/events/#list-even
 |issue_number|true|issue_number parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

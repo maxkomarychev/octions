@@ -45,6 +45,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |email|false|**Required unless you provide `invitee_id`**. Email address of the person you are inviting, which can be an existing GitHub user.
 |role|false|Specify role for new member. Can be one of:   \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.   \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.   \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
 |team_ids|false|Specify IDs for the teams you want to invite new members to.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

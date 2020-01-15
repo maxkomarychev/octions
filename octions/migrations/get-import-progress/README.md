@@ -72,6 +72,7 @@ This section includes details about Git LFS related fields that may be present i
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

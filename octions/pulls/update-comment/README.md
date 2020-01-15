@@ -61,6 +61,7 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |body|true|The text of the reply to the review comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

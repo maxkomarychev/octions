@@ -39,6 +39,7 @@ Get the top 10 referrers over the last 14 days.
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

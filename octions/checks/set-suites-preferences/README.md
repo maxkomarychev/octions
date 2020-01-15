@@ -40,6 +40,7 @@ Changes the default automatic flow when creating check suites. By default, the C
 |owner|false|owner parameter
 |repo|false|repo parameter
 |auto_trigger_checks|false|Enables or disables automatic creation of CheckSuite events upon pushes to the repository. Enabled by default. See the [`auto_trigger_checks` object](https://developer.github.com/v3/checks/suites/#auto_trigger_checks-object) description for details.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

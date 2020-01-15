@@ -45,6 +45,7 @@ To get the reference for a branch named `skunkworkz/featureA`, the endpoint rout
 |owner|false|owner parameter
 |repo|false|repo parameter
 |ref|true|ref parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

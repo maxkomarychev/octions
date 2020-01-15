@@ -43,6 +43,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |pull_number|true|pull_number parameter
 |reviewers|false|An array of user `login`s that will be requested.
 |team_reviewers|false|An array of team `slug`s that will be requested.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

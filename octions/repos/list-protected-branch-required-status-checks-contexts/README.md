@@ -41,6 +41,7 @@ Protected branches are available in public repositories with GitHub Free, and in
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

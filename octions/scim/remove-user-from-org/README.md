@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/scim/#remove-a-user-from
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |scim_user_id|true|scim_user_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

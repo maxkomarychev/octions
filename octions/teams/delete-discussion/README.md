@@ -41,6 +41,7 @@ Delete a discussion from a team's page. OAuth access tokens require the `write:d
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |discussion_number|true|discussion_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

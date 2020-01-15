@@ -43,6 +43,7 @@ Use the raw [media type](https://developer.github.com/v3/media/) to get the raw 
 |---|---|---|
 |token|true|Token to authenticate the request
 |name|true|name parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

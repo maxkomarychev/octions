@@ -48,6 +48,7 @@ The `state` of a migration can be one of the following values:
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |migration_id|true|migration_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

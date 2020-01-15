@@ -45,6 +45,7 @@ When authenticating as a user with admin rights to a repository, this endpoint w
 |repo|false|repo parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

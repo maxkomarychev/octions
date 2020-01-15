@@ -49,6 +49,7 @@ Lists public repositories for the specified user.
 |direction|true|Can be one of `asc` or `desc`. Default: `asc` when using `full_name`, otherwise `desc`
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

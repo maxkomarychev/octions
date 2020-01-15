@@ -41,6 +41,7 @@ Deletes a previous migration archive. Migration archives are automatically delet
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |migration_id|true|migration_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

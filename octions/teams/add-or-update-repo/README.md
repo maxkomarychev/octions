@@ -44,6 +44,7 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
 |owner|false|owner parameter
 |repo|false|repo parameter
 |permission|false|The permission to grant the team on this repository. Can be one of:   \* `pull` - team members can pull, but not push to or administer this repository.   \* `push` - team members can pull and push, but not administer this repository.   \* `admin` - team members can pull, push and administer this repository.      If no permission is specified, the team's `permission` attribute will be used to determine what permission to grant the team on this repository.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

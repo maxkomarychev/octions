@@ -43,6 +43,7 @@ _Note_: This API supports blobs up to 100 megabytes in size.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |file_sha|true|file_sha parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

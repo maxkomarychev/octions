@@ -45,6 +45,7 @@ Edits the body text of a discussion comment. OAuth access tokens require the `wr
 |discussion_number|true|discussion_number parameter
 |comment_number|true|comment_number parameter
 |body|true|The discussion comment's body text.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -48,6 +48,7 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
 |target_url|false|The target URL to associate with this status. This URL will be linked from the GitHub UI to allow users to easily see the source of the status.   For example, if your continuous integration system is posting build status, you would want to provide the deep link for the build output for this specific SHA:   `http://ci.example.com/user/repo/build/sha`
 |description|false|A short description of the status.
 |context|false|A string label to differentiate this status from the status of other systems.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

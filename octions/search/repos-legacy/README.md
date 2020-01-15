@@ -47,6 +47,7 @@ Find repositories by keyword. Note, this legacy method does not follow the v3 pa
 |start_page|true|The page number to fetch.
 |sort|true|The sort field. One of `stars`, `forks`, or `updated`. Default: results are sorted by best match.
 |order|true|The sort field. if `sort` param is provided. Can be either `asc` or `desc`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

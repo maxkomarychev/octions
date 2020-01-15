@@ -47,6 +47,7 @@ Removes the ability of a team to push to this branch. You can also remove push a
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

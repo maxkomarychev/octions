@@ -27,6 +27,10 @@ inputs:
     description: |
       The body text of the pull request review.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

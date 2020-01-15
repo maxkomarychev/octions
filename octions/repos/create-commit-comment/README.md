@@ -48,6 +48,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |path|false|Relative path of the file to comment on.
 |position|false|Line index in the diff to comment on.
 |line|false|**Deprecated**. Use **position** parameter instead. Line number in the file to comment on.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

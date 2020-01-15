@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/issues/events/#get-a-sin
 |owner|false|owner parameter
 |repo|false|repo parameter
 |event_id|true|event_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

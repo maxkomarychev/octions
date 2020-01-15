@@ -39,6 +39,7 @@ View extended details for a single GPG key. Requires that you are authenticated 
 |---|---|---|
 |token|true|Token to authenticate the request
 |gpg_key_id|true|gpg_key_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

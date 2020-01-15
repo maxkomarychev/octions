@@ -44,6 +44,7 @@ Original documentation: https://developer.github.com/v3/issues/labels/#create-a-
 |name|true|The name of the label. Emoji can be added to label names, using either native emoji or colon-style markup. For example, typing `:strawberry:` will render the emoji ![:strawberry:](https://github.githubassets.com/images/icons/emoji/unicode/1f353.png ":strawberry:"). For a full list of available emoji and codes, see [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/).
 |color|true|The [hexadecimal color code](http://www.color-hex.com/) for the label, without the leading `#`.
 |description|false|A short description of the label.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

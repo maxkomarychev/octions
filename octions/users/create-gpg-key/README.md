@@ -38,6 +38,7 @@ Adds a GPG key to the authenticated user's GitHub account. Requires that you are
 |---|---|---|
 |token|true|Token to authenticate the request
 |armored_public_key|false|Your GPG key, generated in ASCII-armored format. See "[Generating a new GPG key](https://help.github.com/articles/generating-a-new-gpg-key/)" for help creating a GPG key.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

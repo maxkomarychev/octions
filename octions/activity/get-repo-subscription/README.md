@@ -39,6 +39,7 @@ Original documentation: https://developer.github.com/v3/activity/watching/#get-a
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

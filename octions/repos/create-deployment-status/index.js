@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -13,6 +14,7 @@ const description = default_parse("description");
 const environment = default_parse("environment");
 const environment_url = default_parse("environment_url");
 const auto_inactive = parse_boolean("auto_inactive");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -32,6 +34,7 @@ const inputs = {
   environment,
   environment_url,
   auto_inactive,
+  file_output,
 }
 
 
@@ -39,7 +42,8 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

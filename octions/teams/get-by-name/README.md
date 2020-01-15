@@ -41,6 +41,7 @@ Gets a team using the team's `slug`. GitHub generates the `slug` from the team `
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |team_slug|true|team_slug parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

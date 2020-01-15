@@ -39,6 +39,7 @@ Original documentation: https://developer.github.com/v3/projects/columns/#delete
 |---|---|---|
 |token|true|Token to authenticate the request
 |column_id|true|column_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

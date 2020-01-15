@@ -47,6 +47,7 @@ Use the `:commit_sha` to specify the commit that will have its comments listed.
 |commit_sha|true|commit_sha parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

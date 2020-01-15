@@ -41,6 +41,7 @@ Note that subscriptions are only generated if a user is participating in a conve
 |---|---|---|
 |token|true|Token to authenticate the request
 |thread_id|true|thread_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

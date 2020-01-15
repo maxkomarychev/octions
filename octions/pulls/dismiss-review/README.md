@@ -45,6 +45,7 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#dismiss-a
 |pull_number|true|pull_number parameter
 |review_id|true|review_id parameter
 |message|true|The message for the pull request review dismissal
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

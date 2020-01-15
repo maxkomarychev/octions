@@ -45,6 +45,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |commit_message|false|Extra detail to append to automatic commit message.
 |sha|false|SHA that pull request head must match to allow merge.
 |merge_method|false|Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -49,6 +49,7 @@ To follow redirects with curl, use the `-L` switch:
 |repo|false|repo parameter
 |archive_format|true|archive_format parameter
 |ref|true|ref parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -41,6 +41,7 @@ This will trigger a [ping event](https://developer.github.com/webhooks/#ping-eve
 |owner|false|owner parameter
 |repo|false|repo parameter
 |hook_id|true|hook_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

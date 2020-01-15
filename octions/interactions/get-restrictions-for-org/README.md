@@ -39,6 +39,7 @@ Shows which group of GitHub users can interact with this organization and when t
 |---|---|---|
 |token|true|Token to authenticate the request
 |org|true|org parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

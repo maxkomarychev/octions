@@ -44,6 +44,7 @@ Original documentation: https://developer.github.com/v3/repos/merging/#perform-a
 |base|true|The name of the base branch that the head will be merged into.
 |head|true|The head to merge. This can be a branch name or a commit SHA1.
 |commit_message|false|Commit message to use for the merge commit. If omitted, a default message will be used.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

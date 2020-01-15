@@ -47,6 +47,7 @@ s
 |state|true|Indicates the state of the projects to return. Can be either `open`, `closed`, or `all`.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

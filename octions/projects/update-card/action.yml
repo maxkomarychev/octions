@@ -19,6 +19,10 @@ inputs:
     description: |
       Use `true` to archive a project card. Specify `false` if you need to restore a previously archived project card.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

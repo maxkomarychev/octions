@@ -39,6 +39,7 @@ Original documentation: https://developer.github.com/v3/users/blocking/#unblock-
 |---|---|---|
 |token|true|Token to authenticate the request
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

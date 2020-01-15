@@ -41,6 +41,7 @@ List IdP groups connected to a team on GitHub.
 |---|---|---|
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

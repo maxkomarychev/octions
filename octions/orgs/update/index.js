@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -18,6 +19,7 @@ const members_can_create_internal_repositories = parse_boolean("members_can_crea
 const members_can_create_private_repositories = parse_boolean("members_can_create_private_repositories");
 const members_can_create_public_repositories = parse_boolean("members_can_create_public_repositories");
 const members_allowed_repository_creation_type = default_parse("members_allowed_repository_creation_type");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -41,6 +43,7 @@ const inputs = {
   members_can_create_private_repositories,
   members_can_create_public_repositories,
   members_allowed_repository_creation_type,
+  file_output,
 }
 
 
@@ -48,7 +51,8 @@ request(token,
   "patch", 
   "/orgs/{org}", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

@@ -41,6 +41,7 @@ You can import repositories from Subversion, Mercurial, and TFS that include fil
 |owner|false|owner parameter
 |repo|false|repo parameter
 |use_lfs|true|Can be one of `opt_in` (large files will be stored using Git LFS) or `opt_out` (large files will be removed during the import).
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

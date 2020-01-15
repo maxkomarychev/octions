@@ -44,6 +44,7 @@ Original documentation: https://developer.github.com/v3/orgs/hooks/#edit-a-hook
 |config|false|Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/orgs/hooks/#update-hook-config-params).
 |events|false|Determines what [events](https://developer.github.com/v3/activity/events/types/) the hook is triggered for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

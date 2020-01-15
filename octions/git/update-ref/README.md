@@ -44,6 +44,7 @@ Original documentation: https://developer.github.com/v3/git/refs/#update-a-refer
 |ref|true|ref parameter
 |sha|true|The SHA1 value to set this reference to
 |force|false|Indicates whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to `false` will make sure you're not overwriting work.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

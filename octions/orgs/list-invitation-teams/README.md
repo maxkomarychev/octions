@@ -45,6 +45,7 @@ List all teams associated with an invitation. In order to see invitations in an 
 |invitation_id|true|invitation_id parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

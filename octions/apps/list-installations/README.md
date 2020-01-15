@@ -43,6 +43,7 @@ The permissions the installation has are included under the `permissions` key.
 |token|true|Token to authenticate the request
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

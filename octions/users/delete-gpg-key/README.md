@@ -39,6 +39,7 @@ Removes a GPG key from the authenticated user's GitHub account. Requires that yo
 |---|---|---|
 |token|true|Token to authenticate the request
 |gpg_key_id|true|gpg_key_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

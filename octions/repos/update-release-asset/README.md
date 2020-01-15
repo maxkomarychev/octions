@@ -43,6 +43,7 @@ Users with push access to the repository can edit a release asset.
 |asset_id|true|asset_id parameter
 |name|false|The file name of the asset.
 |label|false|An alternate short description of the asset. Used in place of the filename.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

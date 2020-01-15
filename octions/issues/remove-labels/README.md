@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/issues/labels/#remove-al
 |owner|false|owner parameter
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

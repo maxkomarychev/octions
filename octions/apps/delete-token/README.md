@@ -40,6 +40,7 @@ OAuth application owners can revoke a single token for an OAuth application. You
 |token|true|Token to authenticate the request
 |client_id|true|client_id parameter
 |access_token|false|The OAuth access token used to authenticate to the GitHub API.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

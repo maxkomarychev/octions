@@ -35,6 +35,10 @@ inputs:
     description: |
       Specifies the number of reviewers required to approve pull requests. Use a number between 1 and 6.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

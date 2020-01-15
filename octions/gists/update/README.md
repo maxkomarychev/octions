@@ -41,6 +41,7 @@ Allows you to update or delete a gist file and rename gist files. Files from the
 |gist_id|true|gist_id parameter
 |description|false|A descriptive name for this gist.
 |files|false|The filenames and content that make up this gist.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

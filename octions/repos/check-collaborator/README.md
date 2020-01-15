@@ -43,6 +43,7 @@ Team members will include the members of child teams.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

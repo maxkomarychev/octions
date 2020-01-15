@@ -52,6 +52,7 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
 |scopes|false|A list of scopes that this authorization is in.
 |note|false|A note to remind you what the OAuth token is for.
 |note_url|false|A URL to remind you what app the OAuth token is for.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

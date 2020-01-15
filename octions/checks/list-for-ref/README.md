@@ -53,6 +53,7 @@ Lists check runs for a commit ref. The `ref` can be a SHA, branch name, or a tag
 |filter|true|Filters check runs by their `completed_at` timestamp. Can be one of `latest` (returning the most recent check runs) or `all`.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

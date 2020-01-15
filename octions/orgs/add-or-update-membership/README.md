@@ -50,6 +50,7 @@ To prevent abuse, the authenticated user is limited to 50 organization invitatio
 |org|true|org parameter
 |username|true|username parameter
 |role|false|The role to give the user in the organization. Can be one of:   \* `admin` - The user will become an owner of the organization.   \* `member` - The user will become a non-owner member of the organization.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

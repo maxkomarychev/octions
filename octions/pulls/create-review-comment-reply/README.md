@@ -47,6 +47,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |pull_number|true|pull_number parameter
 |comment_id|true|comment_id parameter
 |body|true|The text of the review comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

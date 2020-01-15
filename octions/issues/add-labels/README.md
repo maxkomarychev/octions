@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/issues/labels/#add-label
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |labels|true|The name of the label to add to the issue. Must contain at least one label. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

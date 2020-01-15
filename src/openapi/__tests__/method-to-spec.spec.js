@@ -34,7 +34,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     );
   });
   it("should parse inputs and add token as first input", () => {
-    expect(spec.inputs).toHaveLength(5);
+    expect(spec.inputs).toHaveLength(6);
 
     expect(spec.inputs[0].name).toEqual("token");
     expect(spec.inputs[0].description).toEqual(
@@ -61,6 +61,12 @@ describe("converting openapi method descriptor to action.yml structure", () => {
       "Specifies a task to execute (e.g., `deploy` or `deploy:migrations`)."
     );
     expect(spec.inputs[4].required).toEqual(false);
+
+    expect(spec.inputs[5].name).toEqual("file_output");
+    expect(spec.inputs[5].description).toEqual(
+      "Path to store full output of the action"
+    );
+    expect(spec.inputs[5].required).toEqual(false);
   });
   it("has default outputs", () => {
     expect(spec.outputs).toEqual(defaultOutputs);

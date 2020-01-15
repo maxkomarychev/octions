@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/projects/columns/#move-a
 |token|true|Token to authenticate the request
 |column_id|true|column_id parameter
 |position|true|Can be one of `first`, `last`, or `after:<column_id>`, where `<column_id>` is the `id` value of a column in the same project.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

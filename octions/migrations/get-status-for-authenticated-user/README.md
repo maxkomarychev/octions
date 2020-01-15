@@ -46,6 +46,7 @@ Once the migration has been `exported` you can [download the migration archive](
 |---|---|---|
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

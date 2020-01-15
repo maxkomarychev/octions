@@ -41,6 +41,7 @@ Get the total number of views and breakdown per day or week for the last 14 days
 |owner|false|owner parameter
 |repo|false|repo parameter
 |per|true|Must be one of: `day`, `week`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

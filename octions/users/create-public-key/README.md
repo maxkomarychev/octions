@@ -39,6 +39,7 @@ Adds a public SSH key to the authenticated user's GitHub account. Requires that 
 |token|true|Token to authenticate the request
 |title|false|A descriptive name for the new key. Use a name that will help you recognize this key in your GitHub account. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 |key|false|The public SSH key to add to your GitHub account. See "[Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)" for guidance on how to create a public SSH key.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -43,6 +43,10 @@ inputs:
     description: |
       The author of the file. Default: The `committer` or the authenticated user if you omit `committer`.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

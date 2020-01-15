@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/comments/#delete-a
 |owner|false|owner parameter
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

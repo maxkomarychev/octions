@@ -63,6 +63,7 @@ When using [OAuth](https://developer.github.com/apps/building-oauth-apps/underst
 |allow_squash_merge|false|Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
 |allow_merge_commit|false|Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

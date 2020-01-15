@@ -63,6 +63,7 @@ The `reactions` key will have the following payload where `url` can be used to c
 |owner|false|owner parameter
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

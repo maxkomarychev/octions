@@ -39,6 +39,7 @@ This API call is added for compatibility reasons only. There's no guarantee that
 |---|---|---|
 |token|true|Token to authenticate the request
 |email|true|The email address.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

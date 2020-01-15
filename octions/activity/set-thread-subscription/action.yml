@@ -15,6 +15,10 @@ inputs:
     description: |
       Unsubscribes and subscribes you to a conversation. Set `ignored` to `true` to block all notifications from this thread.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

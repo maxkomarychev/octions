@@ -45,6 +45,7 @@ To remove a membership between a user and a team, the authenticated user must ha
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

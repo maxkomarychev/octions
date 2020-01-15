@@ -39,6 +39,7 @@ Lists public profile information when authenticated through OAuth without the `u
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

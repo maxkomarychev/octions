@@ -39,6 +39,7 @@ Deletes a project board. Returns a `404 Not Found` status if projects are disabl
 |---|---|---|
 |token|true|Token to authenticate the request
 |project_id|true|project_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

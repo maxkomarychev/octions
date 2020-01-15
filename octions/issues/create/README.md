@@ -48,6 +48,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |milestone|false|The `number` of the milestone to associate this issue with. _NOTE: Only users with push access can set the milestone for new issues. The milestone is silently dropped otherwise._
 |labels|false|Labels to associate with this issue. _NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise._
 |assignees|false|Logins for Users to assign to this issue. _NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise._
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

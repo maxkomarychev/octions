@@ -49,6 +49,7 @@ You can only send one of these scope keys at a time.
 |note|false|A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.
 |note_url|false|A URL to remind you what app the OAuth token is for.
 |fingerprint|false|A unique string to distinguish an authorization from others created for the same client ID and user.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

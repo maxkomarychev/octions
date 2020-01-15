@@ -41,6 +41,7 @@ Check if a user is, publicly or privately, a member of the organization.
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

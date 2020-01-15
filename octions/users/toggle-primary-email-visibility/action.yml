@@ -15,6 +15,10 @@ inputs:
     description: |
       Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

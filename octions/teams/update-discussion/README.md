@@ -43,6 +43,7 @@ Edits the title and body text of a discussion post. Only the parameters you prov
 |discussion_number|true|discussion_number parameter
 |title|false|The discussion post's title.
 |body|false|The discussion post's body text.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

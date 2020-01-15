@@ -45,6 +45,7 @@ To get a user's membership with a team, the team must be visible to the authenti
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

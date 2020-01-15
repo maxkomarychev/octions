@@ -1,10 +1,12 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const gist_id = default_parse("gist_id");
 const sha = default_parse("sha");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -14,6 +16,7 @@ const inputs = {
   token,
   gist_id,
   sha,
+  file_output,
 }
 
 
@@ -21,7 +24,8 @@ request(token,
   "get", 
   "/gists/{gist_id}/{sha}", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

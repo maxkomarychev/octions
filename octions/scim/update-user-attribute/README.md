@@ -59,6 +59,7 @@ The following example shows adding a new email address and updating the user's g
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |scim_user_id|true|scim_user_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

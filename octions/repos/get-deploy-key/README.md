@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/keys/#get-a-deploy
 |owner|false|owner parameter
 |repo|false|repo parameter
 |key_id|true|key_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

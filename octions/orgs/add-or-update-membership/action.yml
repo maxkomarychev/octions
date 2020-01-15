@@ -19,6 +19,10 @@ inputs:
     description: |
       The role to give the user in the organization. Can be one of:   \* `admin` - The user will become an owner of the organization.   \* `member` - The user will become a non-owner member of the organization.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/gists/#get-a-specific-re
 |token|true|Token to authenticate the request
 |gist_id|true|gist_id parameter
 |sha|true|sha parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

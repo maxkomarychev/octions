@@ -47,6 +47,7 @@ Be aware that the `id` of a pull request returned from "Issues" endpoints will b
 |owner|false|owner parameter
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

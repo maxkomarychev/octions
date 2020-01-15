@@ -43,6 +43,7 @@ If `truncated` is `true`, the number of items in the `tree` array exceeded our m
 |repo|false|repo parameter
 |tree_sha|true|tree_sha parameter
 |recursive|true|recursive parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

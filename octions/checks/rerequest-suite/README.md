@@ -43,6 +43,7 @@ To rerequest a check suite, your GitHub App must have the `checks:read` permissi
 |owner|false|owner parameter
 |repo|false|repo parameter
 |check_suite_id|true|check_suite_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

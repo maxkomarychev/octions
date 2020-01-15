@@ -39,6 +39,7 @@ Removes a public SSH key from the authenticated user's GitHub account. Requires 
 |---|---|---|
 |token|true|Token to authenticate the request
 |key_id|true|key_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -11,6 +11,10 @@ inputs:
     description: |
       gist_id parameter
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

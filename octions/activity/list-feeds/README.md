@@ -47,6 +47,7 @@ GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wik
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

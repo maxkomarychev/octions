@@ -46,6 +46,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |title|true|The discussion post's title.
 |body|true|The discussion post's body text.
 |private|false|Private posts are only visible to team members, organization owners, and team maintainers. Public posts are visible to all members of the organization. Set to `true` to create a private post.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

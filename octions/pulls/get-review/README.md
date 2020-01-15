@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#get-a-sin
 |repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |review_id|true|review_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

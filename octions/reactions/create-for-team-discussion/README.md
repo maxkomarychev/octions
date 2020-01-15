@@ -43,6 +43,7 @@ Create a reaction to a [team discussion](https://developer.github.com/v3/teams/d
 |team_id|true|team_id parameter
 |discussion_number|true|discussion_number parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

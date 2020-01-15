@@ -43,6 +43,7 @@ By default, check suites are automatically created when you create a [check run]
 |owner|false|owner parameter
 |repo|false|repo parameter
 |head_sha|true|The sha of the head commit.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

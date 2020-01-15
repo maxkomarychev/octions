@@ -43,6 +43,7 @@ Get a specific comment on a team discussion. OAuth access tokens require the `re
 |team_id|true|team_id parameter
 |discussion_number|true|discussion_number parameter
 |comment_number|true|comment_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

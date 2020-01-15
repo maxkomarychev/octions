@@ -42,6 +42,7 @@ Original documentation: https://developer.github.com/v3/projects/cards/#move-a-p
 |card_id|true|card_id parameter
 |position|true|Can be one of `top`, `bottom`, or `after:<card_id>`, where `<card_id>` is the `id` value of a card in the same column, or in the new column specified by `column_id`.
 |column_id|false|The `id` value of a column in the same project.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

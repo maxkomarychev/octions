@@ -43,6 +43,7 @@ Initiates the generation of a migration archive.
 |repositories|true|A list of arrays indicating which repositories should be migrated.
 |lock_repositories|false|Indicates whether repositories should be locked (to prevent manipulation) while migrating data.
 |exclude_attachments|false|Indicates whether attachments should be excluded from the migration (to reduce migration archive file size).
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

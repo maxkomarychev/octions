@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/projects/columns/#create
 |token|true|Token to authenticate the request
 |project_id|true|project_id parameter
 |name|true|The name of the column.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

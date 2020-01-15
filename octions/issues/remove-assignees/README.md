@@ -44,6 +44,7 @@ This example removes two of three assignees, leaving the `octocat` assignee.
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |assignees|false|Usernames of assignees to remove from an issue. _NOTE: Only users with push access can remove assignees from an issue. Assignees are silently ignored otherwise._
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

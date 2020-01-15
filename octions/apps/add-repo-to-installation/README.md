@@ -43,6 +43,7 @@ You must use a personal access token (which you can create via the [command line
 |token|true|Token to authenticate the request
 |installation_id|true|installation_id parameter
 |repository_id|true|repository_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

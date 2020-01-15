@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/gists/comments/#delete-a
 |token|true|Token to authenticate the request
 |gist_id|true|gist_id parameter
 |comment_id|true|comment_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

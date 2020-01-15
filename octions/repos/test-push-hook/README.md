@@ -43,6 +43,7 @@ This will trigger the hook with the latest push to the current repository if the
 |owner|false|owner parameter
 |repo|false|repo parameter
 |hook_id|true|hook_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

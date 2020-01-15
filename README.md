@@ -4,6 +4,27 @@
 
 **O**ctokit + A**ction** = **Oction** - it is a [GitHub Action](https://github.com/features/actions) that exposes single REST API call from [@octokit/routes](https://github.com/octokit/routes)
 
+## API
+
+Explore [catalog](#catalog) for API relevant for every specific oction.
+
+Common API are listed below:
+
+### Common inputs
+
+| Name        | Type   | Description                                  |
+| ----------- | ------ | -------------------------------------------- |
+| token       | string | Valid token to authorize API calls           |
+| file_output | string | Store result of the action in specified file |
+
+### Common outputs
+
+| Name   | Description                                |
+| ------ | ------------------------------------------ |
+| id     | `id` field of the response (if exists)     |
+| number | `number` field of the response (if exists) |
+| status | HTTP status of underlying API call         |
+
 ## Catalog
 
 [Catalog](CATALOG.md)

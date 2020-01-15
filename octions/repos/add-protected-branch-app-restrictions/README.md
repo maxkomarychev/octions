@@ -47,6 +47,7 @@ Grants the specified apps push access for this branch. Only installed GitHub App
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

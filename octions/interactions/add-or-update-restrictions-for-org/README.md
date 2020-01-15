@@ -41,6 +41,7 @@ Temporarily restricts interactions to certain GitHub users in any public reposit
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |limit|true|Specifies the group of GitHub users who can comment, open issues, or create pull requests in public repositories for the given organization. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

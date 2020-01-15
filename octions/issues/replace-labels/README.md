@@ -42,6 +42,7 @@ Original documentation: https://developer.github.com/v3/issues/labels/#replace-a
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |labels|false|The names of the labels to add to the issue. You can pass an empty array to remove all labels. **Note:** Alternatively, you can pass a single label as a `string` or an `array` of labels directly, but GitHub recommends passing an object with the `labels` key.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

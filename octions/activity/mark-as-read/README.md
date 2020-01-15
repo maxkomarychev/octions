@@ -38,6 +38,7 @@ Marks a notification as "read" removes it from the [default view on GitHub](http
 |---|---|---|
 |token|true|Token to authenticate the request
 |last_read_at|false|Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

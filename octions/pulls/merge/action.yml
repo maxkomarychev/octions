@@ -35,6 +35,10 @@ inputs:
     description: |
       Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

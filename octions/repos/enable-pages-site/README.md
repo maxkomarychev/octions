@@ -40,6 +40,7 @@ Original documentation: https://developer.github.com/v3/repos/pages/#enable-a-pa
 |owner|false|owner parameter
 |repo|false|repo parameter
 |source|false|source parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

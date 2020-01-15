@@ -43,6 +43,7 @@ Removes the specified label from the issue, and returns the remaining labels on 
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |name|true|name parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

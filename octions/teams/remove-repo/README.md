@@ -41,6 +41,7 @@ If the authenticated user is an organization owner or a team maintainer, they ca
 |team_id|true|team_id parameter
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

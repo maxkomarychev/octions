@@ -41,6 +41,7 @@ When an organization member is converted to an outside collaborator, they'll onl
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

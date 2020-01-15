@@ -43,6 +43,7 @@ Update an author's identity for the import. Your application can continue updati
 |author_id|true|author_id parameter
 |email|false|The new Git author email.
 |name|false|The new Git author name.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

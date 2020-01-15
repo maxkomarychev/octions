@@ -53,6 +53,7 @@ Original documentation: https://developer.github.com/v3/repos/#edit
 |allow_merge_commit|false|Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
 |archived|false|`true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

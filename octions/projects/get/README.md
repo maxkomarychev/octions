@@ -43,6 +43,7 @@ Gets a project by its `id`. Returns a `404 Not Found` status if projects are dis
 |project_id|true|project_id parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

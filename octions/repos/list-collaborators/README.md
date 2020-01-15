@@ -47,6 +47,7 @@ Team members will include the members of child teams.
 |affiliation|true|Filter collaborators returned by their affiliation. Can be one of:   \* `outside`: All outside collaborators of an organization-owned repository.   \* `direct`: All collaborators with permissions to an organization-owned repository, regardless of organization membership status.   \* `all`: All collaborators the authenticated user can see.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

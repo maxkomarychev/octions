@@ -23,6 +23,10 @@ inputs:
     description: |
       ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

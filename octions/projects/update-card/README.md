@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/projects/cards/#update-a
 |card_id|true|card_id parameter
 |note|false|The card's note content. Only valid for cards without another type of content, so this cannot be specified if the card already has a `content_id` and `content_type`.
 |archived|false|Use `true` to archive a project card. Specify `false` if you need to restore a previously archived project card.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -55,6 +55,7 @@ Pass the appropriate [media type](https://developer.github.com/v3/media/#commits
 |owner|false|owner parameter
 |repo|false|repo parameter
 |pull_number|true|pull_number parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

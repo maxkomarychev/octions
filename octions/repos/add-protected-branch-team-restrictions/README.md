@@ -47,6 +47,7 @@ Grants the specified teams push access for this branch. You can also give push a
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

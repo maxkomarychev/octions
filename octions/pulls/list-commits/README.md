@@ -45,6 +45,7 @@ Lists a maximum of 250 commits for a pull request. To receive a complete commit 
 |pull_number|true|pull_number parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -45,6 +45,7 @@ Create a reaction to a [team discussion comment](https://developer.github.com/v3
 |discussion_number|true|discussion_number parameter
 |comment_number|true|comment_number parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

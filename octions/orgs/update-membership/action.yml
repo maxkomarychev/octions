@@ -15,6 +15,10 @@ inputs:
     description: |
       The state that the membership should be in. Only `"active"` will be accepted.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

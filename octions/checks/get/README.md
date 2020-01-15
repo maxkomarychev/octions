@@ -43,6 +43,7 @@ Gets a single check run using its `id`. GitHub Apps must have the `checks:read` 
 |owner|false|owner parameter
 |repo|false|repo parameter
 |check_run_id|true|check_run_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

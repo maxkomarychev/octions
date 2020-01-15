@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/markdown/#render-an-arbi
 |text|true|The Markdown text to render in HTML. Markdown content must be 400 KB or less.
 |mode|false|The rendering mode. Can be either:   \* `markdown` to render a document in plain Markdown, just like README.md files are rendered.   \* `gfm` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.
 |context|false|The repository context to use when creating references in `gfm` mode. Omit this parameter when using `markdown` mode.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

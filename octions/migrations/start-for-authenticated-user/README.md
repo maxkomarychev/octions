@@ -41,6 +41,7 @@ Initiates the generation of a user migration archive.
 |repositories|true|An array of repositories to include in the migration.
 |lock_repositories|false|Locks the `repositories` to prevent changes during the migration when set to `true`.
 |exclude_attachments|false|Does not include attachments uploaded to GitHub.com in the migration data when set to `true`. Excluding attachments will reduce the migration archive file size.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

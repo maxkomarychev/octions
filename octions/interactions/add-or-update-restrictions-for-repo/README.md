@@ -41,6 +41,7 @@ Temporarily restricts interactions to certain GitHub users within the given repo
 |owner|false|owner parameter
 |repo|false|repo parameter
 |limit|true|Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -41,6 +41,7 @@ Users with push access to the repository can delete a release.
 |owner|false|owner parameter
 |repo|false|repo parameter
 |release_id|true|release_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

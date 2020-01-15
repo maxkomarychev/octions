@@ -44,6 +44,7 @@ Note that, if you choose not to pass any parameters, you'll need to set `Content
 |repo|false|repo parameter
 |issue_number|true|issue_number parameter
 |lock_reason|false|The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:   \* `off-topic`   \* `too heated`   \* `resolved`   \* `spam`
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

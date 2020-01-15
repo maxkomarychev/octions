@@ -45,6 +45,7 @@ Original documentation: https://developer.github.com/v3/repos/branches/#list-bra
 |protected|true|Setting to `true` returns only protected branches. When set to `false`, only unprotected branches are returned. Omitting this parameter returns all branches.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

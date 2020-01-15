@@ -41,6 +41,7 @@ Checks whether a team has `read`, `write`, or `admin` permissions for an organiz
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |project_id|true|project_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -50,6 +50,7 @@ If the user is already a member of the team, this endpoint will update the role 
 |team_id|true|team_id parameter
 |username|true|username parameter
 |role|false|The role that this user should have in the team. Can be one of:   \* `member` - a normal member of the team.   \* `maintainer` - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

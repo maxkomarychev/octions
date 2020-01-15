@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/branches/#get-bran
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

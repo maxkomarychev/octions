@@ -43,6 +43,7 @@ This API method and the "Map a commit author" method allow you to provide correc
 |owner|false|owner parameter
 |repo|false|repo parameter
 |since|true|Only authors found after this id are returned. Provide the highest author ID you've seen so far. New authors may be added to the list at any point while the importer is performing the `raw` step.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -45,6 +45,7 @@ Update the review summary comment with new text.
 |pull_number|true|pull_number parameter
 |review_id|true|review_id parameter
 |body|true|The body text of the pull request review.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

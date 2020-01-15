@@ -19,6 +19,10 @@ inputs:
     description: |
       The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion.
     required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

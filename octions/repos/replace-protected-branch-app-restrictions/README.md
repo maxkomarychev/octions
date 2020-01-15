@@ -47,6 +47,7 @@ Replaces the list of apps that have push access to this branch. This removes all
 |owner|false|owner parameter
 |repo|false|repo parameter
 |branch|true|branch parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

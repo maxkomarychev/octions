@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/downloads/#get-a-s
 |owner|false|owner parameter
 |repo|false|repo parameter
 |download_id|true|download_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

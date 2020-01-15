@@ -45,6 +45,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |team_id|true|team_id parameter
 |discussion_number|true|discussion_number parameter
 |body|true|The discussion comment's body text.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

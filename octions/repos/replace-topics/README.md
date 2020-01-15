@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/#replace-all-topic
 |owner|false|owner parameter
 |repo|false|repo parameter
 |names|true|An array of topics to add to the repository. Pass one or more topics to _replace_ the set of existing topics. Send an empty array (`[]`) to clear all topics from the repository. **Note:** Topic `names` cannot contain uppercase letters.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

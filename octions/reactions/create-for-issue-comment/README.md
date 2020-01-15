@@ -43,6 +43,7 @@ Create a reaction to an [issue comment](https://developer.github.com/v3/issues/c
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue comment.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

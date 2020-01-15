@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/pulls/review_requests/#d
 |pull_number|true|pull_number parameter
 |reviewers|false|An array of user `login`s that will be removed.
 |team_reviewers|false|An array of team `slug`s that will be removed.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

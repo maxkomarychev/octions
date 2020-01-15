@@ -43,6 +43,7 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
 |owner|false|owner parameter
 |repo|false|repo parameter
 |commit_sha|true|commit_sha parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

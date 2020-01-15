@@ -39,6 +39,7 @@ Enables automated security fixes for a repository. The authenticated user must h
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

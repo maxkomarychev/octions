@@ -41,6 +41,7 @@ Deleting an OAuth application's grant will also delete all OAuth tokens associat
 |---|---|---|
 |token|true|Token to authenticate the request
 |grant_id|true|grant_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

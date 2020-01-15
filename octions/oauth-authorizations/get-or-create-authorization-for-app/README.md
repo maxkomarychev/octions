@@ -53,6 +53,7 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
 |note|false|A note to remind you what the OAuth token is for.
 |note_url|false|A URL to remind you what app the OAuth token is for.
 |fingerprint|false|A unique string to distinguish an authorization from others created for the same client and user. If provided, this API is functionally equivalent to [Get-or-create an authorization for a specific app and fingerprint](https://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app-and-fingerprint).
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -55,6 +55,7 @@ When using [OAuth](https://developer.github.com/apps/building-oauth-apps/underst
 |name|true|The name of the new repository.
 |description|false|A short description of the new repository.
 |private|false|Either `true` to create a new private repository or `false` to create a new public one.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

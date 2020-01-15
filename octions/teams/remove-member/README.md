@@ -49,6 +49,7 @@ To remove a team member, the authenticated user must have 'admin' permissions to
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

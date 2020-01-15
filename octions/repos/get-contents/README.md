@@ -63,6 +63,7 @@ If the submodule repository is not hosted on github.com, the Git URLs (`git_url`
 |repo|false|repo parameter
 |path|true|path parameter
 |ref|true|The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

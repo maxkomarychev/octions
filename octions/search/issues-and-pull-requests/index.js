@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -8,6 +9,7 @@ const sort = default_parse("sort");
 const order = default_parse("order");
 const per_page = default_parse("per_page");
 const page = default_parse("page");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -20,6 +22,7 @@ const inputs = {
   order,
   per_page,
   page,
+  file_output,
 }
 
 
@@ -27,7 +30,8 @@ request(token,
   "get", 
   "/search/issues", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

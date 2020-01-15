@@ -49,6 +49,7 @@ In this request, we're searching for topics with the keyword `ruby`, and we're l
 |---|---|---|
 |token|true|Token to authenticate the request
 |q|true|The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://developer.github.com/v3/search/#constructing-a-search-query).
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

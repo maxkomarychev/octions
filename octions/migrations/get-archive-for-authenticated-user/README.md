@@ -61,6 +61,7 @@ The archive will also contain an `attachments` directory that includes all attac
 |---|---|---|
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

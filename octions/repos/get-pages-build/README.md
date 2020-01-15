@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/pages/#get-a-speci
 |owner|false|owner parameter
 |repo|false|repo parameter
 |build_id|true|build_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

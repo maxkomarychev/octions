@@ -41,6 +41,7 @@ Unlocks a repository. You can lock repositories when you [start a user migration
 |token|true|Token to authenticate the request
 |migration_id|true|migration_id parameter
 |repo_name|true|repo_name parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -45,6 +45,7 @@ For example, `[2, 14, 25]` indicates that there were 25 total commits, during th
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

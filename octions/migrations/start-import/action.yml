@@ -35,6 +35,10 @@ inputs:
     description: |
       For a tfvc import, the name of the project that is being imported.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

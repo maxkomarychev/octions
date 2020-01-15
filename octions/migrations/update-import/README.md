@@ -47,6 +47,7 @@ To restart an import, no parameters are provided in the update request.
 |repo|false|repo parameter
 |vcs_username|false|The username to provide to the originating repository.
 |vcs_password|false|The password to provide to the originating repository.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

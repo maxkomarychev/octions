@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/collaborators/#rem
 |owner|false|owner parameter
 |repo|false|repo parameter
 |username|true|username parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -39,6 +39,7 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#accep
 |---|---|---|
 |token|true|Token to authenticate the request
 |invitation_id|true|invitation_id parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

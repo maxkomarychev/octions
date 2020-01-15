@@ -70,6 +70,7 @@ These are the possible values for `reason` in the `verification` object:
 |object|true|The SHA of the git object this is tagging.
 |type|true|The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
 |tagger|false|An object with information about the individual creating the tag.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

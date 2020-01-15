@@ -45,6 +45,7 @@ Start a source import to a GitHub repository using GitHub Importer.
 |vcs_username|false|If authentication is required, the username to provide to `vcs_url`.
 |vcs_password|false|If authentication is required, the password to provide to `vcs_url`.
 |tfvc_project|false|For a tfvc import, the name of the project that is being imported.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

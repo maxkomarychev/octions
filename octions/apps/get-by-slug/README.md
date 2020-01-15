@@ -41,6 +41,7 @@ If the GitHub App you specify is public, you can access this endpoint without au
 |---|---|---|
 |token|true|Token to authenticate the request
 |app_slug|true|app_slug parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

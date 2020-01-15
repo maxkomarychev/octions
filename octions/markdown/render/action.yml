@@ -19,6 +19,10 @@ inputs:
     description: |
       The repository context to use when creating references in `gfm` mode. Omit this parameter when using `markdown` mode.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

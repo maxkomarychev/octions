@@ -42,6 +42,7 @@ Original documentation: https://developer.github.com/v3/git/blobs/#create-a-blob
 |repo|false|repo parameter
 |content|true|The new blob's content.
 |encoding|false|The encoding used for `content`. Currently, `"utf-8"` and `"base64"` are supported.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

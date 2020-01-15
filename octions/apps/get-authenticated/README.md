@@ -39,6 +39,7 @@ You must use a [JWT](https://developer.github.com/apps/building-github-apps/auth
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

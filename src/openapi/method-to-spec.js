@@ -75,7 +75,12 @@ function methodToMeta(method, path, method_data, outputs) {
         description: "Token to authenticate the request"
       },
       ...parametersToInputs(parameters),
-      ...requestBodyToInputs(requestBody)
+      ...requestBodyToInputs(requestBody),
+      {
+        name: "file_output",
+        description: "Path to store full output of the action",
+        required: false
+      }
     ],
     outputs: outputs,
     previews: previews(xgithub)

@@ -48,6 +48,7 @@ To open or update a pull request in a public repository, you must have write acc
 |state|false|State of this Pull Request. Either `open` or `closed`.
 |base|false|The name of the branch you want your changes pulled into. This should be an existing branch on the current repository. You cannot update the base branch on a pull request to point to another repository.
 |maintainer_can_modify|false|Indicates whether [maintainers can modify](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/) the pull request.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

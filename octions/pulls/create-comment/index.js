@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
@@ -14,6 +15,7 @@ const side = default_parse("side");
 const line = default_parse("line");
 const start_line = default_parse("start_line");
 const start_side = default_parse("start_side");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -33,6 +35,7 @@ const inputs = {
   line,
   start_line,
   start_side,
+  file_output,
 }
 
 
@@ -40,7 +43,8 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/comments", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })

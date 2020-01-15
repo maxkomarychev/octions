@@ -41,6 +41,7 @@ A transfer request will need to be accepted by the new owner when transferring a
 |repo|false|repo parameter
 |new_owner|false|**Required:** The username or organization name the repository will be transferred to.
 |team_ids|false|ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

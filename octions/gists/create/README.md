@@ -43,6 +43,7 @@ Allows you to add a new gist with one or more files.
 |files|true|The filenames and content of each file in the gist. The keys in the `files` object represent the filename and have the type `string`.
 |description|false|A descriptive name for this gist.
 |public|false|When `true`, the gist will be public and available for anyone to see.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

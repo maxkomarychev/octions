@@ -39,6 +39,7 @@ This endpoint is accessible with the `user` scope.
 |---|---|---|
 |token|true|Token to authenticate the request
 |emails|true|Adds one or more email addresses to your GitHub account. Must contain at least one email address. **Note:** Alternatively, you can pass a single email address or an `array` of emails addresses directly, but we recommend that you pass an object using the `emails` key.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -48,6 +48,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |body|false|Text describing the contents of the tag.
 |draft|false|`true` to create a draft (unpublished) release, `false` to create a published one.
 |prerelease|false|`true` to identify the release as a prerelease. `false` to identify the release as a full release.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

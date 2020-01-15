@@ -47,6 +47,7 @@ Original documentation: https://developer.github.com/v3/pulls/reviews/#get-comme
 |review_id|true|review_id parameter
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

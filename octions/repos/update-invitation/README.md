@@ -42,6 +42,7 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#updat
 |repo|false|repo parameter
 |invitation_id|true|invitation_id parameter
 |permissions|false|The permissions that the associated user will have on the repository. Valid values are `read`, `write`, and `admin`.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

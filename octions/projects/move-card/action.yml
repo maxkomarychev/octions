@@ -19,6 +19,10 @@ inputs:
     description: |
       The `id` value of a column in the same project.
     required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
 
 runs:
   using: node12

@@ -42,6 +42,7 @@ Creates a repository project board. Returns a `404 Not Found` status if projects
 |repo|false|repo parameter
 |name|true|The name of the project.
 |body|false|The description of the project.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

@@ -43,6 +43,7 @@ Creates, updates, or removes a connection between a team and an IdP group. When 
 |token|true|Token to authenticate the request
 |team_id|true|team_id parameter
 |groups|true|The IdP groups you want to connect to a GitHub team. When updating, the new `groups` object will replace the original one. You must include any existing groups that you don't want to remove.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

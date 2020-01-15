@@ -41,6 +41,7 @@ Original documentation: https://developer.github.com/v3/orgs/members/#edit-your-
 |token|true|Token to authenticate the request
 |org|true|org parameter
 |state|true|The state that the membership should be in. Only `"active"` will be accepted.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

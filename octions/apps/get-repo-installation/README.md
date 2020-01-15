@@ -41,6 +41,7 @@ You must use a [JWT](https://developer.github.com/apps/building-github-apps/auth
 |token|true|Token to authenticate the request
 |owner|false|owner parameter
 |repo|false|repo parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

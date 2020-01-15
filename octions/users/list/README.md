@@ -45,6 +45,7 @@ Note: Pagination is powered exclusively by the `since` parameter. Use the [Link 
 |since|true|The integer ID of the last User that you've seen.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

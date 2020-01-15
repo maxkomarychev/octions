@@ -63,6 +63,7 @@ These are the possible values for `reason` in the `verification` object:
 |owner|false|owner parameter
 |repo|false|repo parameter
 |commit_sha|true|commit_sha parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

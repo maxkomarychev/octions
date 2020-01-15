@@ -47,6 +47,7 @@ DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
 |owner|false|owner parameter
 |repo|false|repo parameter
 |ref|true|ref parameter
+|file_output|false|Path to store full output of the action
 
 <a name="outputs" ></a>
 ## Outputs

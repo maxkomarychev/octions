@@ -1,9 +1,11 @@
 const core = require("@actions/core");
 const { parse_array, parse_boolean, default_parse } = require('../../../src/utils/parse-input')
+const _ = require('lodash')
 const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const grant_id = default_parse("grant_id");
+const file_output = default_parse("file_output");
 
 
 const previews = [
@@ -12,6 +14,7 @@ const previews = [
 const inputs = {
   token,
   grant_id,
+  file_output,
 }
 
 
@@ -19,7 +22,8 @@ request(token,
   "delete", 
   "/applications/grants/{grant_id}", 
   previews,
-  inputs,
+  _.omit(inputs, ["token", "file_output"]),
+  file_output,
 ).then(result => {
     console.log("result", result);
   })
