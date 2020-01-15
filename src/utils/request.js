@@ -2,8 +2,16 @@ const fs = require("fs");
 const core = require("@actions/core");
 const _ = require("lodash");
 const outputs = require("../default-outputs");
+const { request } = require("@octokit/request");
 
-async function request(token, method, path, previews, inputs, file_output) {
+async function octionRequest(
+  token,
+  method,
+  path,
+  previews,
+  inputs,
+  file_output
+) {
   const requestWithAuth = request.defaults({
     headers: {
       authorization: `Bearer ${token}`
@@ -26,4 +34,4 @@ async function request(token, method, path, previews, inputs, file_output) {
   return result;
 }
 
-module.exports = request;
+module.exports = octionRequest;
