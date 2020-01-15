@@ -3,14 +3,7 @@ const core = require("@actions/core");
 const _ = require("lodash");
 const outputs = require("../default-outputs");
 
-export default function request(
-  token,
-  method,
-  path,
-  previews,
-  inputs,
-  file_output
-) {
+async function request(token, method, path, previews, inputs, file_output) {
   const requestWithAuth = request.defaults({
     headers: {
       authorization: `Bearer ${token}`
@@ -19,7 +12,7 @@ export default function request(
       previews
     }
   });
-  const result = requestWithAuth(`${method} ${path}`, inputs);
+  const result = await requestWithAuth(`${method} ${path}`, inputs);
   for (const output of outputs) {
     const { path, name } = output;
     const value = _.get(result, path);
@@ -32,3 +25,5 @@ export default function request(
   }
   return result;
 }
+
+module.exports = request;
