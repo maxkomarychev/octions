@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/maxkomarychev/octions/compare/v0.4.1...v0.5.0) (2020-01-15)
+
+
+### Features
+
+* store output in a file ([4580f69](https://github.com/maxkomarychev/octions/commit/4580f6966f47c3b988f3d8ce6fbdedf23a5d0e8d))
+
 ### [0.4.1](https://github.com/maxkomarychev/octions/compare/v0.4.0...v0.4.1) (2020-01-15)
 
 
