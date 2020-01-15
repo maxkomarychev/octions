@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/maxkomarychev/octions/compare/v0.4.0...v0.4.1) (2020-01-15)
+
+
+### Documentation
+
+* add .versionrc ([77cd01d](https://github.com/maxkomarychev/octions/commit/77cd01d662de2bf0edf7227615d32705beb7b84a))
+
+
+### Refactoring
+
+* create outputs in common code ([3709d60](https://github.com/maxkomarychev/octions/commit/3709d6079f6f5497f1e1c46a4ac58e4a3307df29))
+* move common request code to utils ([cc3a6e6](https://github.com/maxkomarychev/octions/commit/cc3a6e6041f44a4f8fe16dd2ae5cfd8304de4a83))
+
 ## [0.4.0](https://github.com/maxkomarychev/octions/compare/v0.3.2...v0.4.0) (2020-01-13)
 
 
