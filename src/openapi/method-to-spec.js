@@ -53,7 +53,7 @@ function previews(xgithub) {
   });
 }
 
-function methodToMeta(method, path, method_data) {
+function methodToMeta(method, path, method_data, outputs) {
   const {
     summary,
     description,
@@ -77,23 +77,7 @@ function methodToMeta(method, path, method_data) {
       ...parametersToInputs(parameters),
       ...requestBodyToInputs(requestBody)
     ],
-    outputs: [
-      {
-        name: "id",
-        description: "`id` field of the response (if exists)",
-        path: "result.data.id"
-      },
-      {
-        name: "number",
-        description: "`number` field of the response (if exists)",
-        path: "result.data.number"
-      },
-      {
-        name: "status",
-        description: "HTTP status of underlying API call",
-        path: "result.status"
-      }
-    ],
+    outputs: outputs,
     previews: previews(xgithub)
   };
 }

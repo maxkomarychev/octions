@@ -33,13 +33,6 @@ request(token,
   inputs,
 ).then(result => {
     console.log("result", result);
-{{#if has_outputs}}
-{{#each outputs}}
-    if ({{{safeAccess path}}}) {
-      core.setOutput('{{{name}}}', {{{path}}})
-    }
-{{/each}}
-{{/if}}
   })
   .catch(error => {
     console.log("error", error);

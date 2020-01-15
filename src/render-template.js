@@ -4,6 +4,7 @@ const path = require("path");
 const _ = require("lodash");
 const routes = require("@octokit/routes");
 const methodToSpec = require("./openapi/method-to-spec");
+const outputs = require("./default-outputs");
 
 handlebars.registerHelper("singleline", function(text) {
   return text.split("\n").join(" ");
@@ -16,7 +17,7 @@ handlebars.registerHelper("toUpperCase", function(str) {
 handlebars.registerHelper("safeAccess", function(str) {
   const elements = str.split(".");
   return elements.reduce((prev, element, index, array) => {
-    const segment = elements.slice(0, index + 1).join(".");
+    const segment = array.slice(0, index + 1).join(".");
     if (prev) {
       return `${prev} && ${segment}`;
     } else {
@@ -92,7 +93,7 @@ for (const apiPath in allPaths) {
     fs.mkdirSync(actionRoot, {
       recursive: true
     });
-    const spec = methodToSpec(method, apiPath, methodSpec);
+    const spec = methodToSpec(method, apiPath, methodSpec, outputs);
 
     const view = {
       ...spec,
