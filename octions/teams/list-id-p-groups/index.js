@@ -22,8 +22,9 @@ request(token,
   "get", 
   "/teams/{team_id}/team-sync/group-mappings", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

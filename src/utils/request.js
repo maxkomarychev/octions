@@ -9,7 +9,8 @@ export default function request(
   path,
   previews,
   inputs,
-  file_output
+  file_output,
+  custom_outputs
 ) {
   const requestWithAuth = request.defaults({
     headers: {
@@ -22,6 +23,13 @@ export default function request(
   const result = requestWithAuth(`${method} ${path}`, inputs);
   for (const output of outputs) {
     const { path, name } = output;
+    const value = _.get(result, path);
+    if (value) {
+      core.setOutput(name, value);
+    }
+  }
+  for (const outputName in custom_outputs) {
+    const path = custom_outputs[outputName];
     const value = _.get(result, path);
     if (value) {
       core.setOutput(name, value);

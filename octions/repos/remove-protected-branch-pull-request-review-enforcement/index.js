@@ -26,8 +26,9 @@ request(token,
   "delete", 
   "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

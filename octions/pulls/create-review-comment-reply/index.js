@@ -30,8 +30,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -31,8 +31,9 @@ request(token,
   "get", 
   "/repos/{owner}/{repo}/check-runs/{check_run_id}/annotations", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })
