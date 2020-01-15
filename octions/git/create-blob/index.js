@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const content = default_parse("content");
 const encoding = default_parse("encoding");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   content,
   encoding,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/git/blobs", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

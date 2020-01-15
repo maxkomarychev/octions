@@ -10,6 +10,7 @@ const base = default_parse("base");
 const head = default_parse("head");
 const commit_message = default_parse("commit_message");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -23,6 +24,7 @@ const inputs = {
   head,
   commit_message,
   file_output,
+  custom_outputs,
 }
 
 
@@ -30,8 +32,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/merges", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

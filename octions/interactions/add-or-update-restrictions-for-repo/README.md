@@ -42,6 +42,7 @@ Temporarily restricts interactions to certain GitHub users within the given repo
 |repo|false|repo parameter
 |limit|true|Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

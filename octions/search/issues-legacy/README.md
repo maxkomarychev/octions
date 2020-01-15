@@ -45,6 +45,7 @@ Find issues by state and keyword.
 |state|true|Indicates the state of the issues to return. Can be either `open` or `closed`.
 |keyword|true|The search term.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

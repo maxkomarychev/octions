@@ -44,6 +44,7 @@ Returns all branches where the given commit SHA is the HEAD, or latest commit fo
 |repo|false|repo parameter
 |commit_sha|true|commit_sha parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

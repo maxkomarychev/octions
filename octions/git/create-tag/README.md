@@ -71,6 +71,7 @@ These are the possible values for `reason` in the `verification` object:
 |type|true|The type of the object we're tagging. Normally this is a `commit` but it can also be a `tree` or a `blob`.
 |tagger|false|An object with information about the individual creating the tag.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

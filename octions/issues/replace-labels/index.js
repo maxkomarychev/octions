@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const issue_number = default_parse("issue_number");
 const labels = parse_array("labels");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   issue_number,
   labels,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/issues/{issue_number}/labels", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

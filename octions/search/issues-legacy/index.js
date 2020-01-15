@@ -9,6 +9,7 @@ const repository = default_parse("repository");
 const state = default_parse("state");
 const keyword = default_parse("keyword");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   state,
   keyword,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "get", 
   "/legacy/issues/search/{owner}/{repository}/{state}/{keyword}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -12,6 +12,7 @@ const body = default_parse("body");
 const event = default_parse("event");
 const comments = parse_array("comments");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -27,6 +28,7 @@ const inputs = {
   event,
   comments,
   file_output,
+  custom_outputs,
 }
 
 
@@ -34,8 +36,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/reviews", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

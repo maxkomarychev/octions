@@ -11,6 +11,7 @@ const client_id = default_parse("client_id");
 const client_secret = default_parse("client_secret");
 const fingerprint = default_parse("fingerprint");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -25,6 +26,7 @@ const inputs = {
   client_secret,
   fingerprint,
   file_output,
+  custom_outputs,
 }
 
 
@@ -32,8 +34,9 @@ request(token,
   "post", 
   "/authorizations", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const issue_number = default_parse("issue_number");
 const name = default_parse("name");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   issue_number,
   name,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "delete", 
   "/repos/{owner}/{repo}/issues/{issue_number}/labels/{name}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

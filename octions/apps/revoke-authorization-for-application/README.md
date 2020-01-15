@@ -44,6 +44,7 @@ OAuth application owners can revoke a single token for an OAuth application. You
 |client_id|true|client_id parameter
 |access_token|true|access_token parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

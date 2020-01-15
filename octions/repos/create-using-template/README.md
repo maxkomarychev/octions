@@ -56,6 +56,7 @@ When using [OAuth](https://developer.github.com/apps/building-oauth-apps/underst
 |description|false|A short description of the new repository.
 |private|false|Either `true` to create a new private repository or `false` to create a new public one.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

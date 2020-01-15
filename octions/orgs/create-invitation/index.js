@@ -10,6 +10,7 @@ const email = default_parse("email");
 const role = default_parse("role");
 const team_ids = parse_array("team_ids");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -23,6 +24,7 @@ const inputs = {
   role,
   team_ids,
   file_output,
+  custom_outputs,
 }
 
 
@@ -30,8 +32,9 @@ request(token,
   "post", 
   "/orgs/{org}/invitations", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

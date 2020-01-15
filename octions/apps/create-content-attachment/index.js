@@ -8,6 +8,7 @@ const content_reference_id = default_parse("content_reference_id");
 const title = default_parse("title");
 const body = default_parse("body");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   title,
   body,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "post", 
   "/content_references/{content_reference_id}/attachments", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

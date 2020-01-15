@@ -46,6 +46,7 @@ Lists the collaborators for an organization project. For a project, the list of 
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

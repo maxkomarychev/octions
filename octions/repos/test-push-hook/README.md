@@ -44,6 +44,7 @@ This will trigger the hook with the latest push to the current repository if the
 |repo|false|repo parameter
 |hook_id|true|hook_id parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

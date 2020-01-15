@@ -8,6 +8,7 @@ const team_id = default_parse("team_id");
 const project_id = default_parse("project_id");
 const permission = default_parse("permission");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   project_id,
   permission,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "put", 
   "/teams/{team_id}/projects/{project_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

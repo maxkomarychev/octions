@@ -8,6 +8,7 @@ const owner = default_parse("owner");
 const repo = default_parse("repo");
 const check_suite_id = default_parse("check_suite_id");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   repo,
   check_suite_id,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "get", 
   "/repos/{owner}/{repo}/check-suites/{check_suite_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

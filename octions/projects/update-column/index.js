@@ -7,6 +7,7 @@ const token = default_parse("token");
 const column_id = default_parse("column_id");
 const name = default_parse("name");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -18,6 +19,7 @@ const inputs = {
   column_id,
   name,
   file_output,
+  custom_outputs,
 }
 
 
@@ -25,8 +27,9 @@ request(token,
   "patch", 
   "/projects/columns/{column_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

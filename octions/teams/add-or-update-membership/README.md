@@ -51,6 +51,7 @@ If the user is already a member of the team, this endpoint will update the role 
 |username|true|username parameter
 |role|false|The role that this user should have in the team. Can be one of:   \* `member` - a normal member of the team.   \* `maintainer` - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

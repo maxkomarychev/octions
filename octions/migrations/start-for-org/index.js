@@ -9,6 +9,7 @@ const repositories = parse_array("repositories");
 const lock_repositories = parse_boolean("lock_repositories");
 const exclude_attachments = parse_boolean("exclude_attachments");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   lock_repositories,
   exclude_attachments,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "post", 
   "/orgs/{org}/migrations", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

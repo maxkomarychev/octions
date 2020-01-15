@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const pull_number = default_parse("pull_number");
 const expected_head_sha = default_parse("expected_head_sha");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -22,6 +23,7 @@ const inputs = {
   pull_number,
   expected_head_sha,
   file_output,
+  custom_outputs,
 }
 
 
@@ -29,8 +31,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/update-branch", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

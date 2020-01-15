@@ -7,6 +7,7 @@ const token = default_parse("token");
 const team_id = default_parse("team_id");
 const username = default_parse("username");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -17,6 +18,7 @@ const inputs = {
   team_id,
   username,
   file_output,
+  custom_outputs,
 }
 
 
@@ -24,8 +26,9 @@ request(token,
   "get", 
   "/teams/{team_id}/memberships/{username}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -46,6 +46,7 @@ Updating required status checks requires admin or owner permissions to the repos
 |strict|false|Require branches to be up to date before merging.
 |contexts|false|The list of status checks to require in order to merge into this branch
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

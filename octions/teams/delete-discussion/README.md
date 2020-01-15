@@ -42,6 +42,7 @@ Delete a discussion from a team's page. OAuth access tokens require the `write:d
 |team_id|true|team_id parameter
 |discussion_number|true|discussion_number parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

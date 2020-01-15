@@ -54,6 +54,7 @@ Original documentation: https://developer.github.com/v3/repos/#edit
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
 |archived|false|`true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

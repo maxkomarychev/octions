@@ -7,6 +7,7 @@ const token = default_parse("token");
 const username = default_parse("username");
 const target_user = default_parse("target_user");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -17,6 +18,7 @@ const inputs = {
   username,
   target_user,
   file_output,
+  custom_outputs,
 }
 
 
@@ -24,8 +26,9 @@ request(token,
   "get", 
   "/users/{username}/following/{target_user}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

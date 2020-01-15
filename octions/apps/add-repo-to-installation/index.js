@@ -7,6 +7,7 @@ const token = default_parse("token");
 const installation_id = default_parse("installation_id");
 const repository_id = default_parse("repository_id");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -18,6 +19,7 @@ const inputs = {
   installation_id,
   repository_id,
   file_output,
+  custom_outputs,
 }
 
 
@@ -25,8 +27,9 @@ request(token,
   "put", 
   "/user/installations/{installation_id}/repositories/{repository_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -44,6 +44,7 @@ Edits the title and body text of a discussion post. Only the parameters you prov
 |title|false|The discussion post's title.
 |body|false|The discussion post's body text.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

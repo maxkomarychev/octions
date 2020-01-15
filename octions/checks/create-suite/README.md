@@ -44,6 +44,7 @@ By default, check suites are automatically created when you create a [check run]
 |repo|false|repo parameter
 |head_sha|true|The sha of the head commit.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

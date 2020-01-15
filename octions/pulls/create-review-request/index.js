@@ -10,6 +10,7 @@ const pull_number = default_parse("pull_number");
 const reviewers = parse_array("reviewers");
 const team_reviewers = parse_array("team_reviewers");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -23,6 +24,7 @@ const inputs = {
   reviewers,
   team_reviewers,
   file_output,
+  custom_outputs,
 }
 
 
@@ -30,8 +32,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -18,6 +18,7 @@ const since = default_parse("since");
 const per_page = default_parse("per_page");
 const page = default_parse("page");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -41,6 +42,7 @@ const inputs = {
   per_page,
   page,
   file_output,
+  custom_outputs,
 }
 
 
@@ -48,8 +50,9 @@ request(token,
   "get", 
   "/repos/{owner}/{repo}/issues", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

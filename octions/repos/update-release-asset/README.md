@@ -44,6 +44,7 @@ Users with push access to the repository can edit a release asset.
 |name|false|The file name of the asset.
 |label|false|An alternate short description of the asset. Used in place of the filename.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

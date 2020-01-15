@@ -8,6 +8,7 @@ const owner = default_parse("owner");
 const repo = default_parse("repo");
 const last_read_at = default_parse("last_read_at");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -19,6 +20,7 @@ const inputs = {
   repo,
   last_read_at,
   file_output,
+  custom_outputs,
 }
 
 
@@ -26,8 +28,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/notifications", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -12,6 +12,7 @@ const vcs_username = default_parse("vcs_username");
 const vcs_password = default_parse("vcs_password");
 const tfvc_project = default_parse("tfvc_project");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -27,6 +28,7 @@ const inputs = {
   vcs_password,
   tfvc_project,
   file_output,
+  custom_outputs,
 }
 
 
@@ -34,8 +36,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/import", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

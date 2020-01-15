@@ -7,6 +7,7 @@ const token = default_parse("token");
 const gist_id = default_parse("gist_id");
 const comment_id = default_parse("comment_id");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -17,6 +18,7 @@ const inputs = {
   gist_id,
   comment_id,
   file_output,
+  custom_outputs,
 }
 
 
@@ -24,8 +26,9 @@ request(token,
   "get", 
   "/gists/{gist_id}/comments/{comment_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

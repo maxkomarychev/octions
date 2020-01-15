@@ -8,6 +8,7 @@ const card_id = default_parse("card_id");
 const position = default_parse("position");
 const column_id = default_parse("column_id");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   position,
   column_id,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "post", 
   "/projects/columns/cards/{card_id}/moves", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

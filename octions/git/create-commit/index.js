@@ -13,6 +13,7 @@ const author = default_parse("author");
 const committer = default_parse("committer");
 const signature = default_parse("signature");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -29,6 +30,7 @@ const inputs = {
   committer,
   signature,
   file_output,
+  custom_outputs,
 }
 
 
@@ -36,8 +38,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/git/commits", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

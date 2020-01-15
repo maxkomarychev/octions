@@ -11,6 +11,7 @@ const scopes = parse_array("scopes");
 const note = default_parse("note");
 const note_url = default_parse("note_url");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -25,6 +26,7 @@ const inputs = {
   note,
   note_url,
   file_output,
+  custom_outputs,
 }
 
 
@@ -32,8 +34,9 @@ request(token,
   "put", 
   "/authorizations/clients/{client_id}/{fingerprint}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

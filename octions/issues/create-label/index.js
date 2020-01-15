@@ -10,6 +10,7 @@ const name = default_parse("name");
 const color = default_parse("color");
 const description = default_parse("description");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -23,6 +24,7 @@ const inputs = {
   color,
   description,
   file_output,
+  custom_outputs,
 }
 
 
@@ -30,8 +32,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/labels", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

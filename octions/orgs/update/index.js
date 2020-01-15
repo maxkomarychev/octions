@@ -20,6 +20,7 @@ const members_can_create_private_repositories = parse_boolean("members_can_creat
 const members_can_create_public_repositories = parse_boolean("members_can_create_public_repositories");
 const members_allowed_repository_creation_type = default_parse("members_allowed_repository_creation_type");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -44,6 +45,7 @@ const inputs = {
   members_can_create_public_repositories,
   members_allowed_repository_creation_type,
   file_output,
+  custom_outputs,
 }
 
 
@@ -51,8 +53,9 @@ request(token,
   "patch", 
   "/orgs/{org}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

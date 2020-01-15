@@ -42,6 +42,7 @@ A transfer request will need to be accepted by the new owner when transferring a
 |new_owner|false|**Required:** The username or organization name the repository will be transferred to.
 |team_ids|false|ID of the team or teams to add to the repository. Teams can only be added to organization-owned repositories.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

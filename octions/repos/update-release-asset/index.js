@@ -10,6 +10,7 @@ const asset_id = default_parse("asset_id");
 const name = default_parse("name");
 const label = default_parse("label");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -23,6 +24,7 @@ const inputs = {
   name,
   label,
   file_output,
+  custom_outputs,
 }
 
 
@@ -30,8 +32,9 @@ request(token,
   "patch", 
   "/repos/{owner}/{repo}/releases/assets/{asset_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

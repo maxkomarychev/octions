@@ -43,6 +43,7 @@ Original documentation: https://developer.github.com/v3/git/blobs/#create-a-blob
 |content|true|The new blob's content.
 |encoding|false|The encoding used for `content`. Currently, `"utf-8"` and `"base64"` are supported.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

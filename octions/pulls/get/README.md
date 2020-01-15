@@ -56,6 +56,7 @@ Pass the appropriate [media type](https://developer.github.com/v3/media/#commits
 |repo|false|repo parameter
 |pull_number|true|pull_number parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

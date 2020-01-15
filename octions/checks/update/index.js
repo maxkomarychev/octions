@@ -17,6 +17,7 @@ const completed_at = default_parse("completed_at");
 const output = default_parse("output");
 const actions = parse_array("actions");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -38,6 +39,7 @@ const inputs = {
   output,
   actions,
   file_output,
+  custom_outputs,
 }
 
 
@@ -45,8 +47,9 @@ request(token,
   "patch", 
   "/repos/{owner}/{repo}/check-runs/{check_run_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

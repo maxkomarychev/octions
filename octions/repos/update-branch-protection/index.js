@@ -15,6 +15,7 @@ const required_linear_history = parse_boolean("required_linear_history");
 const allow_force_pushes = parse_boolean("allow_force_pushes");
 const allow_deletions = parse_boolean("allow_deletions");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -34,6 +35,7 @@ const inputs = {
   allow_force_pushes,
   allow_deletions,
   file_output,
+  custom_outputs,
 }
 
 
@@ -41,8 +43,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/branches/{branch}/protection", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

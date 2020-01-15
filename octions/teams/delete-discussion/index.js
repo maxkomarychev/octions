@@ -7,6 +7,7 @@ const token = default_parse("token");
 const team_id = default_parse("team_id");
 const discussion_number = default_parse("discussion_number");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -17,6 +18,7 @@ const inputs = {
   team_id,
   discussion_number,
   file_output,
+  custom_outputs,
 }
 
 
@@ -24,8 +26,9 @@ request(token,
   "delete", 
   "/teams/{team_id}/discussions/{discussion_number}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -34,7 +34,7 @@ describe("converting openapi method descriptor to action.yml structure", () => {
     );
   });
   it("should parse inputs and add token as first input", () => {
-    expect(spec.inputs).toHaveLength(6);
+    expect(spec.inputs).toHaveLength(7);
 
     expect(spec.inputs[0].name).toEqual("token");
     expect(spec.inputs[0].description).toEqual(
@@ -67,29 +67,17 @@ describe("converting openapi method descriptor to action.yml structure", () => {
       "Path to store full output of the action"
     );
     expect(spec.inputs[5].required).toEqual(false);
+
+    expect(spec.inputs[6].name).toEqual("custom_outputs");
+    expect(spec.inputs[6].description).toEqual(
+      "Custom outputs to create for step. This has to be YAML multiline string literal \n" +
+        "`custom_outputs: |<newline> output_name:path.in.result`"
+    );
+    expect(spec.inputs[6].required).toEqual(false);
   });
   it("has default outputs", () => {
     expect(spec.outputs).toEqual(defaultOutputs);
   });
-  // it("should create 3 outpus", () => {
-  //   expect(spec.outputs[0].name).toEqual("id");
-  //   expect(spec.outputs[0].description).toEqual(
-  //     "`id` field of the response (if exists)"
-  //   );
-  //   expect(spec.outputs[0].path).toEqual("result.data.id");
-
-  //   expect(spec.outputs[1].name).toEqual("number");
-  //   expect(spec.outputs[1].description).toEqual(
-  //     "`number` field of the response (if exists)"
-  //   );
-  //   expect(spec.outputs[1].path).toEqual("result.data.number");
-
-  //   expect(spec.outputs[2].name).toEqual("status");
-  //   expect(spec.outputs[2].description).toEqual(
-  //     "HTTP status of underlying API call"
-  //   );
-  //   expect(spec.outputs[2].path).toEqual("result.status");
-  // });
   it("should handle previews", () => {
     expect(spec.previews).toHaveLength(2);
     expect(spec.previews[0].name).toEqual("flash");

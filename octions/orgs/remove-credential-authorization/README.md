@@ -44,6 +44,7 @@ An authenticated organization owner with the `admin:org` scope can remove a cred
 |org|true|org parameter
 |credential_id|true|credential_id parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

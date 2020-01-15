@@ -44,6 +44,7 @@ Lists the GitHub Apps that have push access to this branch. Only installed GitHu
 |repo|false|repo parameter
 |branch|true|branch parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

@@ -11,6 +11,7 @@ const state = default_parse("state");
 const description = default_parse("description");
 const due_on = default_parse("due_on");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -25,6 +26,7 @@ const inputs = {
   description,
   due_on,
   file_output,
+  custom_outputs,
 }
 
 
@@ -32,8 +34,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/milestones", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

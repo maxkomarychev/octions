@@ -49,6 +49,7 @@ Note: there is a limit of 1000 statuses per `sha` and `context` within a reposit
 |description|false|A short description of the status.
 |context|false|A string label to differentiate this status from the status of other systems.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

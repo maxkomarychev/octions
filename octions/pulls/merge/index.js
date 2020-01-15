@@ -12,6 +12,7 @@ const commit_message = default_parse("commit_message");
 const sha = default_parse("sha");
 const merge_method = default_parse("merge_method");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -27,6 +28,7 @@ const inputs = {
   sha,
   merge_method,
   file_output,
+  custom_outputs,
 }
 
 
@@ -34,8 +36,9 @@ request(token,
   "put", 
   "/repos/{owner}/{repo}/pulls/{pull_number}/merge", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

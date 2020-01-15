@@ -8,6 +8,7 @@ const card_id = default_parse("card_id");
 const note = default_parse("note");
 const archived = parse_boolean("archived");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   note,
   archived,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "patch", 
   "/projects/columns/cards/{card_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

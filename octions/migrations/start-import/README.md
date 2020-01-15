@@ -46,6 +46,7 @@ Start a source import to a GitHub repository using GitHub Importer.
 |vcs_password|false|If authentication is required, the password to provide to `vcs_url`.
 |tfvc_project|false|For a tfvc import, the name of the project that is being imported.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

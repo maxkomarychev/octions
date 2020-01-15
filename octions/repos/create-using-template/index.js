@@ -11,6 +11,7 @@ const name = default_parse("name");
 const description = default_parse("description");
 const private = parse_boolean("private");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -26,6 +27,7 @@ const inputs = {
   description,
   private,
   file_output,
+  custom_outputs,
 }
 
 
@@ -33,8 +35,9 @@ request(token,
   "post", 
   "/repos/{template_owner}/{template_repo}/generate", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

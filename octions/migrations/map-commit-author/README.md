@@ -44,6 +44,7 @@ Update an author's identity for the import. Your application can continue updati
 |email|false|The new Git author email.
 |name|false|The new Git author name.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

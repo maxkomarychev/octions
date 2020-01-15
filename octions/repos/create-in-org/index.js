@@ -22,6 +22,7 @@ const allow_squash_merge = parse_boolean("allow_squash_merge");
 const allow_merge_commit = parse_boolean("allow_merge_commit");
 const allow_rebase_merge = parse_boolean("allow_rebase_merge");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -49,6 +50,7 @@ const inputs = {
   allow_merge_commit,
   allow_rebase_merge,
   file_output,
+  custom_outputs,
 }
 
 
@@ -56,8 +58,9 @@ request(token,
   "post", 
   "/orgs/{org}/repos", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

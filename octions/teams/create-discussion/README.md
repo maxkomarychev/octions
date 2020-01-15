@@ -47,6 +47,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |body|true|The discussion post's body text.
 |private|false|Private posts are only visible to team members, organization owners, and team maintainers. Public posts are visible to all members of the organization. Set to `true` to create a private post.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

@@ -12,6 +12,7 @@ const dismiss_stale_reviews = parse_boolean("dismiss_stale_reviews");
 const require_code_owner_reviews = parse_boolean("require_code_owner_reviews");
 const required_approving_review_count = default_parse("required_approving_review_count");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -28,6 +29,7 @@ const inputs = {
   require_code_owner_reviews,
   required_approving_review_count,
   file_output,
+  custom_outputs,
 }
 
 
@@ -35,8 +37,9 @@ request(token,
   "patch", 
   "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

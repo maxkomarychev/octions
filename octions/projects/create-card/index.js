@@ -9,6 +9,7 @@ const note = default_parse("note");
 const content_id = default_parse("content_id");
 const content_type = default_parse("content_type");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -22,6 +23,7 @@ const inputs = {
   content_id,
   content_type,
   file_output,
+  custom_outputs,
 }
 
 
@@ -29,8 +31,9 @@ request(token,
   "post", 
   "/projects/columns/{column_id}/cards", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

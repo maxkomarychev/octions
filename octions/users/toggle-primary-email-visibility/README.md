@@ -42,6 +42,7 @@ Sets the visibility for your primary email addresses.
 |email|true|Specify the _primary_ email address that needs a visibility change.
 |visibility|true|Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

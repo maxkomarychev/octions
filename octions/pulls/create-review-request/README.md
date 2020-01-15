@@ -44,6 +44,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |reviewers|false|An array of user `login`s that will be requested.
 |team_reviewers|false|An array of team `slug`s that will be requested.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

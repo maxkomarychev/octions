@@ -9,6 +9,7 @@ const discussion_number = default_parse("discussion_number");
 const title = default_parse("title");
 const body = default_parse("body");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -22,6 +23,7 @@ const inputs = {
   title,
   body,
   file_output,
+  custom_outputs,
 }
 
 
@@ -29,8 +31,9 @@ request(token,
   "patch", 
   "/teams/{team_id}/discussions/{discussion_number}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

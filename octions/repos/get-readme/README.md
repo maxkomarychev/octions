@@ -44,6 +44,7 @@ READMEs support [custom media types](https://developer.github.com/v3/repos/conte
 |repo|false|repo parameter
 |ref|true|The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

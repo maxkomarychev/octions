@@ -47,6 +47,7 @@ Original documentation: https://developer.github.com/v3/repos/hooks/#edit-a-hook
 |remove_events|false|Determines a list of events to be removed from the list of events that the Hook triggers for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

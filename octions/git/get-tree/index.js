@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const tree_sha = default_parse("tree_sha");
 const recursive = default_parse("recursive");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   tree_sha,
   recursive,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "get", 
   "/repos/{owner}/{repo}/git/trees/{tree_sha}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

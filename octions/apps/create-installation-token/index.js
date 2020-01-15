@@ -8,6 +8,7 @@ const installation_id = default_parse("installation_id");
 const repository_ids = parse_array("repository_ids");
 const permissions = default_parse("permissions");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -20,6 +21,7 @@ const inputs = {
   repository_ids,
   permissions,
   file_output,
+  custom_outputs,
 }
 
 
@@ -27,8 +29,9 @@ request(token,
   "post", 
   "/app/installations/{installation_id}/access_tokens", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

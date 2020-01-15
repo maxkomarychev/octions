@@ -43,6 +43,7 @@ Adds a collaborator to a an organization project and sets their permission level
 |username|true|username parameter
 |permission|false|The permission to grant the collaborator. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)." Can be one of:   \* `read` - can read, but not write to or administer this project.   \* `write` - can read and write, but not administer this project.   \* `admin` - can read, write and administer this project.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

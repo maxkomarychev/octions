@@ -16,6 +16,7 @@ const description = default_parse("description");
 const transient_environment = parse_boolean("transient_environment");
 const production_environment = parse_boolean("production_environment");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -36,6 +37,7 @@ const inputs = {
   transient_environment,
   production_environment,
   file_output,
+  custom_outputs,
 }
 
 
@@ -43,8 +45,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/deployments", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

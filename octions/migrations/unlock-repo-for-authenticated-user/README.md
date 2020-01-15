@@ -42,6 +42,7 @@ Unlocks a repository. You can lock repositories when you [start a user migration
 |migration_id|true|migration_id parameter
 |repo_name|true|repo_name parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

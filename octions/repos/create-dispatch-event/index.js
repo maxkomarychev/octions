@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const event_type = default_parse("event_type");
 const client_payload = default_parse("client_payload");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -22,6 +23,7 @@ const inputs = {
   event_type,
   client_payload,
   file_output,
+  custom_outputs,
 }
 
 
@@ -29,8 +31,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/dispatches", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

@@ -46,6 +46,7 @@ Here's how you can create a hook that posts payloads in JSON format:
 |events|false|Determines what [events](https://developer.github.com/v3/activity/events/types/) the hook is triggered for.
 |active|false|Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

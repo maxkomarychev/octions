@@ -62,6 +62,7 @@ If you don't use the `comfort-fade` preview header, multi-line and single-line c
 |comment_id|true|comment_id parameter
 |body|true|The text of the reply to the review comment.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

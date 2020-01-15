@@ -46,6 +46,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |sha|false|SHA that pull request head must match to allow merge.
 |merge_method|false|Merge method to use. Possible values are `merge`, `squash` or `rebase`. Default is `merge`.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

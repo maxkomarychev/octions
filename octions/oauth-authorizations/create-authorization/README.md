@@ -55,6 +55,7 @@ Organizations that enforce SAML SSO require personal access tokens to be whiteli
 |client_secret|false|The 40 character OAuth app client secret for which to create the token.
 |fingerprint|false|A unique string to distinguish an authorization from others created for the same client ID and user.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

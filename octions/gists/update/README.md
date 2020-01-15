@@ -42,6 +42,7 @@ Allows you to update or delete a gist file and rename gist files. Files from the
 |description|false|A descriptive name for this gist.
 |files|false|The filenames and content that make up this gist.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

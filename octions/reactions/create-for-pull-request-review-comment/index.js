@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const comment_id = default_parse("comment_id");
 const content = default_parse("content");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -22,6 +23,7 @@ const inputs = {
   comment_id,
   content,
   file_output,
+  custom_outputs,
 }
 
 
@@ -29,8 +31,9 @@ request(token,
   "post", 
   "/repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

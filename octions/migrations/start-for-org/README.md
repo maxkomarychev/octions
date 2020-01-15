@@ -44,6 +44,7 @@ Initiates the generation of a migration archive.
 |lock_repositories|false|Indicates whether repositories should be locked (to prevent manipulation) while migrating data.
 |exclude_attachments|false|Indicates whether attachments should be excluded from the migration (to reduce migration archive file size).
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

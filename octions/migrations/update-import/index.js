@@ -9,6 +9,7 @@ const repo = default_parse("repo");
 const vcs_username = default_parse("vcs_username");
 const vcs_password = default_parse("vcs_password");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -21,6 +22,7 @@ const inputs = {
   vcs_username,
   vcs_password,
   file_output,
+  custom_outputs,
 }
 
 
@@ -28,8 +30,9 @@ request(token,
   "patch", 
   "/repos/{owner}/{repo}/import", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

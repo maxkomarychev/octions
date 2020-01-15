@@ -11,6 +11,7 @@ const privacy = default_parse("privacy");
 const permission = default_parse("permission");
 const parent_team_id = default_parse("parent_team_id");
 const file_output = default_parse("file_output");
+const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
@@ -25,6 +26,7 @@ const inputs = {
   permission,
   parent_team_id,
   file_output,
+  custom_outputs,
 }
 
 
@@ -32,8 +34,9 @@ request(token,
   "patch", 
   "/teams/{team_id}", 
   previews,
-  _.omit(inputs, ["token", "file_output"]),
+  _.omit(inputs, ["token", "file_output", "custom_outputs"]),
   file_output,
+  custom_outputs,
 ).then(result => {
     console.log("result", result);
   })

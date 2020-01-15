@@ -44,6 +44,7 @@ _Note_: This API supports blobs up to 100 megabytes in size.
 |repo|false|repo parameter
 |file_sha|true|file_sha parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

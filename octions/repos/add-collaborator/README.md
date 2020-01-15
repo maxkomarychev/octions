@@ -51,6 +51,7 @@ To prevent abuse, you are limited to sending 50 invitations to a repository per 
 |username|true|username parameter
 |permission|false|The permission to grant the collaborator. **Only valid on organization-owned repositories.** Can be one of:   \* `pull` - can pull, but not push to or administer this repository.   \* `push` - can pull and push, but not administer this repository.   \* `admin` - can pull, push and administer this repository.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

@@ -53,6 +53,7 @@ If you have two-factor authentication setup, Basic Authentication for this endpo
 |note|false|A note to remind you what the OAuth token is for.
 |note_url|false|A URL to remind you what app the OAuth token is for.
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

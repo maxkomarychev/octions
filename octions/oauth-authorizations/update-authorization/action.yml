@@ -39,6 +39,10 @@ inputs:
     description: |
       Path to store full output of the action
     required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+    required: false
 
 runs:
   using: node12

@@ -70,6 +70,7 @@ These are the possible values for `reason` in the `verification` object:
 |repo|false|repo parameter
 |ref|true|ref parameter
 |file_output|false|Path to store full output of the action
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs
