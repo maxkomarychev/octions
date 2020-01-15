@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: echo "${{ toJson(github.event) }}"
-      - uses: ./octions/issues/update@master
+      - uses: ./octions/issues/update
         with:
           id: close_issue
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -18,7 +18,7 @@ jobs:
           custom_outputs: |
             user:user.login
       - run: echo "${{ toJson(steps.outputs.close_issue.user) }}"
-      - uses: ./octions/issues/create-comment@master
+      - uses: ./octions/issues/create-comment
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue_number: ${{ github.event.issue.number }}
