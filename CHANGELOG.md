@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/maxkomarychev/octions/compare/v0.5.1...v0.6.0) (2020-01-15)
+
+
+### Features
+
+* allow specifying custom outputs ([ab67517](https://github.com/maxkomarychev/octions/commit/ab6751724a60af029f76d6b8f1eddae7913c01af))
+
+
+### Bug Fixes
+
+* add missing import ([8689c15](https://github.com/maxkomarychev/octions/commit/8689c1584e6bd47d9b23c55b2d1a4f56206bf260))
+
 ### [0.5.1](https://github.com/maxkomarychev/octions/compare/v0.5.0...v0.5.1) (2020-01-15)
 
 
