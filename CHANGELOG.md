@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/maxkomarychev/octions/compare/v0.5.0...v0.5.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* various fixes in utils ([bb14572](https://github.com/maxkomarychev/octions/commit/bb14572b63ce918576a0864b5944d38ce25d8059))
+
+
+### Documentation
+
+* generate table of contents in catalog ([df4440d](https://github.com/maxkomarychev/octions/commit/df4440d0715fb93c2117e6e37cb23b6a05df58c5))
+
 ## [0.5.0](https://github.com/maxkomarychev/octions/compare/v0.4.1...v0.5.0) (2020-01-15)
 
 
