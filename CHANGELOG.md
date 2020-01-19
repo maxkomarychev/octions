@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/maxkomarychev/octions/compare/v0.6.0...v0.7.0) (2020-01-19)
+
+
+### Features
+
+* allow reading input from a file ([9251ecd](https://github.com/maxkomarychev/octions/commit/9251ecd1de3ab54ec9a2762591c8e051e5564dfc))
+
+
+### Documentation
+
+* update common inputs & example ([332d3e2](https://github.com/maxkomarychev/octions/commit/332d3e251cca6d9084f7a7d4845c6be866398ea8))
+
 ## [0.6.0](https://github.com/maxkomarychev/octions/compare/v0.5.1...v0.6.0) (2020-01-15)
 
 
