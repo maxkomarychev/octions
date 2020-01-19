@@ -48,7 +48,7 @@ By default, Issue Comments are ordered by ascending ID.
 |direction|true|Either `asc` or `desc`. Ignored without the `sort` parameter.
 |since|true|Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

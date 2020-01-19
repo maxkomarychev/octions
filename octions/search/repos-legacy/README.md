@@ -48,7 +48,7 @@ Find repositories by keyword. Note, this legacy method does not follow the v3 pa
 |sort|true|The sort field. One of `stars`, `forks`, or `updated`. Default: results are sorted by best match.
 |order|true|The sort field. if `sort` param is provided. Can be either `asc` or `desc`.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

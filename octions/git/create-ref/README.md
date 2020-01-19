@@ -44,7 +44,7 @@ Creates a reference for your repository. You are unable to create new references
 |ref|true|The name of the fully qualified reference (ie: `refs/heads/master`). If it doesn't start with 'refs' and have at least two slashes, it will be rejected.
 |sha|true|The SHA1 value for this reference.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

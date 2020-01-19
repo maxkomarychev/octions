@@ -50,7 +50,7 @@ This example creates a content attachment for the domain `https://errors.ai/`.
 |title|true|The title of the content attachment displayed in the body or comment of an issue or pull request.
 |body|true|The body text of the content attachment displayed in the body or comment of an issue or pull request. This parameter supports markdown.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

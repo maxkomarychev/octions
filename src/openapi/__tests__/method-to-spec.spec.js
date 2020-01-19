@@ -70,8 +70,8 @@ describe("converting openapi method descriptor to action.yml structure", () => {
 
     expect(spec.inputs[6].name).toEqual("custom_outputs");
     expect(spec.inputs[6].description).toEqual(
-      "Custom outputs to create for step. This has to be YAML multiline string literal \n" +
-        "`custom_outputs: |<newline> output_name:path.in.result`"
+      "Custom outputs to create for step. This has to be YAML multiline string literal " +
+        "`custom_outputs: \\|<newline> output_name:path.in.result`"
     );
     expect(spec.inputs[6].required).toEqual(false);
   });

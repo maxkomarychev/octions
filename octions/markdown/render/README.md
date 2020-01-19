@@ -42,7 +42,7 @@ Original documentation: https://developer.github.com/v3/markdown/#render-an-arbi
 |mode|false|The rendering mode. Can be either:   \* `markdown` to render a document in plain Markdown, just like README.md files are rendered.   \* `gfm` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.
 |context|false|The repository context to use when creating references in `gfm` mode. Omit this parameter when using `markdown` mode.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

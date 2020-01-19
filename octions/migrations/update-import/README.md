@@ -48,7 +48,7 @@ To restart an import, no parameters are provided in the update request.
 |vcs_username|false|The username to provide to the originating repository.
 |vcs_password|false|The password to provide to the originating repository.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

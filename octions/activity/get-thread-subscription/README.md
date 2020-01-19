@@ -42,7 +42,7 @@ Note that subscriptions are only generated if a user is participating in a conve
 |token|true|Token to authenticate the request
 |thread_id|true|thread_id parameter
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

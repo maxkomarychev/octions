@@ -51,7 +51,7 @@ To prevent abuse, the authenticated user is limited to 50 organization invitatio
 |username|true|username parameter
 |role|false|The role to give the user in the organization. Can be one of:   \* `admin` - The user will become an owner of the organization.   \* `member` - The user will become a non-owner member of the organization.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

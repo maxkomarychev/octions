@@ -40,7 +40,7 @@ Removes a public SSH key from the authenticated user's GitHub account. Requires 
 |token|true|Token to authenticate the request
 |key_id|true|key_id parameter
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

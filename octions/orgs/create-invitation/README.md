@@ -46,7 +46,7 @@ This endpoint triggers [notifications](https://help.github.com/articles/about-no
 |role|false|Specify role for new member. Can be one of:   \* `admin` - Organization owners with full administrative rights to the organization and complete access to all repositories and teams.   \* `direct_member` - Non-owner organization members with ability to see other members and join teams by invitation.   \* `billing_manager` - Non-owner organization members with ability to manage the billing settings of your organization.
 |team_ids|false|Specify IDs for the teams you want to invite new members to.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

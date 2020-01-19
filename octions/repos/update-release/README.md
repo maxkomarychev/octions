@@ -48,7 +48,7 @@ Users with push access to the repository can edit a release.
 |draft|false|`true` makes the release a draft, and `false` publishes the release.
 |prerelease|false|`true` to identify the release as a prerelease, `false` to identify the release as a full release.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

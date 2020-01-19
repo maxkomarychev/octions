@@ -50,7 +50,7 @@ You can only send one of these scope keys at a time.
 |note_url|false|A URL to remind you what app the OAuth token is for.
 |fingerprint|false|A unique string to distinguish an authorization from others created for the same client ID and user.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

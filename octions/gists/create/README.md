@@ -44,7 +44,7 @@ Allows you to add a new gist with one or more files.
 |description|false|A descriptive name for this gist.
 |public|false|When `true`, the gist will be public and available for anyone to see.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

@@ -44,7 +44,7 @@ Original documentation: https://developer.github.com/v3/pulls/review_requests/#d
 |reviewers|false|An array of user `login`s that will be removed.
 |team_reviewers|false|An array of team `slug`s that will be removed.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

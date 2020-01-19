@@ -41,7 +41,7 @@ This lets you subscribe or unsubscribe from a conversation.
 |thread_id|true|thread_id parameter
 |ignored|false|Unsubscribes and subscribes you to a conversation. Set `ignored` to `true` to block all notifications from this thread.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

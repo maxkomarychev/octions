@@ -45,7 +45,7 @@ Original documentation: https://developer.github.com/v3/repos/merging/#perform-a
 |head|true|The head to merge. This can be a branch name or a commit SHA1.
 |commit_message|false|Commit message to use for the merge commit. If omitted, a default message will be used.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

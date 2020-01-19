@@ -84,8 +84,8 @@ function methodToMeta(method, path, method_data, outputs) {
       {
         name: "custom_outputs",
         description:
-          "Custom outputs to create for step. This has to be YAML multiline string literal \n" +
-          "`custom_outputs: |<newline> output_name:path.in.result`",
+          "Custom outputs to create for step. This has to be YAML multiline string literal " +
+          "`custom_outputs: \\|<newline> output_name:path.in.result`",
         required: false
       }
     ],

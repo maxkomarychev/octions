@@ -44,7 +44,7 @@ Create a reaction to a [pull request review comment](https://developer.github.co
 |comment_id|true|comment_id parameter
 |content|true|The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the pull request review comment.
 |file_output|false|Path to store full output of the action
-|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal  `custom_outputs: |<newline> output_name:path.in.result`
+|custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 
 <a name="outputs" ></a>
 ## Outputs

@@ -12,10 +12,11 @@ Common API are listed below:
 
 ### Common inputs
 
-| Name        | Type   | Description                                  |
-| ----------- | ------ | -------------------------------------------- |
-| token       | string | Valid token to authorize API calls           |
-| file_output | string | Store result of the action in specified file |
+| Name           | Type             | Description                                                                                                                              |
+| -------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| token          | string           | Valid token to authorize API calls                                                                                                       |
+| file_output    | string           | Store result of the action in specified file                                                                                             |
+| custom_outputs | multiline string | Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: |<newline> output_name:path.in.result`" |
 
 ### Common outputs
 
@@ -50,6 +51,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue_number: ${{ github.event.issue.number }}
           state: closed
+          custom_outputs: |
+            user:data.user.login
       - uses: maxkomarychev/octions/octions/issues/create-comment@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
