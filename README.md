@@ -18,6 +18,33 @@ Common API are listed below:
 | file_output    | string           | Store result of the action in specified file                                                                                             |
 | custom_outputs | multiline string | Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: |<newline> output_name:path.in.result`" |
 
+#### Read input from file
+
+If value of the input beings with `FILE::` the rest of the string is treated as
+path and oction will use data of that file as value of the input.
+
+Example. This will pust output of `cloc` as a comment in a pr:
+
+```yaml
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  cloc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: npx cloc . > cloc.txt
+      - uses: maxkomarychev/octions/octions/issues/create-comment@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue_number: ${{ github.event.pull_request.number }}
+          body: FILE::cloc.txt
+```
+
 ### Common outputs
 
 | Name   | Description                                |
