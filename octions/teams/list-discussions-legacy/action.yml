@@ -1,0 +1,38 @@
+name: List discussions (Legacy)
+description: |
+  **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`List discussions`](https://developer.github.com/v3/teams/discussions/#list-discussions) endpoint.  List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  direction:
+    description: |
+      Sorts the discussion comments by the date they were created. To return the oldest comments first, set to `asc`. Can be one of `asc` or `desc`.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

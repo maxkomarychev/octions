@@ -1,0 +1,46 @@
+name: List reactions for a team discussion
+description: |
+  List the reactions to a [team discussion](https://developer.github.com/v3/teams/discussions/). OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).  **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number/reactions`.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  team_slug:
+    description: |
+      team_slug parameter
+    required: true
+  discussion_number:
+    description: |
+      discussion_number parameter
+    required: true
+  content:
+    description: |
+      Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a team discussion.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,26 @@
+name: List IdP groups for a team (Legacy)
+description: |
+  **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`List IdP groups for a team`](https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team) endpoint.  Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.  List IdP groups connected to a team on GitHub.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/teams/#list-teams
 
-
+Lists all teams in an organization that are visible to the authenticated user.
 
 
 <a name="quick start" ></a>

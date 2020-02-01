@@ -1,0 +1,30 @@
+name: Get team member (Legacy)
+description: |
+  The "Get team member" endpoint (described below) is deprecated.  We recommend using the [Get team membership](https://developer.github.com/v3/teams/members/#get-team-membership) endpoint instead. It allows you to get both active and pending memberships.  To list members in a team, the team must be visible to the authenticated user.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

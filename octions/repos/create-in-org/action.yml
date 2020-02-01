@@ -75,6 +75,10 @@ inputs:
     description: |
       Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
     required: false
+  delete_branch_on_merge:
+    description: |
+      Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion.
+    required: false
   file_output:
     description: |
       Path to store full output of the action

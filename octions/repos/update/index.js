@@ -19,6 +19,7 @@ const default_branch = default_parse("default_branch");
 const allow_squash_merge = parse_boolean("allow_squash_merge");
 const allow_merge_commit = parse_boolean("allow_merge_commit");
 const allow_rebase_merge = parse_boolean("allow_rebase_merge");
+const delete_branch_on_merge = parse_boolean("delete_branch_on_merge");
 const archived = parse_boolean("archived");
 const file_output = default_parse("file_output");
 const custom_outputs = default_parse("custom_outputs");
@@ -46,6 +47,7 @@ const inputs = {
   allow_squash_merge,
   allow_merge_commit,
   allow_rebase_merge,
+  delete_branch_on_merge,
   archived,
   file_output,
   custom_outputs,

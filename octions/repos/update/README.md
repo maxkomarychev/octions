@@ -52,6 +52,7 @@ Original documentation: https://developer.github.com/v3/repos/#edit
 |allow_squash_merge|false|Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
 |allow_merge_commit|false|Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
 |allow_rebase_merge|false|Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+|delete_branch_on_merge|false|Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion.
 |archived|false|`true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
 |file_output|false|Path to store full output of the action
 |custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`

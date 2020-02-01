@@ -1,0 +1,34 @@
+name: Check if a team manages a repository (Legacy)
+description: |
+  **Note**: Repositories inherited through a parent team will also be checked.  **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`Check if a team manages a repository`](https://developer.github.com/v3/teams/#check-if-a-team-manages-a-repository) endpoint.  You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  team_id:
+    description: |
+      team_id parameter
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: false
+  repo:
+    description: |
+      repo parameter
+    required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -1,0 +1,38 @@
+name: List repository workflow runs
+description: |
+  Lists all workflow runs for a repository. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: false
+  repo:
+    description: |
+      repo parameter
+    required: false
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

@@ -67,6 +67,10 @@ inputs:
     description: |
       Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
     required: false
+  delete_branch_on_merge:
+    description: |
+      Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion.
+    required: false
   archived:
     description: |
       `true` to archive this repository. **Note**: You cannot unarchive repositories through the API.

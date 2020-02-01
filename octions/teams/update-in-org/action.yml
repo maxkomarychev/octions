@@ -1,0 +1,50 @@
+name: Edit team
+description: |
+  To edit a team, the authenticated user must either be an organization owner or a team maintainer.  **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/:org_id/team/:team_id`.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  team_slug:
+    description: |
+      team_slug parameter
+    required: true
+  name:
+    description: |
+      The name of the team.
+    required: true
+  description:
+    description: |
+      The description of the team.
+    required: false
+  privacy:
+    description: |
+      The level of privacy this team should have. Editing teams without specifying this parameter leaves `privacy` intact. When a team is nested, the `privacy` for parent teams cannot be `secret`. The options are:   **For a non-nested team:**   \* `secret` - only visible to organization owners and members of this team.   \* `closed` - visible to all members of this organization.   **For a parent or child team:**   \* `closed` - visible to all members of this organization.
+    required: false
+  permission:
+    description: |
+      **Deprecated**. The permission that new repositories will be added to the team with when none is specified. Can be one of:   \* `pull` - team members can pull, but not push to or administer newly-added repositories.   \* `push` - team members can pull and push, but not administer newly-added repositories.   \* `admin` - team members can pull, push and administer newly-added repositories.
+    required: false
+  parent_team_id:
+    description: |
+      The ID of a team to set as the parent team.
+    required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

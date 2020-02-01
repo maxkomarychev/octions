@@ -12,7 +12,9 @@
 
 Original documentation: https://developer.github.com/v3/git/trees/#get-a-tree
 
-If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
+Returns a single tree using the SHA1 value for that tree.
+
+If `truncated` is `true` in the response then the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
 
 
 <a name="quick start" ></a>

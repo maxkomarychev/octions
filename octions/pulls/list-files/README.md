@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/pulls/#list-pull-requests-files
 
-**Note:** The response includes a maximum of 300 files.
+**Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
 
 
 <a name="quick start" ></a>
