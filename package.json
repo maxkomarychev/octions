@@ -1,6 +1,6 @@
 {
   "name": "octions",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "Collection of GitHub Actions that wrap GitHub REST API",
   "main": "index.js",
   "scripts": {
