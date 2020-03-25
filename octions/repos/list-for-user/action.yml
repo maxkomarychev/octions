@@ -1,4 +1,4 @@
-name: List user repositories
+name: List repositories for a user
 description: |
   Lists public repositories for the specified user.
 

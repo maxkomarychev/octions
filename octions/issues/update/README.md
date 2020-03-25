@@ -1,4 +1,4 @@
-# Edit an issue
+# Update an issue
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/issues/#edit-an-issue
+Original documentation: https://developer.github.com/v3/issues/#update-an-issue
 
 Issue owners and users with push access can edit an issue.
 

@@ -1,4 +1,4 @@
-# List all public repositories
+# List public repositories
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/repos/#list-all-public-repositories
+Original documentation: https://developer.github.com/v3/repos/#list-public-repositories
 
 Lists all public repositories in the order that they were created.
 
@@ -42,7 +42,7 @@ Note: Pagination is powered exclusively by the `since` parameter. Use the [Link 
 | Name | Is required | Description |
 |---|---|---|
 |token|true|Token to authenticate the request
-|since|true|The integer ID of the last Repository that you've seen.
+|since|true|The integer ID of the last repository that you've seen.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action

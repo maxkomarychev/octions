@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/activity/watching/#list-watchers
 
-
+Lists the people watching the specified repository.
 
 
 <a name="quick start" ></a>

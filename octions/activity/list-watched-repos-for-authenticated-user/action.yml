@@ -1,6 +1,6 @@
-name: List repositories being watched by the authenticated user
+name: List repositories watched by the authenticated user
 description: |
-  
+  Lists repositories the authenticated user is watching.
 
 inputs:
   token:

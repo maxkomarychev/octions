@@ -1,4 +1,4 @@
-# Set a Repository Subscription
+# Set a repository subscription
 
 ## Table of contents
 

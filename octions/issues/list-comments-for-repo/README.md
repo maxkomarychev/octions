@@ -28,6 +28,8 @@ By default, Issue Comments are ordered by ascending ID.
     sort: <sort value>
     direction: <direction value>
     since: <since value>
+    per_page: <per_page value>
+    page: <page value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -47,6 +49,8 @@ By default, Issue Comments are ordered by ascending ID.
 |sort|true|Either `created` or `updated`.
 |direction|true|Either `asc` or `desc`. Ignored without the `sort` parameter.
 |since|true|Only comments updated at or after this time are returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
+|per_page|true|Results per page (max 100)
+|page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action
 |custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 

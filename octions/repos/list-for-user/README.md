@@ -1,4 +1,4 @@
-# List user repositories
+# List repositories for a user
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/repos/#list-user-repositories
+Original documentation: https://developer.github.com/v3/repos/#list-repositories-for-a-user
 
 Lists public repositories for the specified user.
 

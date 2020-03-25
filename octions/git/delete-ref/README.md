@@ -12,13 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/git/refs/#delete-a-reference
 
-```
-DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
-```
 
-```
-DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
-```
 
 
 <a name="quick start" ></a>

@@ -1,4 +1,4 @@
-# Creates a new repository in the specified organization
+# Create an organization repository
 
 ## Table of contents
 
@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/repos/#create
+Original documentation: https://developer.github.com/v3/repos/#create-an-organization-repository
 
-Creates a new repository for the authenticated user.
+Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
 
 **OAuth scope requirements**
 
@@ -51,7 +51,7 @@ When using [OAuth](https://developer.github.com/apps/building-oauth-apps/underst
 |description|false|A short description of the repository.
 |homepage|false|A URL with more information about the repository.
 |private|false|Either `true` to create a private repository or `false` to create a public one. Creating private repositories requires a paid GitHub account.
-|visibility|false|Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/github/creating-cloning-and-archiving-repositories/creating-an-internal-repository)" in the GitHub Help documentation.   The `visibility` parameter overrides the `private` parameter when you use both parameters with the `nebula-preview` preview header.
+|visibility|false|Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility#about-internal-repositories)" in the GitHub Help documentation.   The `visibility` parameter overrides the `private` parameter when you use both parameters with the `nebula-preview` preview header.
 |has_issues|false|Either `true` to enable issues for this repository or `false` to disable them.
 |has_projects|false|Either `true` to enable projects for this repository or `false` to disable them. **Note:** If you're creating a repository in an organization that has disabled repository projects, the default is `false`, and if you pass `true`, the API returns an error.
 |has_wiki|false|Either `true` to enable the wiki for this repository or `false` to disable it.

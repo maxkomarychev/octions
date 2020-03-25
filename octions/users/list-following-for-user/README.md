@@ -1,4 +1,4 @@
-# List who a user is following
+# List users followed by another user
 
 ## Table of contents
 
@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/users/followers/#list-users-followed-by-another-user
 
-
+Lists the people who the specified user follows.
 
 
 <a name="quick start" ></a>

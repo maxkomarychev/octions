@@ -6,6 +6,10 @@ const request = require('../../../src/utils/request')
 const token = default_parse("token");
 const owner = default_parse("owner");
 const repo = default_parse("repo");
+const actor = default_parse("actor");
+const branch = default_parse("branch");
+const event = default_parse("event");
+const status = default_parse("status");
 const per_page = default_parse("per_page");
 const page = default_parse("page");
 const file_output = default_parse("file_output");
@@ -19,6 +23,10 @@ const inputs = {
   token,
   owner,
   repo,
+  actor,
+  branch,
+  event,
+  status,
   per_page,
   page,
   file_output,

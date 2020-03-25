@@ -19,14 +19,6 @@ inputs:
     description: |
       name parameter
     required: true
-  per_page:
-    description: |
-      Results per page (max 100)
-    required: true
-  page:
-    description: |
-      Page number of the results to fetch.
-    required: true
   file_output:
     description: |
       Path to store full output of the action

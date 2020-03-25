@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/workflow_jobs/#list-jobs-for-a-workflow-run
 
-Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
 
 
 <a name="quick start" ></a>
@@ -24,6 +24,7 @@ Lists jobs for a workflow run. Anyone with read access to the repository can use
   with:
     token: <token value>
     run_id: <run_id value>
+    filter: <filter value>
     per_page: <per_page value>
     page: <page value>
 - name: Print outputs
@@ -43,6 +44,7 @@ Lists jobs for a workflow run. Anyone with read access to the repository can use
 |owner|false|owner parameter
 |repo|false|repo parameter
 |run_id|true|run_id parameter
+|filter|true|Filters jobs by their `completed_at` timestamp. Can be one of:   \* `latest`: Returns jobs from the most recent execution of the workflow run.   \* `all`: Returns all jobs for a workflow run, including from old executions of the workflow run.
 |per_page|true|Results per page (max 100)
 |page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action

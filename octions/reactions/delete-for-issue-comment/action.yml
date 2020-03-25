@@ -1,0 +1,38 @@
+name: Delete an issue comment reaction
+description: |
+  **Note:** You can also specify a repository by `repository_id` using the route `DELETE delete /repositories/:repository_id/issues/comments/:comment_id/reactions/:reaction_id`.  Delete a reaction to an [issue comment](https://developer.github.com/v3/issues/comments/).
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: false
+  repo:
+    description: |
+      repo parameter
+    required: false
+  comment_id:
+    description: |
+      comment_id parameter
+    required: true
+  reaction_id:
+    description: |
+      reaction_id parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

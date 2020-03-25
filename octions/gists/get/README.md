@@ -1,4 +1,4 @@
-# Get a single gist
+# Get a gist
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/gists/#get-a-single-gist
+Original documentation: https://developer.github.com/v3/gists/#get-a-gist
 
 
 

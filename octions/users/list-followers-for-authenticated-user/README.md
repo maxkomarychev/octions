@@ -1,4 +1,4 @@
-# List the authenticated user's followers
+# List followers of the authenticated user
 
 ## Table of contents
 
@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/users/followers/#list-followers-of-a-user
+Original documentation: https://developer.github.com/v3/users/followers/#list-followers-of-the-authenticated-user
 
-
+Lists the people following the authenticated user.
 
 
 <a name="quick start" ></a>

@@ -1,4 +1,4 @@
-# List repositories being watched by a user
+# List repositories watched by a user
 
 ## Table of contents
 
@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/watching/#list-repositories-being-watched
+Original documentation: https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-a-user
 
-
+Lists repositories a user is watching.
 
 
 <a name="quick start" ></a>

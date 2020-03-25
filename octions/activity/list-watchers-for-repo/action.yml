@@ -1,6 +1,6 @@
 name: List watchers
 description: |
-  
+  Lists the people watching the specified repository.
 
 inputs:
   token:

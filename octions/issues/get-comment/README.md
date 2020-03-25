@@ -24,8 +24,6 @@ Original documentation: https://developer.github.com/v3/issues/comments/#get-a-s
   with:
     token: <token value>
     comment_id: <comment_id value>
-    per_page: <per_page value>
-    page: <page value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -43,8 +41,6 @@ Original documentation: https://developer.github.com/v3/issues/comments/#get-a-s
 |owner|false|owner parameter
 |repo|false|repo parameter
 |comment_id|true|comment_id parameter
-|per_page|true|Results per page (max 100)
-|page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action
 |custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 

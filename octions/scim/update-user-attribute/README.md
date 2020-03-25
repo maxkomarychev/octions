@@ -29,7 +29,6 @@ The following example shows adding a new email address and updating the user's g
     }
   }]
 }
-
 ```
 
 

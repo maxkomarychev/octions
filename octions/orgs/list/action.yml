@@ -9,7 +9,7 @@ inputs:
     required: true
   since:
     description: |
-      The integer ID of the last Organization that you've seen.
+      The integer ID of the last organization that you've seen.
     required: true
   per_page:
     description: |

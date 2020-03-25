@@ -1,6 +1,6 @@
 name: Delete a reference
 description: |
-  ``` DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a ```  ``` DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0 ```
+  
 
 inputs:
   token:

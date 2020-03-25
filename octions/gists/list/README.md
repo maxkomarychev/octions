@@ -1,4 +1,4 @@
-# List the authenticated user's gists or if called anonymously, this will return all public gists
+# List gists for the authenticated user
 
 ## Table of contents
 
@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/gists/#list-a-users-gists
+Original documentation: https://developer.github.com/v3/gists/#list-gists-for-the-authenticated-user
 
-
+Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists:
 
 
 <a name="quick start" ></a>

@@ -1,4 +1,4 @@
-# Get a Repository Subscription
+# Get a repository subscription
 
 ## Table of contents
 

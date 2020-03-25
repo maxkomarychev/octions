@@ -7,6 +7,7 @@ const token = default_parse("token");
 const owner = default_parse("owner");
 const repo = default_parse("repo");
 const run_id = default_parse("run_id");
+const filter = default_parse("filter");
 const per_page = default_parse("per_page");
 const page = default_parse("page");
 const file_output = default_parse("file_output");
@@ -21,6 +22,7 @@ const inputs = {
   owner,
   repo,
   run_id,
+  filter,
   per_page,
   page,
   file_output,

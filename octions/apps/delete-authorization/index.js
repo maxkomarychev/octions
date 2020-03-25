@@ -11,7 +11,6 @@ const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
-  "doctor-strange",
 ]
 
 const inputs = {

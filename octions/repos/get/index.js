@@ -12,6 +12,7 @@ const custom_outputs = default_parse("custom_outputs");
 
 const previews = [
   "nebula",
+  "scarlet-witch",
 ]
 
 const inputs = {

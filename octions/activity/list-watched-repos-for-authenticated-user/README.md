@@ -1,4 +1,4 @@
-# List repositories being watched by the authenticated user
+# List repositories watched by the authenticated user
 
 ## Table of contents
 
@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/watching/#list-repositories-being-watched
+Original documentation: https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-the-authenticated-user
 
-
+Lists repositories the authenticated user is watching.
 
 
 <a name="quick start" ></a>

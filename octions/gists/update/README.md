@@ -1,4 +1,4 @@
-# Edit a gist
+# Update a gist
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/gists/#edit-a-gist
+Original documentation: https://developer.github.com/v3/gists/#update-a-gist
 
 Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
 

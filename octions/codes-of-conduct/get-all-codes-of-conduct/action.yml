@@ -1,0 +1,22 @@
+name: List all codes of conduct
+description: |
+  
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

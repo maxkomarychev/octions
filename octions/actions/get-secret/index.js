@@ -7,8 +7,6 @@ const token = default_parse("token");
 const owner = default_parse("owner");
 const repo = default_parse("repo");
 const name = default_parse("name");
-const per_page = default_parse("per_page");
-const page = default_parse("page");
 const file_output = default_parse("file_output");
 const custom_outputs = default_parse("custom_outputs");
 
@@ -21,8 +19,6 @@ const inputs = {
   owner,
   repo,
   name,
-  per_page,
-  page,
   file_output,
   custom_outputs,
 }

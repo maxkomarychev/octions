@@ -1,4 +1,4 @@
-# Delete a Repository Subscription
+# Delete a repository subscription
 
 ## Table of contents
 

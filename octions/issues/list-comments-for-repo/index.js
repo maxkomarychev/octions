@@ -9,6 +9,8 @@ const repo = default_parse("repo");
 const sort = default_parse("sort");
 const direction = default_parse("direction");
 const since = default_parse("since");
+const per_page = default_parse("per_page");
+const page = default_parse("page");
 const file_output = default_parse("file_output");
 const custom_outputs = default_parse("custom_outputs");
 
@@ -24,6 +26,8 @@ const inputs = {
   sort,
   direction,
   since,
+  per_page,
+  page,
   file_output,
   custom_outputs,
 }

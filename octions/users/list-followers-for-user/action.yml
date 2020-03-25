@@ -1,6 +1,6 @@
-name: List a user's followers
+name: List followers of a user
 description: |
-  
+  Lists the people following the specified user.
 
 inputs:
   token:

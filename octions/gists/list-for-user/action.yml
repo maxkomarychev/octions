@@ -1,0 +1,38 @@
+name: List gists for a user
+description: |
+  Lists public gists for the specified user:
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  username:
+    description: |
+      username parameter
+    required: true
+  since:
+    description: |
+      This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Only gists updated at or after this time are returned.
+    required: true
+  per_page:
+    description: |
+      Results per page (max 100)
+    required: true
+  page:
+    description: |
+      Page number of the results to fetch.
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

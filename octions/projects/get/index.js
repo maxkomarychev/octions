@@ -5,8 +5,6 @@ const request = require('../../../src/utils/request')
 
 const token = default_parse("token");
 const project_id = default_parse("project_id");
-const per_page = default_parse("per_page");
-const page = default_parse("page");
 const file_output = default_parse("file_output");
 const custom_outputs = default_parse("custom_outputs");
 
@@ -18,8 +16,6 @@ const previews = [
 const inputs = {
   token,
   project_id,
-  per_page,
-  page,
   file_output,
   custom_outputs,
 }

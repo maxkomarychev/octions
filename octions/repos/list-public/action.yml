@@ -1,4 +1,4 @@
-name: List all public repositories
+name: List public repositories
 description: |
   Lists all public repositories in the order that they were created.  Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
 
@@ -9,7 +9,7 @@ inputs:
     required: true
   since:
     description: |
-      The integer ID of the last Repository that you've seen.
+      The integer ID of the last repository that you've seen.
     required: true
   per_page:
     description: |

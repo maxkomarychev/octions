@@ -1,4 +1,4 @@
-# List all issues for a given organization assigned to the authenticated user
+# List organization issues assigned to the authenticated user
 
 ## Table of contents
 
@@ -10,7 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/issues/#list-issues
+Original documentation: https://developer.github.com/v3/issues/#list-organization-issues-assigned-to-the-authenticated-user
+
+List issues in an organization assigned to the authenticated user.
 
 **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by the `pull_request` key.
 

@@ -1,6 +1,6 @@
-name: List who a user is following
+name: List users followed by another user
 description: |
-  
+  Lists the people who the specified user follows.
 
 inputs:
   token:
