@@ -12,7 +12,6 @@ const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
-  "shadow-cat",
   "sailor-v",
 ]
 

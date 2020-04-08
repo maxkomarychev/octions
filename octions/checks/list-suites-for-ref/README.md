@@ -1,4 +1,4 @@
-# List check suites for a specific ref
+# List check suites for a Git reference
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/checks/suites/#list-check-suites-for-a-specific-ref
+Original documentation: https://developer.github.com/v3/checks/suites/#list-check-suites-for-a-git-reference
 
 **Note:** The Checks API only looks for pushes in the repository where the check suite or check run were created. Pushes to a branch in a forked repository are not detected and return an empty `pull_requests` array and a `null` value for `head_branch`.
 

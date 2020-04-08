@@ -1,0 +1,26 @@
+name: Mark notifications as read
+description: |
+  Marks all notifications as "read" removes it from the [default view on GitHub](https://github.com/notifications). If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List notifications for the authenticated user](https://developer.github.com/v3/activity/notifications/#list-notifications-for-the-authenticated-user) endpoint and pass the query parameter `all=false`.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  last_read_at:
+    description: |
+      Describes the last point that notifications were checked. Anything updated since this time will not be marked as read. If you omit this parameter, all notifications are marked as read. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. Default: The current timestamp.
+    required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

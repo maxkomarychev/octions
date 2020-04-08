@@ -1,4 +1,4 @@
-# View a single thread
+# Get a thread
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/notifications/#view-a-single-thread
+Original documentation: https://developer.github.com/v3/activity/notifications/#get-a-thread
 
 
 

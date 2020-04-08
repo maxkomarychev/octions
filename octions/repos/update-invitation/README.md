@@ -41,7 +41,7 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#updat
 |owner|false|owner parameter
 |repo|false|repo parameter
 |invitation_id|true|invitation_id parameter
-|permissions|false|The permissions that the associated user will have on the repository. Valid values are `read`, `write`, and `admin`.
+|permissions|false|The permissions that the associated user will have on the repository. Valid values are `read`, `write`, `maintain`, `triage`, and `admin`.
 |file_output|false|Path to store full output of the action
 |custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 

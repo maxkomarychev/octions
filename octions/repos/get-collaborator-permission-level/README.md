@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/repos/collaborators/#review-a-users-permission-level
 
-Possible values for the `permission` key: `admin`, `write`, `read`, `none`.
+Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
 
 
 <a name="quick start" ></a>

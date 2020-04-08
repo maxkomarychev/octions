@@ -21,7 +21,7 @@ inputs:
     required: true
   permissions:
     description: |
-      The permissions that the associated user will have on the repository. Valid values are `read`, `write`, and `admin`.
+      The permissions that the associated user will have on the repository. Valid values are `read`, `write`, `maintain`, `triage`, and `admin`.
     required: false
   file_output:
     description: |

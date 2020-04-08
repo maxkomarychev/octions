@@ -1,4 +1,4 @@
-# List public events that a user has received
+# List public events received by a user
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/events/#list-public-events-that-a-user-has-received
+Original documentation: https://developer.github.com/v3/activity/events/#list-public-events-received-by-a-user
 
 
 

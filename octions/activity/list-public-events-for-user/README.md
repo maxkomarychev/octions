@@ -1,4 +1,4 @@
-# List public events performed by a user
+# List public events for a user
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/events/#list-public-events-performed-by-a-user
+Original documentation: https://developer.github.com/v3/activity/events/#list-public-events-for-a-user
 
 
 

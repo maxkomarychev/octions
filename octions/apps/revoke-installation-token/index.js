@@ -9,7 +9,6 @@ const custom_outputs = default_parse("custom_outputs");
 
 
 const previews = [
-  "gambit",
 ]
 
 const inputs = {

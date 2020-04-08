@@ -1,0 +1,26 @@
+name: Get a thread subscription for the authenticated user
+description: |
+  This checks to see if the current user is subscribed to a thread. You can also [get a repository subscription](https://developer.github.com/v3/activity/watching/#get-a-repository-subscription).  Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  thread_id:
+    description: |
+      thread_id parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

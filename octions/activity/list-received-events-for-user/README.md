@@ -1,4 +1,4 @@
-# List events that a user has received
+# List events received by the authenticated user
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/activity/events/#list-events-that-a-user-has-received
+Original documentation: https://developer.github.com/v3/activity/events/#list-events-received-by-the-authenticated-user
 
 These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
 
