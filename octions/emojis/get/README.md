@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/emojis/#emojis
 Lists all the emojis available to use on GitHub.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

@@ -19,8 +19,6 @@ List issues in an organization assigned to the authenticated user.
 Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

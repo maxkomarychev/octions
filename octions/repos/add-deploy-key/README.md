@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/repos/keys/#add-a-new-de
 Here's how you can create a read-only deploy key:
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

@@ -35,8 +35,6 @@ Fetches the URL to download the migration archive as a `tar.gz` file. Depending 
 The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

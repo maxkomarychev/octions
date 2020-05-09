@@ -22,8 +22,6 @@ Weekly Hash (`weeks` array):
 *   `c` - Number of commits
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

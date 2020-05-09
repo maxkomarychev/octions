@@ -1,6 +1,6 @@
 name: List invitations for a repository
 description: |
-  When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.  
+  When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
 
 inputs:
   token:

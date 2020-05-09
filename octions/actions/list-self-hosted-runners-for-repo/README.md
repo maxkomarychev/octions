@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/actions/self_hosted_runners/#list-self-hosted-runners-for-a-repository
+Original documentation: https://developer.github.com/v3/actions/self-hosted-runners/#list-self-hosted-runners-for-a-repository
 
-Lists all self-hosted runners for a repository. Anyone with admin access to the repository can use this endpoint. GitHub Apps must have the `administration` permission to use this endpoint.
+Lists all self-hosted runners for a repository. Anyone with admin access to the repository and an access token with the `repo` scope can use this endpoint.
 
 
 <a name="quick start" ></a>

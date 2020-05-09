@@ -17,8 +17,6 @@ Returns the total commit counts for the `owner` and total commit counts in `all`
 The array order is oldest week (index 0) to most recent week.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/issues/comments/#list-co
 Issue Comments are ordered by ascending ID.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

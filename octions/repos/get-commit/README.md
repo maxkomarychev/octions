@@ -41,8 +41,6 @@ These are the possible values for `reason` in the `verification` object:
 | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

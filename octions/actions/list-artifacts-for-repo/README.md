@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/artifacts/#list-artifacts-for-a-repository
 
-Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

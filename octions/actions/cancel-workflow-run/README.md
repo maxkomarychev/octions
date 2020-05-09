@@ -10,9 +10,9 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/actions/workflow_runs/#cancel-a-workflow-run
+Original documentation: https://developer.github.com/v3/actions/workflow-runs/#cancel-a-workflow-run
 
-Cancels a workflow run using its `id`. Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Cancels a workflow run using its `id`. Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

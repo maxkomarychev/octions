@@ -1,6 +1,6 @@
 name: Get the number of additions and deletions per week
 description: |
-  Returns a weekly aggregate of the number of additions and deletions pushed to a repository.  
+  Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
 
 inputs:
   token:

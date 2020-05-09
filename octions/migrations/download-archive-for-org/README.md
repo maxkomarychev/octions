@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/migrations/orgs/#downloa
 Fetches the URL to a migration archive.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

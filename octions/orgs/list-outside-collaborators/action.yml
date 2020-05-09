@@ -1,6 +1,6 @@
 name: List outside collaborators
 description: |
-  List all users who are outside collaborators of an organization.  
+  List all users who are outside collaborators of an organization.
 
 inputs:
   token:

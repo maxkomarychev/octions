@@ -1,0 +1,30 @@
+name: Delete a self-hosted runner from an organization
+description: |
+  **Warning:** The self-hosted runners API for organizations is currently in public beta and subject to change.  Forces the removal of a self-hosted runner from an organization. You can use this endpoint to completely remove the runner when the machine you were using no longer exists. Anyone with admin access to the organization can use this endpoint.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  runner_id:
+    description: |
+      runner_id parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

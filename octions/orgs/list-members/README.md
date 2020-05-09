@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/orgs/members/#members-li
 List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

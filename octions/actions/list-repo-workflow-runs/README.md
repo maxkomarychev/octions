@@ -10,11 +10,11 @@
 <a name="quick-start" ></a>
 ## Docs
 
-Original documentation: https://developer.github.com/v3/actions/workflow_runs/#list-repository-workflow-runs
+Original documentation: https://developer.github.com/v3/actions/workflow-runs/#list-repository-workflow-runs
 
 Lists all workflow runs for a repository. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
 
-Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

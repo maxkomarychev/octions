@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/secrets/#create-or-update-a-secret-for-a-repository
 
-Creates or updates a secret with an encrypted value. Encrypt your secret using [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
+Creates or updates a secret with an encrypted value. Encrypt your secret using [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
 
 Encrypt your secret using the [tweetsodium](https://github.com/mastahyeti/tweetsodium) library.
 
@@ -27,8 +27,6 @@ Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodiu
 
 
 Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
-
-
 
 
 <a name="quick start" ></a>

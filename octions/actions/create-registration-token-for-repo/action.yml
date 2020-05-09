@@ -1,0 +1,30 @@
+name: Create a registration token for a repository
+description: |
+  Returns a token that you can pass to the `config` script. The token expires after one hour. Anyone with admin access to the repository and an access token with the `repo` scope can use this endpoint.  Configure your self-hosted runner, replacing TOKEN with the registration token provided by this endpoint.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  owner:
+    description: |
+      owner parameter
+    required: false
+  repo:
+    description: |
+      repo parameter
+    required: false
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

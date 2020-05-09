@@ -1,6 +1,6 @@
 name: Create or update a secret for a repository
 description: |
-  Creates or updates a secret with an encrypted value. Encrypt your secret using [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.  Encrypt your secret using the [tweetsodium](https://github.com/mastahyeti/tweetsodium) library.    Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/stable/public/#nacl-public-sealedbox) with Python 3.    Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.    Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.  
+  Creates or updates a secret with an encrypted value. Encrypt your secret using [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.  Encrypt your secret using the [tweetsodium](https://github.com/mastahyeti/tweetsodium) library.    Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/stable/public/#nacl-public-sealedbox) with Python 3.    Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.    Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
 
 inputs:
   token:

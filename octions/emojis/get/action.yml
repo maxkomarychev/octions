@@ -1,6 +1,6 @@
 name: Get
 description: |
-  Lists all the emojis available to use on GitHub.  
+  Lists all the emojis available to use on GitHub.
 
 inputs:
   token:

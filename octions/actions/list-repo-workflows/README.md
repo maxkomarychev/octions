@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/workflows/#list-repository-workflows
 
-Lists the workflows in a repository. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Lists the workflows in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

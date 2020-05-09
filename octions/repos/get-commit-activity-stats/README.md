@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/repos/statistics/#get-th
 Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

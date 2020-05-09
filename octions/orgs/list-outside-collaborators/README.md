@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/orgs/outside_collaborato
 List all users who are outside collaborators of an organization.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

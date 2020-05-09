@@ -1,6 +1,6 @@
 name: Download an organization migration archive
 description: |
-  Fetches the URL to a migration archive.  
+  Fetches the URL to a migration archive.
 
 inputs:
   token:

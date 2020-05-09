@@ -26,8 +26,6 @@ Note: Pagination is powered exclusively by the `since` parameter. Use the [Link 
   with:
     token: <token value>
     since: <since value>
-    per_page: <per_page value>
-    page: <page value>
 - name: Print outputs
   run: |
     echo ${{ steps.my_step_id.outputs.id }}
@@ -43,8 +41,6 @@ Note: Pagination is powered exclusively by the `since` parameter. Use the [Link 
 |---|---|---|
 |token|true|Token to authenticate the request
 |since|true|The integer ID of the last User that you've seen.
-|per_page|true|Results per page (max 100)
-|page|true|Page number of the results to fetch.
 |file_output|false|Path to store full output of the action
 |custom_outputs|false|Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
 

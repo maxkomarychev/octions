@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/repos/statistics/#get-th
 Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

@@ -1,6 +1,6 @@
 name: List comments on an issue
 description: |
-  Issue Comments are ordered by ascending ID.  
+  Issue Comments are ordered by ascending ID.
 
 inputs:
   token:

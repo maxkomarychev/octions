@@ -17,8 +17,6 @@ Commit Comments use [these custom media types](https://developer.github.com/v3/r
 Comments are ordered by ascending ID.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

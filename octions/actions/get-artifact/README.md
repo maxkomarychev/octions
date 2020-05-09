@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/artifacts/#get-an-artifact
 
-Gets a specific artifact for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Gets a specific artifact for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

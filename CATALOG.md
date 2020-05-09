@@ -15,6 +15,7 @@
 1. [MARKDOWN](#markdown)
 1. [META](#meta)
 1. [ORGS](#orgs)
+1. [ACTIONS](#actions)
 1. [INTERACTIONS](#interactions)
 1. [MIGRATIONS](#migrations)
 1. [PROJECTS](#projects)
@@ -22,8 +23,8 @@
 1. [TEAMS](#teams)
 1. [REACTIONS](#reactions)
 1. [RATE-LIMIT](#rate-limit)
-1. [ACTIONS](#actions)
 1. [CHECKS](#checks)
+1. [CODE-SCANNING](#code-scanning)
 1. [GIT](#git)
 1. [PULLS](#pulls)
 1. [SCIM](#scim)
@@ -38,6 +39,8 @@
 1. [Get an installation](./octions/apps/get-installation/README.md)
 1. [Delete an installation](./octions/apps/delete-installation/README.md)
 1. [Create a new installation token](./octions/apps/create-installation-token/README.md)
+1. [Suspend an installation](./octions/apps/suspend-installation/README.md)
+1. [Unsuspend an installation](./octions/apps/unsuspend-installation/README.md)
 1. [Delete an app authorization](./octions/apps/delete-authorization/README.md)
 1. [Revoke a grant for an application](./octions/apps/revoke-grant-for-application/README.md)
 1. [Check a token](./octions/apps/check-token/README.md)
@@ -264,6 +267,43 @@
 1. [Edit your organization membership](./octions/orgs/update-membership/README.md)
 1. [List your organizations](./octions/orgs/list-for-authenticated-user/README.md)
 1. [List user organizations](./octions/orgs/list-for-user/README.md)
+
+## ACTIONS
+
+1. [List self-hosted runners for an organization](./octions/actions/list-self-hosted-runners-for-org/README.md)
+1. [List runner applications for an organization](./octions/actions/list-runner-applications-for-org/README.md)
+1. [Create a registration token for an organization](./octions/actions/create-registration-token-for-org/README.md)
+1. [Create a remove token for an organization](./octions/actions/create-remove-token-for-org/README.md)
+1. [Get a self-hosted runner for an organization](./octions/actions/get-self-hosted-runner-for-org/README.md)
+1. [Delete a self-hosted runner from an organization](./octions/actions/delete-self-hosted-runner-from-org/README.md)
+1. [List artifacts for a repository](./octions/actions/list-artifacts-for-repo/README.md)
+1. [Get an artifact](./octions/actions/get-artifact/README.md)
+1. [Delete an artifact](./octions/actions/delete-artifact/README.md)
+1. [Download an artifact](./octions/actions/download-artifact/README.md)
+1. [Get a workflow job](./octions/actions/get-workflow-job/README.md)
+1. [Download workflow job logs](./octions/actions/download-workflow-job-logs/README.md)
+1. [List self-hosted runners for a repository](./octions/actions/list-self-hosted-runners-for-repo/README.md)
+1. [List runner applications for a repository](./octions/actions/list-runner-applications-for-repo/README.md)
+1. [Create a registration token for a repository](./octions/actions/create-registration-token-for-repo/README.md)
+1. [Create a remove token for a repository](./octions/actions/create-remove-token-for-repo/README.md)
+1. [Get a self-hosted runner for a repository](./octions/actions/get-self-hosted-runner-for-repo/README.md)
+1. [Delete a self-hosted runner from a repository](./octions/actions/delete-self-hosted-runner-from-repo/README.md)
+1. [List repository workflow runs](./octions/actions/list-repo-workflow-runs/README.md)
+1. [Get a workflow run](./octions/actions/get-workflow-run/README.md)
+1. [List workflow run artifacts](./octions/actions/list-workflow-run-artifacts/README.md)
+1. [Cancel a workflow run](./octions/actions/cancel-workflow-run/README.md)
+1. [List jobs for a workflow run](./octions/actions/list-jobs-for-workflow-run/README.md)
+1. [Download workflow run logs](./octions/actions/download-workflow-run-logs/README.md)
+1. [Delete workflow run logs](./octions/actions/delete-workflow-run-logs/README.md)
+1. [Re-run a workflow](./octions/actions/re-run-workflow/README.md)
+1. [List secrets for a repository](./octions/actions/list-secrets-for-repo/README.md)
+1. [Get your public key](./octions/actions/get-public-key/README.md)
+1. [Get a secret](./octions/actions/get-secret/README.md)
+1. [Create or update a secret for a repository](./octions/actions/create-or-update-secret-for-repo/README.md)
+1. [Delete a secret from a repository](./octions/actions/delete-secret-from-repo/README.md)
+1. [List repository workflows](./octions/actions/list-repo-workflows/README.md)
+1. [Get a workflow](./octions/actions/get-workflow/README.md)
+1. [List workflow runs](./octions/actions/list-workflow-runs/README.md)
 
 ## INTERACTIONS
 
@@ -570,36 +610,6 @@
 
 1. [Get your current rate limit status](./octions/rate-limit/get/README.md)
 
-## ACTIONS
-
-1. [List artifacts for a repository](./octions/actions/list-artifacts-for-repo/README.md)
-1. [Get an artifact](./octions/actions/get-artifact/README.md)
-1. [Delete an artifact](./octions/actions/delete-artifact/README.md)
-1. [Download an artifact](./octions/actions/download-artifact/README.md)
-1. [Get a workflow job](./octions/actions/get-workflow-job/README.md)
-1. [List workflow job logs](./octions/actions/list-workflow-job-logs/README.md)
-1. [List self-hosted runners for a repository](./octions/actions/list-self-hosted-runners-for-repo/README.md)
-1. [List downloads for the self-hosted runner application](./octions/actions/list-downloads-for-self-hosted-runner-application/README.md)
-1. [Create a registration token](./octions/actions/create-registration-token/README.md)
-1. [Create a remove token](./octions/actions/create-remove-token/README.md)
-1. [Get a self-hosted runner](./octions/actions/get-self-hosted-runner/README.md)
-1. [Remove a self-hosted runner](./octions/actions/remove-self-hosted-runner/README.md)
-1. [List repository workflow runs](./octions/actions/list-repo-workflow-runs/README.md)
-1. [Get a workflow run](./octions/actions/get-workflow-run/README.md)
-1. [List workflow run artifacts](./octions/actions/list-workflow-run-artifacts/README.md)
-1. [Cancel a workflow run](./octions/actions/cancel-workflow-run/README.md)
-1. [List jobs for a workflow run](./octions/actions/list-jobs-for-workflow-run/README.md)
-1. [List workflow run logs](./octions/actions/list-workflow-run-logs/README.md)
-1. [Re-run a workflow](./octions/actions/re-run-workflow/README.md)
-1. [List secrets for a repository](./octions/actions/list-secrets-for-repo/README.md)
-1. [Get your public key](./octions/actions/get-public-key/README.md)
-1. [Get a secret](./octions/actions/get-secret/README.md)
-1. [Create or update a secret for a repository](./octions/actions/create-or-update-secret-for-repo/README.md)
-1. [Delete a secret from a repository](./octions/actions/delete-secret-from-repo/README.md)
-1. [List repository workflows](./octions/actions/list-repo-workflows/README.md)
-1. [Get a workflow](./octions/actions/get-workflow/README.md)
-1. [List workflow runs](./octions/actions/list-workflow-runs/README.md)
-
 ## CHECKS
 
 1. [Create a check run](./octions/checks/create/README.md)
@@ -613,6 +623,11 @@
 1. [Rerequest a check suite](./octions/checks/rerequest-suite/README.md)
 1. [List check runs for a Git reference](./octions/checks/list-for-ref/README.md)
 1. [List check suites for a Git reference](./octions/checks/list-suites-for-ref/README.md)
+
+## CODE-SCANNING
+
+1. [List code scanning alerts for a repository](./octions/code-scanning/list-alerts-for-repo/README.md)
+1. [Get a code scanning alert](./octions/code-scanning/get-alert/README.md)
 
 ## GIT
 

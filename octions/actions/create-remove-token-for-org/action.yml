@@ -1,0 +1,26 @@
+name: Create a remove token for an organization
+description: |
+  **Warning:** The self-hosted runners API for organizations is currently in public beta and subject to change.  Returns a token that you can pass to the `config` script to remove a self-hosted runner from an organization. The token expires after one hour. Anyone with admin access to the organization can use this endpoint.  To remove your self-hosted runner from an organization, replace `TOKEN` with the remove token provided by this endpoint.
+
+inputs:
+  token:
+    description: |
+      Token to authenticate the request
+    required: true
+  org:
+    description: |
+      org parameter
+    required: true
+  file_output:
+    description: |
+      Path to store full output of the action
+    required: false
+  custom_outputs:
+    description: |
+      Custom outputs to create for step. This has to be YAML multiline string literal `custom_outputs: \|<newline> output_name:path.in.result`
+    required: false
+
+runs:
+  using: node12
+  main: index.js
+

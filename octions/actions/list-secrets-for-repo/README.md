@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/secrets/#list-secrets-for-a-repository
 
-Lists all secrets available in a repository without revealing their encrypted values. Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
+Lists all secrets available in a repository without revealing their encrypted values. Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

@@ -1,6 +1,6 @@
 name: List comments in a repository
 description: |
-  By default, Issue Comments are ordered by ascending ID.  
+  By default, Issue Comments are ordered by ascending ID.
 
 inputs:
   token:

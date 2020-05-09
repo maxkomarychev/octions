@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/secrets/#get-a-secret
 
-Gets a single secret without revealing its encrypted value. Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
+Gets a single secret without revealing its encrypted value. Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `secrets` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

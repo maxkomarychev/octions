@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/repos/invitations/#list-
 When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

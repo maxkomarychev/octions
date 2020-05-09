@@ -15,8 +15,6 @@ Original documentation: https://developer.github.com/v3/repos/comments/#list-com
 Use the `:commit_sha` to specify the commit that will have its comments listed.
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 

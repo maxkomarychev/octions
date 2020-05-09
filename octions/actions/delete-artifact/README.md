@@ -12,7 +12,7 @@
 
 Original documentation: https://developer.github.com/v3/actions/artifacts/#delete-an-artifact
 
-Deletes an artifact for a workflow run. Anyone with write access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+Deletes an artifact for a workflow run. Anyone with write access to the repository and an access token with the `repo` scope can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
 
 
 <a name="quick start" ></a>

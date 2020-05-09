@@ -19,8 +19,6 @@ _Note_: For private repositories, these links are temporary and expire after fiv
 To follow redirects with curl, use the `-L` switch:
 
 
-
-
 <a name="quick start" ></a>
 ## Quick start
 
