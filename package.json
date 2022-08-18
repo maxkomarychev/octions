@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@actions/core": "1.2.4",
+    "@actions/core": "1.9.1",
     "@actions/github": "2.2.0",
     "@octokit/request": "5.4.2",
     "@octokit/routes": "27.16.0",
